@@ -47,7 +47,7 @@ RAW files are never modified; their metadata goes into a sidecar with the same n
 ## Open items
 
 - Photo Mechanic hasn't been checked to confirm it shows our tags and color classes.
-- The Windows paths haven't been tested on a real PC.
+- **The Windows version opens and then crashes** (reported by Coyle). The cause hasn't been found yet. The Windows paths have never been tested on a real PC.
 - In January 2027, update the officials: switch `\gov\` to Amy Acton and `\wcclee\` to Ryan Lee in `News.txt`, and remove Herringshaw.
 - The new sport files (baseball, softball, gymnastics, swimming and diving, track and field, tennis, golf) have no rosters yet.
 - 30 of the 42 photo-credit names came from an email recipient list, so preferred names aren't confirmed.
