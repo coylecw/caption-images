@@ -1,0 +1,315 @@
+# NEWS codes for Bowling Green and northwest Ohio (Caption Images).
+# Each line: code, TAB, text. People have extra columns: \bgmayor#2\ = name, \bgmayor#3\ = last name.
+# Officials were checked on Nov. 5, 2026. Ohio's governor and some county seats change in January 2027 after the
+# Nov. 3, 2026 election. In January 2027 change \gov\ to Ohio Gov. Amy Acton and \wcclee\ to Wood County Commissioner Ryan Lee, and remove \wccherr\.
+# Turn this file on together with DATES for the date codes (\nov5\, \nov5d\).
+
+# DATELINES (type the date code after: \toldate\ \nov5\:) and IN-TOWN endings
+inbg	in Bowling Green, Ohio.
+
+# Wood County
+perrydate	PERRYSBURG, OHIO -
+inperry	in Perrysburg, Ohio.
+rossdate	ROSSFORD, OHIO -
+inross	in Rossford, Ohio.
+nwooddate	NORTHWOOD, OHIO -
+innwood	in Northwood, Ohio.
+nbaltdate	NORTH BALTIMORE, OHIO -
+innbalt	in North Baltimore, Ohio.
+pembdate	PEMBERVILLE, OHIO -
+inpemb	in Pemberville, Ohio.
+walbdate	WALBRIDGE, OHIO -
+inwalb	in Walbridge, Ohio.
+luckdate	LUCKEY, OHIO -
+inluck	in Luckey, Ohio.
+millbdate	MILLBURY, OHIO -
+inmillb	in Millbury, Ohio.
+westdate	WESTON, OHIO -
+inwest	in Weston, Ohio.
+grapdate	GRAND RAPIDS, OHIO -
+ingrap	in Grand Rapids, Ohio.
+haskdate	HASKINS, OHIO -
+inhask	in Haskins, Ohio.
+tontdate	TONTOGANY, OHIO -
+intont	in Tontogany, Ohio.
+portdate	PORTAGE, OHIO -
+inport	in Portage, Ohio.
+bloomdate	BLOOMDALE, OHIO -
+inbloom	in Bloomdale, Ohio.
+bradndate	BRADNER, OHIO -
+inbradn	in Bradner, Ohio.
+cygdate	CYGNET, OHIO -
+incyg	in Cygnet, Ohio.
+risedate	RISINGSUN, OHIO -
+inrise	in Risingsun, Ohio.
+waynedate	WAYNE, OHIO -
+inwayne	in Wayne, Ohio.
+fostdate	FOSTORIA, OHIO -
+infost	in Fostoria, Ohio.
+
+# Lucas County
+toldate	TOLEDO, OHIO -
+intol	in Toledo, Ohio.
+maumdate	MAUMEE, OHIO -
+inmaum	in Maumee, Ohio.
+sylvdate	SYLVANIA, OHIO -
+insylv	in Sylvania, Ohio.
+oregdate	OREGON, OHIO -
+inoreg	in Oregon, Ohio.
+watdate	WATERVILLE, OHIO -
+inwat	in Waterville, Ohio.
+whdate	WHITEHOUSE, OHIO -
+inwh	in Whitehouse, Ohio.
+holldate	HOLLAND, OHIO -
+inholl	in Holland, Ohio.
+ohillsdate	OTTAWA HILLS, OHIO -
+inohills	in Ottawa Hills, Ohio.
+
+# Around northwest Ohio
+finddate	FINDLAY, OHIO -
+infind	in Findlay, Ohio.
+fremdate	FREMONT, OHIO -
+infrem	in Fremont, Ohio.
+napdate	NAPOLEON, OHIO -
+innap	in Napoleon, Ohio.
+pcdate	PORT CLINTON, OHIO -
+inpc	in Port Clinton, Ohio.
+tiffdate	TIFFIN, OHIO -
+intiff	in Tiffin, Ohio.
+defdate	DEFIANCE, OHIO -
+indef	in Defiance, Ohio.
+wausdate	WAUSEON, OHIO -
+inwaus	in Wauseon, Ohio.
+sanddate	SANDUSKY, OHIO -
+insand	in Sandusky, Ohio.
+bryandate	BRYAN, OHIO -
+inbryan	in Bryan, Ohio.
+ottdate	OTTAWA, OHIO -
+inott	in Ottawa, Ohio.
+limadate	LIMA, OHIO -
+inlima	in Lima, Ohio.
+archdate	ARCHBOLD, OHIO -
+inarch	in Archbold, Ohio.
+swandate	SWANTON, OHIO -
+inswan	in Swanton, Ohio.
+deltadate	DELTA, OHIO -
+indelta	in Delta, Ohio.
+genoadate	GENOA, OHIO -
+ingenoa	in Genoa, Ohio.
+elmdate	ELMORE, OHIO -
+inelm	in Elmore, Ohio.
+ohbdate	OAK HARBOR, OHIO -
+inohb	in Oak Harbor, Ohio.
+pibdate	PUT-IN-BAY, OHIO -
+inpib	in Put-in-Bay, Ohio.
+marbdate	MARBLEHEAD, OHIO -
+inmarb	in Marblehead, Ohio.
+
+# COUNTIES AND REGION
+wood	Wood County
+lucas	Lucas County
+hancock	Hancock County
+sandco	Sandusky County
+ottco	Ottawa County
+henry	Henry County
+fulton	Fulton County
+seneca	Seneca County
+nwo	northwest Ohio
+bgarea	the Bowling Green area
+
+# PLACES IN BOWLING GREEN
+dtbg	in downtown Bowling Green
+mainst	on Main Street in downtown Bowling Green
+wccourt	at the Wood County Courthouse
+wcfair	at the Wood County Fairgrounds
+wclib	at the Wood County District Public Library
+wchosp	at Wood County Hospital
+wcmus	at the Wood County Museum
+citypark	at City Park
+carter	at Carter Park
+simpson	at Simpson Garden Park
+bgcc	at the Bowling Green Community Center
+bghs	at Bowling Green High School
+
+# PLACES ON CAMPUS (BGSU)
+campus	on the campus of Bowling Green State University
+union	at the Bowen-Thompson Student Union
+jerome	at Jerome Library
+uhall	at University Hall
+mcfall	at the McFall Center
+kuhlin	at the Kuhlin Center
+wolfe	at the Wolfe Center for the Arts
+moore	at the Moore Musical Arts Center
+kobacker	at Kobacker Hall
+olscamp	at Olscamp Hall
+maurer	at the Maurer Center
+hayes	at Hayes Hall
+src	at the Student Recreation Center
+perryfh	at the Perry Field House
+anderson	at Anderson Arena
+stroh	at the Stroh Center
+doyt	at Doyt L. Perry Stadium
+slater	at Slater Family Ice Arena
+
+# PLACES IN TOLEDO AND AROUND
+tma	at the Toledo Museum of Art
+tzoo	at the Toledo Zoo
+fifth3	at Fifth Third Field
+huntctr	at the Huntington Center
+imagine	at Imagination Station
+promenade	at Promenade Park
+glasscity	at Glass City Metropark
+ogc	at One Government Center
+lccourt	at the Lucas County Courthouse
+utcampus	on the campus of the University of Toledo
+glassbowl	at the Glass Bowl
+savage	at Savage Arena
+maumriver	along the Maumee River
+erie	on Lake Erie
+i75	on Interstate 75
+tpk	on the Ohio Turnpike
+cedarpt	at Cedar Point
+
+# ORGANIZATIONS
+bgsu	Bowling Green State University
+citybg	the City of Bowling Green
+bgcouncil	Bowling Green City Council
+bgcs	Bowling Green City Schools
+bgpd	the Bowling Green Police Division
+bgfd	the Bowling Green Fire Division
+bgsupd	the BGSU Police Department
+wcso	the Wood County Sheriff's Office
+ohp	the Ohio State Highway Patrol
+tpd	the Toledo Police Department
+tfrd	Toledo Fire & Rescue Department
+lcso	the Lucas County Sheriff's Office
+utol	the University of Toledo
+usg	BGSU Undergraduate Student Government
+trustees	the BGSU Board of Trustees
+bgfm	BG Falcon Media
+
+# PEOPLE: OFFICIALS (checked Nov. 5, 2026; #2 = name, #3 = last name. Update after elections)
+bgmayor	Bowling Green Mayor Mike Aspacher	Mike Aspacher	Aspacher
+bgpdchief	Bowling Green Police Chief Justin White	Justin White	White
+bgfdchief	Bowling Green Fire Chief Bill Moorman	Bill Moorman	Moorman
+bgsupres	Bowling Green State University President Rodney K. Rogers	Rodney K. Rogers	Rogers
+bgsuad	Bowling Green Director of Athletics Derek van der Merwe	Derek van der Merwe	van der Merwe
+bgsupdchief	BGSU Police Chief Michael Campbell	Michael Campbell	Campbell
+bgsupddep	BGSU Police Deputy Chief Jon Luidhardt	Jon Luidhardt	Luidhardt
+wcsheriff	Wood County Sheriff Mark Wasylyshyn	Mark Wasylyshyn	Wasylyshyn
+wccherr	Wood County Commissioner Doris Herringshaw	Doris Herringshaw	Herringshaw
+wcclahote	Wood County Commissioner Craig LaHote	Craig LaHote	LaHote
+wccbowlus	Wood County Commissioner Ted Bowlus	Ted Bowlus	Bowlus
+wcclee	Wood County Commissioner-elect Ryan Lee	Ryan Lee	Lee
+perrymayor	Perrysburg Mayor Mark Weber	Mark Weber	Weber
+tolmayor	Toledo Mayor Wade Kapszukiewicz	Wade Kapszukiewicz	Kapszukiewicz
+lcsheriff	Lucas County Sheriff Mike Navarre	Mike Navarre	Navarre
+gov	Ohio Gov. Mike DeWine	Mike DeWine	DeWine
+govelect	Ohio Gov.-elect Amy Acton	Amy Acton	Acton
+latta	U.S. Rep. Bob Latta (R-OH)	Bob Latta	Latta
+kaptur	U.S. Rep. Marcy Kaptur (D-OH)	Marcy Kaptur	Kaptur
+moreno	U.S. Sen. Bernie Moreno (R-OH)	Bernie Moreno	Moreno
+
+# GOVERNMENT AND MEETINGS
+spk	speaks during
+spkpc	speaks during a press conference
+listens	listens during
+votes	votes during
+council	a Bowling Green City Council meeting
+trmeet	a BGSU Board of Trustees meeting
+usgmeet	a BGSU Undergraduate Student Government meeting
+wccmeet	a Wood County Commissioners meeting
+bgboe	a Bowling Green Board of Education meeting
+pc	a press conference
+townhall	a town hall meeting
+hearing	a public hearing
+sworn	is sworn in
+oath	takes the oath of office
+ribbon	cut the ribbon during a ribbon-cutting ceremony
+ground	break ground during a groundbreaking ceremony
+honored	is honored during
+sotc	during the State of the City address
+sotu	during the State of the University address
+
+# ELECTIONS
+ballot	casts a ballot
+voters	Voters cast ballots at a polling location
+pollw	Poll workers help voters
+watchp	during an election night watch party
+results	watches election results come in
+signs	Campaign signs line
+electday	on Election Day
+
+# RALLIES, PROTESTS AND VIGILS
+protest	Demonstrators hold signs during a protest
+marchd	Demonstrators march
+rallyc	Supporters cheer during a rally
+vigil	Community members gather for a vigil
+candles	hold candles during a vigil
+memorial	during a memorial service
+
+# PUBLIC SAFETY
+fire	Firefighters respond to a fire
+crash	Emergency crews respond to a crash
+police	Police investigate
+scene	at the scene of
+ems	Paramedics tend to
+court	appears in court
+trial	during a trial
+arraign	during an arraignment
+hazmat	Crews respond to a hazardous materials call
+rescue	Rescue crews search
+
+# WEATHER AND SEASONS
+snow	Snow falls
+plow	A snowplow clears
+storm	Storm clouds gather over
+rain	Rain falls on
+flood	Floodwaters cover
+heat	beats the heat
+leaves	Fall leaves cover
+sunset	The sun sets over
+fog	Fog settles over
+ice	Ice coats
+
+# COMMUNITY EVENTS
+bsaf	during the Black Swamp Arts Festival
+wcfairev	during the Wood County Fair
+tractor	during the National Tractor Pulling Championships
+firefly	during Firefly Nights
+holparade	during the Bowling Green Holiday Parade
+hcparade	during the BGSU Homecoming Parade
+farmers	at the Bowling Green Farmers Market
+july4	during a Fourth of July celebration
+fireworks	Fireworks light up the sky over
+parade	during a parade
+festival	during a festival
+concert	performs during a concert
+volunteer	Volunteers help
+
+# CAMPUS LIFE
+movein	during move-in day
+commence	during commencement
+grads	Graduates celebrate during commencement
+class	during a class
+lecture	during a lecture
+lab	works in a lab
+study	studies
+orient	during new student orientation
+student	a Bowling Green State University student
+students	Bowling Green State University students
+faculty	a Bowling Green State University faculty member
+perform	performs during
+rehearse	rehearses for
+
+# PHOTO BASICS
+gv	A general view of
+aerial	An aerial view of
+portrait	poses for a portrait
+feature	takes part in
+pose	poses for a photo
+hug	hug
+smile	smiles
+wave	waves to the crowd
+crowd	A crowd gathers
+cwbg	(Coyle Withrow/BG Falcon Media)

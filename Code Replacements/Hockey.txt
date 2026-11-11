@@ -1,0 +1,385 @@
+dcchahky	during a Central Collegiate Hockey Association men's hockey game
+dnchky	during a non-conference men's hockey game
+slater	at Slater Family Ice Arena
+inbg	in Bowling Green, Ohio.
+hkycoach	Head coach Dennis Williams of the Bowling Green Falcons	head coach Dennis Williams	Williams
+pressc	speaks during a postgame press conference
+ncaa	during the NCAA Tournament
+cwbg	(Coyle Withrow/BG Falcon Media)
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+cheer	Bowling Green cheerleaders perform
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+band	The Bowling Green pep band performs
+sn	is honored during Senior Night
+
+p1	during the first period
+p2	during the second period
+p3	during the third period
+ot	during overtime
+so	during a shootout
+int1	during the first intermission
+int2	during the second intermission
+pre	before the game
+intro	is introduced before the game
+
+cel	celebrates
+hud	huddles with teammates
+bench	reacts from the bench
+hf	high-fives a teammate
+anthem	stands for the national anthem
+react	reacts to a call
+skate	skates with the puck
+shot	shoots on goal
+score	scores a goal
+celg	celebrates a goal
+save	makes a save
+glove	makes a glove save
+pad	makes a pad save
+face	takes a faceoff
+puck	battles for the puck
+boards	battles along the boards
+check	checks
+pass	passes the puck
+blk	blocks a shot
+clear	clears the puck
+pen	sits in the penalty box
+stick	raises his stick to the student section
+
+
+hky1	Jacob Steinman #1 of the Bowling Green Falcons	Jacob Steinman #1	Steinman
+hky2	Carson Campbell #2 of the Bowling Green Falcons	Carson Campbell #2	Campbell
+hky3	Ty Higgins #3 of the Bowling Green Falcons	Ty Higgins #3	Higgins
+hky4	Mazden Leslie #4 of the Bowling Green Falcons	Mazden Leslie #4	Leslie
+hky5	Peteris Bulans #5 of the Bowling Green Falcons	Peteris Bulans #5	Bulans
+hky6	Cooper Wilson #6 of the Bowling Green Falcons	Cooper Wilson #6	Wilson
+hky7	Evan Bushy #7 of the Bowling Green Falcons	Evan Bushy #7	Bushy
+hky8	Jeremie Minville #8 of the Bowling Green Falcons	Jeremie Minville #8	Minville
+hky10	Adam Zlnka #10 of the Bowling Green Falcons	Adam Zlnka #10	Zlnka
+hky11	Noah Morneau #11 of the Bowling Green Falcons	Noah Morneau #11	Morneau
+hky14	Ty Cheveldayoff #14 of the Bowling Green Falcons	Ty Cheveldayoff #14	Cheveldayoff
+hky15	Max Martin #15 of the Bowling Green Falcons	Max Martin #15	Martin
+hky16	Jake Sloan #16 of the Bowling Green Falcons	Jake Sloan #16	Sloan
+hky17	Breck McKinley #17 of the Bowling Green Falcons	Breck McKinley #17	McKinley
+hky18	Thomas Verdon #18 of the Bowling Green Falcons	Thomas Verdon #18	Verdon
+hky20	Connor Levis #20 of the Bowling Green Falcons	Connor Levis #20	Levis
+hky21	Ivan Korodiuk #21 of the Bowling Green Falcons	Ivan Korodiuk #21	Korodiuk
+hky22	Matthew Soto #22 of the Bowling Green Falcons	Matthew Soto #22	Soto
+hky23	Ben Doran #23 of the Bowling Green Falcons	Ben Doran #23	Doran
+hky24	Tyler Hotson #24 of the Bowling Green Falcons	Tyler Hotson #24	Hotson
+hky25	Brayden Crampton #25 of the Bowling Green Falcons	Brayden Crampton #25	Crampton
+hky26	Teague Patton #26 of the Bowling Green Falcons	Teague Patton #26	Patton
+hky27	Brandon Whynott #27 of the Bowling Green Falcons	Brandon Whynott #27	Whynott
+hky29	Brody Waters #29 of the Bowling Green Falcons	Brody Waters #29	Waters
+hky31	Tyler Palmer #31 of the Bowling Green Falcons	Tyler Palmer #31	Palmer
+hky33	Cooper Michaluk #33 of the Bowling Green Falcons	Cooper Michaluk #33	Michaluk
+hky77	Dominik Rymon #77 of the Bowling Green Falcons	Dominik Rymon #77	Rymon
+
+
+bg	Bowling Green Falcons
+aug	Augustana Vikings
+aug1	Christian Manz #1 of the Augustana Vikings	Christian Manz #1	Manz
+aug2	Landon Fandel #2 of the Augustana Vikings	Landon Fandel #2	Fandel
+aug4	Maxwell Chakrabarti #4 of the Augustana Vikings	Maxwell Chakrabarti #4	Chakrabarti
+aug5	Easton Young #5 of the Augustana Vikings	Easton Young #5	Young
+aug6	Samo Meritähti #6 of the Augustana Vikings	Samo Meritähti #6	Meritähti
+aug7	Erick Comstock #7 of the Augustana Vikings	Erick Comstock #7	Comstock
+aug9	Hayden Hennen #9 of the Augustana Vikings	Hayden Hennen #9	Hennen
+aug10	Joey DelGreco #10 of the Augustana Vikings	Joey DelGreco #10	DelGreco
+aug11	Tyler Hennen #11 of the Augustana Vikings	Tyler Hennen #11	Hennen
+aug12	Hunter Bischoff #12 of the Augustana Vikings	Hunter Bischoff #12	Bischoff
+aug13	Will Howard #13 of the Augustana Vikings	Will Howard #13	Howard
+aug14	Jacob Fletcher #14 of the Augustana Vikings	Jacob Fletcher #14	Fletcher
+aug18	Matsvei Marshchanok #18 of the Augustana Vikings	Matsvei Marshchanok #18	Marshchanok
+aug20	Jacob Jastrzebski #20 of the Augustana Vikings	Jacob Jastrzebski #20	Jastrzebski
+aug22	Heath Nelson #22 of the Augustana Vikings	Heath Nelson #22	Nelson
+aug23	Carter Theissen #23 of the Augustana Vikings	Carter Theissen #23	Theissen
+aug26	Callum Gau #26 of the Augustana Vikings	Callum Gau #26	Gau
+aug29	Owen Nelson #29 of the Augustana Vikings	Owen Nelson #29	Nelson
+aug31	Mathis Langevin #31 of the Augustana Vikings	Mathis Langevin #31	Langevin
+aug33	Angelo Zol #33 of the Augustana Vikings	Angelo Zol #33	Zol
+aug39	Siamion Marshchanok #39 of the Augustana Vikings	Siamion Marshchanok #39	Marshchanok
+aug48	Ryan Whiterabbit #48 of the Augustana Vikings	Ryan Whiterabbit #48	Whiterabbit
+aug72	Brett Meerman #72 of the Augustana Vikings	Brett Meerman #72	Meerman
+aug81	Owen Bohn #81 of the Augustana Vikings	Owen Bohn #81	Bohn
+aug84	Jeff Hutchinson #84 of the Augustana Vikings	Jeff Hutchinson #84	Hutchinson
+aug86	Nace Langus #86 of the Augustana Vikings	Nace Langus #86	Langus
+aug92	Leonid Bulgakov #92 of the Augustana Vikings	Leonid Bulgakov #92	Bulgakov
+aug93	Cole Burtch #93 of the Augustana Vikings	Cole Burtch #93	Burtch
+aug96	Owen Baumgartner #96 of the Augustana Vikings	Owen Baumgartner #96	Baumgartner
+
+
+bsu	Bemidji State Beavers
+bsu1	Max Hildebrand #1 of the Bemidji State Beavers	Max Hildebrand #1	Hildebrand
+bsu2	Maxon Vig #2 of the Bemidji State Beavers	Maxon Vig #2	Vig
+bsu3	Joe Gramer #3 of the Bemidji State Beavers	Joe Gramer #3	Gramer
+bsu4	Luca D'Amato #4 of the Bemidji State Beavers	Luca D'Amato #4	D'Amato
+bsu5	Brady Birnie #5 of the Bemidji State Beavers	Brady Birnie #5	Birnie
+bsu6	Samuel Harris #6 of the Bemidji State Beavers	Samuel Harris #6	Harris
+bsu7	Eddie Revenig #7 of the Bemidji State Beavers	Eddie Revenig #7	Revenig
+bsu8	Isaac Johnson #8 of the Bemidji State Beavers	Isaac Johnson #8	Johnson
+bsu9	Jaksen Panzer #9 of the Bemidji State Beavers	Jaksen Panzer #9	Panzer
+bsu11	Rylan Gould #11 of the Bemidji State Beavers	Rylan Gould #11	Gould
+bsu12	Hudson Thornton #12 of the Bemidji State Beavers	Hudson Thornton #12	Thornton
+bsu13	Ben Vigneault #13 of the Bemidji State Beavers	Ben Vigneault #13	Vigneault
+bsu14	Alexi Sylvestre #14 of the Bemidji State Beavers	Alexi Sylvestre #14	Sylvestre
+bsu15	Ethan Miedema #15 of the Bemidji State Beavers	Ethan Miedema #15	Miedema
+bsu16	Jiri Klima #16 of the Bemidji State Beavers	Jiri Klima #16	Klima
+bsu17	Will Dawson #17 of the Bemidji State Beavers	Will Dawson #17	Dawson
+bsu18	Max Namestnikov #18 of the Bemidji State Beavers	Max Namestnikov #18	Namestnikov
+bsu19	Vann Yuhas #19 of the Bemidji State Beavers	Vann Yuhas #19	Yuhas
+bsu21	Aiden Ziprick #21 of the Bemidji State Beavers	Aiden Ziprick #21	Ziprick
+bsu22	Oliver Peer #22 of the Bemidji State Beavers	Oliver Peer #22	Peer
+bsu23	Luke Roelofs #23 of the Bemidji State Beavers	Luke Roelofs #23	Roelofs
+bsu25	Tory Lund #25 of the Bemidji State Beavers	Tory Lund #25	Lund
+bsu26	Carter Rapalje #26 of the Bemidji State Beavers	Carter Rapalje #26	Rapalje
+bsu27	Jake McLean #27 of the Bemidji State Beavers	Jake McLean #27	McLean
+bsu29	Brayden Dube #29 of the Bemidji State Beavers	Brayden Dube #29	Dube
+bsu30	Trent Wiemken #30 of the Bemidji State Beavers	Trent Wiemken #30	Wiemken
+bsu35	Raythan Robbins #35 of the Bemidji State Beavers	Raythan Robbins #35	Robbins
+
+
+du	Denver Pioneers
+du2	Tory Pitner #2 of the Denver Pioneers	Tory Pitner #2	Pitner
+du3	Cale Ashcroft #3 of the Denver Pioneers	Cale Ashcroft #3	Ashcroft
+du4	Ryan Lin #4 of the Denver Pioneers	Ryan Lin #4	Lin
+du6	Alec Whipple #6 of the Denver Pioneers	Alec Whipple #6	Whipple
+du8	Kristian Epperson #8 of the Denver Pioneers	Kristian Epperson #8	Epperson
+du9	Mikey Berchild #9 of the Denver Pioneers	Mikey Berchild #9	Berchild
+du10	Jack Pridham #10 of the Denver Pioneers	Jack Pridham #10	Pridham
+du11	Daxon Rudolph #11 of the Denver Pioneers	Daxon Rudolph #11	Rudolph
+du12	Sam Harris #12 of the Denver Pioneers	Sam Harris #12	Harris
+du14	Max Heise #14 of the Denver Pioneers	Max Heise #14	Heise
+du15	Eric Jamieson #15 of the Denver Pioneers	Eric Jamieson #15	Jamieson
+du16	Kyle Chyzowski #16 of the Denver Pioneers	Kyle Chyzowski #16	Chyzowski
+du17	Brady Milburn #17 of the Denver Pioneers	Brady Milburn #17	Milburn
+du18	Payton Nelson #18 of the Denver Pioneers	Payton Nelson #18	Nelson
+du19	Jake Fisher #19 of the Denver Pioneers	Jake Fisher #19	Fisher
+du20	Ben MacBeath #20 of the Denver Pioneers	Ben MacBeath #20	MacBeath
+du22	Brendan McMorrow #22 of the Denver Pioneers	Brendan McMorrow #22	McMorrow
+du23	Ryan Miller #23 of the Denver Pioneers	Ryan Miller #23	Miller
+du24	Kieran Cebrian #24 of the Denver Pioneers	Kieran Cebrian #24	Cebrian
+du25	Clarke Caswell #25 of the Denver Pioneers	Clarke Caswell #25	Caswell
+du27	James Reeder #27 of the Denver Pioneers	James Reeder #27	Reeder
+du28	Reid Varkonyi #28 of the Denver Pioneers	Reid Varkonyi #28	Varkonyi
+du30	Paxton Geisel #30 of the Denver Pioneers	Paxton Geisel #30	Geisel
+du31	Johnny Hicks #31 of the Denver Pioneers	Johnny Hicks #31	Hicks
+du35	Tyler Krivtsov #35 of the Denver Pioneers	Tyler Krivtsov #35	Krivtsov
+du38	Blake Fiddler #38 of the Denver Pioneers	Blake Fiddler #38	Fiddler
+
+
+fsu	Ferris State Bulldogs
+fsu4	Christopher Lie #4 of the Ferris State Bulldogs	Christopher Lie #4	Lie
+fsu5	Luke Coughlin #5 of the Ferris State Bulldogs	Luke Coughlin #5	Coughlin
+fsu6	Adyn Merrick #6 of the Ferris State Bulldogs	Adyn Merrick #6	Merrick
+fsu7	Austin Zemlak #7 of the Ferris State Bulldogs	Austin Zemlak #7	Zemlak
+fsu8	Briggs Orr #8 of the Ferris State Bulldogs	Briggs Orr #8	Orr
+fsu9	Zach Bade #9 of the Ferris State Bulldogs	Zach Bade #9	Bade
+fsu10	Jack Mesic #10 of the Ferris State Bulldogs	Jack Mesic #10	Mesic
+fsu11	Brian Morse #11 of the Ferris State Bulldogs	Brian Morse #11	Morse
+fsu13	Gavin Garland #13 of the Ferris State Bulldogs	Gavin Garland #13	Garland
+fsu15	Akseli Pulkkanen #15 of the Ferris State Bulldogs	Akseli Pulkkanen #15	Pulkkanen
+fsu16	Holden Doell #16 of the Ferris State Bulldogs	Holden Doell #16	Doell
+fsu18	Nicholas Johnson #18 of the Ferris State Bulldogs	Nicholas Johnson #18	Johnson
+fsu19	Nathan Leek #19 of the Ferris State Bulldogs	Nathan Leek #19	Leek
+fsu20	Justin Stupka #20 of the Ferris State Bulldogs	Justin Stupka #20	Stupka
+fsu21	Aidan Dyer #21 of the Ferris State Bulldogs	Aidan Dyer #21	Dyer
+fsu22	Ryan Kusler #22 of the Ferris State Bulldogs	Ryan Kusler #22	Kusler
+fsu23	Hudson Darby #23 of the Ferris State Bulldogs	Hudson Darby #23	Darby
+fsu24	Nathan Mackie #24 of the Ferris State Bulldogs	Nathan Mackie #24	Mackie
+fsu26	Colton Jamieson #26 of the Ferris State Bulldogs	Colton Jamieson #26	Jamieson
+fsu27	Reggie Newman #27 of the Ferris State Bulldogs	Reggie Newman #27	Newman
+fsu28	Trevor Taulien #28 of the Ferris State Bulldogs	Trevor Taulien #28	Taulien
+fsu30	Alan Lendak #30 of the Ferris State Bulldogs	Alan Lendak #30	Lendak
+fsu31	Noah Rupprecht #31 of the Ferris State Bulldogs	Noah Rupprecht #31	Rupprecht
+fsu37	Owen Mehlenbacher #37 of the Ferris State Bulldogs	Owen Mehlenbacher #37	Mehlenbacher
+fsu39	Brecken Smith #39 of the Ferris State Bulldogs	Brecken Smith #39	Smith
+fsu43	Urban Podrekar #43 of the Ferris State Bulldogs	Urban Podrekar #43	Podrekar
+fsu55	Martin Lundberg #55 of the Ferris State Bulldogs	Martin Lundberg #55	Lundberg
+
+
+lssu	Lake Superior State Lakers
+lssu1	Charles Tritt #1 of the Lake Superior State Lakers	Charles Tritt #1	Tritt
+lssu3	Joey Potter #3 of the Lake Superior State Lakers	Joey Potter #3	Potter
+lssu4	Charles Savoie #4 of the Lake Superior State Lakers	Charles Savoie #4	Savoie
+lssu7	Calem Mangone #7 of the Lake Superior State Lakers	Calem Mangone #7	Mangone
+lssu9	Cooper Foster #9 of the Lake Superior State Lakers	Cooper Foster #9	Foster
+lssu11	Carter Batchelder #11 of the Lake Superior State Lakers	Carter Batchelder #11	Batchelder
+lssu12	Doogan Pederson #12 of the Lake Superior State Lakers	Doogan Pederson #12	Pederson
+lssu13	Wilson Dahlheimer #13 of the Lake Superior State Lakers	Wilson Dahlheimer #13	Dahlheimer
+lssu14	Mans Toresson #14 of the Lake Superior State Lakers	Mans Toresson #14	Toresson
+lssu17	Reese Shaw #17 of the Lake Superior State Lakers	Reese Shaw #17	Shaw
+lssu18	Ethan Moore #18 of the Lake Superior State Lakers	Ethan Moore #18	Moore
+lssu19	Kazumo Sasaki #19 of the Lake Superior State Lakers	Kazumo Sasaki #19	Sasaki
+lssu21	Tyson Galloway #21 of the Lake Superior State Lakers	Tyson Galloway #21	Galloway
+lssu24	William Samuelsson #24 of the Lake Superior State Lakers	William Samuelsson #24	Samuelsson
+lssu26	John Herrington #26 of the Lake Superior State Lakers	John Herrington #26	Herrington
+lssu27	Adam Belusko #27 of the Lake Superior State Lakers	Adam Belusko #27	Belusko
+lssu28	Hunter Ramos #28 of the Lake Superior State Lakers	Hunter Ramos #28	Ramos
+lssu29	Andrew Oke #29 of the Lake Superior State Lakers	Andrew Oke #29	Oke
+lssu31	Anders Miller #31 of the Lake Superior State Lakers	Anders Miller #31	Miller
+lssu33	Casper Nassen #33 of the Lake Superior State Lakers	Casper Nassen #33	Nassen
+lssu43	Hadley Hudak #43 of the Lake Superior State Lakers	Hadley Hudak #43	Hudak
+lssu44	Nolan Seed #44 of the Lake Superior State Lakers	Nolan Seed #44	Seed
+lssu63	Markus Loponen #63 of the Lake Superior State Lakers	Markus Loponen #63	Loponen
+lssu71	Raoul Boilard #71 of the Lake Superior State Lakers	Raoul Boilard #71	Boilard
+lssu76	Matteo Mann #76 of the Lake Superior State Lakers	Matteo Mann #76	Mann
+lssu91	Pierson Sobush #91 of the Lake Superior State Lakers	Pierson Sobush #91	Sobush
+lssu92	Teo Besnier #92 of the Lake Superior State Lakers	Teo Besnier #92	Besnier
+lssu97	Matheson Mason #97 of the Lake Superior State Lakers	Matheson Mason #97	Mason
+
+
+mary	Maryville Saints
+mary3	Rihards Simanovics #3 of the Maryville Saints	Rihards Simanovics #3	Simanovics
+mary4	Will Subject #4 of the Maryville Saints	Will Subject #4	Subject
+mary5	Landon Pappas #5 of the Maryville Saints	Landon Pappas #5	Pappas
+mary6	Gustavs Ozolins #6 of the Maryville Saints	Gustavs Ozolins #6	Ozolins
+mary7	Blake Pilgram-Edwards #7 of the Maryville Saints	Blake Pilgram-Edwards #7	Pilgram-Edwards
+mary8	Zachary Maxwell #8 of the Maryville Saints	Zachary Maxwell #8	Maxwell
+mary9	Jack Thomas #9 of the Maryville Saints	Jack Thomas #9	Thomas
+mary10	Ridge Dawson #10 of the Maryville Saints	Ridge Dawson #10	Dawson
+mary11	Adam Timm #11 of the Maryville Saints	Adam Timm #11	Timm
+mary12	Cade Kozak #12 of the Maryville Saints	Cade Kozak #12	Kozak
+mary13	Ethan Woolcott #13 of the Maryville Saints	Ethan Woolcott #13	Woolcott
+mary14	Hunter Sawka #14 of the Maryville Saints	Hunter Sawka #14	Sawka
+mary15	Nathan Williams #15 of the Maryville Saints	Nathan Williams #15	Williams
+mary16	Maxwell Wagener #16 of the Maryville Saints	Maxwell Wagener #16	Wagener
+mary17	Tanner Bruender #17 of the Maryville Saints	Tanner Bruender #17	Bruender
+mary19	Anthony Cardilli #19 of the Maryville Saints	Anthony Cardilli #19	Cardilli
+mary22	Anthony Hall #22 of the Maryville Saints	Anthony Hall #22	Hall
+mary23	Brett Ursulak #23 of the Maryville Saints	Brett Ursulak #23	Ursulak
+mary24	Adam Cavallin #24 of the Maryville Saints	Adam Cavallin #24	Cavallin
+mary29	Campbell Mclean #29 of the Maryville Saints	Campbell Mclean #29	Mclean
+mary31	Parker Sawka #31 of the Maryville Saints	Parker Sawka #31	Sawka
+mary33	Bruno Bruveris #33 of the Maryville Saints	Bruno Bruveris #33	Bruveris
+mary35	Louis-Félix Charrois #35 of the Maryville Saints	Louis-Félix Charrois #35	Charrois
+mary37	Antoine Dorion #37 of the Maryville Saints	Antoine Dorion #37	Dorion
+mary48	Sidney McNeill #48 of the Maryville Saints	Sidney McNeill #48	McNeill
+mary61	Maxim Potvin #61 of the Maryville Saints	Maxim Potvin #61	Potvin
+mary71	Nikita Meshcheryakov #71 of the Maryville Saints	Nikita Meshcheryakov #71	Meshcheryakov
+mary86	Sam Edwards #86 of the Maryville Saints	Sam Edwards #86	Edwards
+mary91	Tanner Winegard #91 of the Maryville Saints	Tanner Winegard #91	Winegard
+mary92	Greye Rampton #92 of the Maryville Saints	Greye Rampton #92	Rampton
+
+
+mtu	Michigan Tech Huskies
+mtu2	Tom Leppa #2 of the Michigan Tech Huskies	Tom Leppa #2	Leppa
+mtu3	Austin Moline #3 of the Michigan Tech Huskies	Austin Moline #3	Moline
+mtu4	Luke Shipley #4 of the Michigan Tech Huskies	Luke Shipley #4	Shipley
+mtu5	Max Matthews #5 of the Michigan Tech Huskies	Max Matthews #5	Matthews
+mtu6	Giovanni Morneau #6 of the Michigan Tech Huskies	Giovanni Morneau #6	Morneau
+mtu7	Lucas Brenton #7 of the Michigan Tech Huskies	Lucas Brenton #7	Brenton
+mtu8	Kalem Parker #8 of the Michigan Tech Huskies	Kalem Parker #8	Parker
+mtu9	Carson Latimer #9 of the Michigan Tech Huskies	Carson Latimer #9	Latimer
+mtu10	Elias Jansson #10 of the Michigan Tech Huskies	Elias Jansson #10	Jansson
+mtu11	Teydon Trembecky #11 of the Michigan Tech Huskies	Teydon Trembecky #11	Trembecky
+mtu12	Morgan Brady #12 of the Michigan Tech Huskies	Morgan Brady #12	Brady
+mtu13	Tyler Miller #13 of the Michigan Tech Huskies	Tyler Miller #13	Miller
+mtu14	Max Koskipirtti #14 of the Michigan Tech Huskies	Max Koskipirtti #14	Koskipirtti
+mtu15	Carson Birnie #15 of the Michigan Tech Huskies	Carson Birnie #15	Birnie
+mtu16	Isaac Gordon #16 of the Michigan Tech Huskies	Isaac Gordon #16	Gordon
+mtu17	Reid Daavettila #17 of the Michigan Tech Huskies	Reid Daavettila #17	Daavettila
+mtu18	Noah Reinhart #18 of the Michigan Tech Huskies	Noah Reinhart #18	Reinhart
+mtu19	Michael Cicek #19 of the Michigan Tech Huskies	Michael Cicek #19	Cicek
+mtu20	Tristan Delisle #20 of the Michigan Tech Huskies	Tristan Delisle #20	Delisle
+mtu21	Reid Andresen #21 of the Michigan Tech Huskies	Reid Andresen #21	Andresen
+mtu22	Matthew Van Blaricom #22 of the Michigan Tech Huskies	Matthew Van Blaricom #22	Van Blaricom
+mtu26	Luca Fasciano #26 of the Michigan Tech Huskies	Luca Fasciano #26	Fasciano
+mtu27	Lauri Raiman #27 of the Michigan Tech Huskies	Lauri Raiman #27	Raiman
+mtu28	Owen Baker #28 of the Michigan Tech Huskies	Owen Baker #28	Baker
+mtu29	Conner Roulette #29 of the Michigan Tech Huskies	Conner Roulette #29	Roulette
+mtu30	Joey Costanzo #30 of the Michigan Tech Huskies	Joey Costanzo #30	Costanzo
+mtu31	Bryant Lee #31 of the Michigan Tech Huskies	Bryant Lee #31	Lee
+mtu35	Owen Bartoszkiewicz #35 of the Michigan Tech Huskies	Owen Bartoszkiewicz #35	Bartoszkiewicz
+mtu37	Ryan Manzella #37 of the Michigan Tech Huskies	Ryan Manzella #37	Manzella
+
+
+mnst	Minnesota State Mavericks
+mnst4	Jacob Conrad #4 of the Minnesota State Mavericks	Jacob Conrad #4	Conrad
+mnst5	Gus Thorp #5 of the Minnesota State Mavericks	Gus Thorp #5	Thorp
+mnst7	Bryce Strand #7 of the Minnesota State Mavericks	Bryce Strand #7	Strand
+mnst8	Will Skahan #8 of the Minnesota State Mavericks	Will Skahan #8	Skahan
+mnst9	Luigi Benincasa #9 of the Minnesota State Mavericks	Luigi Benincasa #9	Benincasa
+mnst11	Jordan Ronn #11 of the Minnesota State Mavericks	Jordan Ronn #11	Ronn
+mnst12	Alex Zetterberg #12 of the Minnesota State Mavericks	Alex Zetterberg #12	Zetterberg
+mnst13	Jack Christ #13 of the Minnesota State Mavericks	Jack Christ #13	Christ
+mnst14	Mason LeBel #14 of the Minnesota State Mavericks	Mason LeBel #14	LeBel
+mnst15	Sam Kappell #15 of the Minnesota State Mavericks	Sam Kappell #15	Kappell
+mnst17	Ean Somoza #17 of the Minnesota State Mavericks	Ean Somoza #17	Somoza
+mnst18	Jakob Stender #18 of the Minnesota State Mavericks	Jakob Stender #18	Stender
+mnst19	Mason Kraft #19 of the Minnesota State Mavericks	Mason Kraft #19	Kraft
+mnst20	Cash Carter #20 of the Minnesota State Mavericks	Cash Carter #20	Carter
+mnst21	Fin Williams #21 of the Minnesota State Mavericks	Fin Williams #21	Williams
+mnst22	Liam Hupka #22 of the Minnesota State Mavericks	Liam Hupka #22	Hupka
+mnst23	Sawyer Scholl #23 of the Minnesota State Mavericks	Sawyer Scholl #23	Scholl
+mnst26	Rylan Bonkowski #26 of the Minnesota State Mavericks	Rylan Bonkowski #26	Bonkowski
+mnst27	Liam Watkins #27 of the Minnesota State Mavericks	Liam Watkins #27	Watkins
+mnst28	Easton Hewson #28 of the Minnesota State Mavericks	Easton Hewson #28	Hewson
+mnst31	Matthew Syverson #31 of the Minnesota State Mavericks	Matthew Syverson #31	Syverson
+mnst34	Raiden LeGall #34 of the Minnesota State Mavericks	Raiden LeGall #34	LeGall
+mnst35	Lassi Lehti #35 of the Minnesota State Mavericks	Lassi Lehti #35	Lehti
+mnst37	Sam Court #37 of the Minnesota State Mavericks	Sam Court #37	Court
+mnst44	Reid Morich #44 of the Minnesota State Mavericks	Reid Morich #44	Morich
+mnst81	Daimon Gardner #81 of the Minnesota State Mavericks	Daimon Gardner #81	Gardner
+
+
+nmu	Northern Michigan Wildcats
+nmu2	Joe Schiller #2 of the Northern Michigan Wildcats	Joe Schiller #2	Schiller
+nmu3	Noah Houle #3 of the Northern Michigan Wildcats	Noah Houle #3	Houle
+nmu4	Warren Clark #4 of the Northern Michigan Wildcats	Warren Clark #4	Clark
+nmu5	Grayden Daul #5 of the Northern Michigan Wildcats	Grayden Daul #5	Daul
+nmu6	Jason Davenport #6 of the Northern Michigan Wildcats	Jason Davenport #6	Davenport
+nmu7	Branden Piku #7 of the Northern Michigan Wildcats	Branden Piku #7	Piku
+nmu8	Olivier Beaulieu #8 of the Northern Michigan Wildcats	Olivier Beaulieu #8	Beaulieu
+nmu9	Coster Dunn #9 of the Northern Michigan Wildcats	Coster Dunn #9	Dunn
+nmu10	Mathew Ward #10 of the Northern Michigan Wildcats	Mathew Ward #10	Ward
+nmu11	Brendan Lamb #11 of the Northern Michigan Wildcats	Brendan Lamb #11	Lamb
+nmu12	Peter Cisar #12 of the Northern Michigan Wildcats	Peter Cisar #12	Cisar
+nmu13	Medrick Bolduc #13 of the Northern Michigan Wildcats	Medrick Bolduc #13	Bolduc
+nmu14	Reilley Kotai #14 of the Northern Michigan Wildcats	Reilley Kotai #14	Kotai
+nmu15	Grayden Slipec #15 of the Northern Michigan Wildcats	Grayden Slipec #15	Slipec
+nmu17	Girts Silkalns #17 of the Northern Michigan Wildcats	Girts Silkalns #17	Silkalns
+nmu18	Michael Burchill #18 of the Northern Michigan Wildcats	Michael Burchill #18	Burchill
+nmu19	Ian Engel #19 of the Northern Michigan Wildcats	Ian Engel #19	Engel
+nmu20	Nik Gudmundson #20 of the Northern Michigan Wildcats	Nik Gudmundson #20	Gudmundson
+nmu22	Darik Olson #22 of the Northern Michigan Wildcats	Darik Olson #22	Olson
+nmu23	Aapo Katavisto #23 of the Northern Michigan Wildcats	Aapo Katavisto #23	Katavisto
+nmu24	Evan Depatie #24 of the Northern Michigan Wildcats	Evan Depatie #24	Depatie
+nmu26	Merril Steenari #26 of the Northern Michigan Wildcats	Merril Steenari #26	Steenari
+nmu28	Owen Pitters #28 of the Northern Michigan Wildcats	Owen Pitters #28	Pitters
+nmu29	Adam Csabi #29 of the Northern Michigan Wildcats	Adam Csabi #29	Csabi
+nmu30	Oliver Auyeung-Ashton #30 of the Northern Michigan Wildcats	Oliver Auyeung-Ashton #30	Auyeung-Ashton
+nmu31	Jack Fuller #31 of the Northern Michigan Wildcats	Jack Fuller #31	Fuller
+nmu32	Max Weilandt #32 of the Northern Michigan Wildcats	Max Weilandt #32	Weilandt
+
+
+nd	Notre Dame Fighting Irish
+nd2	Jimmy Jurcev #2 of the Notre Dame Fighting Irish	Jimmy Jurcev #2	Jurcev
+nd4	Michael Quinn #4 of the Notre Dame Fighting Irish	Michael Quinn #4	Quinn
+nd5	Leo Gruba #5 of the Notre Dame Fighting Irish	Leo Gruba #5	Gruba
+nd6	Drew Mackie #6 of the Notre Dame Fighting Irish	Drew Mackie #6	Mackie
+nd8	William Belle #8 of the Notre Dame Fighting Irish	William Belle #8	Belle
+nd9	Cole Brown #9 of the Notre Dame Fighting Irish	Cole Brown #9	Brown
+nd11	Danny Nelson #11 of the Notre Dame Fighting Irish	Danny Nelson #11	Nelson
+nd12	Henry Nelson #12 of the Notre Dame Fighting Irish	Henry Nelson #12	Nelson
+nd13	Brennan Ali #13 of the Notre Dame Fighting Irish	Brennan Ali #13	Ali
+nd14	Maddox Fleming #14 of the Notre Dame Fighting Irish	Maddox Fleming #14	Fleming
+nd15	Jayden Davis #15 of the Notre Dame Fighting Irish	Jayden Davis #15	Davis
+nd16	Paul Fischer #16 of the Notre Dame Fighting Irish	Paul Fischer #16	Fischer
+nd17	Panayioti Fimis #17 of the Notre Dame Fighting Irish	Panayioti Fimis #17	Fimis
+nd19	Evan Werner #19 of the Notre Dame Fighting Irish	Evan Werner #19	Werner
+nd20	David Klee #20 of the Notre Dame Fighting Irish	David Klee #20	Klee
+nd21	Jaedon Kerr #21 of the Notre Dame Fighting Irish	Jaedon Kerr #21	Kerr
+nd22	Hagen Burrows #22 of the Notre Dame Fighting Irish	Hagen Burrows #22	Burrows
+nd23	Michael Schermerhorn #23 of the Notre Dame Fighting Irish	Michael Schermerhorn #23	Schermerhorn
+nd24	Dashel Oliver #24 of the Notre Dame Fighting Irish	Dashel Oliver #24	Oliver
+nd25	Carter Slaggert #25 of the Notre Dame Fighting Irish	Carter Slaggert #25	Slaggert
+nd31	Nicholas Kempf #31 of the Notre Dame Fighting Irish	Nicholas Kempf #31	Kempf
+nd32	Patrick Quinlan #32 of the Notre Dame Fighting Irish	Patrick Quinlan #32	Quinlan
+nd34	Sammy Nelson #34 of the Notre Dame Fighting Irish	Sammy Nelson #34	Nelson
+nd37	Toby Hopp #37 of the Notre Dame Fighting Irish	Toby Hopp #37	Hopp
+nd43	Danny Klaers #43 of the Notre Dame Fighting Irish	Danny Klaers #43	Klaers
+nd81	Beckham Edwards #81 of the Notre Dame Fighting Irish	Beckham Edwards #81	Edwards

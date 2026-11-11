@@ -1,0 +1,261 @@
+bgdate	BOWLING GREEN, OHIO - 
+dmacvb	during a Mid-American Conference volleyball match
+dncvb	during a non-conference volleyball match
+stroh	at the Stroh Center
+inbg	in Bowling Green, Ohio.
+vbcoach	Head coach Alex DelPiombo of the Bowling Green Falcons	head coach Alex DelPiombo	DelPiombo
+pressc	speaks during a postgame press conference
+mact	during the Mid-American Conference Tournament
+ncaa	during the NCAA Tournament
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+cheer	Bowling Green cheerleaders perform
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+band	The Bowling Green pep band performs
+sn	is honored during Senior Night
+
+s1	during the first set
+s2	during the second set
+s3	during the third set
+s4	during the fourth set
+s5	during the fifth set
+mp	on match point
+pre	before the match
+intro	is introduced before the match
+
+cel	celebrates
+hud	huddles with teammates
+bench	reacts from the bench
+hf	high-fives a teammate
+anthem	stands for the national anthem
+react	reacts to a call
+spike	spikes the ball
+kill	hits for a kill
+dig	digs the ball
+set	sets the ball
+serve	serves the ball
+jserve	jump-serves the ball
+pass	passes the ball
+blk	goes up for a block
+tip	tips the ball over the net
+dive	dives for the ball
+ace	celebrates an ace
+celpt	celebrates a point
+celblk	celebrates a block
+
+
+vb1	Sydnie Hernandez #1 of the Bowling Green Falcons	Sydnie Hernandez #1	Hernandez
+vb2	Molly Beatty #2 of the Bowling Green Falcons	Molly Beatty #2	Beatty
+vb3	Avery Anders #3 of the Bowling Green Falcons	Avery Anders #3	Anders
+vb4	Ava Buddelmeyer #4 of the Bowling Green Falcons	Ava Buddelmeyer #4	Buddelmeyer
+vb6	Cecily Waynar #6 of the Bowling Green Falcons	Cecily Waynar #6	Waynar
+vb8	Vivian Jones #8 of the Bowling Green Falcons	Vivian Jones #8	Jones
+vb9	Avery Hobson #9 of the Bowling Green Falcons	Avery Hobson #9	Hobson
+vb10	Marija Tabak #10 of the Bowling Green Falcons	Marija Tabak #10	Tabak
+vb11	Amanda Otten #11 of the Bowling Green Falcons	Amanda Otten #11	Otten
+vb12	Karli Molnau #12 of the Bowling Green Falcons	Karli Molnau #12	Molnau
+vb13	Kendall Williams #13 of the Bowling Green Falcons	Kendall Williams #13	Williams
+vb14	Ania Magier #14 of the Bowling Green Falcons	Ania Magier #14	Magier
+vb15	Marin Dunaway #15 of the Bowling Green Falcons	Marin Dunaway #15	Dunaway
+vb17	Kate Eigner #17 of the Bowling Green Falcons	Kate Eigner #17	Eigner
+vb18	Helen Wilford #18 of the Bowling Green Falcons	Helen Wilford #18	Wilford
+vb19	Alivia Brown #19 of the Bowling Green Falcons	Alivia Brown #19	Brown
+vb20	Edyta Waclawczyk #20 of the Bowling Green Falcons	Edyta Waclawczyk #20	Waclawczyk
+vb22	Makiaya Turner #22 of the Bowling Green Falcons	Makiaya Turner #22	Turner
+vb23	Anastasija Bozic #23 of the Bowling Green Falcons	Anastasija Bozic #23	Bozic
+vbalex	Head coach Alex DelPiombo of the Bowling Green Falcons	head coach Alex DelPiombo	DelPiombo
+
+vbalexn	Alex DelPiombo
+
+
+vbalexl	DelPiombo
+
+
+bg	Bowling Green Falcons
+ut	Toledo Rockets
+ut1	Grace Freiberger #1 of the Toledo Rockets	Grace Freiberger #1	Freiberger
+ut2	Mariah Gaines #2 of the Toledo Rockets	Mariah Gaines #2	Gaines
+ut3	Janelle Green #3 of the Toledo Rockets	Janelle Green #3	Green
+ut4	Olivia Heitkamp #4 of the Toledo Rockets	Olivia Heitkamp #4	Heitkamp
+ut5	Sydney Crowley #5 of the Toledo Rockets	Sydney Crowley #5	Crowley
+ut6	Jessica Costlow #6 of the Toledo Rockets	Jessica Costlow #6	Costlow
+ut7	Avery Adamski #7 of the Toledo Rockets	Avery Adamski #7	Adamski
+ut9	Audrey Dyas #9 of the Toledo Rockets	Audrey Dyas #9	Dyas
+ut10	Kayla Ozanich #10 of the Toledo Rockets	Kayla Ozanich #10	Ozanich
+ut11	Brooke Naniseni #11 of the Toledo Rockets	Brooke Naniseni #11	Naniseni
+ut12	Gabbi LeBlanc #12 of the Toledo Rockets	Gabbi LeBlanc #12	LeBlanc
+ut14	Ava Siefke #14 of the Toledo Rockets	Ava Siefke #14	Siefke
+ut15	Maddy Bach #15 of the Toledo Rockets	Maddy Bach #15	Bach
+ut16	Sophie Catalano #16 of the Toledo Rockets	Sophie Catalano #16	Catalano
+ut18	Caylee Sharkey #18 of the Toledo Rockets	Caylee Sharkey #18	Sharkey
+ut19	Jadyn Kennedy #19 of the Toledo Rockets	Jadyn Kennedy #19	Kennedy
+ut21	Meg Jarrett #21 of the Toledo Rockets	Meg Jarrett #21	Jarrett
+ut22	Sierra Pertzborn #22 of the Toledo Rockets	Sierra Pertzborn #22	Pertzborn
+ut23	Lilly Merk #23 of the Toledo Rockets	Lilly Merk #23	Merk
+ut24	Lucy Monahan #24 of the Toledo Rockets	Lucy Monahan #24	Monahan
+
+
+wmu	Western Michigan Broncos
+wmu1	Izzy Swiercz #1 of the Western Michigan Broncos	Izzy Swiercz #1	Swiercz
+wmu2	Elana Erickson #2 of the Western Michigan Broncos	Elana Erickson #2	Erickson
+wmu3	Riley Messenger #3 of the Western Michigan Broncos	Riley Messenger #3	Messenger
+wmu4	Leah Richmond #4 of the Western Michigan Broncos	Leah Richmond #4	Richmond
+wmu6	Annalise Patchett #6 of the Western Michigan Broncos	Annalise Patchett #6	Patchett
+wmu7	Ella Askin #7 of the Western Michigan Broncos	Ella Askin #7	Askin
+wmu8	Camille Morrison #8 of the Western Michigan Broncos	Camille Morrison #8	Morrison
+wmu9	Ella Guilfoy #9 of the Western Michigan Broncos	Ella Guilfoy #9	Guilfoy
+wmu10	Gabby Weihe #10 of the Western Michigan Broncos	Gabby Weihe #10	Weihe
+wmu11	Bri Zimmerman #11 of the Western Michigan Broncos	Bri Zimmerman #11	Zimmerman
+wmu12	Cassidy Pratley #12 of the Western Michigan Broncos	Cassidy Pratley #12	Pratley
+wmu19	Carley Piercefield #19 of the Western Michigan Broncos	Carley Piercefield #19	Piercefield
+wmu21	Mia Jurkovic #21 of the Western Michigan Broncos	Mia Jurkovic #21	Jurkovic
+
+
+cwbg	(Coyle Withrow/BG Falcon Media)
+atho	(Photo by Ava Thoman/BG Falcon Media)
+
+
+emu	Eastern Michigan Eagles
+emu1	Lina Govoni #1 of the Eastern Michigan Eagles	Lina Govoni #1	Govoni
+emu2	Kayla Ostrander #2 of the Eastern Michigan Eagles	Kayla Ostrander #2	Ostrander
+emu3	Nattie Slusher #3 of the Eastern Michigan Eagles	Nattie Slusher #3	Slusher
+emu4	Olivia Stewart #4 of the Eastern Michigan Eagles	Olivia Stewart #4	Stewart
+emu5	Maddie Herman #5 of the Eastern Michigan Eagles	Maddie Herman #5	Herman
+emu6	Madelyn Sipe #6 of the Eastern Michigan Eagles	Madelyn Sipe #6	Sipe
+emu7	Kaylin Richter #7 of the Eastern Michigan Eagles	Kaylin Richter #7	Richter
+emu8	Bianca Salvador #8 of the Eastern Michigan Eagles	Bianca Salvador #8	Salvador
+emu9	Mia Schaefer #9 of the Eastern Michigan Eagles	Mia Schaefer #9	Schaefer
+emu10	Haley Trosky #10 of the Eastern Michigan Eagles	Haley Trosky #10	Trosky
+emu11	Mya Eberlein #11 of the Eastern Michigan Eagles	Mya Eberlein #11	Eberlein
+emu12	Olivia Beaudrie #12 of the Eastern Michigan Eagles	Olivia Beaudrie #12	Beaudrie
+emu13	Arynn Randle El #13 of the Eastern Michigan Eagles	Arynn Randle El #13	El
+emu14	Julia Johnson #14 of the Eastern Michigan Eagles	Julia Johnson #14	Johnson
+emu16	Surabhi Srinivasan #16 of the Eastern Michigan Eagles	Surabhi Srinivasan #16	Srinivasan
+emu17	Taeley Mahler #17 of the Eastern Michigan Eagles	Taeley Mahler #17	Mahler
+emu18	Azra Eriç #18 of the Eastern Michigan Eagles	Azra Eriç #18	Eriç
+emu19	Lily Spark #19 of the Eastern Michigan Eagles	Lily Spark #19	Spark
+emu20	AshleeKay Christensen #20 of the Eastern Michigan Eagles	AshleeKay Christensen #20	Christensen
+emu21	Zaria Ragler #21 of the Eastern Michigan Eagles	Zaria Ragler #21	Ragler
+
+
+mu	Miami (Ohio) RedHawks
+mu1	Raegan Lantz #1 of the Miami (Ohio) RedHawks	Raegan Lantz #1	Lantz
+mu3	Maria Insana #3 of the Miami (Ohio) RedHawks	Maria Insana #3	Insana
+mu4	Sophia Stallworth #4 of the Miami (Ohio) RedHawks	Sophia Stallworth #4	Stallworth
+mu5	Ria Furuta #5 of the Miami (Ohio) RedHawks	Ria Furuta #5	Furuta
+mu6	Molly Creech #6 of the Miami (Ohio) RedHawks	Molly Creech #6	Creech
+mu7	Chelsea Williams #7 of the Miami (Ohio) RedHawks	Chelsea Williams #7	Williams
+mu8	Sophie Crawford #8 of the Miami (Ohio) RedHawks	Sophie Crawford #8	Crawford
+mu9	Rachel Morgan #9 of the Miami (Ohio) RedHawks	Rachel Morgan #9	Morgan
+mu10	Madison Brown #10 of the Miami (Ohio) RedHawks	Madison Brown #10	Brown
+mu11	Reesa Zimmerman #11 of the Miami (Ohio) RedHawks	Reesa Zimmerman #11	Zimmerman
+mu12	Sydney Waller #12 of the Miami (Ohio) RedHawks	Sydney Waller #12	Waller
+mu13	Grace Kreutz #13 of the Miami (Ohio) RedHawks	Grace Kreutz #13	Kreutz
+mu14	Kamryn Utley #14 of the Miami (Ohio) RedHawks	Kamryn Utley #14	Utley
+mu15	Lydia Michelin #15 of the Miami (Ohio) RedHawks	Lydia Michelin #15	Michelin
+mu16	Piper Willinger #16 of the Miami (Ohio) RedHawks	Piper Willinger #16	Willinger
+mu17	Lauren Coyne #17 of the Miami (Ohio) RedHawks	Lauren Coyne #17	Coyne
+mu18	Holland Van Deusen #18 of the Miami (Ohio) RedHawks	Holland Van Deusen #18	Deusen
+mu19	Kendall Bosse #19 of the Miami (Ohio) RedHawks	Kendall Bosse #19	Bosse
+mu20	Lindy Radaszewski #20 of the Miami (Ohio) RedHawks	Lindy Radaszewski #20	Radaszewski
+
+
+bsu	Ball State Cardinals
+bsu1	Audrey Geer #1 of the Ball State Cardinals	Audrey Geer #1	Geer
+bsu2	Reese Axness #2 of the Ball State Cardinals	Reese Axness #2	Axness
+bsu3	Elizabeth Tabeling #3 of the Ball State Cardinals	Elizabeth Tabeling #3	Tabeling
+bsu4	Kendall Eden #4 of the Ball State Cardinals	Kendall Eden #4	Eden
+bsu6	Merritt Sliwa #6 of the Ball State Cardinals	Merritt Sliwa #6	Sliwa
+bsu7	Lucy McCollum #7 of the Ball State Cardinals	Lucy McCollum #7	McCollum
+bsu8	Lindsey Green #8 of the Ball State Cardinals	Lindsey Green #8	Green
+bsu9	Mallory Pike #9 of the Ball State Cardinals	Mallory Pike #9	Pike
+bsu10	Leah Pike #10 of the Ball State Cardinals	Leah Pike #10	Pike
+bsu11	Tiffany Snook #11 of the Ball State Cardinals	Tiffany Snook #11	Snook
+bsu12	Sophie Ledbetter #12 of the Ball State Cardinals	Sophie Ledbetter #12	Ledbetter
+bsu13	Gwen Crull #13 of the Ball State Cardinals	Gwen Crull #13	Crull
+bsu14	Ava Smith #14 of the Ball State Cardinals	Ava Smith #14	Smith
+bsu15	Allie Wuestenfeld #15 of the Ball State Cardinals	Allie Wuestenfeld #15	Wuestenfeld
+bsu16	Alana Bailey #16 of the Ball State Cardinals	Alana Bailey #16	Bailey
+bsu17	Camryn Wise #17 of the Ball State Cardinals	Camryn Wise #17	Wise
+bsu21	Madison Buckley #21 of the Ball State Cardinals	Madison Buckley #21	Buckley
+
+
+ou	Ohio Bobcats
+ou1	Cienna Lapsley #1 of the Ohio Bobcats	Cienna Lapsley #1	Lapsley
+ou2	Kendall Hickey #2 of the Ohio Bobcats	Kendall Hickey #2	Hickey
+ou3	Gentry Brown #3 of the Ohio Bobcats	Gentry Brown #3	Brown
+ou4	Torre Kildow #4 of the Ohio Bobcats	Torre Kildow #4	Kildow
+ou6	Caroline Curran #6 of the Ohio Bobcats	Caroline Curran #6	Curran
+ou7	Rose Mahin #7 of the Ohio Bobcats	Rose Mahin #7	Mahin
+ou10	Rowan Kelly #10 of the Ohio Bobcats	Rowan Kelly #10	Kelly
+ou11	Emily Waddell #11 of the Ohio Bobcats	Emily Waddell #11	Waddell
+ou13	Bryn Janke #13 of the Ohio Bobcats	Bryn Janke #13	Janke
+ou15	Sierra Evans #15 of the Ohio Bobcats	Sierra Evans #15	Evans
+ou16	Darbi Ricketts #16 of the Ohio Bobcats	Darbi Ricketts #16	Ricketts
+ou17	Bailey Blair #17 of the Ohio Bobcats	Bailey Blair #17	Blair
+ou18	Lillie Meinhart #18 of the Ohio Bobcats	Lillie Meinhart #18	Meinhart
+ou21	Brooklyn Cole #21 of the Ohio Bobcats	Brooklyn Cole #21	Cole
+ou22	Lacy Marx #22 of the Ohio Bobcats	Lacy Marx #22	Marx
+ou23	Olivia Gardner #23 of the Ohio Bobcats	Olivia Gardner #23	Gardner
+
+
+ub	Buffalo Bulls
+ub1	Angelina Siepierski #1 of the Buffalo Bulls	Angelina Siepierski #1	Siepierski
+ub2	Maddie Mitchell #2 of the Buffalo Bulls	Maddie Mitchell #2	Mitchell
+ub3	Sydney Bell #3 of the Buffalo Bulls	Sydney Bell #3	Bell
+ub4	Hailey Campagna #4 of the Buffalo Bulls	Hailey Campagna #4	Campagna
+ub5	Michal Benaim #5 of the Buffalo Bulls	Michal Benaim #5	Benaim
+ub6	Nienke Trossel #6 of the Buffalo Bulls	Nienke Trossel #6	Trossel
+ub8	Tehya Shaw #8 of the Buffalo Bulls	Tehya Shaw #8	Shaw
+ub9	Ava Kanj #9 of the Buffalo Bulls	Ava Kanj #9	Kanj
+ub10	Anaya Cole #10 of the Buffalo Bulls	Anaya Cole #10	Cole
+ub11	Abbie Willis #11 of the Buffalo Bulls	Abbie Willis #11	Willis
+ub12	Soleil Rancourt #12 of the Buffalo Bulls	Soleil Rancourt #12	Rancourt
+ub13	Sadie Gladhill #13 of the Buffalo Bulls	Sadie Gladhill #13	Gladhill
+ub14	Manoela Forlin #14 of the Buffalo Bulls	Manoela Forlin #14	Forlin
+ub15	Eve Adams #15 of the Buffalo Bulls	Eve Adams #15	Adams
+ub16	Chloe Brown #16 of the Buffalo Bulls	Chloe Brown #16	Brown
+ub20	Abisola Adebayo #20 of the Buffalo Bulls	Abisola Adebayo #20	Adebayo
+ub24	Reese Collins #24 of the Buffalo Bulls	Reese Collins #24	Collins
+
+
+ksu	Kent State Golden Flashes
+ksu1	Maggie Kachmarik #1 of the Kent State Golden Flashes	Maggie Kachmarik #1	Kachmarik
+ksu2	Avrey Rigney #2 of the Kent State Golden Flashes	Avrey Rigney #2	Rigney
+ksu3	Kylee Baranski #3 of the Kent State Golden Flashes	Kylee Baranski #3	Baranski
+ksu4	Hailey Brenner #4 of the Kent State Golden Flashes	Hailey Brenner #4	Brenner
+ksu5	Lesley Furuta #5 of the Kent State Golden Flashes	Lesley Furuta #5	Furuta
+ksu6	Liliana Mechura #6 of the Kent State Golden Flashes	Liliana Mechura #6	Mechura
+ksu7	Mercedez Brown #7 of the Kent State Golden Flashes	Mercedez Brown #7	Brown
+ksu8	Nadia Miller #8 of the Kent State Golden Flashes	Nadia Miller #8	Miller
+ksu10	Macie Moreland #10 of the Kent State Golden Flashes	Macie Moreland #10	Moreland
+ksu11	Vanessa Imoh #11 of the Kent State Golden Flashes	Vanessa Imoh #11	Imoh
+ksu12	Catie Patterson #12 of the Kent State Golden Flashes	Catie Patterson #12	Patterson
+ksu13	Jordyn Anderson #13 of the Kent State Golden Flashes	Jordyn Anderson #13	Anderson
+ksu14	Christina Vigil #14 of the Kent State Golden Flashes	Christina Vigil #14	Vigil
+ksu16	Adalynn Ginley #16 of the Kent State Golden Flashes	Adalynn Ginley #16	Ginley
+ksu18	Abbey Debevec #18 of the Kent State Golden Flashes	Abbey Debevec #18	Debevec
+ksu20	Ashley Verhey #20 of the Kent State Golden Flashes	Ashley Verhey #20	Verhey
+
+
+akr	Akron Zips
+akr1	Vanessa Del Real #1 of the Akron Zips	Vanessa Del Real #1	Real
+akr2	Sarah Bettis #2 of the Akron Zips	Sarah Bettis #2	Bettis
+akr3	Payton Evans #3 of the Akron Zips	Payton Evans #3	Evans
+akr4	Clara Christensen #4 of the Akron Zips	Clara Christensen #4	Christensen
+akr5	Jordyn Aeschliman #5 of the Akron Zips	Jordyn Aeschliman #5	Aeschliman
+akr6	Noelle Aprati #6 of the Akron Zips	Noelle Aprati #6	Aprati
+akr7	Reilly Chausse #7 of the Akron Zips	Reilly Chausse #7	Chausse
+akr8	Ruby Klusman #8 of the Akron Zips	Ruby Klusman #8	Klusman
+akr9	Jessie Musselman #9 of the Akron Zips	Jessie Musselman #9	Musselman
+akr10	Chiara Gennari #10 of the Akron Zips	Chiara Gennari #10	Gennari
+akr11	Taylor Donovan #11 of the Akron Zips	Taylor Donovan #11	Donovan
+akr13	Delaney Gash #13 of the Akron Zips	Delaney Gash #13	Gash
+akr14	Lauren Wilson #14 of the Akron Zips	Lauren Wilson #14	Wilson
+akr15	Vanessa Washington #15 of the Akron Zips	Vanessa Washington #15	Washington
+akr16	Lyndi Wolf #16 of the Akron Zips	Lyndi Wolf #16	Wolf
+akr19	Masa Prascevic #19 of the Akron Zips	Masa Prascevic #19	Prascevic
+akr22	Chidera Ozoh #22 of the Akron Zips	Chidera Ozoh #22	Ozoh

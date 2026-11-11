@@ -1,0 +1,472 @@
+dmacwbb	during a Mid-American Conference women's basketball game
+dncwbb	during a non-conference women's basketball game
+stroh	at the Stroh Center
+inbg	in Bowling Green, Ohio.
+wbbcoach	Head coach Fred Chmiel of the Bowling Green Falcons	head coach Fred Chmiel	Chmiel
+pressc	speaks during a postgame press conference
+mact	during the Mid-American Conference Tournament
+ncaa	during the NCAA Tournament
+cwbg	(Coyle Withrow/BG Falcon Media)
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+cheer	Bowling Green cheerleaders perform
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+band	The Bowling Green pep band performs
+sn	is honored during Senior Night
+bgo	BOWLING GREEN, OHIO -
+
+q1	during the first quarter
+q2	during the second quarter
+q3	during the third quarter
+q4	during the fourth quarter
+ot	during overtime
+2ot	during double overtime
+half	at halftime
+pre	before the game
+intro	is introduced before the game
+
+cel	celebrates
+hud	huddles with teammates
+bench	reacts from the bench
+hf	high-fives a teammate
+anthem	stands for the national anthem
+react	reacts to a call
+3pt	shoots a 3-pointer
+jump	shoots a jump shot
+lay	goes up for a layup
+drive	drives to the basket
+post	posts up
+reb	grabs a rebound
+oreb	grabs an offensive rebound
+ft	shoots a free throw
+blk	blocks a shot
+stl	steals the ball
+pass	passes the ball
+drib	brings the ball up the court
+def	defends against
+loose	dives for a loose ball
+tip	goes up for the opening tip
+foul	is called for a foul
+to	listens during a timeout
+cel3	celebrates a 3-pointer
+and1	celebrates an and-one
+
+
+bg	Bowling Green Falcons
+wbb2	Sophie Alexander #2 of the Bowling Green Falcons	Sophie Alexander #2	Alexander
+wbb4	Jaedyn Cook #4 of the Bowling Green Falcons	Jaedyn Cook #4	Cook
+wbb8	Joniyah Bland-Fitzpatrick #8 of the Bowling Green Falcons	Joniyah Bland-Fitzpatrick #8	Bland-Fitzpatrick
+wbb11	Sol Depetris #11 of the Bowling Green Falcons	Sol Depetris #11	Depetris
+wbb12	Ky'Aira Miller #12 of the Bowling Green Falcons	Ky'Aira Miller #12	Miller
+wbb18	Aurelie Vanderstraeten #18 of the Bowling Green Falcons	Aurelie Vanderstraeten #18	Vanderstraeten
+wbb20	Kayla Stidham #20 of the Bowling Green Falcons	Kayla Stidham #20	Stidham
+wbb21	Mar Segura #21 of the Bowling Green Falcons	Mar Segura #21	Segura
+wbb22	Lauren Gerken #22 of the Bowling Green Falcons	Lauren Gerken #22	Gerken
+wbb26	Carol Silva #26 of the Bowling Green Falcons	Carol Silva #26	Silva
+wbb42	Mafalda Monteiro #42 of the Bowling Green Falcons	Mafalda Monteiro #42	Monteiro
+wbb44	Eugenia Ngungo #44 of the Bowling Green Falcons	Eugenia Ngungo #44	Ngungo
+wbb88	Sara Caetano #88 of the Bowling Green Falcons	Sara Caetano #88	Caetano
+
+
+akr	Akron Zips
+akr0	Kaylah Thornton #0 of the Akron Zips	Kaylah Thornton #0	Thornton
+akr1	Kaylee King #1 of the Akron Zips	Kaylee King #1	King
+akr2	Jazzy Owens-Barnett #2 of the Akron Zips	Jazzy Owens-Barnett #2	Owens-Barnett
+akr3	Jessie Joaquim #3 of the Akron Zips	Jessie Joaquim #3	Joaquim
+akr4	Kam'Ren Rhodes #4 of the Akron Zips	Kam'Ren Rhodes #4	Rhodes
+akr5	Corinne Reed #5 of the Akron Zips	Corinne Reed #5	Reed
+akr7	Monique Mitchell #7 of the Akron Zips	Monique Mitchell #7	Mitchell
+akr8	Shaena Brew #8 of the Akron Zips	Shaena Brew #8	Brew
+akr9	Ofir Parpara #9 of the Akron Zips	Ofir Parpara #9	Parpara
+akr10	Christaesha Jackson #10 of the Akron Zips	Christaesha Jackson #10	Jackson
+akr14	Kailee Bransford #14 of the Akron Zips	Kailee Bransford #14	Bransford
+akr22	Teniesha Clarke #22 of the Akron Zips	Teniesha Clarke #22	Clarke
+akr24	Annika Manthy #24 of the Akron Zips	Annika Manthy #24	Manthy
+akr30	Macey Fegan #30 of the Akron Zips	Macey Fegan #30	Fegan
+akr33	Tyla Heard #33 of the Akron Zips	Tyla Heard #33	Heard
+
+
+bsu	Ball State Cardinals
+bsu2	Zhen Verburgt #2 of the Ball State Cardinals	Zhen Verburgt #2	Verburgt
+bsu3	Karsyn Norman #3 of the Ball State Cardinals	Karsyn Norman #3	Norman
+bsu9	Helen Holley #9 of the Ball State Cardinals	Helen Holley #9	Holley
+bsu10	Giorgia Gorini #10 of the Ball State Cardinals	Giorgia Gorini #10	Gorini
+bsu13	Faith Walker #13 of the Ball State Cardinals	Faith Walker #13	Walker
+bsu21	Klaske Miedema #21 of the Ball State Cardinals	Klaske Miedema #21	Miedema
+bsu22	Tessa Towers #22 of the Ball State Cardinals	Tessa Towers #22	Towers
+bsu23	Lilli Barnes #23 of the Ball State Cardinals	Lilli Barnes #23	Barnes
+bsu24	Aniss Tagayi #24 of the Ball State Cardinals	Aniss Tagayi #24	Tagayi
+bsu25	Grace Kingery #25 of the Ball State Cardinals	Grace Kingery #25	Kingery
+
+
+bell	Bellarmine Knights
+bell0	Tacko Sy #0 of the Bellarmine Knights	Tacko Sy #0	Sy
+bell1	Savannah Rowland #1 of the Bellarmine Knights	Savannah Rowland #1	Rowland
+bell2	Coumba Keïta #2 of the Bellarmine Knights	Coumba Keïta #2	Keïta
+bell4	Triniti Ralston #4 of the Bellarmine Knights	Triniti Ralston #4	Ralston
+bell5	Kellyn Hunter #5 of the Bellarmine Knights	Kellyn Hunter #5	Hunter
+bell10	Leigha Acoff #10 of the Bellarmine Knights	Leigha Acoff #10	Acoff
+bell11	Anna Rodgers #11 of the Bellarmine Knights	Anna Rodgers #11	Rodgers
+bell12	Kayce Hyman #12 of the Bellarmine Knights	Kayce Hyman #12	Hyman
+bell13	Haya Abdel Aal #13 of the Bellarmine Knights	Haya Abdel Aal #13	Abdel Aal
+bell14	Tristan Shivers #14 of the Bellarmine Knights	Tristan Shivers #14	Shivers
+bell20	Kaylyn Lelie #20 of the Bellarmine Knights	Kaylyn Lelie #20	Lelie
+bell21	Olivia Pifer #21 of the Bellarmine Knights	Olivia Pifer #21	Pifer
+bell34	Emma Holtzapfel #34 of the Bellarmine Knights	Emma Holtzapfel #34	Holtzapfel
+bell35	Hana Abdel Aal #35 of the Bellarmine Knights	Hana Abdel Aal #35	Abdel Aal
+
+
+ub	Buffalo Bulls
+ub0	Ava LaMonica #0 of the Buffalo Bulls	Ava LaMonica #0	LaMonica
+ub1	Asia Wilson #1 of the Buffalo Bulls	Asia Wilson #1	Wilson
+ub2	Natavia Alber #2 of the Buffalo Bulls	Natavia Alber #2	Alber
+ub3	Annabelle Day #3 of the Buffalo Bulls	Annabelle Day #3	Day
+ub7	Aniya Rowe #7 of the Buffalo Bulls	Aniya Rowe #7	Rowe
+ub10	Kyleigh Hall #10 of the Buffalo Bulls	Kyleigh Hall #10	Hall
+ub11	Deana Thompson #11 of the Buffalo Bulls	Deana Thompson #11	Thompson
+ub12	Briana Young #12 of the Buffalo Bulls	Briana Young #12	Young
+ub13	Ella Corry #13 of the Buffalo Bulls	Ella Corry #13	Corry
+ub21	Diann Jackson #21 of the Buffalo Bulls	Diann Jackson #21	Jackson
+ub22	Jadeah Marshall #22 of the Buffalo Bulls	Jadeah Marshall #22	Marshall
+ub23	Ella Wickstrom #23 of the Buffalo Bulls	Ella Wickstrom #23	Wickstrom
+ub24	Meg Lucas #24 of the Buffalo Bulls	Meg Lucas #24	Lucas
+ub35	Layla Hearne #35 of the Buffalo Bulls	Layla Hearne #35	Hearne
+ub42	Oyinkansola Soetan #42 of the Buffalo Bulls	Oyinkansola Soetan #42	Soetan
+
+
+cmu	Central Michigan Chippewas
+cmu1	Nevaeh Williams #1 of the Central Michigan Chippewas	Nevaeh Williams #1	Williams
+cmu2	Lilah Turnbull #2 of the Central Michigan Chippewas	Lilah Turnbull #2	Turnbull
+cmu3	Kara Bartels #3 of the Central Michigan Chippewas	Kara Bartels #3	Bartels
+cmu4	Sarah Brown #4 of the Central Michigan Chippewas	Sarah Brown #4	Brown
+cmu5	Audrey Parker #5 of the Central Michigan Chippewas	Audrey Parker #5	Parker
+cmu9	Jawelle Daquin #9 of the Central Michigan Chippewas	Jawelle Daquin #9	Daquin
+cmu10	Rylan Buschell #10 of the Central Michigan Chippewas	Rylan Buschell #10	Buschell
+cmu11	Jailenn Green #11 of the Central Michigan Chippewas	Jailenn Green #11	Green
+cmu12	Riley Smith #12 of the Central Michigan Chippewas	Riley Smith #12	Smith
+cmu23	Summer Davis #23 of the Central Michigan Chippewas	Summer Davis #23	Davis
+cmu24	Indya Davis #24 of the Central Michigan Chippewas	Indya Davis #24	Davis
+cmu30	Jayda Mosley #30 of the Central Michigan Chippewas	Jayda Mosley #30	Mosley
+cmu40	Taylor Johnson #40 of the Central Michigan Chippewas	Taylor Johnson #40	Johnson
+
+
+csu	Cleveland State Vikings
+csu0	Queen Ruffin #0 of the Cleveland State Vikings	Queen Ruffin #0	Ruffin
+csu1	Brianna Barr-Buday #1 of the Cleveland State Vikings	Brianna Barr-Buday #1	Barr-Buday
+csu3	Macie Taylor #3 of the Cleveland State Vikings	Macie Taylor #3	Taylor
+csu4	Alexa Hocevar #4 of the Cleveland State Vikings	Alexa Hocevar #4	Hocevar
+csu5	Fatou Sane #5 of the Cleveland State Vikings	Fatou Sane #5	Sane
+csu6	Chloe Oliver #6 of the Cleveland State Vikings	Chloe Oliver #6	Oliver
+csu7	Hanna Medina Kajevic #7 of the Cleveland State Vikings	Hanna Medina Kajevic #7	Medina Kajevic
+csu9	Sarah Hurley #9 of the Cleveland State Vikings	Sarah Hurley #9	Hurley
+csu10	Paula Pique #10 of the Cleveland State Vikings	Paula Pique #10	Pique
+csu11	Annika Corcoran #11 of the Cleveland State Vikings	Annika Corcoran #11	Corcoran
+csu14	Silvia Gonzalez #14 of the Cleveland State Vikings	Silvia Gonzalez #14	Gonzalez
+csu19	Sur Lozano #19 of the Cleveland State Vikings	Sur Lozano #19	Lozano
+csu33	Tiyahna Trottier #33 of the Cleveland State Vikings	Tiyahna Trottier #33	Trottier
+
+
+fres	Fresno State Bulldogs
+fres1	Mekhia Chase #1 of the Fresno State Bulldogs	Mekhia Chase #1	Chase
+fres3	Jada Hunter #3 of the Fresno State Bulldogs	Jada Hunter #3	Hunter
+fres4	Latisha Wilson #4 of the Fresno State Bulldogs	Latisha Wilson #4	Wilson
+fres5	Lola Donez #5 of the Fresno State Bulldogs	Lola Donez #5	Donez
+fres6	Sienna Clark #6 of the Fresno State Bulldogs	Sienna Clark #6	Clark
+fres10	Rubi Gray #10 of the Fresno State Bulldogs	Rubi Gray #10	Gray
+fres12	Ivy Brown #12 of the Fresno State Bulldogs	Ivy Brown #12	Brown
+fres13	Ella Barmentloo #13 of the Fresno State Bulldogs	Ella Barmentloo #13	Barmentloo
+fres14	Ashlyn Rean #14 of the Fresno State Bulldogs	Ashlyn Rean #14	Rean
+fres21	Ava Marr #21 of the Fresno State Bulldogs	Ava Marr #21	Marr
+fres23	Mylaena Norton #23 of the Fresno State Bulldogs	Mylaena Norton #23	Norton
+fres24	Kenzie Sirowich #24 of the Fresno State Bulldogs	Kenzie Sirowich #24	Sirowich
+fres34	Briana Webb #34 of the Fresno State Bulldogs	Briana Webb #34	Webb
+fres42	Ryleigh Schoonover #42 of the Fresno State Bulldogs	Ryleigh Schoonover #42	Schoonover
+fres54	Zawadi Ogot #54 of the Fresno State Bulldogs	Zawadi Ogot #54	Ogot
+
+
+gaso	Georgia Southern Eagles
+gaso0	Jailyn Williams #0 of the Georgia Southern Eagles	Jailyn Williams #0	Williams
+gaso1	Tamiria Jones #1 of the Georgia Southern Eagles	Tamiria Jones #1	Jones
+gaso2	Kyra Perkins #2 of the Georgia Southern Eagles	Kyra Perkins #2	Perkins
+gaso3	Nevaeh Brown #3 of the Georgia Southern Eagles	Nevaeh Brown #3	Brown
+gaso4	Unique Horton #4 of the Georgia Southern Eagles	Unique Horton #4	Horton
+gaso5	Kyla Bryant #5 of the Georgia Southern Eagles	Kyla Bryant #5	Bryant
+gaso10	Jamiria Jones #10 of the Georgia Southern Eagles	Jamiria Jones #10	Jones
+gaso11	Kiyah Lewis #11 of the Georgia Southern Eagles	Kiyah Lewis #11	Lewis
+gaso12	Markayla Holland #12 of the Georgia Southern Eagles	Markayla Holland #12	Holland
+gaso14	Kiara Anderson #14 of the Georgia Southern Eagles	Kiara Anderson #14	Anderson
+gaso20	Lia Anderson #20 of the Georgia Southern Eagles	Lia Anderson #20	Anderson
+gaso23	Laney Scoggins #23 of the Georgia Southern Eagles	Laney Scoggins #23	Scoggins
+gaso33	Hailey Chiles #33 of the Georgia Southern Eagles	Hailey Chiles #33	Chiles
+gaso41	Kayla Cleaveland #41 of the Georgia Southern Eagles	Kayla Cleaveland #41	Cleaveland
+
+
+ksu	Kent State Golden Flashes
+ksu0	Caitlyn Holmes #0 of the Kent State Golden Flashes	Caitlyn Holmes #0	Holmes
+ksu3	Corynne Hauser #3 of the Kent State Golden Flashes	Corynne Hauser #3	Hauser
+ksu4	Journey Hildebrand #4 of the Kent State Golden Flashes	Journey Hildebrand #4	Hildebrand
+ksu11	Anna Campanelli #11 of the Kent State Golden Flashes	Anna Campanelli #11	Campanelli
+ksu12	Whitney Stafford #12 of the Kent State Golden Flashes	Whitney Stafford #12	Stafford
+ksu14	Da'Nia McClain #14 of the Kent State Golden Flashes	Da'Nia McClain #14	McClain
+ksu15	Lauren Bain #15 of the Kent State Golden Flashes	Lauren Bain #15	Bain
+ksu21	Sini Luukkonen #21 of the Kent State Golden Flashes	Sini Luukkonen #21	Luukkonen
+ksu25	Talia Harris #25 of the Kent State Golden Flashes	Talia Harris #25	Harris
+ksu30	Riley Rismiller #30 of the Kent State Golden Flashes	Riley Rismiller #30	Rismiller
+ksu31	Maddie Kiper #31 of the Kent State Golden Flashes	Maddie Kiper #31	Kiper
+ksu34	Janae Tyler #34 of the Kent State Golden Flashes	Janae Tyler #34	Tyler
+ksu35	Emory Klatt #35 of the Kent State Golden Flashes	Emory Klatt #35	Klatt
+
+
+ltu	Lawrence Tech Blue Devils
+ltu0	Gabby Brooks-Foster #0 of the Lawrence Tech Blue Devils	Gabby Brooks-Foster #0	Brooks-Foster
+ltu1	Jamya Fritz #1 of the Lawrence Tech Blue Devils	Jamya Fritz #1	Fritz
+ltu2	Sierra Robinson #2 of the Lawrence Tech Blue Devils	Sierra Robinson #2	Robinson
+ltu3	Ella Haupert #3 of the Lawrence Tech Blue Devils	Ella Haupert #3	Haupert
+ltu5	Tiona Harding #5 of the Lawrence Tech Blue Devils	Tiona Harding #5	Harding
+ltu10	Paetyn Miller #10 of the Lawrence Tech Blue Devils	Paetyn Miller #10	Miller
+ltu11	Addy Barnes #11 of the Lawrence Tech Blue Devils	Addy Barnes #11	Barnes
+ltu12	Liv Linden #12 of the Lawrence Tech Blue Devils	Liv Linden #12	Linden
+ltu15	Mia Burgess #15 of the Lawrence Tech Blue Devils	Mia Burgess #15	Burgess
+ltu21	Averi Peot #21 of the Lawrence Tech Blue Devils	Averi Peot #21	Peot
+ltu22	Sydney Garon #22 of the Lawrence Tech Blue Devils	Sydney Garon #22	Garon
+ltu33	Evelyn VanTol #33 of the Lawrence Tech Blue Devils	Evelyn VanTol #33	VanTol
+
+
+mu	Miami (Ohio) RedHawks
+mu0	Jaya McClure #0 of the Miami (Ohio) RedHawks	Jaya McClure #0	McClure
+mu2	Brooke Zartman #2 of the Miami (Ohio) RedHawks	Brooke Zartman #2	Zartman
+mu3	Julianna LaMendola #3 of the Miami (Ohio) RedHawks	Julianna LaMendola #3	LaMendola
+mu8	Laia Jovée #8 of the Miami (Ohio) RedHawks	Laia Jovée #8	Jovée
+mu9	Dominika Ullmann #9 of the Miami (Ohio) RedHawks	Dominika Ullmann #9	Ullmann
+mu15	Amber Tretter #15 of the Miami (Ohio) RedHawks	Amber Tretter #15	Tretter
+mu17	Núria Jurjo #17 of the Miami (Ohio) RedHawks	Núria Jurjo #17	Jurjo
+mu18	Adela Plans Bellavista #18 of the Miami (Ohio) RedHawks	Adela Plans Bellavista #18	Plans Bellavista
+mu23	Audrey Biggs #23 of the Miami (Ohio) RedHawks	Audrey Biggs #23	Biggs
+mu24	Lucía Martínez López #24 of the Miami (Ohio) RedHawks	Lucía Martínez López #24	Martínez López
+mu33	Addison Baxter #33 of the Miami (Ohio) RedHawks	Addison Baxter #33	Baxter
+mu41	Brooke Blumenfeld #41 of the Miami (Ohio) RedHawks	Brooke Blumenfeld #41	Blumenfeld
+mu45	Jade Ondineme #45 of the Miami (Ohio) RedHawks	Jade Ondineme #45	Ondineme
+
+
+ncat	North Carolina A&T Aggies
+ncat0	Darrionna Howard #0 of the North Carolina A&T Aggies	Darrionna Howard #0	Howard
+ncat1	Honor Hall #1 of the North Carolina A&T Aggies	Honor Hall #1	Hall
+ncat2	Maraja Pass #2 of the North Carolina A&T Aggies	Maraja Pass #2	Pass
+ncat3	Crystal Hardy #3 of the North Carolina A&T Aggies	Crystal Hardy #3	Hardy
+ncat4	Anaya Karriem #4 of the North Carolina A&T Aggies	Anaya Karriem #4	Karriem
+ncat5	Jada Bates #5 of the North Carolina A&T Aggies	Jada Bates #5	Bates
+ncat6	Yves Cox #6 of the North Carolina A&T Aggies	Yves Cox #6	Cox
+ncat9	Kaylin Pernell #9 of the North Carolina A&T Aggies	Kaylin Pernell #9	Pernell
+ncat12	Drew Alexander #12 of the North Carolina A&T Aggies	Drew Alexander #12	Alexander
+ncat13	Brook Evans #13 of the North Carolina A&T Aggies	Brook Evans #13	Evans
+ncat20	Whitley Davis #20 of the North Carolina A&T Aggies	Whitley Davis #20	Davis
+ncat23	Jamyia Lindsey #23 of the North Carolina A&T Aggies	Jamyia Lindsey #23	Lindsey
+ncat25	Paris Locke #25 of the North Carolina A&T Aggies	Paris Locke #25	Locke
+ncat30	Rania Curry #30 of the North Carolina A&T Aggies	Rania Curry #30	Curry
+ncat33	Icyss Storm #33 of the North Carolina A&T Aggies	Icyss Storm #33	Storm
+
+
+nd	Notre Dame Fighting Irish
+nd1	Kelly Ratigan #1 of the Notre Dame Fighting Irish	Kelly Ratigan #1	Ratigan
+nd2	Jacy Abii #2 of the Notre Dame Fighting Irish	Jacy Abii #2	Abii
+nd3	Hannah Hidalgo #3 of the Notre Dame Fighting Irish	Hannah Hidalgo #3	Hidalgo
+nd5	Bella Ragone #5 of the Notre Dame Fighting Irish	Bella Ragone #5	Ragone
+nd6	Isabella Sangha #6 of the Notre Dame Fighting Irish	Isabella Sangha #6	Sangha
+nd7	Maya Gin #7 of the Notre Dame Fighting Irish	Maya Gin #7	Gin
+nd9	Anaya Hardy #9 of the Notre Dame Fighting Irish	Anaya Hardy #9	Hardy
+nd10	Jenica Lewis #10 of the Notre Dame Fighting Irish	Jenica Lewis #10	Lewis
+nd23	Madison St. Rose #23 of the Notre Dame Fighting Irish	Madison St. Rose #23	St. Rose
+nd24	Amari Byles #24 of the Notre Dame Fighting Irish	Amari Byles #24	Byles
+nd30	Bella Veith #30 of the Notre Dame Fighting Irish	Bella Veith #30	Veith
+nd32	Mia Veith #32 of the Notre Dame Fighting Irish	Mia Veith #32	Veith
+nd44	Leah Macy #44 of the Notre Dame Fighting Irish	Leah Macy #44	Macy
+
+
+ou	Ohio Bobcats
+ou0	Kamie Ellis #0 of the Ohio Bobcats	Kamie Ellis #0	Ellis
+ou1	Sienna Allen #1 of the Ohio Bobcats	Sienna Allen #1	Allen
+ou2	ReRe Jennings #2 of the Ohio Bobcats	ReRe Jennings #2	Jennings
+ou3	Bella Ranallo #3 of the Ohio Bobcats	Bella Ranallo #3	Ranallo
+ou5	Vivienne Macheck #5 of the Ohio Bobcats	Vivienne Macheck #5	Macheck
+ou8	Aubrey Pepper #8 of the Ohio Bobcats	Aubrey Pepper #8	Pepper
+ou10	Blossom Wallace #10 of the Ohio Bobcats	Blossom Wallace #10	Wallace
+ou11	Antonicia Moultrie #11 of the Ohio Bobcats	Antonicia Moultrie #11	Moultrie
+ou12	Irene Asensio Manosa #12 of the Ohio Bobcats	Irene Asensio Manosa #12	Asensio Manosa
+ou13	Monica Williams #13 of the Ohio Bobcats	Monica Williams #13	Williams
+ou20	Gigi Bower #20 of the Ohio Bobcats	Gigi Bower #20	Bower
+ou21	Bailey Tabeling #21 of the Ohio Bobcats	Bailey Tabeling #21	Tabeling
+ou22	Asiah Baxter #22 of the Ohio Bobcats	Asiah Baxter #22	Baxter
+ou23	Danni Scully #23 of the Ohio Bobcats	Danni Scully #23	Scully
+ou30	Madison Lim #30 of the Ohio Bobcats	Madison Lim #30	Lim
+ou41	Cassidy Lafler #41 of the Ohio Bobcats	Cassidy Lafler #41	Lafler
+
+
+psu	Penn State Lady Lions
+psu0	Devyn Quigley #0 of the Penn State Lady Lions	Devyn Quigley #0	Quigley
+psu2	Savannah White #2 of the Penn State Lady Lions	Savannah White #2	White
+psu3	Kamrah Banks #3 of the Penn State Lady Lions	Kamrah Banks #3	Banks
+psu4	Petra Božan #4 of the Penn State Lady Lions	Petra Božan #4	Božan
+psu5	Ashlee Brown #5 of the Penn State Lady Lions	Ashlee Brown #5	Brown
+psu6	Ava Black #6 of the Penn State Lady Lions	Ava Black #6	Black
+psu9	Irene García #9 of the Penn State Lady Lions	Irene García #9	García
+psu10	Vitória Santana #10 of the Penn State Lady Lions	Vitória Santana #10	Santana
+psu11	Enjulina Gonzalez #11 of the Penn State Lady Lions	Enjulina Gonzalez #11	Gonzalez
+psu23	Skylar Durley #23 of the Penn State Lady Lions	Skylar Durley #23	Durley
+psu24	Cristen Carter #24 of the Penn State Lady Lions	Cristen Carter #24	Carter
+
+
+pfw	Purdue Fort Wayne Mastodons
+pfw0	Amaris Timmons #0 of the Purdue Fort Wayne Mastodons	Amaris Timmons #0	Timmons
+pfw1	Nika Lokica #1 of the Purdue Fort Wayne Mastodons	Nika Lokica #1	Lokica
+pfw2	Hiba Malkawi #2 of the Purdue Fort Wayne Mastodons	Hiba Malkawi #2	Malkawi
+pfw4	Riley Pepple #4 of the Purdue Fort Wayne Mastodons	Riley Pepple #4	Pepple
+pfw5	Meegan Fahy #5 of the Purdue Fort Wayne Mastodons	Meegan Fahy #5	Fahy
+pfw8	Bailee Duck #8 of the Purdue Fort Wayne Mastodons	Bailee Duck #8	Duck
+pfw12	Alivia Bolinger #12 of the Purdue Fort Wayne Mastodons	Alivia Bolinger #12	Bolinger
+pfw14	Maddie Lepley #14 of the Purdue Fort Wayne Mastodons	Maddie Lepley #14	Lepley
+pfw21	Claire Gregwer #21 of the Purdue Fort Wayne Mastodons	Claire Gregwer #21	Gregwer
+pfw22	Madison Lewis #22 of the Purdue Fort Wayne Mastodons	Madison Lewis #22	Lewis
+pfw23	Karis Thomas #23 of the Purdue Fort Wayne Mastodons	Karis Thomas #23	Thomas
+pfw24	Alyssa Berry #24 of the Purdue Fort Wayne Mastodons	Alyssa Berry #24	Berry
+pfw30	Avery Wagner #30 of the Purdue Fort Wayne Mastodons	Avery Wagner #30	Wagner
+
+
+stt	St. Thomas Tommies
+stt3	Maya Kovacic #3 of the St. Thomas Tommies	Maya Kovacic #3	Kovacic
+stt4	Lydia Aalsma #4 of the St. Thomas Tommies	Lydia Aalsma #4	Aalsma
+stt5	Addie Schliewe #5 of the St. Thomas Tommies	Addie Schliewe #5	Schliewe
+stt10	Savannah Gage #10 of the St. Thomas Tommies	Savannah Gage #10	Gage
+stt11	Tessa Driscoll #11 of the St. Thomas Tommies	Tessa Driscoll #11	Driscoll
+stt12	Mikayla Werner #12 of the St. Thomas Tommies	Mikayla Werner #12	Werner
+stt13	Jayci Rath #13 of the St. Thomas Tommies	Jayci Rath #13	Rath
+stt14	Autumn McCall #14 of the St. Thomas Tommies	Autumn McCall #14	McCall
+stt21	Samantha Voll #21 of the St. Thomas Tommies	Samantha Voll #21	Voll
+stt22	Abbey Vallance #22 of the St. Thomas Tommies	Abbey Vallance #22	Vallance
+stt23	Morgan Staloch #23 of the St. Thomas Tommies	Morgan Staloch #23	Staloch
+stt24	Alyssa Sand #24 of the St. Thomas Tommies	Alyssa Sand #24	Sand
+stt30	Laura Hauge #30 of the St. Thomas Tommies	Laura Hauge #30	Hauge
+stt32	Savanah Gardner #32 of the St. Thomas Tommies	Savanah Gardner #32	Gardner
+stt33	Kammie Ludwig #33 of the St. Thomas Tommies	Kammie Ludwig #33	Ludwig
+stt52	Savannah McGowan #52 of the St. Thomas Tommies	Savannah McGowan #52	McGowan
+
+
+tamu	Texas A&M Aggies
+tamu0	Kaniya Boyd #0 of the Texas A&M Aggies	Kaniya Boyd #0	Boyd
+tamu2	Miyah Verse #2 of the Texas A&M Aggies	Miyah Verse #2	Verse
+tamu3	Rieyan DeSouze #3 of the Texas A&M Aggies	Rieyan DeSouze #3	DeSouze
+tamu4	Chaney Spencer #4 of the Texas A&M Aggies	Chaney Spencer #4	Spencer
+tamu5	Vanessa Saidu #5 of the Texas A&M Aggies	Vanessa Saidu #5	Saidu
+tamu7	Pien Steenbergen #7 of the Texas A&M Aggies	Pien Steenbergen #7	Steenbergen
+tamu14	Jayda Porter #14 of the Texas A&M Aggies	Jayda Porter #14	Porter
+tamu15	Ibifaa Azogu #15 of the Texas A&M Aggies	Ibifaa Azogu #15	Azogu
+tamu16	Kailyn Gilbert #16 of the Texas A&M Aggies	Kailyn Gilbert #16	Gilbert
+tamu20	Janae Kent #20 of the Texas A&M Aggies	Janae Kent #20	Kent
+tamu21	Essence Cody #21 of the Texas A&M Aggies	Essence Cody #21	Cody
+tamu23	Gianna Gentry #23 of the Texas A&M Aggies	Gianna Gentry #23	Gentry
+tamu24	Emerald Parker #24 of the Texas A&M Aggies	Emerald Parker #24	Parker
+tamu25	Salese Blow #25 of the Texas A&M Aggies	Salese Blow #25	Blow
+tamu26	Anita Franchini #26 of the Texas A&M Aggies	Anita Franchini #26	Franchini
+
+
+ut	Toledo Rockets
+ut0	Kiera Edmonds #0 of the Toledo Rockets	Kiera Edmonds #0	Edmonds
+ut1	Natiah Nelson #1 of the Toledo Rockets	Natiah Nelson #1	Nelson
+ut2	Faith Fedd-Robinson #2 of the Toledo Rockets	Faith Fedd-Robinson #2	Fedd-Robinson
+ut3	Camryn VandenBosch #3 of the Toledo Rockets	Camryn VandenBosch #3	VandenBosch
+ut4	Kendall Carruthers #4 of the Toledo Rockets	Kendall Carruthers #4	Carruthers
+ut8	Reagan Wilson #8 of the Toledo Rockets	Reagan Wilson #8	Wilson
+ut9	Jyah LoVett #9 of the Toledo Rockets	Jyah LoVett #9	LoVett
+ut10	Evalyse Cole #10 of the Toledo Rockets	Evalyse Cole #10	Cole
+ut11	Destiny Robinson #11 of the Toledo Rockets	Destiny Robinson #11	Robinson
+ut12	Ella Weaver #12 of the Toledo Rockets	Ella Weaver #12	Weaver
+ut13	Lizzy Puot #13 of the Toledo Rockets	Lizzy Puot #13	Puot
+ut15	Judit Oliva Fernandez #15 of the Toledo Rockets	Judit Oliva Fernandez #15	Oliva Fernandez
+ut21	Miriam Diala #21 of the Toledo Rockets	Miriam Diala #21	Diala
+ut22	Gabby Helsom #22 of the Toledo Rockets	Gabby Helsom #22	Helsom
+
+
+tul	Tulsa Golden Hurricane
+tul1	Haven Fisher #1 of the Tulsa Golden Hurricane	Haven Fisher #1	Fisher
+tul2	RyLee Grays #2 of the Tulsa Golden Hurricane	RyLee Grays #2	Grays
+tul3	Camryn Schmidt #3 of the Tulsa Golden Hurricane	Camryn Schmidt #3	Schmidt
+tul4	Alexa Kinas #4 of the Tulsa Golden Hurricane	Alexa Kinas #4	Kinas
+tul5	Alisha Peavy #5 of the Tulsa Golden Hurricane	Alisha Peavy #5	Peavy
+tul7	Teresa Seppala #7 of the Tulsa Golden Hurricane	Teresa Seppala #7	Seppala
+tul8	Gina Nikola Pirjak #8 of the Tulsa Golden Hurricane	Gina Nikola Pirjak #8	Nikola Pirjak
+tul10	Hadar Cohen #10 of the Tulsa Golden Hurricane	Hadar Cohen #10	Cohen
+tul11	Jaelynn Scott #11 of the Tulsa Golden Hurricane	Jaelynn Scott #11	Scott
+tul15	Jade Clack #15 of the Tulsa Golden Hurricane	Jade Clack #15	Clack
+tul22	Mady Cartwright #22 of the Tulsa Golden Hurricane	Mady Cartwright #22	Cartwright
+tul23	McKenzie Jones #23 of the Tulsa Golden Hurricane	McKenzie Jones #23	Jones
+tul31	Laura Di Stefano #31 of the Tulsa Golden Hurricane	Laura Di Stefano #31	Di Stefano
+tul33	Dora Toman #33 of the Tulsa Golden Hurricane	Dora Toman #33	Toman
+
+
+umass	UMass Minutewomen
+umass1	Reagan Hurst #1 of the UMass Minutewomen	Reagan Hurst #1	Hurst
+umass2	Chinenye Odenigbo #2 of the UMass Minutewomen	Chinenye Odenigbo #2	Odenigbo
+umass3	Aiyanna Perkins #3 of the UMass Minutewomen	Aiyanna Perkins #3	Perkins
+umass4	Taylor Derkack #4 of the UMass Minutewomen	Taylor Derkack #4	Derkack
+umass5	Kiki Scott #5 of the UMass Minutewomen	Kiki Scott #5	Scott
+umass9	Alba Caballero #9 of the UMass Minutewomen	Alba Caballero #9	Caballero
+umass10	Yahmani McKayle #10 of the UMass Minutewomen	Yahmani McKayle #10	McKayle
+umass12	Kylie Sooley #12 of the UMass Minutewomen	Kylie Sooley #12	Sooley
+umass15	Brooke Pulpi #15 of the UMass Minutewomen	Brooke Pulpi #15	Pulpi
+umass17	Eva Hannon #17 of the UMass Minutewomen	Eva Hannon #17	Hannon
+umass20	Tessa Gladieux #20 of the UMass Minutewomen	Tessa Gladieux #20	Gladieux
+umass22	Imani Shelton #22 of the UMass Minutewomen	Imani Shelton #22	Shelton
+umass25	Caroline Dotsey #25 of the UMass Minutewomen	Caroline Dotsey #25	Dotsey
+umass30	Jess Ross #30 of the UMass Minutewomen	Jess Ross #30	Ross
+umass33	Ayanna Franks #33 of the UMass Minutewomen	Ayanna Franks #33	Franks
+
+
+uncw	UNC Wilmington Seahawks
+uncw0	Ebbony Wilson #0 of the UNC Wilmington Seahawks	Ebbony Wilson #0	Wilson
+uncw2	Promise Njoku #2 of the UNC Wilmington Seahawks	Promise Njoku #2	Njoku
+uncw3	Leah Keyes #3 of the UNC Wilmington Seahawks	Leah Keyes #3	Keyes
+uncw4	Alva Hägerström #4 of the UNC Wilmington Seahawks	Alva Hägerström #4	Hägerström
+uncw5	Kimmie Hicks #5 of the UNC Wilmington Seahawks	Kimmie Hicks #5	Hicks
+uncw7	Loghan Johnson #7 of the UNC Wilmington Seahawks	Loghan Johnson #7	Johnson
+uncw9	Naylee Cortes #9 of the UNC Wilmington Seahawks	Naylee Cortes #9	Cortes
+uncw11	Bella Toomey #11 of the UNC Wilmington Seahawks	Bella Toomey #11	Toomey
+uncw13	Sienna Dauer #13 of the UNC Wilmington Seahawks	Sienna Dauer #13	Dauer
+uncw22	Morgan White #22 of the UNC Wilmington Seahawks	Morgan White #22	White
+uncw24	Jazlyn Bowman #24 of the UNC Wilmington Seahawks	Jazlyn Bowman #24	Bowman
+uncw30	Tiara Thompson #30 of the UNC Wilmington Seahawks	Tiara Thompson #30	Thompson
+
+
+wmu	Western Michigan Broncos
+wmu1	Vanessa Rodriguez #1 of the Western Michigan Broncos	Vanessa Rodriguez #1	Rodriguez
+wmu2	Alli Harness #2 of the Western Michigan Broncos	Alli Harness #2	Harness
+wmu3	Zuri Ransom #3 of the Western Michigan Broncos	Zuri Ransom #3	Ransom
+wmu7	Casey Vyverman #7 of the Western Michigan Broncos	Casey Vyverman #7	Vyverman
+wmu11	Ava Rodriguez #11 of the Western Michigan Broncos	Ava Rodriguez #11	Rodriguez
+wmu12	Alli Carlson #12 of the Western Michigan Broncos	Alli Carlson #12	Carlson
+wmu14	May Revahe #14 of the Western Michigan Broncos	May Revahe #14	Revahe
+wmu20	Kailey Starks #20 of the Western Michigan Broncos	Kailey Starks #20	Starks
+wmu21	Faith Wiseman #21 of the Western Michigan Broncos	Faith Wiseman #21	Wiseman
+wmu22	Isabella Miljkovic #22 of the Western Michigan Broncos	Isabella Miljkovic #22	Miljkovic
+wmu23	Emily Van Timmeren #23 of the Western Michigan Broncos	Emily Van Timmeren #23	Van Timmeren
+wmu24	Kaylyn Buchanon #24 of the Western Michigan Broncos	Kaylyn Buchanon #24	Buchanon
+wmu30	Morasha Wiggins #30 of the Western Michigan Broncos	Morasha Wiggins #30	Wiggins
+wmu33	Nile Muguira Orbe #33 of the Western Michigan Broncos	Nile Muguira Orbe #33	Muguira Orbe
+
+
+emu	Eastern Michigan Eagles
+emu0	Zoe Guice #0 of the Eastern Michigan Eagles	Zoe Guice #0	Guice
+emu1	Alli Zajac #1 of the Eastern Michigan Eagles	Alli Zajac #1	Zajac
+emu2	Ruby Brannon #2 of the Eastern Michigan Eagles	Ruby Brannon #2	Brannon
+emu3	Ni'Rah Clark #3 of the Eastern Michigan Eagles	Ni'Rah Clark #3	Clark
+emu4	Molly Sisson #4 of the Eastern Michigan Eagles	Molly Sisson #4	Sisson
+emu5	Chey McEvans #5 of the Eastern Michigan Eagles	Chey McEvans #5	McEvans
+emu6	Fernanda Ovalle #6 of the Eastern Michigan Eagles	Fernanda Ovalle #6	Ovalle
+emu11	Oliwia Pelka #11 of the Eastern Michigan Eagles	Oliwia Pelka #11	Pelka
+emu15	Believe Tshibangu #15 of the Eastern Michigan Eagles	Believe Tshibangu #15	Tshibangu
+emu19	Paula Balada #19 of the Eastern Michigan Eagles	Paula Balada #19	Balada
+emu23	Peyton Hill #23 of the Eastern Michigan Eagles	Peyton Hill #23	Hill
+emu24	Anna Habra #24 of the Eastern Michigan Eagles	Anna Habra #24	Habra
+emu25	Sarah Rekowski #25 of the Eastern Michigan Eagles	Sarah Rekowski #25	Rekowski
+emu33	Adrena Gordon #33 of the Eastern Michigan Eagles	Adrena Gordon #33	Gordon

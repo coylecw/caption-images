@@ -1,0 +1,14 @@
+# Mac and Windows junk
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
+
+# Never upload these
+*.zip
+*backup*/
+# Personal templates stay on each person's own computer; only Generic is shared
+Metadata Templates/*.json
+!Metadata Templates/Generic.json

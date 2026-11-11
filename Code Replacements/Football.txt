@@ -1,0 +1,504 @@
+dmacfb	during a Mid-American Conference football game
+dncfb	during a non-conference football game
+doyt	at Doyt L. Perry Stadium
+inbg	in Bowling Green, Ohio.
+fbcoach	Head coach Eddie George of the Bowling Green Falcons	head coach Eddie George	George
+pressc	speaks during a postgame press conference
+macc	during the Mid-American Conference Championship Game
+bowl	during a bowl game
+cwbg	(Coyle Withrow/BG Falcon Media)
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+cheer	Bowling Green cheerleaders perform
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+band	The Falcon Marching Band performs
+sd	is honored during Senior Day
+hc	during the Homecoming game
+
+q1	during the first quarter
+q2	during the second quarter
+q3	during the third quarter
+q4	during the fourth quarter
+ot	during overtime
+2ot	during double overtime
+half	at halftime
+pre	before the game
+intro	is introduced before the game
+entry	runs onto the field before the game
+coin	watches the coin toss
+
+cel	celebrates
+hud	huddles with teammates
+bench	reacts on the sideline
+hf	high-fives a teammate
+anthem	stands for the national anthem
+react	reacts to a call
+pass	throws a pass
+hand	hands off the ball
+snap	takes the snap
+scram	scrambles out of the pocket
+run	runs the ball
+catch	makes a catch
+stiff	stiff-arms
+dive	dives for the end zone
+td	scores a touchdown
+celtd	celebrates a touchdown
+block	blocks
+tackle	makes a tackle
+sack	sacks the quarterback
+int	intercepts a pass
+pbu	breaks up a pass
+ff	forces a fumble
+fr	recovers a fumble
+celto	celebrates a turnover
+fg	kicks a field goal
+xp	kicks an extra point
+punt	punts the ball
+kr	returns a kickoff
+pr	returns a punt
+
+
+fbd0	Kal-El Pascal #0 of the Bowling Green Falcons	Kal-El Pascal #0	Pascal
+fbo0	Jeremiah Scoby #0 of the Bowling Green Falcons	Jeremiah Scoby #0	Scoby
+fbd1	Drey Braxton #1 of the Bowling Green Falcons	Drey Braxton #1	Braxton
+fbo1	Austyn Dendy #1 of the Bowling Green Falcons	Austyn Dendy #1	Dendy
+fbo2	Nakai Amachree #2 of the Bowling Green Falcons	Nakai Amachree #2	Amachree
+fbd2	JoJo Johnson #2 of the Bowling Green Falcons	JoJo Johnson #2	Johnson
+fbo3	Trey Johnson #3 of the Bowling Green Falcons	Trey Johnson #3	Johnson
+fbd3	Dorian Pringle #3 of the Bowling Green Falcons	Dorian Pringle #3	Pringle
+fbo4	Ke'Marion Baldwin #4 of the Bowling Green Falcons	Ke'Marion Baldwin #4	Baldwin
+fbd4	Kade Kostus #4 of the Bowling Green Falcons	Kade Kostus #4	Kostus
+fbd5	Eriq George #5 of the Bowling Green Falcons	Eriq George #5	George
+fbo5	Brennan Ridley #5 of the Bowling Green Falcons	Brennan Ridley #5	Ridley
+fbo6	Isaiah Dawson #6 of the Bowling Green Falcons	Isaiah Dawson #6	Dawson
+fbd6	Sanders Ellis #6 of the Bowling Green Falcons	Sanders Ellis #6	Ellis
+fbd7	Mike Wright III #7 of the Bowling Green Falcons	Mike Wright III #7	Wright
+fbo8	Eli Jacon-Duffy #8 of the Bowling Green Falcons	Eli Jacon-Duffy #8	Jacon-Duffy
+fbd8	Cashmire Lewis #8 of the Bowling Green Falcons	Cashmire Lewis #8	Lewis
+fbd9	Preston EstoEsta #9 of the Bowling Green Falcons	Preston EstoEsta #9	EstoEsta
+fbo9	Nick Sowell #9 of the Bowling Green Falcons	Nick Sowell #9	Sowell
+fbd10	Andrew Hines III #10 of the Bowling Green Falcons	Andrew Hines III #10	Hines
+fbo10	Hunter Najm #10 of the Bowling Green Falcons	Hunter Najm #10	Najm
+fbo11	Austin Clay #11 of the Bowling Green Falcons	Austin Clay #11	Clay
+fbd11	Armahn Hale #11 of the Bowling Green Falcons	Armahn Hale #11	Hale
+fbs12	Travis Kenner #12 of the Bowling Green Falcons	Travis Kenner #12	Kenner
+fbo12	Jarin Mock #12 of the Bowling Green Falcons	Jarin Mock #12	Mock
+fbo13	Caleb Moyer #13 of the Bowling Green Falcons	Caleb Moyer #13	Moyer
+fbd13	Chris Newell Jr. #13 of the Bowling Green Falcons	Chris Newell Jr. #13	Newell
+fbd14	JayT Jackson #14 of the Bowling Green Falcons	JayT Jackson #14	Jackson
+fbo14	Pauly Sadler #14 of the Bowling Green Falcons	Pauly Sadler #14	Sadler
+fbd15	D'kyah Banks #15 of the Bowling Green Falcons	D'kyah Banks #15	Banks
+fbo15	Dylan Dreasky #15 of the Bowling Green Falcons	Dylan Dreasky #15	Dreasky
+fbo16	Austin Novosad #16 of the Bowling Green Falcons	Austin Novosad #16	Novosad
+fbo17	Jay Kastantin #17 of the Bowling Green Falcons	Jay Kastantin #17	Kastantin
+fbd17	Jaimion Olverson #17 of the Bowling Green Falcons	Jaimion Olverson #17	Olverson
+fbd18	Nick Sawyer #18 of the Bowling Green Falcons	Nick Sawyer #18	Sawyer
+fbo18	Winn Sharp #18 of the Bowling Green Falcons	Winn Sharp #18	Sharp
+fbd19	Jahai Johnson #19 of the Bowling Green Falcons	Jahai Johnson #19	Johnson
+fbo19	Joseph Saffold #19 of the Bowling Green Falcons	Joseph Saffold #19	Saffold
+fbo20	Marceles Carey #20 of the Bowling Green Falcons	Marceles Carey #20	Carey
+fbd20	Darian Hawkins #20 of the Bowling Green Falcons	Darian Hawkins #20	Hawkins
+fbd21	Cedarius Christian #21 of the Bowling Green Falcons	Cedarius Christian #21	Christian
+fbo21	Carson Lovett #21 of the Bowling Green Falcons	Carson Lovett #21	Lovett
+fbd22	Julian Holt #22 of the Bowling Green Falcons	Julian Holt #22	Holt
+fbd23	Myles Bradley #23 of the Bowling Green Falcons	Myles Bradley #23	Bradley
+fbo23	Dom Woods #23 of the Bowling Green Falcons	Dom Woods #23	Woods
+fbd24	DeVenchi Arnold II #24 of the Bowling Green Falcons	DeVenchi Arnold II #24	Arnold
+fbo25	Cade Brooks #25 of the Bowling Green Falcons	Cade Brooks #25	Brooks
+fbd26	Josira Andrews #26 of the Bowling Green Falcons	Josira Andrews #26	Andrews
+fbs27	Treyton McKee #27 of the Bowling Green Falcons	Treyton McKee #27	McKee
+fbd28	Samuel Dossous #28 of the Bowling Green Falcons	Samuel Dossous #28	Dossous
+fbd30	Caden Carter #30 of the Bowling Green Falcons	Caden Carter #30	Carter
+fbs30	Ryan Kingston #30 of the Bowling Green Falcons	Ryan Kingston #30	Kingston
+fbd32	Rico Garcia #32 of the Bowling Green Falcons	Rico Garcia #32	Garcia
+fbo33	Tristin Blackmon #33 of the Bowling Green Falcons	Tristin Blackmon #33	Blackmon
+fbd36	Jabari Mitchell #36 of the Bowling Green Falcons	Jabari Mitchell #36	Mitchell
+fbd37	Garrison Blair #37 of the Bowling Green Falcons	Garrison Blair #37	Blair
+fbd39	Henry Reifschneider #39 of the Bowling Green Falcons	Henry Reifschneider #39	Reifschneider
+fbs40	Ethan Warner #40 of the Bowling Green Falcons	Ethan Warner #40	Warner
+fbo44	Leo Kemp #44 of the Bowling Green Falcons	Leo Kemp #44	Kemp
+fbd44	AJ Odom #44 of the Bowling Green Falcons	AJ Odom #44	Odom
+fbd45	Kingston Seals #45 of the Bowling Green Falcons	Kingston Seals #45	Seals
+fbo47	Kentrell White #47 of the Bowling Green Falcons	Kentrell White #47	White
+fbd48	Quentin Lewis #48 of the Bowling Green Falcons	Quentin Lewis #48	Lewis
+fbo50	Vincent Giordano #50 of the Bowling Green Falcons	Vincent Giordano #50	Giordano
+fbd50	Jonathan Goins #50 of the Bowling Green Falcons	Jonathan Goins #50	Goins
+fbd52	Elijah Durham-Smith #52 of the Bowling Green Falcons	Elijah Durham-Smith #52	Durham-Smith
+fbs52	Quinn Forsythe #52 of the Bowling Green Falcons	Quinn Forsythe #52	Forsythe
+fbo53	Masyn Zahursky #53 of the Bowling Green Falcons	Masyn Zahursky #53	Zahursky
+fbo54	Brody Bolyn #54 of the Bowling Green Falcons	Brody Bolyn #54	Bolyn
+fbd54	Dior Garner #54 of the Bowling Green Falcons	Dior Garner #54	Garner
+fbd55	Timothy Taylor Jr. #55 of the Bowling Green Falcons	Timothy Taylor Jr. #55	Taylor
+fbd56	John Baker IV #56 of the Bowling Green Falcons	John Baker IV #56	Baker
+fbs56	Quillan Jimenez #56 of the Bowling Green Falcons	Quillan Jimenez #56	Jimenez
+fbd57	Dayln White #57 of the Bowling Green Falcons	Dayln White #57	White
+fbo58	Ethan Kraatz #58 of the Bowling Green Falcons	Ethan Kraatz #58	Kraatz
+fbd58	Kore Thomas #58 of the Bowling Green Falcons	Kore Thomas #58	Thomas
+fbo59	John Kolarchick #59 of the Bowling Green Falcons	John Kolarchick #59	Kolarchick
+fbo61	Pete Pendergest #61 of the Bowling Green Falcons	Pete Pendergest #61	Pendergest
+fbo64	MJ Dillard #64 of the Bowling Green Falcons	MJ Dillard #64	Dillard
+fbo65	Gabe Funk #65 of the Bowling Green Falcons	Gabe Funk #65	Funk
+fbo66	Zane Panchula #66 of the Bowling Green Falcons	Zane Panchula #66	Panchula
+fbo70	Alex Harris #70 of the Bowling Green Falcons	Alex Harris #70	Harris
+fbo71	Travis Robertson #71 of the Bowling Green Falcons	Travis Robertson #71	Robertson
+fbo73	Caden Campbell #73 of the Bowling Green Falcons	Caden Campbell #73	Campbell
+fbo75	Maddux Murphy #75 of the Bowling Green Falcons	Maddux Murphy #75	Murphy
+fbo76	Theo Andall #76 of the Bowling Green Falcons	Theo Andall #76	Andall
+fbo77	James Thomas Jr. #77 of the Bowling Green Falcons	James Thomas Jr. #77	Thomas
+fbo78	Alexis Sanchez #78 of the Bowling Green Falcons	Alexis Sanchez #78	Sanchez
+fbo80	Ocean Brabbs #80 of the Bowling Green Falcons	Ocean Brabbs #80	Brabbs
+fbo82	Maddox Hunstad #82 of the Bowling Green Falcons	Maddox Hunstad #82	Hunstad
+fbo83	Pierce St Geme #83 of the Bowling Green Falcons	Pierce St Geme #83	St Geme
+fbo84	Trent Taylor #84 of the Bowling Green Falcons	Trent Taylor #84	Taylor
+fbo85	Reece Little #85 of the Bowling Green Falcons	Reece Little #85	Little
+fbo86	Derron Gray Jr. #86 of the Bowling Green Falcons	Derron Gray Jr. #86	Gray
+fbo87	Reddik Pillarelli #87 of the Bowling Green Falcons	Reddik Pillarelli #87	Pillarelli
+fbd88	Selah Brown #88 of the Bowling Green Falcons	Selah Brown #88	Brown
+fbo88	Carsen Melvin #88 of the Bowling Green Falcons	Carsen Melvin #88	Melvin
+fbo89	Blane Cleaver #89 of the Bowling Green Falcons	Blane Cleaver #89	Cleaver
+fbd90	Bryce Brewster #90 of the Bowling Green Falcons	Bryce Brewster #90	Brewster
+fbs91	Alex Jenkins #91 of the Bowling Green Falcons	Alex Jenkins #91	Jenkins
+fbd93	Trent Merrell #93 of the Bowling Green Falcons	Trent Merrell #93	Merrell
+fbs95	Carlos Guerra #95 of the Bowling Green Falcons	Carlos Guerra #95	Guerra
+fbd95	Jonathan Hendrix #95 of the Bowling Green Falcons	Jonathan Hendrix #95	Hendrix
+fbd96	Cameron Simmons #96 of the Bowling Green Falcons	Cameron Simmons #96	Simmons
+fbs97	Drew Rosick #97 of the Bowling Green Falcons	Drew Rosick #97	Rosick
+fbd99	Brendon Rice #99 of the Bowling Green Falcons	Brendon Rice #99	Rice
+fbed	Head coach Eddie George of the Bowling Green Falcons	head coach Eddie George	George
+
+fbedn	Eddie George
+
+
+fbedl	George
+
+
+bg	Bowling Green Falcons
+ksu	Kent State Golden Flashes
+ksuo0	Mason King #0 of the Kent State Golden Flashes	Mason King #0	King
+ksud0	Darian Blachewicz #0 of the Kent State Golden Flashes	Darian Blachewicz #0	Blachewicz
+ksuo1	Ardell Banks #1 of the Kent State Golden Flashes	Ardell Banks #1	Banks
+ksud1	A'tiq Muhammad #1 of the Kent State Golden Flashes	A'tiq Muhammad #1	Muhammad
+ksuo2	Nolan Good #2 of the Kent State Golden Flashes	Nolan Good #2	Good
+ksud2	Joel Cordoba #2 of the Kent State Golden Flashes	Joel Cordoba #2	Cordoba
+ksuo3	Jay Jay Etheridge #3 of the Kent State Golden Flashes	Jay Jay Etheridge #3	Jay Etheridge
+ksud3	Derrick Jackson III #3 of the Kent State Golden Flashes	Derrick Jackson III #3	Jackson
+ksuo4	Jared Kelley #4 of the Kent State Golden Flashes	Jared Kelley #4	Kelley
+ksud4	Rocco Nicholl #4 of the Kent State Golden Flashes	Rocco Nicholl #4	Nicholl
+ksuo5	Jakorion Caffey #5 of the Kent State Golden Flashes	Jakorion Caffey #5	Caffey
+ksud5	Thomas Aden #5 of the Kent State Golden Flashes	Thomas Aden #5	Aden
+ksuo6	Wayne Harris #6 of the Kent State Golden Flashes	Wayne Harris #6	Harris
+ksud7	Angelo Stockstill #7 of the Kent State Golden Flashes	Angelo Stockstill #7	Stockstill
+ksuo8	Da'Realyst Clark #8 of the Kent State Golden Flashes	Da'Realyst Clark #8	Clark
+ksud8	Josue Cordoba #8 of the Kent State Golden Flashes	Josue Cordoba #8	Cordoba
+ksuo10	Ethan Thanthanavong #10 of the Kent State Golden Flashes	Ethan Thanthanavong #10	Thanthanavong
+ksud10	Hayden Dawahare #10 of the Kent State Golden Flashes	Hayden Dawahare #10	Dawahare
+ksuo11	Zy'aire Fletcher #11 of the Kent State Golden Flashes	Zy'aire Fletcher #11	Fletcher
+ksud11	Camdon Wilborn #11 of the Kent State Golden Flashes	Camdon Wilborn #11	Wilborn
+ksuo12	Dru DeShields #12 of the Kent State Golden Flashes	Dru DeShields #12	DeShields
+ksud12	Lionel Burns III #12 of the Kent State Golden Flashes	Lionel Burns III #12	Burns
+ksuo13	Dakota Taylor #13 of the Kent State Golden Flashes	Dakota Taylor #13	Taylor
+ksud13	Quan Rhodes-McKee #13 of the Kent State Golden Flashes	Quan Rhodes-McKee #13	Rhodes-McKee
+ksuo14	Deante Ruffin #14 of the Kent State Golden Flashes	Deante Ruffin #14	Ruffin
+ksud14	Tyler Bivens #14 of the Kent State Golden Flashes	Tyler Bivens #14	Bivens
+ksuo15	Gavin Peeps #15 of the Kent State Golden Flashes	Gavin Peeps #15	Peeps
+ksud15	Sayed Abuhamdeh #15 of the Kent State Golden Flashes	Sayed Abuhamdeh #15	Abuhamdeh
+ksuo17	Cole Miller #17 of the Kent State Golden Flashes	Cole Miller #17	Miller
+ksud17	Semaj Bridgeman #17 of the Kent State Golden Flashes	Semaj Bridgeman #17	Bridgeman
+ksuo18	Hunter Hopperton #18 of the Kent State Golden Flashes	Hunter Hopperton #18	Hopperton
+ksud18	Norey Johnson #18 of the Kent State Golden Flashes	Norey Johnson #18	Johnson
+ksuo19	Ali Fisher #19 of the Kent State Golden Flashes	Ali Fisher #19	Fisher
+ksud19	DJ Barnes #19 of the Kent State Golden Flashes	DJ Barnes #19	Barnes
+ksuo20	Marques Hicks #20 of the Kent State Golden Flashes	Marques Hicks #20	Hicks
+ksud20	Rafael Terrero Jr. #20 of the Kent State Golden Flashes	Rafael Terrero Jr. #20	Terrero
+ksud21	Tejuan Barbour #21 of the Kent State Golden Flashes	Tejuan Barbour #21	Barbour
+ksuo22	Brandon White #22 of the Kent State Golden Flashes	Brandon White #22	White
+ksud22	Davion Pritchard #22 of the Kent State Golden Flashes	Davion Pritchard #22	Pritchard
+ksuo23	Maurice Stephens #23 of the Kent State Golden Flashes	Maurice Stephens #23	Stephens
+ksud23	Ezekiel Castex #23 of the Kent State Golden Flashes	Ezekiel Castex #23	Castex
+ksuo24	Jackson Farley #24 of the Kent State Golden Flashes	Jackson Farley #24	Farley
+ksud24	Tanner Mintz #24 of the Kent State Golden Flashes	Tanner Mintz #24	Mintz
+ksuo25	Donovan Delaney Jr. #25 of the Kent State Golden Flashes	Donovan Delaney Jr. #25	Delaney
+ksud25	Martell Buchanan #25 of the Kent State Golden Flashes	Martell Buchanan #25	Buchanan
+ksuo26	Dylan Armentrout #26 of the Kent State Golden Flashes	Dylan Armentrout #26	Armentrout
+ksud26	BuddyRow Garrer #26 of the Kent State Golden Flashes	BuddyRow Garrer #26	Garrer
+ksuo27	Javier Wills #27 of the Kent State Golden Flashes	Javier Wills #27	Wills
+ksud27	Lennox Lemon #27 of the Kent State Golden Flashes	Lennox Lemon #27	Lemon
+ksud28	Brodyn Bishop #28 of the Kent State Golden Flashes	Brodyn Bishop #28	Bishop
+ksuo29	Cade Romanini #29 of the Kent State Golden Flashes	Cade Romanini #29	Romanini
+ksud29	Jeremiah Johnson #29 of the Kent State Golden Flashes	Jeremiah Johnson #29	Johnson
+ksud30	Matthew Sollberger #30 of the Kent State Golden Flashes	Matthew Sollberger #30	Sollberger
+ksud31	Jacob Broach #31 of the Kent State Golden Flashes	Jacob Broach #31	Broach
+ksud32	Trey Rubinstein #32 of the Kent State Golden Flashes	Trey Rubinstein #32	Rubinstein
+ksuo33	Ayden Harris #33 of the Kent State Golden Flashes	Ayden Harris #33	Harris
+ksud33	Jaihien Roy #33 of the Kent State Golden Flashes	Jaihien Roy #33	Roy
+ksud35	Nate Gregory #35 of the Kent State Golden Flashes	Nate Gregory #35	Gregory
+ksuo36	Wyatt Januska #36 of the Kent State Golden Flashes	Wyatt Januska #36	Januska
+ksud38	Clinton Robinson #38 of the Kent State Golden Flashes	Clinton Robinson #38	Robinson
+ksus39	Eli Tucker #39 of the Kent State Golden Flashes	Eli Tucker #39	Tucker
+ksus41	Gus Goodell #41 of the Kent State Golden Flashes	Gus Goodell #41	Goodell
+ksus42	Kolten Ford #42 of the Kent State Golden Flashes	Kolten Ford #42	Ford
+ksud43	Kendall McNutt #43 of the Kent State Golden Flashes	Kendall McNutt #43	McNutt
+ksuo44	Holtz Maine #44 of the Kent State Golden Flashes	Holtz Maine #44	Maine
+ksud44	Antonio Bottiggi #44 of the Kent State Golden Flashes	Antonio Bottiggi #44	Bottiggi
+ksuo45	Tommy Arnold #45 of the Kent State Golden Flashes	Tommy Arnold #45	Arnold
+ksuo47	Andrew Rickelman #47 of the Kent State Golden Flashes	Andrew Rickelman #47	Rickelman
+ksus48	Chase Mantooth #48 of the Kent State Golden Flashes	Chase Mantooth #48	Mantooth
+ksus49	Tommy Newcomb #49 of the Kent State Golden Flashes	Tommy Newcomb #49	Newcomb
+ksuo50	Ben Midea #50 of the Kent State Golden Flashes	Ben Midea #50	Midea
+ksud50	Garrett Dial #50 of the Kent State Golden Flashes	Garrett Dial #50	Dial
+ksuo52	Gavin Kanar #52 of the Kent State Golden Flashes	Gavin Kanar #52	Kanar
+ksud52	Aiden Burgess #52 of the Kent State Golden Flashes	Aiden Burgess #52	Burgess
+ksuo54	Dustyn Morell #54 of the Kent State Golden Flashes	Dustyn Morell #54	Morell
+ksuo55	Jaxon Dunn #55 of the Kent State Golden Flashes	Jaxon Dunn #55	Dunn
+ksuo56	Moustafa Daoud #56 of the Kent State Golden Flashes	Moustafa Daoud #56	Daoud
+ksud56	Carlos Shird #56 of the Kent State Golden Flashes	Carlos Shird #56	Shird
+ksuo58	Colin Prichard #58 of the Kent State Golden Flashes	Colin Prichard #58	Prichard
+ksud59	Eckley Bridges #59 of the Kent State Golden Flashes	Eckley Bridges #59	Bridges
+ksuo62	Mason Imbt #62 of the Kent State Golden Flashes	Mason Imbt #62	Imbt
+ksuo64	David Iannini #64 of the Kent State Golden Flashes	David Iannini #64	Iannini
+ksuo66	Quinten Young #66 of the Kent State Golden Flashes	Quinten Young #66	Young
+ksuo67	Max Gembus #67 of the Kent State Golden Flashes	Max Gembus #67	Gembus
+ksuo70	Hudson Chasko #70 of the Kent State Golden Flashes	Hudson Chasko #70	Chasko
+ksuo71	Liam Dalton #71 of the Kent State Golden Flashes	Liam Dalton #71	Dalton
+ksuo72	Cecil Wilson #72 of the Kent State Golden Flashes	Cecil Wilson #72	Wilson
+ksuo73	William Johnson III #73 of the Kent State Golden Flashes	William Johnson III #73	Johnson
+ksuo74	Donovan Dark #74 of the Kent State Golden Flashes	Donovan Dark #74	Dark
+ksuo75	Boston Crowell #75 of the Kent State Golden Flashes	Boston Crowell #75	Crowell
+ksuo76	Mofe Adewole #76 of the Kent State Golden Flashes	Mofe Adewole #76	Adewole
+ksuo77	Rico Steele #77 of the Kent State Golden Flashes	Rico Steele #77	Steele
+ksuo78	Tyler Meadows #78 of the Kent State Golden Flashes	Tyler Meadows #78	Meadows
+ksuo80	Teaunn Hunter #80 of the Kent State Golden Flashes	Teaunn Hunter #80	Hunter
+ksuo81	Zymir Reed #81 of the Kent State Golden Flashes	Zymir Reed #81	Reed
+ksud83	Garrett Long #83 of the Kent State Golden Flashes	Garrett Long #83	Long
+ksuo84	Aidan Stewart #84 of the Kent State Golden Flashes	Aidan Stewart #84	Stewart
+ksuo85	Brendyn Smith #85 of the Kent State Golden Flashes	Brendyn Smith #85	Smith
+ksuo86	Matthew Maxey #86 of the Kent State Golden Flashes	Matthew Maxey #86	Maxey
+ksuo87	William Bierfeldt #87 of the Kent State Golden Flashes	William Bierfeldt #87	Bierfeldt
+ksuo88	Luke Simms #88 of the Kent State Golden Flashes	Luke Simms #88	Simms
+ksud88	Mohammed Hazime #88 of the Kent State Golden Flashes	Mohammed Hazime #88	Hazime
+ksuo89	Terik Mulder #89 of the Kent State Golden Flashes	Terik Mulder #89	Mulder
+ksud90	Bryce Griffin #90 of the Kent State Golden Flashes	Bryce Griffin #90	Griffin
+ksud91	Dion'Dre Taylor #91 of the Kent State Golden Flashes	Dion'Dre Taylor #91	Taylor
+ksud93	Daiveon Taylor #93 of the Kent State Golden Flashes	Daiveon Taylor #93	Taylor
+ksud94	Kale Webb #94 of the Kent State Golden Flashes	Kale Webb #94	Webb
+ksud95	Anthony Adams III #95 of the Kent State Golden Flashes	Anthony Adams III #95	Adams
+ksus96	Sean Leonard #96 of the Kent State Golden Flashes	Sean Leonard #96	Leonard
+ksus97	Jake Stoeckel #97 of the Kent State Golden Flashes	Jake Stoeckel #97	Stoeckel
+ksud98	Bryce Faulk #98 of the Kent State Golden Flashes	Bryce Faulk #98	Faulk
+
+
+ut	Toledo Rockets
+utd0	Andrew Zock #0 of the Toledo Rockets	Andrew Zock #0	Zock
+uto1	Rico Bond #1 of the Toledo Rockets	Rico Bond #1	Bond
+utd1	Cam Jones #1 of the Toledo Rockets	Cam Jones #1	Jones
+uto2	Trenton Jones #2 of the Toledo Rockets	Trenton Jones #2	Jones
+utd2	Ezra Odinjor #2 of the Toledo Rockets	Ezra Odinjor #2	Odinjor
+uto3	Adjatay Dabbs #3 of the Toledo Rockets	Adjatay Dabbs #3	Dabbs
+utd3	Sharard Vaughn III #3 of the Toledo Rockets	Sharard Vaughn III #3	Vaughn
+uto4	Autavius Ison #4 of the Toledo Rockets	Autavius Ison #4	Ison
+utd4	Donovan Watkins #4 of the Toledo Rockets	Donovan Watkins #4	Watkins
+uto5	Terrell Crosby Jr. #5 of the Toledo Rockets	Terrell Crosby Jr. #5	Crosby
+utd5	Damon Ollison II #5 of the Toledo Rockets	Damon Ollison II #5	Ollison
+uto6	John Alan Richter #6 of the Toledo Rockets	John Alan Richter #6	Alan Richter
+utd6	Langston Long #6 of the Toledo Rockets	Langston Long #6	Long
+uto7	Khamoni Robinson #7 of the Toledo Rockets	Khamoni Robinson #7	Robinson
+utd7	Armorion Smith #7 of the Toledo Rockets	Armorion Smith #7	Smith
+uto8	Connor Walendzak #8 of the Toledo Rockets	Connor Walendzak #8	Walendzak
+utd8	KJ Thomas #8 of the Toledo Rockets	KJ Thomas #8	Thomas
+uto9	Kalvin Gilbert Jr. #9 of the Toledo Rockets	Kalvin Gilbert Jr. #9	Gilbert
+uto10	Seth Elchert #10 of the Toledo Rockets	Seth Elchert #10	Elchert
+utd10	Julian Fox #10 of the Toledo Rockets	Julian Fox #10	Fox
+uto11	Walter Moses #11 of the Toledo Rockets	Walter Moses #11	Moses
+utd11	Hyajah Miller #11 of the Toledo Rockets	Hyajah Miller #11	Miller
+uto12	Bryson Hammer #12 of the Toledo Rockets	Bryson Hammer #12	Hammer
+utd12	Mo Conteh #12 of the Toledo Rockets	Mo Conteh #12	Conteh
+uto13ru	Cooper Rusk #13 of the Toledo Rockets	Cooper Rusk #13	Rusk
+uto13de	Jake DeHaan #13 of the Toledo Rockets	Jake DeHaan #13	DeHaan
+utd13	Kari Jackson #13 of the Toledo Rockets	Kari Jackson #13	Jackson
+uto14	Tashi Braceful #14 of the Toledo Rockets	Tashi Braceful #14	Braceful
+utd15	Michael-Arinzé Ezirim #15 of the Toledo Rockets	Michael-Arinzé Ezirim #15	Ezirim
+utd17	Kaleb Hutchinson #17 of the Toledo Rockets	Kaleb Hutchinson #17	Hutchinson
+uto19	Daryl Barnett Jr. #19 of the Toledo Rockets	Daryl Barnett Jr. #19	Barnett
+utd19	Isaac Prince #19 of the Toledo Rockets	Isaac Prince #19	Prince
+uto20	Corey Smith #20 of the Toledo Rockets	Corey Smith #20	Smith
+utd20	LaDavion Osborn #20 of the Toledo Rockets	LaDavion Osborn #20	Osborn
+utd21	Ben Sahakian #21 of the Toledo Rockets	Ben Sahakian #21	Sahakian
+uto22	CJ Miller #22 of the Toledo Rockets	CJ Miller #22	Miller
+utd22	Nicholas Thompson #22 of the Toledo Rockets	Nicholas Thompson #22	Thompson
+uto23	Noah Sanders #23 of the Toledo Rockets	Noah Sanders #23	Sanders
+utd23	Israel Petite #23 of the Toledo Rockets	Israel Petite #23	Petite
+utd24	Bo Jacobs #24 of the Toledo Rockets	Bo Jacobs #24	Jacobs
+utd25	Tyrell Russell #25 of the Toledo Rockets	Tyrell Russell #25	Russell
+uto26	Kadale Williams #26 of the Toledo Rockets	Kadale Williams #26	Williams
+utd26	Tyler Hackenbracht #26 of the Toledo Rockets	Tyler Hackenbracht #26	Hackenbracht
+uto27	Dane Nauman #27 of the Toledo Rockets	Dane Nauman #27	Nauman
+utd27	Ziiyahn Blair #27 of the Toledo Rockets	Ziiyahn Blair #27	Blair
+utd28	Sam Smith Jr. #28 of the Toledo Rockets	Sam Smith Jr. #28	Smith
+uto29	Tanner Rubinstein #29 of the Toledo Rockets	Tanner Rubinstein #29	Rubinstein
+utd29	Jordan Fox #29 of the Toledo Rockets	Jordan Fox #29	Fox
+utd30	Hayden Roy #30 of the Toledo Rockets	Hayden Roy #30	Roy
+utd31	Maddox Arnold #31 of the Toledo Rockets	Maddox Arnold #31	Arnold
+utd33	Andrew Fineske #33 of the Toledo Rockets	Andrew Fineske #33	Fineske
+utd35	Bryant Weatherspoon Jr. #35 of the Toledo Rockets	Bryant Weatherspoon Jr. #35	Weatherspoon
+utd36	Nathan Gersh #36 of the Toledo Rockets	Nathan Gersh #36	Gersh
+uts36	Emilio Duran #36 of the Toledo Rockets	Emilio Duran #36	Duran
+utd37	Desmond Okantey #37 of the Toledo Rockets	Desmond Okantey #37	Okantey
+utd38	Clarence Tucker #38 of the Toledo Rockets	Clarence Tucker #38	Tucker
+utd39	Dylan Hohler #39 of the Toledo Rockets	Dylan Hohler #39	Hohler
+uts39	Anthony Ruggles #39 of the Toledo Rockets	Anthony Ruggles #39	Ruggles
+utd41	Cam Gwinn #41 of the Toledo Rockets	Cam Gwinn #41	Gwinn
+uto43	Sam Lee #43 of the Toledo Rockets	Sam Lee #43	Lee
+utd43	Tyrell O'Neal #43 of the Toledo Rockets	Tyrell O'Neal #43	O'Neal
+utd44	Isaac Zay #44 of the Toledo Rockets	Isaac Zay #44	Zay
+uts46	Hunter Probst #46 of the Toledo Rockets	Hunter Probst #46	Probst
+uts47	Markus Meincke #47 of the Toledo Rockets	Markus Meincke #47	Meincke
+utd48	Jordin Farrow #48 of the Toledo Rockets	Jordin Farrow #48	Farrow
+uto50	Luke Rector #50 of the Toledo Rockets	Luke Rector #50	Rector
+utd51	Zackery Samuel #51 of the Toledo Rockets	Zackery Samuel #51	Samuel
+utd52	Lucas Lambert-Pipkin #52 of the Toledo Rockets	Lucas Lambert-Pipkin #52	Lambert-Pipkin
+utd53	Samuel Toniolo #53 of the Toledo Rockets	Samuel Toniolo #53	Toniolo
+uto55	Ibrahim Traore #55 of the Toledo Rockets	Ibrahim Traore #55	Traore
+uto56	Jacob Kropchak #56 of the Toledo Rockets	Jacob Kropchak #56	Kropchak
+uts57	Reece Strittmatter #57 of the Toledo Rockets	Reece Strittmatter #57	Strittmatter
+uto58	Jake Palucki #58 of the Toledo Rockets	Jake Palucki #58	Palucki
+uts59	Max Allen #59 of the Toledo Rockets	Max Allen #59	Allen
+uto60	Jake Grimm #60 of the Toledo Rockets	Jake Grimm #60	Grimm
+uto62	Christian Medlock #62 of the Toledo Rockets	Christian Medlock #62	Medlock
+uto63	Grant Zimmerly #63 of the Toledo Rockets	Grant Zimmerly #63	Zimmerly
+uto65	Stephen Gales #65 of the Toledo Rockets	Stephen Gales #65	Gales
+uto67	Cade Wilhelmi #67 of the Toledo Rockets	Cade Wilhelmi #67	Wilhelmi
+uto69	Dominic Johnson #69 of the Toledo Rockets	Dominic Johnson #69	Johnson
+uto70	Nick Thomas #70 of the Toledo Rockets	Nick Thomas #70	Thomas
+uto71	Matt Hofer #71 of the Toledo Rockets	Matt Hofer #71	Hofer
+uto72	Brian Mahoney III #72 of the Toledo Rockets	Brian Mahoney III #72	Mahoney
+uto73	Jonathan Harder #73 of the Toledo Rockets	Jonathan Harder #73	Harder
+uto74	Ahmad Carwise #74 of the Toledo Rockets	Ahmad Carwise #74	Carwise
+uto75	Preston Dazey #75 of the Toledo Rockets	Preston Dazey #75	Dazey
+uto76	Vincenzo Pizzo #76 of the Toledo Rockets	Vincenzo Pizzo #76	Pizzo
+uto78	Dylan Senda #78 of the Toledo Rockets	Dylan Senda #78	Senda
+uto80	Peyton Strickland #80 of the Toledo Rockets	Peyton Strickland #80	Strickland
+uto81	Ethan Malafa #81 of the Toledo Rockets	Ethan Malafa #81	Malafa
+uto83	Omar Mims Jr. #83 of the Toledo Rockets	Omar Mims Jr. #83	Mims
+uto85	Anthony Simpson #85 of the Toledo Rockets	Anthony Simpson #85	Simpson
+utd85	Josh Lee #85 of the Toledo Rockets	Josh Lee #85	Lee
+uto87	Tucker Kelleher #87 of the Toledo Rockets	Tucker Kelleher #87	Kelleher
+uto88	Jacob Newell #88 of the Toledo Rockets	Jacob Newell #88	Newell
+utd90	Zach Johnson #90 of the Toledo Rockets	Zach Johnson #90	Johnson
+utd91	Laith Shamma #91 of the Toledo Rockets	Laith Shamma #91	Shamma
+utd92	Tommy Huss #92 of the Toledo Rockets	Tommy Huss #92	Huss
+utd93	Leonard Sharp #93 of the Toledo Rockets	Leonard Sharp #93	Sharp
+uts93	Reice Griffith #93 of the Toledo Rockets	Reice Griffith #93	Griffith
+utd94	Adrian Love Jr. #94 of the Toledo Rockets	Adrian Love Jr. #94	Love
+utd95	Wayne Peart II #95 of the Toledo Rockets	Wayne Peart II #95	Peart
+utd96	Nathaniel Chandler #96 of the Toledo Rockets	Nathaniel Chandler #96	Chandler
+utd97	Brian Stovall Jr. #97 of the Toledo Rockets	Brian Stovall Jr. #97	Stovall
+utd98	Micah Fils-Aime #98 of the Toledo Rockets	Micah Fils-Aime #98	Fils-Aime
+utd99	Caden Camese #99 of the Toledo Rockets	Caden Camese #99	Camese
+
+
+umass	UMass Minutemen
+umasso0	Jordan Washington #0 of the UMass Minutemen	Jordan Washington #0	Washington
+umassd0	Isaiah Reed #0 of the UMass Minutemen	Isaiah Reed #0	Reed
+umasso1	Joseph Griffin Jr. #1 of the UMass Minutemen	Joseph Griffin Jr. #1	Griffin
+umassd1	DD Snyder #1 of the UMass Minutemen	DD Snyder #1	Snyder
+umasso2	T.Y. Harding #2 of the UMass Minutemen	T.Y. Harding #2	Harding
+umassd2	Joshua Nobles #2 of the UMass Minutemen	Joshua Nobles #2	Nobles
+umasso3	Elijah Pedro #3 of the UMass Minutemen	Elijah Pedro #3	Pedro
+umassd3	Kendall Bournes #3 of the UMass Minutemen	Kendall Bournes #3	Bournes
+umasso4	Da'Marion Alberic #4 of the UMass Minutemen	Da'Marion Alberic #4	Alberic
+umassd4	Chris Stanley #4 of the UMass Minutemen	Chris Stanley #4	Stanley
+umasso5	William Watson III #5 of the UMass Minutemen	William Watson III #5	Watson
+umassd5	Tyler Martin #5 of the UMass Minutemen	Tyler Martin #5	Martin
+umasso6	Justin Williams-Thomas #6 of the UMass Minutemen	Justin Williams-Thomas #6	Williams-Thomas
+umassd6	Joshua Iseah #6 of the UMass Minutemen	Joshua Iseah #6	Iseah
+umasso7	Will Perry #7 of the UMass Minutemen	Will Perry #7	Perry
+umassd7	TJ Magee #7 of the UMass Minutemen	TJ Magee #7	Magee
+umasso8	Kezion Dia-Johnson #8 of the UMass Minutemen	Kezion Dia-Johnson #8	Dia-Johnson
+umassd8	Michael Robinson #8 of the UMass Minutemen	Michael Robinson #8	Robinson
+umasso9	Devin Matthews #9 of the UMass Minutemen	Devin Matthews #9	Matthews
+umassd9	Justin Krueger #9 of the UMass Minutemen	Justin Krueger #9	Krueger
+umasso10	Ty McCutcheon #10 of the UMass Minutemen	Ty McCutcheon #10	McCutcheon
+umassd10	Aubrey Melvin #10 of the UMass Minutemen	Aubrey Melvin #10	Melvin
+umasso11	Max Dowling #11 of the UMass Minutemen	Max Dowling #11	Dowling
+umassd11	Jerry Washington #11 of the UMass Minutemen	Jerry Washington #11	Washington
+umasso12	David Moore Jr. #12 of the UMass Minutemen	David Moore Jr. #12	Moore
+umassd12	Corey Warner #12 of the UMass Minutemen	Corey Warner #12	Warner
+umasso13	Aedan McCarthy #13 of the UMass Minutemen	Aedan McCarthy #13	McCarthy
+umassd13	Raheim Sexil #13 of the UMass Minutemen	Raheim Sexil #13	Sexil
+umasso14	Curtis Kimmons IV #14 of the UMass Minutemen	Curtis Kimmons IV #14	Kimmons
+umassd14	Jose Touron #14 of the UMass Minutemen	Jose Touron #14	Touron
+umasso15	Tavian Dashiell #15 of the UMass Minutemen	Tavian Dashiell #15	Dashiell
+umassd15	Khari Bendolph #15 of the UMass Minutemen	Khari Bendolph #15	Bendolph
+umasso16	Logan Inagawa #16 of the UMass Minutemen	Logan Inagawa #16	Inagawa
+umassd16	Kendric Council #16 of the UMass Minutemen	Kendric Council #16	Council
+umasso17	Dallas Elliott #17 of the UMass Minutemen	Dallas Elliott #17	Elliott
+umassd17	Zachary Betts #17 of the UMass Minutemen	Zachary Betts #17	Betts
+umasso18	Matt Ogunniyi #18 of the UMass Minutemen	Matt Ogunniyi #18	Ogunniyi
+umassd18	Dinos Drossos #18 of the UMass Minutemen	Dinos Drossos #18	Drossos
+umasso19	Jabari Lewis #19 of the UMass Minutemen	Jabari Lewis #19	Lewis
+umassd19	David Chiavegato #19 of the UMass Minutemen	David Chiavegato #19	Chiavegato
+umasso20	Ricardo Laboy #20 of the UMass Minutemen	Ricardo Laboy #20	Laboy
+umassd20	Keith Sarkodieh #20 of the UMass Minutemen	Keith Sarkodieh #20	Sarkodieh
+umasso21	Kai Owens #21 of the UMass Minutemen	Kai Owens #21	Owens
+umassd21	Terron Johnson #21 of the UMass Minutemen	Terron Johnson #21	Johnson
+umasso22	TK Davis #22 of the UMass Minutemen	TK Davis #22	Davis
+umassd22	Jahmad Harmon #22 of the UMass Minutemen	Jahmad Harmon #22	Harmon
+umasso23	Elijah Faulkner #23 of the UMass Minutemen	Elijah Faulkner #23	Faulkner
+umassd23	JC Clark #23 of the UMass Minutemen	JC Clark #23	Clark
+umassd24	Ted Mondesir #24 of the UMass Minutemen	Ted Mondesir #24	Mondesir
+umassd25	Anochie Azuakolam Jr. #25 of the UMass Minutemen	Anochie Azuakolam Jr. #25	Azuakolam
+umassd26	CJ Amobi #26 of the UMass Minutemen	CJ Amobi #26	Amobi
+umassd27	Michael Pangaro #27 of the UMass Minutemen	Michael Pangaro #27	Pangaro
+umassd28	Ahkir Morgan #28 of the UMass Minutemen	Ahkir Morgan #28	Morgan
+umassd29	Kareem Pruitt #29 of the UMass Minutemen	Kareem Pruitt #29	Pruitt
+umasso33	Justin Lewis #33 of the UMass Minutemen	Justin Lewis #33	Lewis
+umasss33	Seamus McIntyre #33 of the UMass Minutemen	Seamus McIntyre #33	McIntyre
+umassd34	Payton Andrade #34 of the UMass Minutemen	Payton Andrade #34	Andrade
+umasso35	Magnus Von Saldern #35 of the UMass Minutemen	Magnus Von Saldern #35	Von Saldern
+umassd36	David Timson #36 of the UMass Minutemen	David Timson #36	Timson
+umassd38	Zeraun Daniel #38 of the UMass Minutemen	Zeraun Daniel #38	Daniel
+umassd40	Moritz Strempel #40 of the UMass Minutemen	Moritz Strempel #40	Strempel
+umassd42	Andrew DePaepe #42 of the UMass Minutemen	Andrew DePaepe #42	DePaepe
+umasss43	Edward Phillipson #43 of the UMass Minutemen	Edward Phillipson #43	Phillipson
+umassd44	Timmy Hinspeter #44 of the UMass Minutemen	Timmy Hinspeter #44	Hinspeter
+umasss46	Michael Streeter #46 of the UMass Minutemen	Michael Streeter #46	Streeter
+umasso50	Gavin Wilson #50 of the UMass Minutemen	Gavin Wilson #50	Wilson
+umasss51	Grant Mills #51 of the UMass Minutemen	Grant Mills #51	Mills
+umasso55	Ben Noome #55 of the UMass Minutemen	Ben Noome #55	Noome
+umassd55	Zakar Morris #55 of the UMass Minutemen	Zakar Morris #55	Morris
+umasss56	James Horton #56 of the UMass Minutemen	James Horton #56	Horton
+umasso57	Garrett Cooper #57 of the UMass Minutemen	Garrett Cooper #57	Cooper
+umassd58	Donovan Murphy #58 of the UMass Minutemen	Donovan Murphy #58	Murphy
+umasso59	Nick Dalessandro #59 of the UMass Minutemen	Nick Dalessandro #59	Dalessandro
+umasso63	Aidan Canty-Whitt #63 of the UMass Minutemen	Aidan Canty-Whitt #63	Canty-Whitt
+umasso64	Peyton Miller #64 of the UMass Minutemen	Peyton Miller #64	Miller
+umasso65	Samu Suominen #65 of the UMass Minutemen	Samu Suominen #65	Suominen
+umasso66	Greg Knox III #66 of the UMass Minutemen	Greg Knox III #66	Knox
+umasso67	Will McNamara #67 of the UMass Minutemen	Will McNamara #67	McNamara
+umasso69	Brock Taylor #69 of the UMass Minutemen	Brock Taylor #69	Taylor
+umasso73	Zachary Franks #73 of the UMass Minutemen	Zachary Franks #73	Franks
+umasso74	Jake McGrath #74 of the UMass Minutemen	Jake McGrath #74	McGrath
+umasso75	Tanner Burlingame #75 of the UMass Minutemen	Tanner Burlingame #75	Burlingame
+umasso76	Riley Bloch #76 of the UMass Minutemen	Riley Bloch #76	Bloch
+umasso77	Jaxon King #77 of the UMass Minutemen	Jaxon King #77	King
+umasso78	Greg Klingensmith #78 of the UMass Minutemen	Greg Klingensmith #78	Klingensmith
+umasso79	Aitor Urionabarrenechea #79 of the UMass Minutemen	Aitor Urionabarrenechea #79	Urionabarrenechea
+umasso80	Isaiah Simmons #80 of the UMass Minutemen	Isaiah Simmons #80	Simmons
+umasso83	Reece Adkins #83 of the UMass Minutemen	Reece Adkins #83	Adkins
+umasso85	Drew Alsup #85 of the UMass Minutemen	Drew Alsup #85	Alsup
+umasso86	Jax Markovich #86 of the UMass Minutemen	Jax Markovich #86	Markovich
+umasso87	Owen Anderson #87 of the UMass Minutemen	Owen Anderson #87	Anderson
+umasso88	John Condakes #88 of the UMass Minutemen	John Condakes #88	Condakes
+umassd88	Samuel Mulbah #88 of the UMass Minutemen	Samuel Mulbah #88	Mulbah
+umasso89	Matthew Tybor #89 of the UMass Minutemen	Matthew Tybor #89	Tybor
+umassd90	Tim Passmore Jr. #90 of the UMass Minutemen	Tim Passmore Jr. #90	Passmore
+umassd92	Romando Johnson #92 of the UMass Minutemen	Romando Johnson #92	Johnson
+umassd94	Colin Reynolds #94 of the UMass Minutemen	Colin Reynolds #94	Reynolds
+umassd95	Hollis Dirstine #95 of the UMass Minutemen	Hollis Dirstine #95	Dirstine
+umassd97	Robert Ekins #97 of the UMass Minutemen	Robert Ekins #97	Ekins
+umassd98	William DePaepe #98 of the UMass Minutemen	William DePaepe #98	DePaepe
+umassd99	Kamarion Thomas #99 of the UMass Minutemen	Kamarion Thomas #99	Thomas
+umasss99	Derek Morris #99 of the UMass Minutemen	Derek Morris #99	Morris

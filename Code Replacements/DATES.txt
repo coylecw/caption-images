@@ -1,0 +1,460 @@
+bgdate	BOWLING GREEN, OHIO -
+nov5	NOVEMBER 05
+nov6	NOVEMBER 06
+nov7	NOVEMBER 07
+nov8	NOVEMBER 08
+nov9	NOVEMBER 09
+nov10	NOVEMBER 10
+nov11	NOVEMBER 11
+nov12	NOVEMBER 12
+nov13	NOVEMBER 13
+nov14	NOVEMBER 14
+nov15	NOVEMBER 15
+nov16	NOVEMBER 16
+nov17	NOVEMBER 17
+nov18	NOVEMBER 18
+nov19	NOVEMBER 19
+nov20	NOVEMBER 20
+nov21	NOVEMBER 21
+nov22	NOVEMBER 22
+nov23	NOVEMBER 23
+nov24	NOVEMBER 24
+nov25	NOVEMBER 25
+nov26	NOVEMBER 26
+nov27	NOVEMBER 27
+nov28	NOVEMBER 28
+nov29	NOVEMBER 29
+nov30	NOVEMBER 30
+dec1	DECEMBER 01
+dec2	DECEMBER 02
+dec3	DECEMBER 03
+dec4	DECEMBER 04
+dec5	DECEMBER 05
+dec6	DECEMBER 06
+dec7	DECEMBER 07
+dec8	DECEMBER 08
+dec9	DECEMBER 09
+dec10	DECEMBER 10
+dec11	DECEMBER 11
+dec12	DECEMBER 12
+dec13	DECEMBER 13
+dec14	DECEMBER 14
+dec15	DECEMBER 15
+dec16	DECEMBER 16
+dec17	DECEMBER 17
+dec18	DECEMBER 18
+dec19	DECEMBER 19
+dec20	DECEMBER 20
+dec21	DECEMBER 21
+dec22	DECEMBER 22
+dec23	DECEMBER 23
+dec24	DECEMBER 24
+dec25	DECEMBER 25
+dec26	DECEMBER 26
+dec27	DECEMBER 27
+dec28	DECEMBER 28
+dec29	DECEMBER 29
+dec30	DECEMBER 30
+dec31	DECEMBER 31
+jan1	JANUARY 01
+jan2	JANUARY 02
+jan3	JANUARY 03
+jan4	JANUARY 04
+jan5	JANUARY 05
+jan6	JANUARY 06
+jan7	JANUARY 07
+jan8	JANUARY 08
+jan9	JANUARY 09
+jan10	JANUARY 10
+jan11	JANUARY 11
+jan12	JANUARY 12
+jan13	JANUARY 13
+jan14	JANUARY 14
+jan15	JANUARY 15
+jan16	JANUARY 16
+jan17	JANUARY 17
+jan18	JANUARY 18
+jan19	JANUARY 19
+jan20	JANUARY 20
+jan21	JANUARY 21
+jan22	JANUARY 22
+jan23	JANUARY 23
+jan24	JANUARY 24
+jan25	JANUARY 25
+jan26	JANUARY 26
+jan27	JANUARY 27
+jan28	JANUARY 28
+jan29	JANUARY 29
+jan30	JANUARY 30
+jan31	JANUARY 31
+feb1	FEBRUARY 01 
+feb2	FEBRUARY 02
+feb3	FEBRUARY 03
+feb4	FEBRUARY 04
+feb5	FEBRUARY 05
+feb6	FEBRUARY 06
+feb7	FEBRUARY 07
+feb8	FEBRUARY 08
+feb9	FEBRUARY 09
+feb10	FEBRUARY 10
+feb11	FEBRUARY 11
+feb12	FEBRUARY 12
+feb13	FEBRUARY 13
+feb14	FEBRUARY 14
+feb15	FEBRUARY 15
+feb16	FEBRUARY 16
+feb17	FEBRUARY 17
+feb18	FEBRUARY 18
+feb19	FEBRUARY 19
+feb20	FEBRUARY 20
+feb21	FEBRUARY 21
+feb22	FEBRUARY 22
+feb23	FEBRUARY 23
+feb24	FEBRUARY 24
+feb25	FEBRUARY 25
+feb26	FEBRUARY 26
+feb27	FEBRUARY 27
+feb28	FEBRUARY 28
+mar1	MARCH 01
+mar2	MARCH 02
+mar3	MARCH 03
+mar4	MARCH 04
+mar5	MARCH 05
+mar6	MARCH 06
+mar7	MARCH 07
+mar8	MARCH 08
+mar9	MARCH 09
+mar10	MARCH 10
+mar11	MARCH 11
+mar12	MARCH 12
+mar13	MARCH 13
+mar14	MARCH 14
+mar15	MARCH 15
+mar16	MARCH 16
+mar17	MARCH 17
+mar18	MARCH 18
+mar19	MARCH 19
+mar20	MARCH 20
+mar21	MARCH 21
+mar22	MARCH 22
+mar23	MARCH 23
+mar24	MARCH 24
+mar25	MARCH 25
+mar26	MARCH 26
+mar27	MARCH 27
+mar28	MARCH 28
+mar29	MARCH 29
+mar30	MARCH 30
+mar31	MARCH 31
+apr1	APRIL 01
+apr2	APRIL 02
+apr3	APRIL 03
+apr4	APRIL 04
+apr5	APRIL 05
+apr6	APRIL 06
+apr7	APRIL 07
+apr8	APRIL 08
+apr9	APRIL 09
+apr10	APRIL 10
+apr11	APRIL 11
+apr12	APRIL 12
+apr13	APRIL 13
+apr14	APRIL 14
+apr15	APRIL 15
+apr16	APRIL 16
+apr17	APRIL 17
+apr18	APRIL 18
+apr19	APRIL 19
+apr20	APRIL 20
+apr21	APRIL 21
+apr22	APRIL 22
+apr23	APRIL 23
+apr24	APRIL 24
+apr25	APRIL 25
+apr26	APRIL 26
+apr27	APRIL 27
+apr28	APRIL 28
+apr29	APRIL 29
+apr30	APRIL 30
+may1	MAY 01
+may2	MAY 02
+may3	MAY 03
+may4	MAY 04
+may5	MAY 05
+may6	MAY 06
+may7	MAY 07
+may8	MAY 08
+may9	MAY 09
+may10	MAY 10
+may11	MAY 11
+may12	MAY 12
+may13	MAY 13
+may14	MAY 14
+may15	MAY 15
+may16	MAY 16
+may17	MAY 17
+may18	MAY 18
+may19	MAY 19
+may20	MAY 20
+may21	MAY 21
+may22	MAY 22
+may23	MAY 23
+may24	MAY 24
+may25	MAY 25
+may26	MAY 26
+may27	MAY 27
+may28	MAY 28
+may29	MAY 29
+may30	MAY 30
+may31	MAY 31
+nov5d	on November 5, 2026
+nov6d	on November 6, 2026
+nov7d	on November 7, 2026
+nov8d	on November 8, 2026
+nov9d	on November 9, 2026
+nov10d	on November 10, 2026
+nov11d	on November 11, 2026
+nov12d	on November 12, 2026
+nov13d	on November 13, 2026
+nov14d	on November 14, 2026
+nov15d	on November 15, 2026
+nov16d	on November 16, 2026
+nov17d	on November 17, 2026
+nov18d	on November 18, 2026
+nov19d	on November 19, 2026
+nov20d	on November 20, 2026
+nov21d	on November 21, 2026
+nov22d	on November 22, 2026
+nov23d	on November 23, 2026
+nov24d	on November 24, 2026
+nov25d	on November 25, 2026
+nov26d	on November 26, 2026
+nov27d	on November 27, 2026
+nov28d	on November 28, 2026
+nov29d	on November 29, 2026
+nov30d	on November 30, 2026
+dec1d	on December 1, 2026
+dec2d	on December 2, 2026
+dec3d	on December 3, 2026
+dec4d	on December 4, 2026
+dec5d	on December 5, 2026
+dec6d	on December 6, 2026
+dec7d	on December 7, 2026
+dec8d	on December 8, 2026
+dec9d	on December 9, 2026
+dec10d	on December 10, 2026
+dec11d	on December 11, 2026
+dec12d	on December 12, 2026
+dec13d	on December 13, 2026
+dec14d	on December 14, 2026
+dec15d	on December 15, 2026
+dec16d	on December 16, 2026
+dec17d	on December 17, 2026
+dec18d	on December 18, 2026
+dec19d	on December 19, 2026
+dec20d	on December 20, 2026
+dec21d	on December 21, 2026
+dec22d	on December 22, 2026
+dec23d	on December 23, 2026
+dec24d	on December 24, 2026
+dec25d	on December 25, 2026
+dec26d	on December 26, 2026
+dec27d	on December 27, 2026
+dec28d	on December 28, 2026
+dec29d	on December 29, 2026
+dec30d	on December 30, 2026
+dec31d	on December 31, 2026
+jan1d	on January 1, 2027
+jan2d	on January 2, 2027
+jan3d	on January 3, 2027
+jan4d	on January 4, 2027
+jan5d	on January 5, 2027
+jan6d	on January 6, 2027
+jan7d	on January 7, 2027
+jan8d	on January 8, 2027
+jan9d	on January 9, 2027
+jan10d	on January 10, 2027
+jan11d	on January 11, 2027
+jan12d	on January 12, 2027
+jan13d	on January 13, 2027
+jan14d	on January 14, 2027
+jan15d	on January 15, 2027
+jan16d	on January 16, 2027
+jan17d	on January 17, 2027
+jan18d	on January 18, 2027
+jan19d	on January 19, 2027
+jan20d	on January 20, 2027
+jan21d	on January 21, 2027
+jan22d	on January 22, 2027
+jan23d	on January 23, 2027
+jan24d	on January 24, 2027
+jan25d	on January 25, 2027
+jan26d	on January 26, 2027
+jan27d	on January 27, 2027
+jan28d	on January 28, 2027
+jan29d	on January 29, 2027
+jan30d	on January 30, 2027
+jan31d	on January 31, 2027
+feb2d	on February 2, 2027
+feb3d	on February 3, 2027
+feb4d	on February 4, 2027
+feb5d	on February 5, 2027
+feb6d	on February 6, 2027
+feb7d	on February 7, 2027
+feb8d	on February 8, 2027
+feb9d	on February 9, 2027
+feb10d	on February 10, 2027
+feb11d	on February 11, 2027
+feb12d	on February 12, 2027
+feb13d	on February 13, 2027
+feb14d	on February 14, 2027
+feb15d	on February 15, 2027
+feb16d	on February 16, 2027
+feb17d	on February 17, 2027
+feb18d	on February 18, 2027
+feb19d	on February 19, 2027
+feb20d	on February 20, 2027
+feb21d	on February 21, 2027
+feb22d	on February 22, 2027
+feb23d	on February 23, 2027
+feb24d	on February 24, 2027
+feb25d	on February 25, 2027
+feb26d	on February 26, 2027
+feb27d	on February 27, 2027
+feb28d	on February 28, 2027
+mar1d	on March 1, 2027
+mar2d	on March 2, 2027
+mar3d	on March 3, 2027
+mar4d	on March 4, 2027
+mar5d	on March 5, 2027
+mar6d	on March 6, 2027
+mar7d	on March 7, 2027
+mar8d	on March 8, 2027
+mar9d	on March 9, 2027
+mar10d	on March 10, 2027
+mar11d	on March 11, 2027
+mar12d	on March 12, 2027
+mar13d	on March 13, 2027
+mar14d	on March 14, 2027
+mar15d	on March 15, 2027
+mar16d	on March 16, 2027
+mar17d	on March 17, 2027
+mar18d	on March 18, 2027
+mar19d	on March 19, 2027
+mar20d	on March 20, 2027
+mar21d	on March 21, 2027
+mar22d	on March 22, 2027
+mar23d	on March 23, 2027
+mar24d	on March 24, 2027
+mar25d	on March 25, 2027
+mar26d	on March 26, 2027
+mar27d	on March 27, 2027
+mar28d	on March 28, 2027
+mar29d	on March 29, 2027
+mar30d	on March 30, 2027
+mar31d	on March 31, 2027
+apr1d	on April 1, 2027
+apr2d	on April 2, 2027
+apr3d	on April 3, 2027
+apr4d	on April 4, 2027
+apr5d	on April 5, 2027
+apr6d	on April 6, 2027
+apr7d	on April 7, 2027
+apr8d	on April 8, 2027
+apr9d	on April 9, 2027
+apr10d	on April 10, 2027
+apr11d	on April 11, 2027
+apr12d	on April 12, 2027
+apr13d	on April 13, 2027
+apr14d	on April 14, 2027
+apr15d	on April 15, 2027
+apr16d	on April 16, 2027
+apr17d	on April 17, 2027
+apr18d	on April 18, 2027
+apr19d	on April 19, 2027
+apr20d	on April 20, 2027
+apr21d	on April 21, 2027
+apr22d	on April 22, 2027
+apr23d	on April 23, 2027
+apr24d	on April 24, 2027
+apr25d	on April 25, 2027
+apr26d	on April 26, 2027
+apr27d	on April 27, 2027
+apr28d	on April 28, 2027
+apr29d	on April 29, 2027
+apr30d	on April 30, 2027
+may1d	on May 1, 2027
+may2d	on May 2, 2027
+may3d	on May 3, 2027
+may4d	on May 4, 2027
+may5d	on May 5, 2027
+may6d	on May 6, 2027
+may7d	on May 7, 2027
+may8d	on May 8, 2027
+may9d	on May 9, 2027
+may10d	on May 10, 2027
+may11d	on May 11, 2027
+may12d	on May 12, 2027
+may13d	on May 13, 2027
+may14d	on May 14, 2027
+may15d	on May 15, 2027
+may16d	on May 16, 2027
+may17d	on May 17, 2027
+may18d	on May 18, 2027
+may19d	on May 19, 2027
+may20d	on May 20, 2027
+may21d	on May 21, 2027
+may22d	on May 22, 2027
+may23d	on May 23, 2027
+may24d	on May 24, 2027
+may25d	on May 25, 2027
+may26d	on May 26, 2027
+may27d	on May 27, 2027
+may28d	on May 28, 2027
+may29d	on May 29, 2027
+may30d	on May 30, 2027
+may31d	on May 31, 2027
+
+# PHOTO CREDITS: everyone on BG Falcon Media's photo team. Initials + bg; add new people the same way.
+cwbg	(Coyle Withrow/BG Falcon Media)
+qdbg	(Quentin Dolengowski/BG Falcon Media)
+mpbg	(Marlee Poupard/BG Falcon Media)
+chbg	(Charlie Howe/BG Falcon Media)
+kmbg	(Kamon Molina/BG Falcon Media)
+albg	(Aaron Lockett/BG Falcon Media)
+skbg	(Sierra Kastor/BG Falcon Media)
+bjbg	(Becca Jensen/BG Falcon Media)
+nwbg	(Nick Windholtz/BG Falcon Media)
+mobg	(Mason Olsavsky/BG Falcon Media)
+llbg	(Laith Latif/BG Falcon Media)
+mdbg	(Morgan Diaz/BG Falcon Media)
+ambg	(Ahmyre McCree/BG Falcon Media)
+azbg	(Allyson Zieman/BG Falcon Media)
+sabg	(Samaja Amison/BG Falcon Media)
+avtbg	(Ava Thoman/BG Falcon Media)
+bcbg	(Benjamin Corak/BG Falcon Media)
+mcbg	(Macy Callen/BG Falcon Media)
+casbg	(Carlie Smith/BG Falcon Media)
+jdbg	(James Dixon/BG Falcon Media)
+dcbg	(Dominic Carpenter/BG Falcon Media)
+dpbg	(Dylan Payton/BG Falcon Media)
+egbg	(Ellen Getz/BG Falcon Media)
+ehbg	(Emma Horrocks/BG Falcon Media)
+grbg	(Gavin Raby/BG Falcon Media)
+hsbg	(Hayden Sawka/BG Falcon Media)
+jhbg	(Jace Hoskins/BG Falcon Media)
+jesbg	(Jeffrey Smith/BG Falcon Media)
+jfbg	(Julia French/BG Falcon Media)
+kkbg	(Kaylee Kunze/BG Falcon Media)
+zlbg	(Zane Lassen/BG Falcon Media)
+lsbg	(Lauren Steible/BG Falcon Media)
+lhbg	(Lyndsay Hartman/BG Falcon Media)
+mlbg	(Mackenzie Lowe/BG Falcon Media)
+msbg	(Maxime Schiff/BG Falcon Media)
+lmbg	(Lukas Moss/BG Falcon Media)
+josbg	(Jordan Sasseen/BG Falcon Media)
+cosbg	(Collin Snyder/BG Falcon Media)
+ssbg	(Solomon Smart/BG Falcon Media)
+antbg	(Andrew Traxler/BG Falcon Media)
+whbg	(Weston Helman/BG Falcon Media)
+clbg	(Curtis Lydy/BG Falcon Media)

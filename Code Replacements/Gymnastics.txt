@@ -1,0 +1,69 @@
+# Gymnastics codes (Caption Images). Rosters aren't in this file yet: add players as
+# code, TAB, full ID, TAB, Name #N, TAB, last name (like the basketball files).
+
+# BOWLING GREEN, CONFERENCE AND PLACE
+bg	Bowling Green Falcons
+bgdate	BOWLING GREEN, OHIO -
+dmacgym	during a Mid-American Conference gymnastics meet
+dncgym	during a non-conference gymnastics meet
+mact	during the Mid-American Conference Tournament
+stroh	at the Stroh Center
+inbg	in Bowling Green, Ohio.
+gymcoach	Head coach Brittney Emmons of the Bowling Green Falcons	head coach Brittney Emmons	Emmons
+
+# WHEN
+rot1	during the first rotation
+rot2	during the second rotation
+rot3	during the third rotation
+rot4	during the fourth rotation
+pre	before the meet
+
+# ACTION
+vault	competes on the vault
+bars	competes on the uneven bars
+beam	competes on the balance beam
+floor	competes in the floor exercise
+salute	salutes the judges
+stick	sticks the landing
+score	reacts to her score
+chalk	chalks her hands
+
+# EVERY SPORT
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+pressc	speaks during a postgame press conference
+cel	celebrates
+hud	huddles with teammates
+hf	high-fives a teammate
+anthem	stands for the national anthem
+intro	is introduced before the meet
+react	reacts
+cwbg	(Coyle Withrow/BG Falcon Media)
+sd	is honored during Senior Day
+
+# OPPONENTS (add players the same way as the other sport files)
+akr	Akron Zips
+bsu	Ball State Cardinals
+ub	Buffalo Bulls
+cmu	Central Michigan Chippewas
+emu	Eastern Michigan Eagles
+ksu	Kent State Golden Flashes
+mu	Miami (Ohio) RedHawks
+niu	Northern Illinois Huskies
+ou	Ohio Bobcats
+ut	Toledo Rockets
+wmu	Western Michigan Broncos
+umass	UMass Minutewomen
+osu	Ohio State Buckeyes
+um	Michigan Wolverines
+msu	Michigan State Spartans
+uc	Cincinnati Bearcats
+oak	Oakland Golden Grizzlies
+ysu	Youngstown State Penguins
+wsu	Wright State Raiders
+ud	Dayton Flyers
+udm	Detroit Mercy Titans

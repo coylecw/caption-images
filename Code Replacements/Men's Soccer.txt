@@ -1,0 +1,270 @@
+dmvcmsoc	during a Missouri Valley Conference men's soccer match
+dncmsoc	during a non-conference men's soccer match
+cochrane	at Cochrane Stadium
+inbg	in Bowling Green, Ohio.
+msoccoach	Head coach Eric Nichols of the Bowling Green Falcons	head coach Eric Nichols	Nichols
+pressc	speaks during a postgame press conference
+mvct	during the Missouri Valley Conference Tournament
+ncaa	during the NCAA Tournament
+cwbg	(Coyle Withrow/BG Falcon Media)
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+cheer	Bowling Green cheerleaders perform
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+band	The Bowling Green pep band performs
+sd	is honored during Senior Day
+
+h1	during the first half
+h2	during the second half
+ot	during overtime
+2ot	during double overtime
+pks	during the penalty-kick shootout
+half	at halftime
+pre	before the match
+intro	is introduced before the match
+
+cel	celebrates
+hud	huddles with teammates
+bench	reacts from the bench
+hf	high-fives a teammate
+anthem	stands for the national anthem
+react	reacts to a call
+drib	dribbles the ball
+pass	passes the ball
+shot	shoots on goal
+score	scores a goal
+celg	celebrates a goal
+head	heads the ball
+save	makes a save
+dive	dives for a save
+ck	takes a corner kick
+fk	takes a free kick
+pk	takes a penalty kick
+throw	takes a throw-in
+gkick	takes a goal kick
+slide	slides for the ball
+battle	battles for possession
+chase	chases down the ball
+
+
+msoc1	Enzo Gil #1 of the Bowling Green Falcons	Enzo Gil #1	Gil
+msoc2	Gus Peacock #2 of the Bowling Green Falcons	Gus Peacock #2	Peacock
+msoc3	Aidan Flanders #3 of the Bowling Green Falcons	Aidan Flanders #3	Flanders
+msoc5	Mads Christensen #5 of the Bowling Green Falcons	Mads Christensen #5	Christensen
+msoc6	Caue Ramos #6 of the Bowling Green Falcons	Caue Ramos #6	Ramos
+msoc7	Namik Mehic #7 of the Bowling Green Falcons	Namik Mehic #7	Mehic
+msoc8	Joshua Saavedra #8 of the Bowling Green Falcons	Joshua Saavedra #8	Saavedra
+msoc9	Tyson McCoy #9 of the Bowling Green Falcons	Tyson McCoy #9	McCoy
+msoc10	Aiden Ptacek #10 of the Bowling Green Falcons	Aiden Ptacek #10	Ptacek
+msoc12	Joshua Pedersen #12 of the Bowling Green Falcons	Joshua Pedersen #12	Pedersen
+msoc13	Xavier Sims #13 of the Bowling Green Falcons	Xavier Sims #13	Sims
+msoc14	Bright Asante #14 of the Bowling Green Falcons	Bright Asante #14	Asante
+msoc15	Matheus Filipe #15 of the Bowling Green Falcons	Matheus Filipe #15	Filipe
+msoc16	Sawyer Wilbanks #16 of the Bowling Green Falcons	Sawyer Wilbanks #16	Wilbanks
+msoc17	Saul Rios #17 of the Bowling Green Falcons	Saul Rios #17	Rios
+msoc18	Michael Lindh #18 of the Bowling Green Falcons	Michael Lindh #18	Lindh
+msoc20	Diego Ramirez #20 of the Bowling Green Falcons	Diego Ramirez #20	Ramirez
+msoc21	Trace Terry #21 of the Bowling Green Falcons	Trace Terry #21	Terry
+msoc22	J Mossholder #22 of the Bowling Green Falcons	J Mossholder #22	Mossholder
+msoc23	Tomas Meek #23 of the Bowling Green Falcons	Tomas Meek #23	Meek
+msoc24	Lucas Brinkman #24 of the Bowling Green Falcons	Lucas Brinkman #24	Brinkman
+msoc25	Luciano Perez-Cernuda #25 of the Bowling Green Falcons	Luciano Perez-Cernuda #25	Perez-Cernuda
+msoc27	Mouhamadou Cisse #27 of the Bowling Green Falcons	Mouhamadou Cisse #27	Cisse
+msoc28	Will Schutte #28 of the Bowling Green Falcons	Will Schutte #28	Schutte
+msoc30	Jason Ball #30 of the Bowling Green Falcons	Jason Ball #30	Ball
+msoc33	Marshall DeGraff #33 of the Bowling Green Falcons	Marshall DeGraff #33	DeGraff
+
+
+bg	Bowling Green Falcons
+uic	UIC Flames
+uic1	Owen Cornell #1 of the UIC Flames	Owen Cornell #1	Cornell
+uic3	Sota Nakazono #3 of the UIC Flames	Sota Nakazono #3	Nakazono
+uic4	Takeru Chiba #4 of the UIC Flames	Takeru Chiba #4	Chiba
+uic5	Hector Gil #5 of the UIC Flames	Hector Gil #5	Gil
+uic6	Alan Alonso #6 of the UIC Flames	Alan Alonso #6	Alonso
+uic7	Jaime Zani #7 of the UIC Flames	Jaime Zani #7	Zani
+uic8	Darrell Turcios #8 of the UIC Flames	Darrell Turcios #8	Turcios
+uic9	Antonio Delgado #9 of the UIC Flames	Antonio Delgado #9	Delgado
+uic11	Shafi Ibrahim #11 of the UIC Flames	Shafi Ibrahim #11	Ibrahim
+uic12	Artem Grinblat #12 of the UIC Flames	Artem Grinblat #12	Grinblat
+uic13	Kyle Ward #13 of the UIC Flames	Kyle Ward #13	Ward
+uic14	AJ Sabanovic #14 of the UIC Flames	AJ Sabanovic #14	Sabanovic
+uic15	Preston Carroll #15 of the UIC Flames	Preston Carroll #15	Carroll
+uic16	Vasilis Eliadis #16 of the UIC Flames	Vasilis Eliadis #16	Eliadis
+uic17	Daniel Zepeda #17 of the UIC Flames	Daniel Zepeda #17	Zepeda
+uic18	Semin Razman #18 of the UIC Flames	Semin Razman #18	Razman
+uic19	Martin Montoya #19 of the UIC Flames	Martin Montoya #19	Montoya
+uic20	Daniel Navarro #20 of the UIC Flames	Daniel Navarro #20	Navarro
+uic21	Carlos Nevarez #21 of the UIC Flames	Carlos Nevarez #21	Nevarez
+uic22	Sebastian Khoury #22 of the UIC Flames	Sebastian Khoury #22	Khoury
+uic23	Stefan Dabic #23 of the UIC Flames	Stefan Dabic #23	Dabic
+uic26	Aiden Montes #26 of the UIC Flames	Aiden Montes #26	Montes
+uic30	Artem Kulykov #30 of the UIC Flames	Artem Kulykov #30	Kulykov
+uic31	Brandon Flores #31 of the UIC Flames	Brandon Flores #31	Flores
+uic99	Joey Galante #99 of the UIC Flames	Joey Galante #99	Galante
+
+
+ue	Evansville Purple Aces
+ue0	Naman Singh #0 of the Evansville Purple Aces	Naman Singh #0	Singh
+ue1	Hugo Amo #1 of the Evansville Purple Aces	Hugo Amo #1	Amo
+ue2	Devin Shepherd #2 of the Evansville Purple Aces	Devin Shepherd #2	Shepherd
+ue3	Will Bencic #3 of the Evansville Purple Aces	Will Bencic #3	Bencic
+ue4	Leon Suzuki #4 of the Evansville Purple Aces	Leon Suzuki #4	Suzuki
+ue5	Etienne Ravelli #5 of the Evansville Purple Aces	Etienne Ravelli #5	Ravelli
+ue6	Pablo Calvete #6 of the Evansville Purple Aces	Pablo Calvete #6	Calvete
+ue7	Carlos Iglesias #7 of the Evansville Purple Aces	Carlos Iglesias #7	Iglesias
+ue8	Chase Ricker #8 of the Evansville Purple Aces	Chase Ricker #8	Ricker
+ue9	Patrik Fagan #9 of the Evansville Purple Aces	Patrik Fagan #9	Fagan
+ue10	Álvaro Timón #10 of the Evansville Purple Aces	Álvaro Timón #10	Timón
+ue11	Ben Zec #11 of the Evansville Purple Aces	Ben Zec #11	Zec
+ue12	Bryson Burke #12 of the Evansville Purple Aces	Bryson Burke #12	Burke
+ue13	Malcolm Starr #13 of the Evansville Purple Aces	Malcolm Starr #13	Starr
+ue14	Kyle Kimberling #14 of the Evansville Purple Aces	Kyle Kimberling #14	Kimberling
+ue15	Michael Waller #15 of the Evansville Purple Aces	Michael Waller #15	Waller
+ue16	Austin Walter #16 of the Evansville Purple Aces	Austin Walter #16	Walter
+ue17	Lionel Williams #17 of the Evansville Purple Aces	Lionel Williams #17	Williams
+ue18	Miles Taylor #18 of the Evansville Purple Aces	Miles Taylor #18	Taylor
+ue19	Benjie Koziura #19 of the Evansville Purple Aces	Benjie Koziura #19	Koziura
+ue20	Ben Fisch #20 of the Evansville Purple Aces	Ben Fisch #20	Fisch
+ue21	Malike Campbell #21 of the Evansville Purple Aces	Malike Campbell #21	Campbell
+ue22	Lloyd Robinson #22 of the Evansville Purple Aces	Lloyd Robinson #22	Robinson
+ue23	Marc Martin #23 of the Evansville Purple Aces	Marc Martin #23	Martin
+ue24	Rodrigo Zambrana #24 of the Evansville Purple Aces	Rodrigo Zambrana #24	Zambrana
+ue25	Michael Peres #25 of the Evansville Purple Aces	Michael Peres #25	Peres
+ue26	Izán Redondo #26 of the Evansville Purple Aces	Izán Redondo #26	Redondo
+ue27	Alex Tura #27 of the Evansville Purple Aces	Alex Tura #27	Tura
+ue28	Nick Lazarski #28 of the Evansville Purple Aces	Nick Lazarski #28	Lazarski
+ue29	Alejandro Fernandez #29 of the Evansville Purple Aces	Alejandro Fernandez #29	Fernandez
+ue30	Jamison Clarke #30 of the Evansville Purple Aces	Jamison Clarke #30	Clarke
+ue31	Fisher Nadeau #31 of the Evansville Purple Aces	Fisher Nadeau #31	Nadeau
+ue32	Aron Böcking Gerken #32 of the Evansville Purple Aces	Aron Böcking Gerken #32	Gerken
+ue33	Zach Santos #33 of the Evansville Purple Aces	Zach Santos #33	Santos
+ue34	Nico Scibird #34 of the Evansville Purple Aces	Nico Scibird #34	Scibird
+ue35	Wilson Siegmund #35 of the Evansville Purple Aces	Wilson Siegmund #35	Siegmund
+ue36	Parker Bassuener #36 of the Evansville Purple Aces	Parker Bassuener #36	Bassuener
+ue37	Christian Nyatanga #37 of the Evansville Purple Aces	Christian Nyatanga #37	Nyatanga
+ue40	Aidan Engelbrecht #40 of the Evansville Purple Aces	Aidan Engelbrecht #40	Engelbrecht
+
+
+bel	Belmont Bruins
+bel0	Brody Sucher #0 of the Belmont Bruins	Brody Sucher #0	Sucher
+bel1	Miles Kipley #1 of the Belmont Bruins	Miles Kipley #1	Kipley
+bel2	Palmer Hendrix #2 of the Belmont Bruins	Palmer Hendrix #2	Hendrix
+bel3	Zach Stanton #3 of the Belmont Bruins	Zach Stanton #3	Stanton
+bel4	Judah McCloud #4 of the Belmont Bruins	Judah McCloud #4	McCloud
+bel5	Nate Mefford #5 of the Belmont Bruins	Nate Mefford #5	Mefford
+bel7	Paul Claes Nielsen #7 of the Belmont Bruins	Paul Claes Nielsen #7	Nielsen
+bel8	Caleb Robertson #8 of the Belmont Bruins	Caleb Robertson #8	Robertson
+bel9	Nathan Ferguson #9 of the Belmont Bruins	Nathan Ferguson #9	Ferguson
+bel10	Nzuhri Biggar #10 of the Belmont Bruins	Nzuhri Biggar #10	Biggar
+bel11	Lucas Wolthers #11 of the Belmont Bruins	Lucas Wolthers #11	Wolthers
+bel12	Jaxon Stokes #12 of the Belmont Bruins	Jaxon Stokes #12	Stokes
+bel13	Hayden Robinson #13 of the Belmont Bruins	Hayden Robinson #13	Robinson
+bel14	John McDowell #14 of the Belmont Bruins	John McDowell #14	McDowell
+bel16	Leon De Ciccio #16 of the Belmont Bruins	Leon De Ciccio #16	Ciccio
+bel17	AJ Elliott #17 of the Belmont Bruins	AJ Elliott #17	Elliott
+bel18	Callum Lee #18 of the Belmont Bruins	Callum Lee #18	Lee
+bel19	Aiden Pierpoint #19 of the Belmont Bruins	Aiden Pierpoint #19	Pierpoint
+bel22	Lucas Vidrascu #22 of the Belmont Bruins	Lucas Vidrascu #22	Vidrascu
+bel23	Elijah John #23 of the Belmont Bruins	Elijah John #23	John
+bel25	Emmanuel Aranda #25 of the Belmont Bruins	Emmanuel Aranda #25	Aranda
+bel27	Ethan Schlegel #27 of the Belmont Bruins	Ethan Schlegel #27	Schlegel
+bel28	Zain Abdelhadi #28 of the Belmont Bruins	Zain Abdelhadi #28	Abdelhadi
+bel29	Dru Stanton #29 of the Belmont Bruins	Dru Stanton #29	Stanton
+bel32	Adam Leonard #32 of the Belmont Bruins	Adam Leonard #32	Leonard
+bel33	Jack Roach #33 of the Belmont Bruins	Jack Roach #33	Roach
+
+
+wmu	Western Michigan Broncos
+wmu0	John Coon #0 of the Western Michigan Broncos	John Coon #0	Coon
+wmu1	Alessandro Ouzounis #1 of the Western Michigan Broncos	Alessandro Ouzounis #1	Ouzounis
+wmu2	Braxton Arpachinda #2 of the Western Michigan Broncos	Braxton Arpachinda #2	Arpachinda
+wmu3	Joshua Veychek #3 of the Western Michigan Broncos	Joshua Veychek #3	Veychek
+wmu4	Joshua Nicholson #4 of the Western Michigan Broncos	Joshua Nicholson #4	Nicholson
+wmu5	Dan McHale #5 of the Western Michigan Broncos	Dan McHale #5	McHale
+wmu6	Liam Biggers #6 of the Western Michigan Broncos	Liam Biggers #6	Biggers
+wmu7	Gabe Villagomez #7 of the Western Michigan Broncos	Gabe Villagomez #7	Villagomez
+wmu8	Jordan Klein #8 of the Western Michigan Broncos	Jordan Klein #8	Klein
+wmu9	Sahel Yessen #9 of the Western Michigan Broncos	Sahel Yessen #9	Yessen
+wmu10	Vitor Geromel #10 of the Western Michigan Broncos	Vitor Geromel #10	Geromel
+wmu11	Kyle Pierson #11 of the Western Michigan Broncos	Kyle Pierson #11	Pierson
+wmu12	Braden Stevanovic #12 of the Western Michigan Broncos	Braden Stevanovic #12	Stevanovic
+wmu13	Liam Smith #13 of the Western Michigan Broncos	Liam Smith #13	Smith
+wmu14	Christian Shannon #14 of the Western Michigan Broncos	Christian Shannon #14	Shannon
+wmu15	Joseph Min #15 of the Western Michigan Broncos	Joseph Min #15	Min
+wmu17	Alex Rosin #17 of the Western Michigan Broncos	Alex Rosin #17	Rosin
+wmu18	Eddie Hudson III #18 of the Western Michigan Broncos	Eddie Hudson III #18	Hudson
+wmu19	Connor Mangan #19 of the Western Michigan Broncos	Connor Mangan #19	Mangan
+wmu20	Neo Heyral #20 of the Western Michigan Broncos	Neo Heyral #20	Heyral
+wmu21	Alek Markovski #21 of the Western Michigan Broncos	Alek Markovski #21	Markovski
+wmu23	Anthony Piacentini #23 of the Western Michigan Broncos	Anthony Piacentini #23	Piacentini
+wmu24	Adam Matej Smolcic #24 of the Western Michigan Broncos	Adam Matej Smolcic #24	Smolcic
+wmu27	Gregory Whitfield II #27 of the Western Michigan Broncos	Gregory Whitfield II #27	Whitfield
+wmu28	Adam Berent #28 of the Western Michigan Broncos	Adam Berent #28	Berent
+wmu29	Alex Lindewirth #29 of the Western Michigan Broncos	Alex Lindewirth #29	Lindewirth
+
+
+drake	Drake Bulldogs
+drake0	Finn Kramer-Mann #0 of the Drake Bulldogs	Finn Kramer-Mann #0	Kramer-Mann
+drake1	Justin Heienickle #1 of the Drake Bulldogs	Justin Heienickle #1	Heienickle
+drake2	Chase Wakefield #2 of the Drake Bulldogs	Chase Wakefield #2	Wakefield
+drake3	Cole Schrage #3 of the Drake Bulldogs	Cole Schrage #3	Schrage
+drake4	Jack Dancer #4 of the Drake Bulldogs	Jack Dancer #4	Dancer
+drake5	Sam DeLong #5 of the Drake Bulldogs	Sam DeLong #5	DeLong
+drake6	Cody Bochenski #6 of the Drake Bulldogs	Cody Bochenski #6	Bochenski
+drake7	Landon Benge #7 of the Drake Bulldogs	Landon Benge #7	Benge
+drake8	Jackson Kirsch #8 of the Drake Bulldogs	Jackson Kirsch #8	Kirsch
+drake9	Crew Alvarez #9 of the Drake Bulldogs	Crew Alvarez #9	Alvarez
+drake10	Gabe Dobrincu #10 of the Drake Bulldogs	Gabe Dobrincu #10	Dobrincu
+drake11	Evan Carlson #11 of the Drake Bulldogs	Evan Carlson #11	Carlson
+drake12	Sam Divis #12 of the Drake Bulldogs	Sam Divis #12	Divis
+drake13	Nicholas Gagan #13 of the Drake Bulldogs	Nicholas Gagan #13	Gagan
+drake14	Preston Kipnusu #14 of the Drake Bulldogs	Preston Kipnusu #14	Kipnusu
+drake15	Charlie-Finn Barrett #15 of the Drake Bulldogs	Charlie-Finn Barrett #15	Barrett
+drake16	Mamadou Sow #16 of the Drake Bulldogs	Mamadou Sow #16	Sow
+drake17	Malachi Anya #17 of the Drake Bulldogs	Malachi Anya #17	Anya
+drake18	Samuel Valencia #18 of the Drake Bulldogs	Samuel Valencia #18	Valencia
+drake19	Barrett Kitts #19 of the Drake Bulldogs	Barrett Kitts #19	Kitts
+drake20	Dalton Visconti #20 of the Drake Bulldogs	Dalton Visconti #20	Visconti
+drake21	Leo Rodriguez #21 of the Drake Bulldogs	Leo Rodriguez #21	Rodriguez
+drake22	Jonathan Mendez #22 of the Drake Bulldogs	Jonathan Mendez #22	Mendez
+drake23	Rogelio Herrera #23 of the Drake Bulldogs	Rogelio Herrera #23	Herrera
+drake24	Robbie Wood #24 of the Drake Bulldogs	Robbie Wood #24	Wood
+drake25	Cael Leach #25 of the Drake Bulldogs	Cael Leach #25	Leach
+drake27	Judah Shalit #27 of the Drake Bulldogs	Judah Shalit #27	Shalit
+drake28	Cael Orban #28 of the Drake Bulldogs	Cael Orban #28	Orban
+drake32	John Stanton #32 of the Drake Bulldogs	John Stanton #32	Stanton
+drake99	Tomas Butkovic #99 of the Drake Bulldogs	Tomas Butkovic #99	Butkovic
+
+
+bu	Bradley Braves
+bu1	Marçal Salom Chandre #1 of the Bradley Braves	Marçal Salom Chandre #1	Chandre
+bu2	Anel Kafedzic #2 of the Bradley Braves	Anel Kafedzic #2	Kafedzic
+bu3	Dāvis Bormanis #3 of the Bradley Braves	Dāvis Bormanis #3	Bormanis
+bu4	Luca Meyers-Richter #4 of the Bradley Braves	Luca Meyers-Richter #4	Meyers-Richter
+bu5	Kael Drummond #5 of the Bradley Braves	Kael Drummond #5	Drummond
+bu6	Liam Healey #6 of the Bradley Braves	Liam Healey #6	Healey
+bu7	Stephen Saladin #7 of the Bradley Braves	Stephen Saladin #7	Saladin
+bu8	Cohen Musschoot #8 of the Bradley Braves	Cohen Musschoot #8	Musschoot
+bu10	Max Manzelmann #10 of the Bradley Braves	Max Manzelmann #10	Manzelmann
+bu12	Beshoy Eldaif #12 of the Bradley Braves	Beshoy Eldaif #12	Eldaif
+bu13	Braden Missey #13 of the Bradley Braves	Braden Missey #13	Missey
+bu14	Alejandro Pino #14 of the Bradley Braves	Alejandro Pino #14	Pino
+bu15	Fjölnir Sigurjónsson #15 of the Bradley Braves	Fjölnir Sigurjónsson #15	Sigurjónsson
+bu16	Caden Frank #16 of the Bradley Braves	Caden Frank #16	Frank
+bu17	Ardit Abdullai #17 of the Bradley Braves	Ardit Abdullai #17	Abdullai
+bu18	Archie Heron #18 of the Bradley Braves	Archie Heron #18	Heron
+bu20	Connor Chester #20 of the Bradley Braves	Connor Chester #20	Chester
+bu22	Adrian Franks #22 of the Bradley Braves	Adrian Franks #22	Franks
+bu25	Percy James II #25 of the Bradley Braves	Percy James II #25	James
+bu26	Luke Knotts #26 of the Bradley Braves	Luke Knotts #26	Knotts
+bu27	Mitchell Barrett #27 of the Bradley Braves	Mitchell Barrett #27	Barrett
+bu30	Ivan Reyes #30 of the Bradley Braves	Ivan Reyes #30	Reyes
+bu32	Tommy Graham #32 of the Bradley Braves	Tommy Graham #32	Graham
+bu33	Mitch Coughlon #33 of the Bradley Braves	Mitch Coughlon #33	Coughlon
+bu36	Franc Nmengah #36 of the Bradley Braves	Franc Nmengah #36	Nmengah
+bu37	Ian Ferguson #37 of the Bradley Braves	Ian Ferguson #37	Ferguson
+bu38	Joseph Heiar #38 of the Bradley Braves	Joseph Heiar #38	Heiar

@@ -1,0 +1,235 @@
+# Your tag list. One tag per line. It shows in the tag box's list on every photo.
+# Lines starting with # are notes and are ignored. Save the file and the app picks up changes right away.
+
+#events
+
+celebration
+huddle
+senior night
+pregame
+postgame
+warmups
+fans
+student section
+band
+cheer
+mascot
+coach
+bench
+timeout
+trophy
+handshake
+national anthem
+MAC
+CCHA
+MVC
+tournament
+playoffs
+Derek Van Der Merwe
+Stroh Center
+Slater Family Ice Arena
+Doyt L. Perry Stadium
+Cochrane Stadium
+Steller Field
+Cooper Pool
+Meserve Field
+football
+baseball
+softball
+men's basketball
+women's basketball
+men's soccer
+women's soccer
+tennis
+men's golf
+women's golf
+hockey
+swim and dive
+
+#sports
+volleyball
+gymnastics
+track and field
+cross country
+
+#moments
+Senior Day
+Homecoming
+Battle of I-75
+action
+feature
+portrait
+general view
+
+#around the game
+Freddie Falcon
+Frieda Falcon
+Falcon Marching Band
+pep band
+
+#news
+news
+government
+city council
+board of trustees
+board of education
+election
+voting
+campaign
+protest
+rally
+vigil
+press conference
+speech
+police
+fire
+crash
+emergency
+court
+weather
+snow
+rain
+storm
+flooding
+construction
+business
+agriculture
+farm
+community
+volunteer
+festival
+parade
+concert
+theater
+art
+music
+dance
+religion
+health
+education
+research
+science
+technology
+environment
+nature
+wildlife
+transportation
+housing
+economy
+holiday
+Halloween
+Thanksgiving
+Christmas
+Fourth of July
+aerial
+drone
+
+#campus
+campus life
+commencement
+graduation
+move-in day
+orientation
+classroom
+lecture
+student government
+Greek life
+residence hall
+dining hall
+study
+
+#places
+Bowling Green
+Toledo
+Perrysburg
+Maumee
+Sylvania
+Rossford
+Northwood
+Findlay
+Fremont
+Napoleon
+Port Clinton
+Tiffin
+Wood County
+Lucas County
+northwest Ohio
+Ohio
+downtown Bowling Green
+Main Street
+BGSU
+University of Toledo
+Bowen-Thompson Student Union
+Jerome Library
+University Hall
+Wolfe Center for the Arts
+Wood County Courthouse
+Wood County Fairgrounds
+City Park
+Maumee River
+Lake Erie
+
+#organizations
+City of Bowling Green
+Bowling Green City Council
+BGSU Board of Trustees
+Undergraduate Student Government
+Bowling Green Police Division
+Bowling Green Fire Division
+BGSU Police
+Wood County Sheriff's Office
+Ohio State Highway Patrol
+Bowling Green City Schools
+BG Falcon Media
+
+#events
+Black Swamp Arts Festival
+Wood County Fair
+National Tractor Pulling Championships
+Firefly Nights
+Holiday Parade
+Homecoming Parade
+Farmers Market
+Election Day
+
+#people in the news
+Mike Aspacher
+Rodney K. Rogers
+Justin White
+Mark Wasylyshyn
+Wade Kapszukiewicz
+Mark Weber
+Bob Latta
+Mike DeWine
+
+#coaches
+Eddie George
+Todd Simon
+Fred Chmiel
+Dennis Williams
+Eric Nichols
+Chris Fox
+Alex DelPiombo
+Kyle Hallock
+Michelle Gardner
+Brittney Emmons
+Tanner Barton
+
+#more sports
+golf
+swimming
+diving
+MAC Tournament
+NCAA Tournament
+
+#more people and places
+Bill Moorman
+Michael Campbell
+Jon Luidhardt
+Amy Acton
+Ryan Lee
+Lou Snelling
+Autumn Williams
+John Powers
+Erin Fahey
+Stone Ridge Golf Club

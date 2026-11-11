@@ -1,0 +1,2705 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caption Images</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22100%20100%20824%20824%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22ig%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ff8a3d%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e2500f%22/%3E%3C/linearGradient%3E%3CclipPath%20id%3D%22ic%22%3E%3Crect%20x%3D%22268%22%20y%3D%22264%22%20width%3D%22488%22%20height%3D%22312%22%20rx%3D%2218%22/%3E%3C/clipPath%3E%3C/defs%3E%3Crect%20x%3D%22100%22%20y%3D%22100%22%20width%3D%22824%22%20height%3D%22824%22%20rx%3D%22185%22%20fill%3D%22url%28%23ig%29%22/%3E%3Crect%20x%3D%22232%22%20y%3D%22228%22%20width%3D%22560%22%20height%3D%22384%22%20rx%3D%2240%22%20fill%3D%22%23fff%22/%3E%3Crect%20x%3D%22268%22%20y%3D%22264%22%20width%3D%22488%22%20height%3D%22312%22%20rx%3D%2218%22%20fill%3D%22%234f2c1d%22/%3E%3Cg%20clip-path%3D%22url%28%23ic%29%22%3E%3Ccircle%20cx%3D%22652%22%20cy%3D%22350%22%20r%3D%2244%22%20fill%3D%22%23ffb27a%22/%3E%3Cpath%20d%3D%22M250%20600%20L430%20380%20L560%20520%20L625%20455%20L780%20600%20Z%22%20fill%3D%22%23f26a21%22/%3E%3C/g%3E%3Crect%20x%3D%22232%22%20y%3D%22676%22%20width%3D%22560%22%20height%3D%2244%22%20rx%3D%2222%22%20fill%3D%22%23fff%22/%3E%3Crect%20x%3D%22232%22%20y%3D%22760%22%20width%3D%22388%22%20height%3D%2244%22%20rx%3D%2222%22%20fill%3D%22%23fff%22%20opacity%3D%22.85%22/%3E%3C/svg%3E">
+<style>
+/* Neutral grays like a Mac pro app. Orange (BGSU) only marks the current tab, the main
+   action, selection and focus. Cull is a dark neutral stage so color isn't judged against a tint. */
+:root {
+  --bg: #f3f3f3; --panel: #ffffff; --panel-2: #f8f8f8; --fg: #1d1d1f; --muted: #6b6b70; --faint: #9a9aa0;
+  --line: #e2e2e4; --line-strong: #cfcfd3;
+  --accent: #c94a0a; --accent-hover: #b03f07; --accent-fg: #ffffff; --accent-soft: #fbeee6; --accent-ring: rgba(201, 74, 10, .25);
+  --ok: #2b7a3f; --warn: #9a5b00; --bad: #b42318; --chip: #ececee; --star: #c98a00;
+  --stage: #1c1c1e; --stage-2: #242426; --stage-3: #2e2e31; --stage-fg: #e9e9eb; --stage-muted: #98989d; --stage-line: #38383b;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --r: 6px; --r-sm: 5px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1e1e1e; --panel: #282828; --panel-2: #2d2d2d; --fg: #ececec; --muted: #a1a1a6; --faint: #75757a;
+    --line: #363636; --line-strong: #474749;
+    --accent: #ff7a33; --accent-hover: #ff8f52; --accent-fg: #1a0c04; --accent-soft: #3a2a20; --accent-ring: rgba(255, 122, 51, .3);
+    --ok: #5cc27a; --warn: #e9a33e; --bad: #ff6f61; --chip: #333335; --star: #f5c142;
+    color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 13px/1.45 var(--sans); display: flex; flex-direction: column; -webkit-font-smoothing: antialiased; }
+[hidden] { display: none !important; }
+button, input, select, textarea { font: inherit; }
+::selection { background: var(--accent-ring); }
+
+/* ---------- top bar ---------- */
+.top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 7px max(14px, env(safe-area-inset-left)); border-bottom: 1px solid var(--line-strong); background: var(--panel); position: relative; z-index: 10; }
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; white-space: nowrap; }
+.brand svg { width: 20px; height: 20px; flex: none; }
+.tabs { display: flex; border: 1px solid var(--line-strong); border-radius: var(--r); overflow: hidden; }
+.tabs a { color: var(--fg); text-decoration: none; padding: 3px 16px; font-size: 13px; border-left: 1px solid var(--line-strong); }
+.tabs a:first-child { border-left: 0; }
+.tabs a:hover { background: var(--panel-2); }
+.tabs a[aria-current="page"] { background: var(--accent); color: var(--accent-fg); }
+.folderbar { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 280px; justify-content: flex-end; }
+.folder { display: flex; flex-direction: column; align-items: flex-end; min-width: 0; line-height: 1.25; }
+.folder .fname-top { font-weight: 600; font-size: 13px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.folder .fname-top.none { color: var(--faint); font-weight: 400; }
+.folder .path { font-size: 11px; color: var(--faint); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; direction: rtl; text-align: right; }
+.icon-btn { display: grid; place-items: center; width: 26px; height: 26px; border-radius: var(--r-sm); border: 0; background: none; color: var(--muted); cursor: pointer; }
+.icon-btn:hover { background: var(--chip); color: var(--fg); }
+.icon-btn svg { width: 15px; height: 15px; }
+
+.view { flex: 1; min-height: 0; overflow: auto; }
+
+/* ---------- controls ---------- */
+.btn { display: inline-flex; align-items: center; gap: 6px; color: var(--fg); background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r-sm); padding: 2px 10px; min-height: 24px; cursor: pointer; font-size: 13px; white-space: nowrap; }
+.btn:hover { background: var(--panel-2); border-color: var(--faint); }
+.btn:active { background: var(--chip); }
+.btn:disabled { color: var(--faint); cursor: default; background: var(--panel); border-color: var(--line); }
+.btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); font-weight: 500; padding: 4px 16px; }
+.btn.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+.btn.primary:disabled { background: var(--chip); border-color: var(--line-strong); color: var(--faint); }
+.btn.danger { color: var(--bad); }
+.btn[aria-pressed="true"] { background: var(--chip); border-color: var(--faint); box-shadow: inset 0 1px 2px rgba(0,0,0,.12); }
+.btn:focus-visible, .chip:focus-visible, .tabs a:focus-visible, .thumb:focus-visible, .icon-btn:focus-visible, .card-btn:focus-visible { outline: 2px solid var(--accent-ring); outline-offset: 1px; }
+.msg { color: var(--muted); font-size: 12.5px; }
+.msg.error { color: var(--bad); }
+.hint { font-size: 12px; color: var(--muted); }
+code, .mono { font-family: var(--mono); font-size: .92em; }
+kbd { font: 11px var(--mono); border: 1px solid var(--line-strong); border-radius: 3px; padding: 0 4px; background: var(--panel-2); }
+label.toggle { display: inline-flex; gap: 6px; align-items: center; font-size: 13px; cursor: pointer; }
+input[type=checkbox], input[type=radio] { accent-color: var(--accent); width: 14px; height: 14px; margin: 0; }
+input[type=text], input:not([type]), input[type=search], select { height: 24px; padding: 0 7px; border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: var(--panel); color: var(--fg); font-size: 13px; }
+select { padding-right: 4px; cursor: pointer; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-ring); }
+input:disabled { opacity: .55; }
+.empty { text-align: center; color: var(--muted); padding: 64px 16px; }
+.empty p { margin: 0; font-size: 14px; }
+.empty .btn { margin-top: 12px; }
+
+/* ---------- ingest ---------- */
+.page { max-width: 980px; margin: 0 auto; padding: 22px max(16px, env(safe-area-inset-left)) 0; }
+.page h2 { margin: 0 0 2px; font-size: 20px; font-weight: 600; }
+.lede { margin: 0 0 18px; color: var(--muted); max-width: 64ch; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 12px; }
+.step { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.step h3 { margin: 0 0 2px; padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: 13px; font-weight: 600; }
+.choices { display: flex; flex-wrap: wrap; gap: 6px; }
+.card-btn { display: flex; align-items: center; gap: 10px; padding: 6px 12px 6px 8px; border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--panel); color: var(--fg); cursor: pointer; text-align: left; font-weight: 600; }
+.card-btn::before { content: ""; width: 18px; height: 22px; flex: none; border-radius: 2px 6px 2px 2px; background: linear-gradient(var(--faint) 0 0) 4px 3px / 2px 5px no-repeat, linear-gradient(var(--faint) 0 0) 8px 3px / 2px 5px no-repeat, linear-gradient(var(--faint) 0 0) 12px 3px / 2px 5px no-repeat, var(--chip); border: 1px solid var(--faint); }
+.card-btn > span { display: flex; flex-direction: column; }
+.card-btn small { color: var(--muted); font-size: 11.5px; font-weight: 400; }
+.card-btn:hover { background: var(--panel-2); }
+.card-btn[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.card-btn[aria-pressed="true"]::before { border-color: var(--accent); background: linear-gradient(var(--accent) 0 0) 4px 3px / 2px 5px no-repeat, linear-gradient(var(--accent) 0 0) 8px 3px / 2px 5px no-repeat, linear-gradient(var(--accent) 0 0) 12px 3px / 2px 5px no-repeat, var(--panel); }
+.scan { font-size: 13px; background: var(--panel-2); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 9px 11px; display: grid; gap: 2px; }
+.scan b { font-variant-numeric: tabular-nums; }
+.scan .mono { color: var(--muted); font-size: 11.5px; overflow-wrap: anywhere; }
+.scan .go { margin-top: 6px; gap: 8px; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field > label { font-size: 12px; color: var(--muted); }
+.field input, .field select { width: 100%; }
+.pathrow { display: flex; gap: 8px; align-items: center; min-width: 0; padding: 3px 3px 3px 9px; border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: var(--panel-2); }
+.pathrow .path { font-size: 12.5px; color: var(--muted); overflow-wrap: anywhere; flex: 1; min-width: 0; }
+.radio { display: flex; gap: 7px; align-items: center; font-size: 13px; cursor: pointer; }
+.names { font: 12px var(--mono); color: var(--muted); display: grid; gap: 2px; overflow-x: auto; background: var(--panel-2); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 8px 10px; }
+.names span b { color: var(--fg); font-weight: 600; }
+.go { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.step-wide { grid-column: 1 / -1; }
+.getty-toggle { margin-top: 2px; align-self: flex-start; }
+.field .getty-toggle input { width: auto; }
+.getty-preview { margin-top: 4px; padding: 9px 12px; border-left: 3px solid var(--accent); border-radius: 4px; background: var(--panel-2); font-size: 13px; line-height: 1.5; display: grid; gap: 4px; }
+.getty-preview .pv-label { font-size: 11.5px; color: var(--muted); }
+.getty-preview em { color: var(--muted); }
+.update-banner { position: fixed; left: 50%; top: 10px; transform: translateX(-50%); z-index: 50; display: flex; gap: 12px; align-items: center; padding: 10px 12px 10px 16px; border-radius: 8px; background: #1d1d1f; color: #fff; font-size: 13px; box-shadow: 0 10px 30px rgba(0,0,0,.35); max-width: calc(100vw - 32px); }
+.update-banner .btn { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tpl-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tpl-bar label.toggle { margin-right: auto; font-weight: 600; }
+.tpl-bar select { min-width: 160px; }
+.tpl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 10px 12px; }
+.tpl-grid .wide { grid-column: 1 / -1; }
+.tpl-grid textarea { min-height: 58px; flex: none; }
+.tpl-off .tpl-grid { opacity: .5; }
+.tpl-warn { color: var(--bad); }
+.go-bar { position: sticky; bottom: 0; margin: 16px calc(-1 * max(16px, env(safe-area-inset-left))) 0; padding: 10px max(16px, env(safe-area-inset-left)); background: var(--bg); border-top: 1px solid var(--line); z-index: 2; }
+.progress-card { margin: 4px 0 24px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; display: grid; gap: 8px; }
+#ing-status { font-weight: 600; }
+.bar { height: 5px; border-radius: 3px; background: var(--chip); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+.progress-card.done .bar i { background: var(--ok); }
+.errors { color: var(--bad); font-size: 12.5px; margin: 0; padding-left: 18px; max-height: 140px; overflow: auto; }
+
+/* ---------- cull ---------- */
+.cull { display: flex; flex-direction: column; overflow: hidden; background: var(--stage); color: var(--stage-fg); }
+.cull-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding: 6px max(14px, env(safe-area-inset-left)); background: var(--stage-2); border-bottom: 1px solid var(--stage-line); }
+.cull select { background: var(--stage-3); color: var(--stage-fg); border-color: var(--stage-line); }
+.cull-bar .msg, .cull .msg { color: var(--stage-muted); }
+.cull .btn { background: var(--stage-3); color: var(--stage-fg); border-color: var(--stage-line); }
+.cull .btn:hover { border-color: var(--stage-muted); }
+.cull .btn:disabled { color: #6c6d74; }
+.cull-bar .btn.danger { color: #ff8a80; }
+.spacer { flex: 1; }
+.stage { flex: 1; min-height: 0; display: grid; place-items: center; overflow: hidden; position: relative; cursor: zoom-in; padding: 12px; }
+.stage img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: calc(100% - 24px); max-height: calc(100% - 24px); object-fit: contain; display: block; user-select: none; -webkit-user-drag: none; }
+.stage.zoomed { display: block; overflow: auto; cursor: zoom-out; padding: 0; }
+.stage.zoomed img { position: static; transform: none; max-width: none; max-height: none; }
+.stage .reject-mark { position: absolute; top: 14px; left: 14px; background: #b42318; color: #fff; font-weight: 600; font-size: 11px; padding: 2px 8px; border-radius: 3px; letter-spacing: .04em; pointer-events: none; }
+.stage .loading { position: absolute; bottom: 12px; right: 14px; color: var(--stage-muted); font-size: 12px; pointer-events: none; background: rgba(0,0,0,.55); padding: 2px 8px; border-radius: 3px; }
+.stage.rejected img { opacity: .4; }
+.infobar { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; padding: 5px max(14px, env(safe-area-inset-left)); background: var(--stage-2); border-top: 1px solid var(--stage-line); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.infobar .name { font-weight: 600; }
+.infobar .tag { font-size: 10.5px; border: 1px solid var(--stage-line); border-radius: 3px; padding: 0 5px; color: var(--stage-muted); background: none; }
+.stars { display: inline-flex; gap: 0; }
+.stars button { background: none; border: 0; padding: 0 2px; font-size: 17px; line-height: 1; color: #505055; cursor: pointer; }
+.stars button:hover { color: #8a8a90; }
+.stars button.on { color: #f5c142; }
+.keys { color: var(--stage-muted); font-size: 11.5px; margin-left: auto; }
+.keys kbd { border-color: var(--stage-line); color: var(--stage-fg); background: var(--stage-3); }
+.strip { display: flex; gap: 4px; overflow-x: auto; padding: 6px max(14px, env(safe-area-inset-left)) 8px; background: var(--stage-2); border-top: 1px solid var(--stage-line); scroll-behavior: smooth; flex: none; scrollbar-width: thin; scrollbar-color: var(--stage-line) transparent; }
+.thumb { flex: none; width: 104px; height: 70px; border-radius: 2px; border: 2px solid transparent; background: var(--stage); padding: 0; position: relative; cursor: pointer; overflow: hidden; }
+.thumb:hover { border-color: var(--stage-line); }
+.thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.thumb.current { border-color: var(--accent); }
+/* contact sheet (G): the strip becomes a grid and the big photo steps aside */
+#view-cull.grid .stage, #view-cull.grid .infobar .keys { display: none; }
+#view-cull.grid .strip { flex: 1; flex-wrap: wrap; align-content: flex-start; overflow-x: hidden; overflow-y: auto; gap: 10px; padding: 14px max(16px, env(safe-area-inset-left)); border-top: 0; scroll-behavior: auto; }
+#view-cull.grid .thumb { width: 212px; height: 150px; border-radius: 4px; background: var(--stage-2); }
+#view-cull.grid .thumb img { padding: 6px; }
+#view-cull.grid .thumb .badge { font-size: 11px; left: 6px; top: 10px; bottom: auto; }
+#view-cull.grid .thumb .tagmark { width: 18px; height: 18px; line-height: 18px; font-size: 12px; right: 6px; top: 6px; }
+#view-cull.grid .thumb .fname { display: block; }
+.thumb .fname { display: none; position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 6px 4px; font-size: 10.5px; color: rgba(255,255,255,.75); background: linear-gradient(transparent, rgba(0,0,0,.55)); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
+.btn[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+#keys-help { width: min(800px, calc(100vw - 32px)); padding: 0; border: 1px solid var(--line-strong); border-radius: 10px; background: var(--panel); color: var(--fg); box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+#keys-help::backdrop { background: rgba(0,0,0,.4); }
+#keys-help .kh { padding: 18px 20px 16px; display: grid; gap: 14px; }
+#keys-help h3 { margin: 0; font-size: 15px; font-weight: 600; }
+#keys-help h4 { margin: 0 0 6px; font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+#keys-help .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px 32px; }
+#keys-help dl { margin: 0; display: grid; grid-template-columns: 8.6em 1fr; gap: 6px 12px; font-size: 13px; align-items: baseline; }
+#keys-help dt { white-space: nowrap; }
+#keys-help dl.narrow { grid-template-columns: 6.6em 1fr; }
+#keys-help dd { margin: 0; color: var(--muted); }
+#keys-help kbd { font: 11.5px var(--mono); padding: 1px 6px; border: 1px solid var(--line-strong); border-bottom-width: 2px; border-radius: 4px; background: var(--panel-2); color: var(--fg); }
+#keys-help .setting { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; font-size: 13px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-2); }
+#keys-help .setting select { font: inherit; }
+#keys-help .setting .hint { flex-basis: 100%; }
+#keys-help .foot { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted); }
+.thumb .badge { position: absolute; left: 3px; bottom: 3px; font-size: 9.5px; line-height: 1; background: rgba(0,0,0,.75); color: #f5c142; padding: 2px 4px; border-radius: 2px; }
+.thumb .badge.rej { color: #fff; background: #b42318; }
+.thumb .cc { position: absolute; left: 0; right: 0; top: 0; height: 3px; pointer-events: none; }
+#view-cull.grid .thumb .cc { height: 5px; }
+.thumb.sel { border-color: rgba(255, 138, 61, .55); background: rgba(255, 138, 61, .16); }
+#view-cull.grid .thumb.sel { background: rgba(255, 138, 61, .2); }
+.ccsel { font: inherit; font-size: 12px; padding: 2px 6px 2px 8px; border-radius: 4px; border: 1px solid var(--stage-line); border-left: 6px solid var(--cc, var(--stage-line)); background: transparent; color: inherit; cursor: pointer; max-width: 150px; }
+.ccsel option { color: #1d1d1f; }
+.thumb .tagmark { position: absolute; right: 3px; top: 3px; width: 14px; height: 14px; border-radius: 3px; background: var(--accent); color: #fff; font-size: 10px; line-height: 14px; text-align: center; font-weight: 700; box-shadow: 0 0 0 1px rgba(0,0,0,.35); }
+.tagbtn { font: inherit; font-size: 12px; padding: 2px 9px 2px 7px; border-radius: 4px; border: 1px solid var(--stage-line); background: transparent; color: inherit; cursor: pointer; display: inline-flex; gap: 5px; align-items: center; }
+.tagbtn::before { content: ""; width: 11px; height: 11px; border-radius: 2px; border: 1.5px solid currentColor; opacity: .7; }
+.tagbtn[aria-pressed="true"] { border-color: var(--accent); color: #fff; background: var(--accent); }
+.tagbtn[aria-pressed="true"]::before { content: "✓"; border: 0; opacity: 1; font-size: 11px; line-height: 11px; width: auto; height: auto; }
+.thumb.rejected img { opacity: .3; }
+.cull-job { padding: 6px max(14px, env(safe-area-inset-left)); background: var(--stage-2); border-top: 1px solid var(--stage-line); display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.cull-job .bar { flex: 1 1 200px; background: var(--stage-3); }
+.confirm { display: inline-flex; gap: 8px; align-items: center; }
+#cull-actions { display: inline-flex; gap: 6px; align-items: center; }
+.cull .empty { color: var(--stage-muted); }
+
+/* ---------- caption ---------- */
+.cap-head { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line-strong); padding: 0 max(14px, env(safe-area-inset-left)); }
+.row-bar { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; padding: 6px 0; }
+.row-bar + .row-bar { border-top: 1px solid var(--line); }
+.row-bar:has(> .label:first-child) { position: relative; padding-left: 96px; }
+.row-bar > .label:first-child { position: absolute; left: 0; top: 9px; }
+.label { color: var(--muted); font-size: 12px; }
+.progress { font-variant-numeric: tabular-nums; color: var(--muted); }
+.progress b { color: var(--fg); font-weight: 600; }
+.meter { height: 4px; background: var(--chip); border-radius: 2px; overflow: hidden; width: 100px; }
+.meter i { display: block; height: 100%; background: var(--ok); width: 0; transition: width .3s; }
+.meter.wide { flex: 1 1 160px; width: auto; }
+.name-input { width: 14em; max-width: 100%; }
+#code-files, #team-chips { display: inline-block; }
+details.pick { position: relative; display: inline-block; }
+details.pick > summary { list-style: none; user-select: none; max-width: 420px; }
+details.pick > summary::-webkit-details-marker { display: none; }
+details.pick > summary::after { content: ""; width: 6px; height: 6px; margin: -3px 2px 0 6px; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); opacity: .6; flex: none; }
+details.pick > summary .sw { margin-right: 0; }
+details.pick > summary .sw:last-of-type { margin-right: 5px; }
+details.pick[open] > summary { background: var(--chip); }
+.pick-panel { position: absolute; top: calc(100% + 4px); left: 0; z-index: 30; min-width: 240px; max-height: 60vh; overflow: auto; background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r); box-shadow: 0 8px 28px rgba(0,0,0,.2); padding: 4px; }
+.pick-panel label { display: flex; align-items: center; gap: 8px; padding: 3px 8px; border-radius: 3px; cursor: pointer; white-space: nowrap; font-size: 13px; }
+.pick-panel label .sw { margin-right: -3px; }
+.pick-panel label:hover { background: var(--panel-2); }
+.pick-panel label small { margin-left: auto; padding-left: 14px; color: var(--faint); font-size: 11.5px; }
+.pick-foot { display: flex; gap: 14px; border-top: 1px solid var(--line); margin-top: 4px; padding: 6px 8px 3px; }
+.chip { font-size: 12.5px; color: var(--fg); background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r-sm); padding: 1px 9px; cursor: pointer; }
+.chip:hover { background: var(--panel-2); }
+.chip[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: color-mix(in srgb, var(--accent) 55%, transparent); font-weight: 500; }
+.delim { width: 2.2em; text-align: center; font-family: var(--mono); }
+#codes-panel { max-width: 1100px; margin: 0 auto 8px; background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r); overflow: hidden; }
+#codes-panel input { width: 100%; height: 30px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 0 10px; box-shadow: none; }
+.codes-scroll { max-height: 34vh; overflow: auto; }
+.codes-scroll table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.codes-scroll td { padding: 3px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.codes-scroll tr:nth-child(even) td { background: var(--panel-2); }
+.codes-scroll td:first-child { font-family: var(--mono); white-space: nowrap; color: var(--accent); width: 1%; }
+.codes-scroll td.extra { color: var(--muted); }
+.codes-scroll th { position: sticky; top: 0; background: var(--panel); text-align: left; font-weight: 500; font-family: var(--mono); font-size: 11.5px; color: var(--muted); padding: 4px 10px; border-bottom: 1px solid var(--line-strong); }
+.codes-scroll td:not(:first-child):hover { color: var(--accent); }
+.codes-scroll tr { cursor: pointer; }
+.codes-scroll tr:not(.head):hover td { background: var(--accent-soft); }
+.codes-note { padding: 6px 10px; color: var(--muted); font-size: 12px; }
+.cap-list { max-width: 1100px; margin: 0 auto; padding: 12px max(14px, env(safe-area-inset-left)) 60px; display: grid; gap: 0; }
+.row { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 16px; background: var(--panel); border: 1px solid var(--line); border-top: 0; padding: 12px; }
+.row:first-child { border-top: 1px solid var(--line); border-radius: var(--r) var(--r) 0 0; }
+.row:last-child { border-radius: 0 0 var(--r) var(--r); }
+.row:only-child { border-radius: var(--r); }
+.row.focused { box-shadow: inset 3px 0 0 var(--accent); }
+.row figure { margin: 0; background: #1c1c1e; display: grid; place-items: center; min-height: 170px; overflow: hidden; }
+.row img { display: block; max-width: 100%; max-height: 280px; object-fit: contain; }
+.edit { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.meta { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.fname { font-size: 12.5px; font-weight: 600; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.byline, .rowstars { font-size: 12px; color: var(--muted); }
+.rowstars { color: var(--star); margin-right: 6px; }
+.state { font-size: 11.5px; white-space: nowrap; color: var(--muted); }
+.state:empty { display: none; }
+.state.saved { color: var(--ok); }
+.state.unsaved { color: var(--warn); }
+.state.error { color: var(--bad); white-space: normal; }
+textarea { width: 100%; flex: 1; min-height: 110px; resize: vertical; font: 14px/1.5 var(--sans); color: var(--fg); background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r-sm); padding: 7px 9px; }
+textarea::placeholder, input::placeholder { color: var(--faint); }
+.codewarn { font-size: 12px; color: var(--warn); }
+.edit > .hint { visibility: hidden; }
+.row.focused .edit > .hint { visibility: visible; }
+.tags { display: flex; flex-direction: column; gap: 5px; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.tag-list { display: contents; }
+.tag { display: inline-flex; align-items: center; gap: 2px; font-size: 12.5px; background: var(--chip); border: 1px solid transparent; border-radius: 3px; padding: 0 2px 0 7px; max-width: 100%; }
+.tag .t { background: none; border: 0; padding: 0; font: inherit; color: var(--fg); cursor: default; overflow-wrap: anywhere; text-align: left; }
+.tag.person { background: var(--accent-soft); }
+.tag.person .t { cursor: pointer; }
+.tag.person .t::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 4px; vertical-align: -1px; background: currentColor; opacity: .6;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='5' r='3.2'/%3E%3Cpath d='M1.5 15c.6-3.6 3.3-5.6 6.5-5.6s5.9 2 6.5 5.6z'/%3E%3C/svg%3E") center/contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='5' r='3.2'/%3E%3Cpath d='M1.5 15c.6-3.6 3.3-5.6 6.5-5.6s5.9 2 6.5 5.6z'/%3E%3C/svg%3E") center/contain no-repeat; }
+.tag.auto { border: 1px dashed var(--faint); }
+.tag.person.off { background: none; border-color: var(--warn); }
+.tag.person.off .t { color: var(--warn); }
+.tag .auto-mark { font-size: 10px; color: var(--muted); margin-left: 5px; }
+.tag .x { background: none; border: 0; color: var(--muted); font-size: 14px; line-height: 1; width: 18px; height: 18px; border-radius: 2px; cursor: pointer; padding: 0; }
+.tag .x:hover { background: var(--line-strong); color: var(--fg); }
+.sw { display: inline-block; flex: none; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: 0; background: linear-gradient(135deg, var(--a) 50%, var(--b) 50%); box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
+.tag-menu { position: fixed; z-index: 40; width: 300px; overflow: auto; background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r); box-shadow: 0 8px 28px rgba(0,0,0,.2); padding: 3px; font-size: 12.5px; }
+.tag-menu .grp { display: flex; align-items: center; padding: 6px 8px 2px; color: var(--muted); font-size: 11px; font-weight: 600; }
+.tag-menu .opt { display: flex; align-items: center; padding: 2px 8px; border-radius: 3px; cursor: default; white-space: nowrap; }
+.tag-menu .opt .num { width: 3.4em; flex: none; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tag-menu .opt .nm { overflow: hidden; text-overflow: ellipsis; }
+.tag-menu .opt .tm { margin-left: auto; padding-left: 10px; color: var(--faint); font-size: 11.5px; }
+.tag-menu .opt.on { background: var(--accent); color: var(--accent-fg); }
+.tag-menu .opt.on .num, .tag-menu .opt.on .tm { color: inherit; opacity: .85; }
+.player .sw { margin-right: 4px; }
+.chip .sw { margin-right: 6px; }
+.tag-input { width: 12em; height: 22px; font-size: 12.5px; padding: 0 7px; }
+.players { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; font-size: 12.5px; min-height: 22px; }
+.plabel { color: var(--muted); font-size: 12px; min-width: 52px; }
+.player { font: inherit; font-size: 12.5px; color: var(--fg); background: var(--panel); border: 1px solid var(--line-strong); border-radius: 3px; padding: 0 8px; cursor: pointer; }
+.player:hover { border-color: var(--accent); background: var(--accent-soft); }
+.player b { color: var(--accent); margin-right: 4px; font-variant-numeric: tabular-nums; }
+.player.nearby { border-style: dashed; }
+.player.learned { border-style: dotted; }
+.player-num { color: var(--muted); border: 1px dashed var(--line-strong); border-radius: 3px; padding: 0 7px; }
+.players .hint { font-size: 12px; }
+.player .team { color: var(--muted); margin-left: 5px; }
+
+.codewarn code { font-family: var(--mono); }
+
+/* ---------- teach numbers ---------- */
+.teach { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 20px; background: rgba(0,0,0,.35); }
+.teach-card { width: min(840px, 100%); max-height: calc(100vh - 40px); overflow: auto; background: var(--panel); border: 1px solid var(--line-strong); border-radius: 10px; box-shadow: 0 16px 48px rgba(0,0,0,.3); padding: 14px 18px 16px; display: grid; gap: 12px; }
+.teach-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.teach-head h2 { margin: 0; font-size: 15px; font-weight: 600; }
+.teach-lede { margin: -4px 0 0; color: var(--muted); font-size: 12.5px; max-width: 72ch; }
+.teach-main { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 16px; align-items: start; }
+.teach-pic { position: relative; height: 360px; background: #1c1c1e; border-radius: var(--r-sm); display: grid; place-items: center; overflow: hidden; }
+.teach-pic img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.teach-pic .empty-pic { color: #a1a1a6; text-align: center; padding: 24px; font-size: 13px; max-width: 34ch; }
+.teach-side { display: grid; gap: 10px; align-content: start; }
+.teach-guess { font-size: 12.5px; color: var(--muted); min-height: 2.6em; }
+.teach-guess b { color: var(--fg); }
+#teach-form { display: flex; gap: 8px; align-items: center; }
+#teach-num { width: 3.6em; height: 44px; font-size: 24px; font-weight: 600; text-align: center; font-variant-numeric: tabular-nums; }
+.teach-who { font-size: 12.5px; color: var(--muted); min-height: 1.5em; }
+.teach-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.teach-foot { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 8px; }
+.teach-counts { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.teach-counts > .label { margin-right: 6px; }
+.tcount { font-size: 12px; font-variant-numeric: tabular-nums; border-radius: 3px; padding: 0 6px; background: var(--chip); }
+.tcount b { color: var(--accent); margin-right: 4px; }
+.tcount.few { opacity: .5; }
+.teach-actions { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+.linkish { background: none; border: 0; padding: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: 12px; }
+.linkish:hover { color: var(--accent); }
+@media (max-width: 760px) { .teach-main { grid-template-columns: minmax(0, 1fr); } .teach-pic { height: 240px; } }
+
+/* ---------- closed ---------- */
+.closed { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: var(--bg); padding: 24px; }
+.closed > div { text-align: center; max-width: 380px; display: grid; gap: 8px; justify-items: center; }
+.closed svg { width: 48px; height: 48px; }
+.closed h2 { margin: 4px 0 0; font-size: 16px; font-weight: 600; }
+.closed p { margin: 0; color: var(--muted); }
+
+@media (max-width: 760px) { .row { grid-template-columns: minmax(0, 1fr); } .keys { display: none; } .folder .path { display: none; } .tabs a { padding: 3px 10px; } .row-bar:has(> .label:first-child) { padding-left: 0; } .row-bar > .label:first-child { position: static; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><svg viewBox="100 100 824 824" aria-hidden="true"><defs><linearGradient id="ig1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#e2500f"/></linearGradient><clipPath id="ic1"><rect x="268" y="264" width="488" height="312" rx="18"/></clipPath></defs><rect x="100" y="100" width="824" height="824" rx="185" fill="url(#ig1)"/><rect x="232" y="228" width="560" height="384" rx="40" fill="#fff"/><rect x="268" y="264" width="488" height="312" rx="18" fill="#4f2c1d"/><g clip-path="url(#ic1)"><circle cx="652" cy="350" r="44" fill="#ffb27a"/><path d="M250 600 L430 380 L560 520 L625 455 L780 600 Z" fill="#f26a21"/></g><rect x="232" y="676" width="560" height="44" rx="22" fill="#fff"/><rect x="232" y="760" width="388" height="44" rx="22" fill="#fff" opacity=".85"/></svg><span>Caption Images</span></div>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#ingest" data-view="ingest">Ingest</a>
+    <a href="#cull" data-view="cull">Cull</a>
+    <a href="#caption" data-view="caption">Caption</a>
+  </nav>
+  <div class="folderbar">
+    <div class="folder"><span class="fname-top none" id="folder-name">No folder open</span><span class="path" id="folder-path" title=""></span></div>
+    <button class="btn" id="open-folder" type="button">Open folder…</button>
+    <button class="icon-btn" id="quit" type="button" title="Quit Caption Images" aria-label="Quit Caption Images"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 2.5v7"/><path d="M5.4 5.2a6.5 6.5 0 1 0 9.2 0"/></svg></button>
+  </div>
+</header>
+
+<!-- ================= INGEST ================= -->
+<section class="view" id="view-ingest" hidden>
+  <div class="page">
+    <h2>Ingest</h2>
+    <p class="lede">Copy photos off a memory card into a new folder. Nothing on the card is moved or deleted. Want to skip copying? Cull and caption right on the card.</p>
+    <div class="steps">
+      <section class="step">
+        <h3>Copy from</h3>
+        <div class="choices" id="cards"></div>
+        <div><button class="btn" id="pick-source" type="button">Choose a folder instead…</button></div>
+        <div class="scan" id="scan-result"><span class="msg">Plug in a card, or choose a folder.</span></div>
+      </section>
+      <section class="step">
+        <h3>Copy to</h3>
+        <div class="field">
+          <label>Save in</label>
+          <div class="pathrow"><span class="path" id="ing-base">Not chosen yet</span><button class="btn" id="pick-base" type="button">Choose…</button></div>
+        </div>
+        <div class="field"><label for="ing-event">Event</label><input id="ing-event" type="text" placeholder="Football vs Toledo" autocomplete="off"></div>
+        <div class="field">
+          <label for="ing-folder">New folder name</label>
+          <input id="ing-folder" type="text" value="{isodate} {event}" autocomplete="off">
+          <div class="hint" id="ing-folder-preview"></div>
+        </div>
+      </section>
+      <section class="step">
+        <h3>File names</h3>
+        <label class="radio"><input type="radio" name="ing-rename" id="ing-keep" value="keep"> Keep the camera's names</label>
+        <label class="radio"><input type="radio" name="ing-rename" id="ing-rename" value="rename" checked> Rename to</label>
+        <input id="ing-template" type="text" value="{date}_{event}_{num}" autocomplete="off" aria-label="File name pattern">
+        <div class="hint">Fill-ins: <code>{date}</code> 20261102 · <code>{isodate}</code> 2026-11-02 · <code>{time}</code> · <code>{event}</code> · <code>{num}</code> 0001 · <code>{original}</code> camera name · <code>{initials}</code></div>
+        <div class="names" id="ing-names"></div>
+      </section>
+      <section class="step">
+        <h3>Also</h3>
+        <div class="field">
+          <label for="ing-photographer">Photographer</label>
+          <input id="ing-photographer" class="sync-name" type="text" placeholder="Your name" autocomplete="name">
+          <div class="hint">Added to every photo that doesn't already have a photographer.</div>
+        </div>
+        <div class="field">
+          <label for="ing-only">Copy</label>
+          <select id="ing-only">
+            <option value="all">Every photo</option>
+            <option value="norejects">Everything except rejects</option>
+            <option value="1">Rated ★ or more</option>
+            <option value="2">Rated ★★ or more</option>
+            <option value="3">Rated ★★★ or more</option>
+          </select>
+          <div class="hint" id="ing-only-hint">Cull on the card first, then copy just your picks. Ratings and captions come along.</div>
+        </div>
+        <label class="toggle"><input type="checkbox" id="ing-skip" checked> Skip photos I've already ingested</label>
+      </section>
+      <section class="step step-wide" id="tpl-step">
+        <h3>Metadata template</h3>
+        <div class="tpl-bar">
+          <label class="toggle"><input type="checkbox" id="tpl-on"> Add this to every photo</label>
+          <select id="tpl-pick" aria-label="Saved templates"></select>
+          <button class="btn" id="tpl-save" type="button">Save</button>
+          <button class="btn" id="tpl-getty" type="button" title="Fill the empty boxes in Getty Images style">Getty style</button>
+          <button class="btn" id="tpl-saveas" type="button">Save as…</button>
+          <button class="btn" id="tpl-del" type="button">Delete</button>
+        </div>
+        <div class="tpl-grid" id="tpl-fields"></div>
+        <div class="hint"><code>{photographer}</code> puts in the photographer name from the top of this page, so a shared template uses each person's own name.</div>
+        <div class="hint">Blank boxes are left alone. The caption only goes on photos that don't have one yet; keywords are added to any already there. Codes like <code>\ut\</code> work in every box.</div>
+        <div class="hint tpl-warn" id="tpl-warn" hidden></div>
+      </section>
+    </div>
+    <div class="go go-bar">
+      <button class="btn primary" id="ing-start" type="button" disabled>Ingest</button>
+      <span class="msg" id="ing-msg"></span>
+    </div>
+    <div class="progress-card" id="ing-progress" hidden>
+      <div id="ing-status"></div>
+      <div class="bar"><i id="ing-bar"></i></div>
+      <div class="hint mono" id="ing-current"></div>
+      <ul class="errors" id="ing-errors" hidden></ul>
+      <div class="go" style="margin-top:4px">
+        <button class="btn" id="ing-cancel" type="button">Stop copying</button>
+        <button class="btn primary" id="ing-cull" type="button" hidden>Cull these photos</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CULL ================= -->
+<section class="view cull" id="view-cull" hidden>
+  <div class="cull-bar">
+    <label class="toggle">Show
+      <select id="cull-filter">
+        <option value="all">All photos</option>
+        <option value="unrated">Not rated yet</option>
+        <option value="1">★ or more</option>
+        <option value="2">★★ or more</option>
+        <option value="3">★★★ or more</option>
+        <option value="4">★★★★ or more</option>
+        <option value="5">★★★★★</option>
+        <option value="rejected">Rejected</option>
+        <option value="tagged">Tagged</option>
+        <option value="untagged">Not tagged</option>
+        <optgroup label="Color class">
+          <option value="cc-any">Any color class</option>
+          <option value="cc-1">Winner</option>
+          <option value="cc-2">Winner Alt</option>
+          <option value="cc-3">Superior</option>
+          <option value="cc-4">Superior Alt</option>
+          <option value="cc-5">Typical</option>
+          <option value="cc-6">Typical Alt</option>
+          <option value="cc-7">Extras</option>
+          <option value="cc-8">Trash</option>
+        </optgroup>
+      </select>
+    </label>
+    <span class="msg" id="cull-counts"></span>
+    <label class="toggle"><input type="checkbox" id="cull-advance" checked> Go to next after rating</label>
+    <button class="btn" id="cull-grid" type="button" aria-pressed="false" title="Contact sheet (G)">Contact sheet</button>
+    <button class="btn" id="keys-open" type="button" title="Keyboard shortcuts (?)">Shortcuts</button>
+    <span class="spacer"></span>
+    <span id="cull-actions">
+      <button class="btn" id="cull-copy" type="button">Copy these…</button>
+      <button class="btn danger" id="cull-rejects" type="button">Move rejects…</button>
+    </span>
+    <span class="confirm" id="cull-confirm" hidden>
+      <span id="cull-confirm-text"></span>
+      <button class="btn danger" id="cull-confirm-yes" type="button">Move them</button>
+      <button class="btn" id="cull-confirm-no" type="button">Cancel</button>
+    </span>
+  </div>
+  <div class="stage" id="stage">
+    <img id="stage-img" alt="">
+    <div class="empty" id="stage-empty" hidden></div>
+    <span class="reject-mark" id="stage-reject" hidden>REJECTED</span>
+    <span class="loading" id="stage-loading" hidden>Loading full size…</span>
+  </div>
+  <div class="infobar" id="infobar">
+    <span class="name" id="cull-name"></span>
+    <span class="tag" id="cull-label"></span>
+    <span class="msg" id="cull-time"></span>
+    <span class="stars" id="cull-stars" aria-label="Rating"></span>
+    <button class="tagbtn" id="cull-tag" type="button" aria-pressed="false" title="Tag (T)">Tag</button>
+    <select class="ccsel" id="cull-color" aria-label="Color class" title="Color class"></select>
+    <span class="msg" id="cull-pos"></span>
+    <span class="keys" id="cull-keys"></span>
+  </div>
+  <div class="strip" id="strip" aria-label="Photos"></div>
+  <div class="cull-job" id="cull-job" hidden>
+    <span id="cull-job-text"></span>
+    <div class="bar"><i id="cull-job-bar"></i></div>
+    <button class="btn" id="cull-job-cancel" type="button">Stop</button>
+  </div>
+</section>
+
+<!-- ================= CAPTION ================= -->
+<section class="view" id="view-caption" hidden>
+  <div class="cap-head">
+    <div class="row-bar">
+      <label class="label" for="cap-filter">Show</label>
+        <select id="cap-filter">
+          <option value="all">All photos</option>
+          <option value="missing">Without a caption</option>
+          <option value="1">Rated ★ or more</option>
+          <option value="3">Rated ★★★ or more</option>
+          <option value="tagged">Tagged</option>
+          <option value="cc-any">Has a color class</option>
+          <option value="cc-1">Winner</option>
+          <option value="cc-2">Winner Alt</option>
+          <option value="cc-3">Superior</option>
+          <option value="cc-4">Superior Alt</option>
+          <option value="cc-5">Typical</option>
+          <option value="cc-6">Typical Alt</option>
+          <option value="cc-7">Extras</option>
+          <option value="cc-8">Trash</option>
+        </select>
+      <span class="progress" id="progress"></span>
+      <div class="meter"><i id="meter"></i></div>
+      <span class="spacer"></span>
+      <select id="send-mode" aria-label="Move or copy">
+        <option value="move">Move</option>
+        <option value="copy">Copy</option>
+        <option value="small" id="small-opt">Save smaller copies of</option>
+        <option value="lightroom" id="lr-opt" hidden>Send to Lightroom</option>
+      </select>
+      <select id="small-size" aria-label="Size of the smaller copies" hidden>
+        <option value="2000">2000 px (web)</option>
+        <option value="1080">1080 px (social)</option>
+        <option value="3000">3000 px (editor, print)</option>
+        <option value="0">Full size</option>
+      </select>
+      <select id="small-limit" aria-label="Largest file size" hidden>
+        <option value="0">Any file size</option>
+        <option value="5">Under 5 MB</option>
+        <option value="2">Under 2 MB</option>
+        <option value="1">Under 1 MB</option>
+        <option value="0.5">Under 500 KB</option>
+      </select>
+      <select id="lr-app" aria-label="Which Lightroom" hidden></select>
+      <button class="btn primary" id="send-captioned" type="button" disabled>Move captioned photos to…</button>
+    </div>
+    <div class="row-bar send-job" id="send-job" hidden>
+      <span id="send-job-text"></span>
+      <div class="meter wide"><i id="send-job-bar"></i></div>
+      <button class="btn" id="send-job-cancel" type="button">Stop</button>
+    </div>
+    <div class="row-bar">
+      <label class="label" for="photographer">Photographer</label>
+      <input class="name-input sync-name" id="photographer" type="text" placeholder="Your name" autocomplete="name">
+      <label class="toggle"><input type="checkbox" id="auto-credit" checked> Add my name to each photo I caption</label>
+      <button class="btn" id="credit-all" type="button" disabled>Add to all photos</button>
+      <span class="msg" id="credit-msg"></span>
+    </div>
+    <div class="row-bar">
+      <span class="label">Codes</span>
+      <span id="code-files"></span>
+      <button class="btn" id="add-codes" type="button">Add file…</button>
+      <input type="file" id="code-file" accept=".txt,.tsv,.tab,text/plain,text/tab-separated-values" multiple hidden>
+      <label class="toggle">Delimiter <input class="delim" id="delim" type="text" maxlength="1" value="\" aria-label="Code delimiter"></label>
+      <button class="btn" id="toggle-lookup" type="button" aria-pressed="false">Look up codes</button>
+      <span class="msg" id="code-msg"></span>
+    </div>
+    <div class="row-bar" id="suggest-wrap" hidden>
+      <span class="label">Players</span>
+        <label class="toggle" title="Reads jersey numbers in each photo and suggests players from the code files you have on"><input type="checkbox" id="suggest-players" checked> Suggest by jersey number</label>
+        <label class="toggle" title="Tags a player by itself when the number was read clearly and only one player wears it"><input type="checkbox" id="auto-tag" checked> Tag when sure</label>
+        <button class="btn" id="scan-all" type="button">Check all</button>
+        <button class="btn" id="teach-open" type="button" hidden title="Label jerseys so the app reads your teams' numbers better">Teach numbers…</button>
+        <span class="msg" id="scan-msg"></span>
+    </div>
+    <div class="row-bar" id="teams-bar" hidden>
+      <span class="label">Teams</span>
+      <span id="team-chips"></span>
+      <span class="msg">Only players and coaches from the teams that are on can be tagged.</span>
+    </div>
+    <section id="codes-panel" hidden>
+      <input id="code-search" type="search" placeholder="Search codes or names…" autocomplete="off">
+      <div class="codes-scroll"><table><tbody id="code-rows"></tbody></table></div>
+      <div class="codes-note" id="codes-note"></div>
+    </section>
+  </div>
+  <main class="cap-list" id="list"></main>
+  <datalist id="tag-options"></datalist>
+</section>
+
+<div class="teach" id="teach" hidden role="dialog" aria-modal="true" aria-labelledby="teach-title">
+  <div class="teach-card">
+    <div class="teach-head">
+      <h2 id="teach-title">Teach numbers</h2>
+      <button class="icon-btn" id="teach-close" type="button" aria-label="Close" title="Close (Esc)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <p class="teach-lede">Type the number on each jersey. The app learns what your teams' numbers look like and finds players the text reader misses. About 10 jerseys per player, in each jersey colour, is plenty. Players you tag from a suggestion count too.</p>
+    <div class="teach-main">
+      <div class="teach-pic"><img id="teach-img" alt="A player's jersey" hidden><div class="empty-pic" id="teach-empty"></div></div>
+      <div class="teach-side">
+        <div class="teach-guess" id="teach-guess"></div>
+        <form id="teach-form" autocomplete="off">
+          <input id="teach-num" type="text" inputmode="numeric" maxlength="2" aria-label="Jersey number" placeholder="#">
+          <button class="btn primary" type="submit" id="teach-save">Save</button>
+        </form>
+        <div class="teach-who" id="teach-who"></div>
+        <div class="teach-btns">
+          <button class="btn" type="button" id="teach-none" title="No number showing (a side or face-on view, a coach, a referee)">No number <kbd>N</kbd></button>
+          <button class="btn" type="button" id="teach-skip" title="Too blurry, cut off, or two players overlapping">Can't tell <kbd>S</kbd></button>
+          <button class="btn" type="button" id="teach-undo" disabled>Undo <kbd>⌘Z</kbd></button>
+        </div>
+        <div class="hint" id="teach-left"></div>
+      </div>
+    </div>
+    <div class="teach-foot">
+      <div class="teach-counts"><span class="label">Labelled</span><span id="teach-counts" class="teach-counts"></span></div>
+      <div class="teach-actions">
+        <button class="btn" type="button" id="teach-scan">Find more jerseys in this folder</button>
+        <span class="msg" id="teach-scan-msg"></span>
+      </div>
+      <div class="teach-actions">
+        <button class="btn primary" type="button" id="teach-train">Teach the app</button>
+        <span class="msg" id="teach-train-msg"></span>
+      </div>
+      <div class="msg" id="teach-model"></div>
+    </div>
+  </div>
+</div>
+<dialog id="keys-help" aria-labelledby="keys-title">
+  <div class="kh">
+    <h3 id="keys-title">Keyboard shortcuts</h3>
+    <label class="setting">Number keys set
+      <select id="num-keys">
+        <option value="lightroom">1–5 stars, 6–9 color classes</option>
+        <option value="stars">1–5 stars only</option>
+        <option value="colors">1–8 color classes</option>
+      </select>
+      <span class="hint" id="num-keys-pm"></span>
+    </label>
+    <div class="cols">
+      <div>
+        <h4>Cull</h4>
+        <dl>
+          <dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Previous / next photo</dd>
+          <dt><kbd>T</kbd></dt><dd>Tag or untag (like Photo Mechanic)</dd>
+        </dl>
+        <dl id="kh-numbers" style="margin-top:6px"></dl>
+        <dl style="margin-top:6px">
+          <dt><kbd>X</kbd></dt><dd>Reject (press again to undo)</dd>
+          <dt><kbd>Shift</kbd>+<kbd>←</kbd> <kbd>→</kbd></dt><dd>Select a run of photos</dd>
+          <dt><kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>A</kbd></dt><dd>Select all; keys then change them all</dd>
+          <dt><kbd>Space</kbd> <kbd>Z</kbd></dt><dd>Zoom to 100% and back</dd>
+          <dt><kbd>G</kbd></dt><dd>Contact sheet grid / one photo</dd>
+          <dt><kbd>Enter</kbd></dt><dd>Open the selected photo (in the grid)</dd>
+          <dt><kbd>Home</kbd> <kbd>End</kbd></dt><dd>First / last photo</dd>
+        </dl>
+      </div>
+      <div>
+        <h4>Caption</h4>
+        <dl class="narrow">
+          <dt><kbd>\code\</kbd></dt><dd>Code replacement, full text</dd>
+          <dt><kbd>\code#2\</kbd></dt><dd>Second column (Name #9)</dd>
+          <dt><kbd>\code#3\</kbd></dt><dd>Third column (last name)</dd>
+        </dl>
+        <h4 style="margin-top:14px">Anywhere</h4>
+        <dl class="narrow">
+          <dt><kbd>?</kbd></dt><dd>This list</dd>
+          <dt><kbd>Esc</kbd></dt><dd>Close it</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="foot"><span>Stars and tags are saved in the photo itself. Lightroom reads the stars; tags use Photo Mechanic's tag field.</span><button class="btn" type="button" onclick="this.closest('dialog').close()">Done</button></div>
+  </div>
+</dialog>
+<script>
+"use strict";
+const TOKEN = "__TOKEN__";
+const $ = id => document.getElementById(id);
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("ci-" + k); return v === null ? d : v; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem("ci-" + k, v); } catch (e) {} },
+};
+async function post(url, body) {
+  const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json", "X-Token": TOKEN }, body: JSON.stringify(body || {}) });
+  const d = await r.json();
+  if (!r.ok) throw new Error(d.error || "Something went wrong");
+  return d;
+}
+const getJSON = url => fetch(url).then(r => r.json());
+const plural = (n, w, ws) => `${n} ${n === 1 ? w : (ws || w + "s")}`;
+const gb = b => b >= 1e9 ? (b / 1e9).toFixed(1) + " GB" : Math.max(1, Math.round(b / 1e6)) + " MB";
+const photoURL = (s, size) => `/photo/${encodeURIComponent(s.id)}?size=${size}`;
+function fmtTime(t) {
+  if (!t) return "";
+  const m = String(t).match(/^(\d{4})[:-](\d\d)[:-](\d\d)[ T](\d\d):(\d\d)/);
+  if (!m) return t;
+  const d = new Date(+m[1], m[2] - 1, +m[3], +m[4], +m[5]);
+  return d.toLocaleString(undefined, { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" });
+}
+function starText(r) { return r > 0 ? "★".repeat(r) : ""; }
+
+/* ================= folder + data ================= */
+let FOLDER = "", SHOTS = [], BYID = new Map();
+let captionDirty = true, cullDirty = true;
+
+let INFO = {};
+function showFolder() {
+  const name = INFO.on_card ? `Memory card ${INFO.card}` + (INFO.missing ? " (not plugged in)" : "")
+    : FOLDER ? FOLDER.split(/[\\/]/).filter(Boolean).pop() || FOLDER : "No folder open";
+  $("folder-name").textContent = name;
+  $("folder-name").classList.toggle("none", !FOLDER);
+  $("folder-path").textContent = FOLDER;
+  $("folder-path").title = FOLDER;
+}
+async function loadShots() {
+  const d = await getJSON("/api/shots");
+  FOLDER = d.folder; SHOTS = d.shots; INFO = d;
+  BYID = new Map(SHOTS.map(s => [s.id, s]));
+  showFolder();
+  captionDirty = cullDirty = true;
+  if (VIEW === "cull") cullShow();
+  if (VIEW === "caption") captionShow();
+}
+async function setFolder(path) {
+  await post("/api/folder", { path });
+  store.set("last-folder", path);
+  await loadShots();
+}
+async function chooseFolder(prompt, start) {
+  const d = await post("/api/pick-folder", { prompt, start: start || "" });
+  return d.path;
+}
+$("open-folder").addEventListener("click", async () => {
+  const p = await chooseFolder("Choose a folder of photos", FOLDER || store.get("ingest-base", ""));
+  if (p) { await setFolder(p); if (VIEW === "ingest") location.hash = "#cull"; }
+});
+function missingMsg() {
+  return INFO.on_card ? `The card ${INFO.card} isn't plugged in. Plug it back in, then open it again.` : "That folder isn't there any more.";
+}
+function emptyFolderHTML(msg) {
+  return `<p>${msg}</p><button class="btn" type="button" onclick="document.getElementById('open-folder').click()">Open folder…</button>`;
+}
+
+/* ================= router ================= */
+const VIEWS = ["ingest", "cull", "caption"];
+let VIEW = "";
+function route() {
+  let v = location.hash.slice(1);
+  if (!VIEWS.includes(v)) v = FOLDER ? "cull" : "ingest";
+  VIEW = v;
+  for (const name of VIEWS) $("view-" + name).hidden = name !== v;
+  document.querySelectorAll(".tabs a").forEach(a => { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+  if (v === "ingest") ingestShow();
+  if (v === "cull") cullShow();
+  if (v === "caption") captionShow();
+}
+window.addEventListener("hashchange", route);
+
+/* shared photographer name */
+document.querySelectorAll(".sync-name").forEach(inp => {
+  inp.value = store.get("photographer", "");
+  inp.addEventListener("input", () => {
+    store.set("photographer", inp.value);
+    document.querySelectorAll(".sync-name").forEach(o => { if (o !== inp) o.value = inp.value; });
+    updateCredit();
+  });
+});
+const photographer = () => $("photographer").value.trim().replace(/\s+/g, " ");
+
+/* ================= INGEST ================= */
+let SOURCE = "", SCAN = null, cardTimer = null, jobTimer = null;
+const ing = {
+  base: store.get("ingest-base", ""),
+};
+$("ing-event").value = store.get("ingest-event", "");
+$("ing-folder").value = store.get("ingest-folder", "{isodate} {event}");
+$("ing-template").value = store.get("ingest-template", "{date}_{event}_{num}");
+$("ing-skip").checked = store.get("ingest-skip", "1") === "1";
+(store.get("ingest-rename", "rename") === "keep" ? $("ing-keep") : $("ing-rename")).checked = true;
+
+function renderTpl(tpl, when, event, num, original, initials, forFile) {
+  const p = n => String(n).padStart(2, "0");
+  const y = when.getFullYear(), mo = p(when.getMonth() + 1), d = p(when.getDate());
+  const vals = { date: `${y}${mo}${d}`, isodate: `${y}-${mo}-${d}`, time: `${p(when.getHours())}${p(when.getMinutes())}${p(when.getSeconds())}`,
+    event: forFile ? event.trim().replace(/\s+/g, "-") : event.trim(), num: String(num).padStart(4, "0"), original, initials };
+  let out = tpl.replace(/\{(\w+)\}/g, (m, k) => (k.toLowerCase() in vals ? vals[k.toLowerCase()] : m));
+  if (forFile) out = out.replace(/([_\-. ])[_\-. ]+/g, "$1").replace(/^[_\-. ]+|[_\-. ]+$/g, "");
+  return out.replace(/[\\/:*?"<>|\x00-\x1f]/g, "").replace(/\s+/g, " ").trim().replace(/^\.+|\.+$/g, "");
+}
+const initialsOf = n => (n.match(/[A-Za-z]+/g) || []).map(w => w[0]).join("").toUpperCase();
+
+function ingestPreview() {
+  $("ing-base").textContent = ing.base || "Not chosen yet";
+  const when = SCAN && SCAN.first ? new Date(SCAN.first) : new Date();
+  const sub = renderTpl($("ing-folder").value, when, $("ing-event").value, 1, "", "", false);
+  $("ing-folder-preview").textContent = ing.base ? "Photos go in: " + ing.base + (sub ? "/" + sub : "") : (sub ? "Folder: " + sub : "");
+  const rename = $("ing-rename").checked;
+  $("ing-template").disabled = !rename;
+  const box = $("ing-names");
+  box.innerHTML = "";
+  const samples = SCAN ? SCAN.sample : [{ time: new Date().toISOString(), stem: "IMG_1234", files: ["IMG_1234.CR3"] }];
+  samples.forEach((s, i) => s.files.forEach(f => {
+    const ext = f.slice(f.lastIndexOf(".")).toLowerCase();
+    const to = rename ? (renderTpl($("ing-template").value, new Date(s.time), $("ing-event").value, i + 1, s.stem, initialsOf(photographer()), true) || s.stem) + ext : f;
+    const line = document.createElement("span");
+    line.append(f + "  →  ");
+    const b = document.createElement("b"); b.textContent = to; line.append(b);
+    box.append(line);
+  }));
+  const ready = SCAN && SCAN.shots > 0 && ing.base;
+  const only = $("ing-only").value, skip = $("ing-skip").checked;
+  const want = r => only === "all" ? true : only === "norejects" ? r !== -1 : r >= +only;
+  const picked = SCAN ? SCAN.flags.filter(([r]) => want(r)) : [];
+  const todo = picked.filter(([, done]) => !(skip && done)).length;
+  $("ing-only-hint").textContent = SCAN && only !== "all"
+    ? `${plural(picked.length, "photo")} of ${SCAN.shots} on the card match.` + (SCAN.rated || SCAN.rejected ? "" : " Nothing on this card is rated yet.")
+    : "Cull on the card first, then copy just your picks. Ratings and captions come along.";
+  $("ing-start").disabled = !ready || !todo || (JOBSTATE && JOBSTATE.running);
+  $("ing-start").textContent = SCAN ? `Ingest ${plural(todo, "photo")}` : "Ingest";
+  $("ing-msg").className = "msg";
+  $("ing-msg").textContent = !SCAN ? "Choose what to copy from." : !ing.base ? "Choose where to save the photos."
+    : SCAN.shots && !todo ? (picked.length ? "Everything here has already been ingested." : "No photos match what you chose to copy.") : "";
+}
+["ing-event", "ing-folder", "ing-template"].forEach(id => $(id).addEventListener("input", () => {
+  store.set({ "ing-event": "ingest-event", "ing-folder": "ingest-folder", "ing-template": "ingest-template" }[id], $(id).value);
+  ingestPreview();
+}));
+["ing-keep", "ing-rename"].forEach(id => $(id).addEventListener("change", () => { store.set("ingest-rename", $("ing-keep").checked ? "keep" : "rename"); ingestPreview(); }));
+$("ing-skip").addEventListener("change", () => { store.set("ingest-skip", $("ing-skip").checked ? "1" : "0"); ingestPreview(); });
+$("ing-only").value = store.get("ingest-only", "all");
+$("ing-only").addEventListener("change", () => { store.set("ingest-only", $("ing-only").value); ingestPreview(); });
+document.querySelectorAll(".sync-name").forEach(i => i.addEventListener("input", () => { if (VIEW === "ingest") { ingestPreview(); paintGettyPreview(); } }));
+
+/* metadata template: saved by name, applied while copying */
+const TPL_FIELDS = [
+  ["caption", "Caption", "The visiting Cleveland State Vikings and the Bowling Green Falcons warm up before a non-conference women's basketball game", "area"],
+  ["headline", "Headline", "Toledo v Bowling Green"],
+  ["title", "Title", "Cleveland State v Bowling Green"],
+  ["keywords", "Keywords", "BGSU, Falcons, Football", "", "Separate with commas"],
+  ["copyright", "Copyright", "{photographer}/BG Falcon Media"],
+  ["credit", "Credit", "BG Falcon Media"],
+  ["source", "Source", "{photographer}"],
+  ["location", "Venue", "the Stroh Center"],
+  ["city", "City", "Bowling Green"],
+  ["state", "State", "Ohio"],
+  ["country", "Country", "United States"],
+  ["countrycode", "Country code", "USA"],
+  ["bylinetitle", "Byline title", "Staff"],
+  ["jobid", "Job ID", "FB 2026-11-02"],
+  ["instructions", "Instructions", "Editorial use only", "wide"],
+];
+// Saved templates are files in the "Metadata Templates" folder next to the app, so they can be shared.
+let TEMPLATES = {}, TPL_LOADED = false;
+const tplStore = {
+  all() { return TEMPLATES; },
+  async save(name, values) { TEMPLATES = (await post("/api/templates/save", { name, values })).templates; },
+  async remove(name) { TEMPLATES = (await post("/api/templates/delete", { name })).templates; },
+};
+async function loadTemplates() {
+  try { TEMPLATES = (await fetch("/api/templates", { cache: "no-store" }).then(r => r.json())).templates || {}; } catch (e) { TEMPLATES = {}; }
+  // Templates saved before they were files lived in this browser: move them into the folder once.
+  if (store.get("meta-templates-moved", "") !== "1") {
+    let old = {};
+    try { old = JSON.parse(store.get("meta-templates", "{}")) || {}; } catch (e) {}
+    try {
+      for (const [n, v] of Object.entries(old)) if (!(n in TEMPLATES)) await tplStore.save(n, v);
+      store.set("meta-templates-moved", "1");
+    } catch (e) {}
+  }
+  TPL_LOADED = true;
+  tplMenu();
+}
+let tplName = store.get("meta-name", "");
+(function buildTplFields() {
+  const box = $("tpl-fields");
+  let cur = {};
+  try { cur = JSON.parse(store.get("meta-current", "{}")) || {}; } catch (e) {}
+  TPL_FIELDS.forEach(([key, label, ph, kind, hint]) => {
+    const f = document.createElement("div");
+    f.className = "field" + (kind ? " wide" : "");
+    const l = document.createElement("label"); l.htmlFor = "tpl-" + key; l.textContent = label;
+    const inp = document.createElement(kind === "area" ? "textarea" : "input");
+    inp.id = "tpl-" + key; inp.placeholder = ph; inp.autocomplete = "off"; inp.spellcheck = key === "caption" || key === "headline";
+    if (inp.tagName === "INPUT") inp.type = "text";
+    inp.value = cur[key] || "";
+    inp.addEventListener("input", tplChanged);
+    f.append(l, inp);
+    if (key === "caption") {
+      const t = document.createElement("label"); t.className = "toggle getty-toggle";
+      t.innerHTML = '<input type="checkbox" id="tpl-gettyfmt"> Getty format: just write what\'s happening. The dateline, date, venue, place and credit are added for you';
+      const pv = document.createElement("div"); pv.className = "getty-preview"; pv.id = "tpl-preview"; pv.hidden = true;
+      f.append(t, pv);
+      t.querySelector("input").checked = !!cur.getty;
+      t.querySelector("input").addEventListener("change", tplChanged);
+    }
+    if (hint) { const h = document.createElement("div"); h.className = "hint"; h.textContent = hint; f.append(h); }
+    box.append(f);
+  });
+  $("tpl-on").checked = store.get("meta-on", "0") === "1";
+  $("tpl-on").addEventListener("change", () => { store.set("meta-on", $("tpl-on").checked ? "1" : "0"); tplChanged(); });
+})();
+const tplValues = () => Object.assign(Object.fromEntries(TPL_FIELDS.map(([k]) => [k, $("tpl-" + k).value])), { getty: $("tpl-gettyfmt").checked ? "1" : "" });
+function tplSetValues(v) { TPL_FIELDS.forEach(([k]) => { $("tpl-" + k).value = (v && v[k]) || ""; }); $("tpl-gettyfmt").checked = !!(v && v.getty); tplChanged(); }
+function tplDirty() { const saved = tplStore.all()[tplName]; return !!saved && (TPL_FIELDS.some(([k]) => (saved[k] || "") !== $("tpl-" + k).value) || !!saved.getty !== $("tpl-gettyfmt").checked); }
+// Same rules as getty_caption() in ingest.py, for the preview.
+function gettyCaption(body, when, city, state, venue, who, credit) {
+  body = body.split(/\s+/).join(" ").trim();
+  const written = body.match(/\s*\([^()]+\/[^()]+\)\s*$/);  // a credit already typed at the end
+  if (written) body = body.slice(0, written.index);
+  body = body.replace(/[.\s]+$/, "");
+  const place = [city.trim(), state.trim()].filter(Boolean).join(", ");
+  const month = when.toLocaleString("en-US", { month: "long" });
+  const head = /^[A-Z][A-Z .,'-]* - [A-Z]+ \d{1,2}:/.test(body) ? "" : (place ? place.toUpperCase() + " - " : "") + `${month.toUpperCase()} ${String(when.getDate()).padStart(2, "0")}: `;
+  const hasDate = new RegExp(month + " \\d{1,2}, \\d{4}").test(body);
+  const tail = (hasDate ? "" : ` on ${month} ${when.getDate()}, ${when.getFullYear()}` + (venue.trim() ? " at " + venue.trim() : "") + (place ? " in " + place : "")) + ".";
+  who = who.trim(); credit = credit.trim();
+  const by = written ? written[0].trim() : who && credit ? `(${who}/${credit})` : who ? `(${who})` : "";
+  return [head, body, tail, by ? " " + by : ""];
+}
+function paintGettyPreview() {
+  const pv = $("tpl-preview"), on = $("tpl-gettyfmt").checked;
+  pv.hidden = !on;
+  if (!on) return;
+  const when = SCAN && SCAN.first ? new Date(SCAN.first) : new Date();
+  const body = expand($("tpl-caption").value, 0).text.trim();
+  const [head, mid, tail, by] = gettyCaption(body || "x", when, $("tpl-city").value, $("tpl-state").value, $("tpl-location").value, photographer(), $("tpl-credit").value);
+  pv.innerHTML = "";
+  const lab = document.createElement("div"); lab.className = "pv-label"; lab.textContent = "Each photo's caption will read:";
+  const txt = document.createElement("div");
+  const m = document.createElement(body ? "span" : "em"); m.textContent = body ? mid : "what's happening";
+  txt.append(head, m, tail + by);
+  pv.append(lab, txt);
+  if (!photographer()) { const n = document.createElement("div"); n.className = "pv-label"; n.textContent = "Type your photographer name above to get the (Photo by …) credit."; pv.append(n); }
+  if (!$("tpl-city").value.trim()) { const n = document.createElement("div"); n.className = "pv-label"; n.textContent = "Fill in City and State for the dateline."; pv.append(n); }
+}
+function tplChanged() {
+  store.set("meta-current", JSON.stringify(tplValues()));
+  paintGettyPreview();
+  $("tpl-step").classList.toggle("tpl-off", !$("tpl-on").checked);
+  const unknown = new Set();
+  TPL_FIELDS.forEach(([k]) => {
+    const v = $("tpl-" + k).value;
+    if (Object.keys(CODES).length) expand(v, 0).unknown.forEach(u => unknown.add(u));
+    else for (const m of v.matchAll(codeRegex())) unknown.add(m[0]);
+  });
+  const w = $("tpl-warn");
+  w.hidden = !unknown.size;
+  w.textContent = unknown.size ? "Unknown code" + (unknown.size > 1 ? "s" : "") + ": " + [...unknown].join(", ") + " (turn on its code file in Caption, or it's copied as typed)" : "";
+  tplMenu();
+}
+function tplMenu() {
+  const sel = $("tpl-pick"), all = tplStore.all(), names = Object.keys(all).sort((a, b) => a.localeCompare(b));
+  if (TPL_LOADED && !(tplName in all)) tplName = "";
+  sel.innerHTML = "";
+  const none = document.createElement("option"); none.value = ""; none.textContent = names.length ? "Unsaved template" : "No saved templates"; sel.append(none);
+  names.forEach(n => { const o = document.createElement("option"); o.value = n; o.textContent = n + (n === tplName && tplDirty() ? " (edited)" : ""); sel.append(o); });
+  sel.value = tplName;
+  $("tpl-save").disabled = !tplName || !tplDirty();
+  $("tpl-del").disabled = !tplName;
+}
+$("tpl-pick").addEventListener("change", () => {
+  tplName = $("tpl-pick").value; store.set("meta-name", tplName);
+  if (tplName) tplSetValues(tplStore.all()[tplName]); else tplMenu();
+});
+function tplError(e) { const w = $("tpl-warn"); w.hidden = false; w.textContent = "Couldn't save the template: " + e.message; }
+$("tpl-save").addEventListener("click", async () => { if (!tplName) return; try { await tplStore.save(tplName, tplValues()); } catch (e) { tplError(e); } tplMenu(); });
+$("tpl-saveas").addEventListener("click", async () => {
+  const n = (prompt("Name this template (for example Football home):", tplName || $("ing-event").value || "") || "").trim();
+  if (!n) return;
+  const all = tplStore.all();
+  if (n in all && n !== tplName && !confirm(`Replace the saved template "${n}"?`)) return;
+  try { await tplStore.save(n, tplValues()); } catch (e) { tplError(e); return; }
+  tplName = n; store.set("meta-name", n); tplMenu();
+});
+$("tpl-del").addEventListener("click", async () => {
+  if (!tplName || !confirm(`Delete the saved template "${tplName}"? The fields stay filled in.`)) return;
+  try { await tplStore.remove(tplName); } catch (e) { tplError(e); return; }
+  tplName = ""; store.set("meta-name", ""); tplMenu();
+});
+// Getty Images style starter: fills only the boxes that are empty, so nothing typed is lost.
+const GETTY_STARTER = {
+  copyright: "{photographer}/BG Falcon Media", credit: "BG Falcon Media", source: "{photographer}",
+  city: "Bowling Green", state: "Ohio", country: "United States", countrycode: "USA", bylinetitle: "Staff",
+};
+$("tpl-getty").addEventListener("click", () => {
+  let n = 0;
+  for (const [k, v] of Object.entries(GETTY_STARTER)) { const el = $("tpl-" + k); if (el && !el.value.trim()) { el.value = v; n++; } }
+  if (!$("tpl-gettyfmt").checked) { $("tpl-gettyfmt").checked = true; n++; }
+  if (!$("tpl-on").checked) { $("tpl-on").checked = true; store.set("meta-on", "1"); }
+  tplChanged();
+  if (!$("tpl-caption").value.trim()) $("tpl-caption").focus();
+  const w = $("tpl-warn");
+  if (!n) { w.hidden = false; w.textContent = "Every Getty field is already filled in. Clear a box first to reset it."; }
+});
+// Codes are swapped for their text now; {fill-ins} are filled per photo while copying.
+function tplForIngest() {
+  if (!$("tpl-on").checked) return {};
+  const out = {};
+  TPL_FIELDS.forEach(([k]) => {
+    const v = expand($("tpl-" + k).value, 0).text.trim();
+    if (!v) return;
+    out[k] = k === "keywords" ? v.split(/[,;\n]/).map(x => x.trim()).filter(Boolean) : v;
+  });
+  if ($("tpl-gettyfmt").checked) out.getty = true;
+  return out;
+}
+setTimeout(tplChanged, 0);  // after the code-file section below has set up
+loadTemplates();
+
+async function refreshCards() {
+  const { cards } = await getJSON("/api/cards");
+  const box = $("cards");
+  const key = cards.map(c => c.path).join("|");
+  if (box.dataset.key === key) return;
+  box.dataset.key = key;
+  box.innerHTML = "";
+  if (!cards.length) box.innerHTML = '<span class="msg">No memory card found. Plug one in and it shows up here.</span>';
+  cards.forEach(c => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "card-btn";
+    b.setAttribute("aria-pressed", String(c.path === SOURCE));
+    b.innerHTML = "<span><b></b><small>Memory card</small></span>";
+    b.querySelector("b").textContent = c.name;
+    b.addEventListener("click", () => chooseSource(c.path));
+    box.append(b);
+  });
+  if (!SOURCE && cards.length === 1) chooseSource(cards[0].path);
+}
+async function chooseSource(path) {
+  SOURCE = path; SCAN = null;
+  document.querySelectorAll(".card-btn").forEach(b => b.setAttribute("aria-pressed", "false"));
+  $("cards").dataset.key = "";
+  refreshCards();
+  $("scan-result").innerHTML = '<span class="msg">Looking at the photos…</span>';
+  ingestPreview();
+  try {
+    SCAN = await post("/api/ingest/scan", { source: path });
+    const types = Object.entries(SCAN.types).map(([k, v]) => `${v} ${k}`).join(", ");
+    const span = SCAN.first ? `${fmtTime(SCAN.first)} – ${fmtTime(SCAN.last)}` : "";
+    $("scan-result").innerHTML = "";
+    const p = document.createElement("div");
+    p.innerHTML = `<b></b> in <span class="mono"></span>`;
+    p.querySelector("b").textContent = `${plural(SCAN.shots, "photo")} · ${gb(SCAN.bytes)}`;
+    p.querySelector(".mono").textContent = SCAN.source;
+    const q = document.createElement("div"); q.className = "msg"; q.textContent = [types, span].filter(Boolean).join(" · ");
+    $("scan-result").append(p, q);
+    const notes = [];
+    if (SCAN.rated || SCAN.rejected) notes.push(`${SCAN.rated} rated, ${SCAN.rejected} rejected`);
+    if (SCAN.already) notes.push(`${plural(SCAN.already, "photo")} already ingested`);
+    if (notes.length) { const a = document.createElement("div"); a.className = "msg"; a.textContent = notes.join(" · ") + "."; $("scan-result").append(a); }
+    if (SCAN.shots) {
+      const go = document.createElement("div"); go.className = "go";
+      go.innerHTML = '<button class="btn" type="button" data-v="cull">Cull on the card</button><button class="btn" type="button" data-v="caption">Caption on the card</button>';
+      go.querySelectorAll("button").forEach(b => b.addEventListener("click", async () => { await setFolder(path); location.hash = "#" + b.dataset.v; }));
+      $("scan-result").append(go);
+    }
+    if (SCAN.rated && $("ing-only").value === "all" && !store.get("ingest-only", "")) $("ing-only").value = "norejects";
+    if (!SCAN.shots) $("scan-result").innerHTML = '<span class="msg">No photos found there.</span>';
+  } catch (e) {
+    $("scan-result").innerHTML = ""; const m = document.createElement("span"); m.className = "msg error"; m.textContent = e.message; $("scan-result").append(m);
+  }
+  ingestPreview();
+}
+$("pick-source").addEventListener("click", async () => { const p = await chooseFolder("Choose the card or folder to copy photos from", "/Volumes"); if (p) chooseSource(p); });
+$("pick-base").addEventListener("click", async () => {
+  const p = await chooseFolder("Choose where to save ingested photos", ing.base);
+  if (p) { ing.base = p; store.set("ingest-base", p); ingestPreview(); }
+});
+
+let JOBSTATE = null;
+function pollJob(onUpdate) {
+  clearInterval(jobTimer);
+  const tick = async () => {
+    JOBSTATE = await getJSON("/api/job");
+    onUpdate(JOBSTATE);
+    if (!JOBSTATE.running) clearInterval(jobTimer);
+  };
+  jobTimer = setInterval(tick, 400);
+  tick();
+}
+function showIngestJob(s) {
+  $("ing-progress").hidden = false;
+  const done = s.finished;
+  $("ing-progress").classList.toggle("done", done && !s.errors.length);
+  $("ing-bar").style.width = (s.bytes_total ? 100 * s.bytes_done / s.bytes_total : (done ? 100 : 0)) + "%";
+  if (!done) {
+    $("ing-status").textContent = `Copying ${Math.min(s.files_done + 1, s.files_total)} of ${s.files_total} files · ${gb(s.bytes_done)} of ${gb(s.bytes_total)}`;
+  } else {
+    const parts = [`Copied ${plural(s.copied, "file")} to ${s.dest}`];
+    if (s.skipped) parts.push(`skipped ${s.skipped} already ingested`);
+    if (s.left_out) parts.push(`left ${plural(s.left_out, "photo")} on the card that you didn't pick`);
+    $("ing-status").textContent = (s.cancelled ? "Stopped. " : "Done. ") + parts.join(", ") + ".";
+  }
+  $("ing-current").textContent = s.current || "";
+  const errs = $("ing-errors");
+  errs.hidden = !s.errors.length;
+  errs.innerHTML = "";
+  s.errors.slice(-50).forEach(e => { const li = document.createElement("li"); li.textContent = e; errs.append(li); });
+  $("ing-cancel").hidden = done;
+  $("ing-cull").hidden = !done || !s.copied && !s.skipped;
+  ingestPreview();
+}
+$("ing-start").addEventListener("click", async () => {
+  $("ing-msg").textContent = "";
+  try {
+    await post("/api/ingest/start", {
+      source: SOURCE, base: ing.base, folder_template: $("ing-folder").value, event: $("ing-event").value,
+      rename: $("ing-rename").checked, template: $("ing-template").value, photographer: photographer(), skip_done: $("ing-skip").checked, only: $("ing-only").value,
+      meta: tplForIngest(),
+    });
+    pollJob(s => {
+      if (s.kind !== "ingest") return;
+      showIngestJob(s);
+      if (s.finished && SOURCE) chooseSource(SOURCE);  // refresh "already ingested" counts
+    });
+  } catch (e) { $("ing-msg").textContent = e.message; $("ing-msg").className = "msg error"; }
+});
+$("ing-cancel").addEventListener("click", () => post("/api/job/cancel"));
+$("ing-cull").addEventListener("click", async () => { if (JOBSTATE && JOBSTATE.dest) { await setFolder(JOBSTATE.dest); location.hash = "#cull"; } });
+
+function ingestShow() {
+  refreshCards();
+  clearInterval(cardTimer);
+  cardTimer = setInterval(() => VIEW === "ingest" ? refreshCards() : clearInterval(cardTimer), 3000);
+  ingestPreview();
+}
+
+/* ================= CULL ================= */
+let CULL = [], cullIdx = 0, zoomed = false;
+const stage = $("stage"), stageImg = $("stage-img");
+
+function cullFilter(s) {
+  const f = $("cull-filter").value;
+  if (f === "all") return true;
+  if (f === "unrated") return s.rating === 0;
+  if (f === "rejected") return s.rating === -1;
+  if (f === "tagged") return !!s.tagged;
+  if (f === "untagged") return !s.tagged;
+  if (f.startsWith("cc-")) return f === "cc-any" ? s.colorclass > 0 : s.colorclass === +f.slice(3);
+  return s.rating >= +f;
+}
+function cullCounts() {
+  const rated = SHOTS.filter(s => s.rating > 0).length, rej = SHOTS.filter(s => s.rating === -1).length, tagged = SHOTS.filter(s => s.tagged).length;
+  $("cull-rejects").hidden = !!INFO.on_card;
+  $("cull-counts").textContent = (INFO.on_card ? `On card ${INFO.card} · ` : "") + `${plural(SHOTS.length, "photo")} · ${tagged} tagged · ${rated} rated · ${rej} rejected` + (CULL.length !== SHOTS.length ? ` · showing ${CULL.length}` : "");
+  $("cull-rejects").disabled = !rej;
+  $("cull-copy").disabled = !CULL.length;
+  const nSel = selected().length;
+  $("cull-copy").textContent = nSel > 1 ? `Copy ${nSel} selected to…` : CULL.length ? `Copy ${plural(CULL.length, "photo")} to…` : "Copy these…";
+  if (nSel > 1) $("cull-counts").textContent += ` · ${nSel} selected`;
+}
+function buildStrip() {
+  const strip = $("strip");
+  strip.innerHTML = "";
+  CULL.forEach((s, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "thumb"; b.title = s.name;
+    b.innerHTML = '<img loading="lazy" alt=""><span class="badge" hidden></span><span class="fname"></span>';
+    b.querySelector(".fname").textContent = s.name;
+    b.querySelector("img").src = photoURL(s, "thumb");
+    b.addEventListener("click", e => {
+      if (e.shiftKey) selectRange(anchorIdx >= 0 ? anchorIdx : cullIdx, i);
+      else if (e.metaKey || e.ctrlKey) {
+        if (!SEL.size && CULL[cullIdx]) SEL.add(CULL[cullIdx].id);
+        SEL.has(s.id) ? SEL.delete(s.id) : SEL.add(s.id);
+        anchorIdx = i;
+      } else { SEL.clear(); anchorIdx = i; }
+      cullGo(i); paintSel();
+    });
+    b.addEventListener("dblclick", () => { cullGo(i); setGrid(false); });
+    s.thumbEl = b;
+    paintThumb(s);
+    strip.append(b);
+  });
+}
+function paintThumb(s) {
+  const b = s.thumbEl; if (!b) return;
+  let mark = b.querySelector(".tagmark");
+  if (s.tagged && !mark) { mark = document.createElement("span"); mark.className = "tagmark"; mark.textContent = "✓"; b.append(mark); }
+  if (mark) mark.hidden = !s.tagged;
+  let cc = b.querySelector(".cc");
+  if (s.colorclass && !cc) { cc = document.createElement("span"); cc.className = "cc"; b.prepend(cc); }
+  if (cc) { cc.hidden = !s.colorclass; if (s.colorclass) cc.style.background = COLOR_CLASSES[s.colorclass].color; }
+  b.title = s.colorclass ? s.name + " · " + COLOR_CLASSES[s.colorclass].name : s.name;
+  const badge = b.querySelector(".badge");
+  badge.hidden = !s.rating;
+  badge.className = "badge" + (s.rating === -1 ? " rej" : "");
+  badge.textContent = s.rating === -1 ? "✕" : starText(s.rating);
+  b.classList.toggle("rejected", s.rating === -1);
+}
+function cullRebuild(keepId) {
+  CULL = SHOTS.filter(cullFilter);
+  buildStrip();
+  let i = keepId ? CULL.findIndex(s => s.id === keepId) : -1;
+  cullIdx = i >= 0 ? i : Math.min(cullIdx, Math.max(0, CULL.length - 1));
+  cullCounts();
+  cullPaint();
+}
+function cullShow() {
+  if (!FOLDER || INFO.missing) {
+    stageImg.hidden = true; $("stage-empty").hidden = false; $("stage-empty").innerHTML = emptyFolderHTML(INFO.missing ? missingMsg() : "Open a folder of photos to start culling, or ingest a card first.");
+    $("strip").innerHTML = ""; $("cull-counts").textContent = ""; $("infobar").hidden = true;
+    return;
+  }
+  if (cullDirty) { cullDirty = false; cullIdx = 0; cullRebuild(); }
+}
+const preloaded = new Map();
+function preload(s) {
+  if (!s || preloaded.has(s.id)) return;
+  const im = new Image(); im.src = photoURL(s, "screen"); preloaded.set(s.id, im);
+  if (preloaded.size > 12) preloaded.delete(preloaded.keys().next().value);
+}
+// RAW files: show the camera's built-in preview at once, then swap in the sharper screen-sized
+// one as soon as it's made (the first time takes a moment; after that it's cached).
+const showsAsIs = s => /\.(jpe?g|png)$/i.test(s.name);
+function showSharp(s) {
+  const sharp = photoURL(s, "screen");
+  const pre = preloaded.get(s.id);
+  if (showsAsIs(s) || (pre && pre.complete && pre.naturalWidth)) { stageImg.src = sharp; return; }
+  const quick = photoURL(s, "medium");
+  stageImg.src = quick;
+  const im = pre || new Image();
+  if (!pre) im.src = sharp;
+  im.decode().then(() => {
+    const cur = CULL[cullIdx];
+    if (cur && cur.id === s.id && stageImg.src.endsWith(quick)) stageImg.src = sharp;
+  }).catch(() => {});
+}
+function cullPaint() {
+  const s = CULL[cullIdx];
+  $("infobar").hidden = !s;
+  if (!s) {
+    stageImg.hidden = true; $("stage-empty").hidden = false; $("stage-reject").hidden = true;
+    $("stage-empty").textContent = SHOTS.length ? "No photos match this filter." : "No photos in this folder.";
+    return;
+  }
+  setZoom(false);
+  stageImg.hidden = false; $("stage-empty").hidden = true;
+  if (!inGrid()) showSharp(s);  // the contact sheet doesn't show the big photo, so don't make it yet
+  $("cull-name").textContent = s.name;
+  $("cull-label").textContent = s.label;
+  $("cull-time").textContent = fmtTime(s.time);
+  $("cull-pos").textContent = `${cullIdx + 1} of ${CULL.length}`;
+  paintStars(s); paintTag(s); paintColor(s);
+  document.querySelectorAll(".thumb.current").forEach(t => t.classList.remove("current"));
+  if (s.thumbEl) { s.thumbEl.classList.add("current"); s.thumbEl.scrollIntoView({ inline: "center", block: "nearest" }); }
+  if (!inGrid()) { preload(CULL[cullIdx + 1]); preload(CULL[cullIdx + 2]); preload(CULL[cullIdx - 1]); }
+}
+function paintStars(s) {
+  const box = $("cull-stars");
+  box.innerHTML = "";
+  for (let n = 1; n <= 5; n++) {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = "★"; b.className = s.rating >= n ? "on" : "";
+    b.setAttribute("aria-label", plural(n, "star"));
+    b.addEventListener("click", () => rate(s, s.rating === n ? 0 : n, false));
+    box.append(b);
+  }
+  stage.classList.toggle("rejected", s.rating === -1);
+  $("stage-reject").hidden = s.rating !== -1;
+}
+// Contact sheet: G switches between the grid and one big photo; Enter or a double-click opens one.
+function setGrid(on) {
+  $("view-cull").classList.toggle("grid", on);
+  $("cull-grid").setAttribute("aria-pressed", String(on));
+  store.set("cull-grid", on ? "1" : "0");
+  if (on && zoomed) setZoom(false);
+  if (!on && CULL.length) cullPaint();
+  const s = CULL[cullIdx];
+  if (s && s.thumbEl) s.thumbEl.scrollIntoView({ block: "center", inline: "nearest" });
+}
+const inGrid = () => $("view-cull").classList.contains("grid");
+function gridColumns() {
+  const t = CULL[0] && CULL[0].thumbEl;
+  if (!t) return 1;
+  const w = t.getBoundingClientRect().width + 10;
+  return Math.max(1, Math.floor(($("strip").clientWidth - 28 + 10) / w));
+}
+$("cull-grid").addEventListener("click", () => setGrid(!inGrid()));
+$("keys-open").addEventListener("click", () => $("keys-help").showModal());
+setGrid(store.get("cull-grid", "0") === "1");
+function cullGo(i) {
+  if (!CULL.length) return;
+  cullIdx = Math.max(0, Math.min(CULL.length - 1, i));
+  cullPaint();
+}
+async function rate(s, r, advance) {
+  const before = s.rating;
+  s.rating = r;
+  paintThumb(s); if (CULL[cullIdx] === s) paintStars(s); cullCounts();
+  if (advance && $("cull-advance").checked && CULL[cullIdx] === s) cullGo(cullIdx + 1);
+  try { await post("/api/meta", { id: s.id, rating: r }); captionDirty = true; }
+  catch (e) { s.rating = before; paintThumb(s); if (CULL[cullIdx] === s) paintStars(s); cullCounts(); flash("Couldn't save the rating: " + e.message); }
+}
+/* Photo Mechanic's color classes, with its default names */
+const COLOR_CLASSES = [
+  { name: "No color class", color: "" },
+  { name: "Winner", color: "#e5484d" }, { name: "Winner Alt", color: "#f76b15" },
+  { name: "Superior", color: "#f5c142" }, { name: "Superior Alt", color: "#46a758" },
+  { name: "Typical", color: "#3e8bf0" }, { name: "Typical Alt", color: "#8e4ec6" },
+  { name: "Extras", color: "#12a594" }, { name: "Trash", color: "#8b8d98" },
+];
+(function fillColorPicker() {
+  const sel = $("cull-color");
+  COLOR_CLASSES.forEach((c, i) => { const o = document.createElement("option"); o.value = i; o.textContent = i ? `${i} ${c.name}` : c.name; sel.append(o); });
+  sel.addEventListener("change", () => { colorAll(+sel.value); sel.blur(); });
+})();
+function paintColor(s) {
+  const sel = $("cull-color");
+  sel.value = String(s.colorclass || 0);
+  sel.style.setProperty("--cc", s.colorclass ? COLOR_CLASSES[s.colorclass].color : "");
+}
+async function setColor(s, c) {
+  const before = s.colorclass || 0;
+  if (before === c) return;
+  s.colorclass = c;
+  paintThumb(s); if (CULL[cullIdx] === s) paintColor(s);
+  try { await post("/api/meta", { id: s.id, colorclass: c }); captionDirty = true; }
+  catch (e) { s.colorclass = before; paintThumb(s); if (CULL[cullIdx] === s) paintColor(s); flash("Couldn't save the color class: " + e.message); }
+}
+function colorAll(c) { targets().forEach(s => setColor(s, c)); }
+
+/* Selection, like Photo Mechanic's contact sheet: Shift-click or Shift+arrows for a run,
+   Cmd/Ctrl-click to add one, Cmd/Ctrl+A for all. Keys then act on every selected photo. */
+const SEL = new Set();
+let anchorIdx = -1;
+const selected = () => CULL.filter(s => SEL.has(s.id));
+function targets() { const sel = selected(); const cur = CULL[cullIdx]; return sel.length > 1 && cur && SEL.has(cur.id) ? sel : cur ? [cur] : []; }
+function paintSel() {
+  const many = SEL.size > 1;
+  CULL.forEach(s => s.thumbEl && s.thumbEl.classList.toggle("sel", many && SEL.has(s.id)));
+  cullCounts();
+}
+function selectRange(a, b) {
+  if (!CULL.length) return;
+  const lo = Math.max(0, Math.min(a, b)), hi = Math.min(CULL.length - 1, Math.max(a, b));
+  SEL.clear();
+  for (let j = lo; j <= hi; j++) SEL.add(CULL[j].id);
+  paintSel();
+}
+function moveTo(i, extend) {
+  if (!CULL.length) return;
+  i = Math.max(0, Math.min(CULL.length - 1, i));
+  if (extend) { if (anchorIdx < 0) anchorIdx = cullIdx; cullGo(i); selectRange(anchorIdx, i); }
+  else { if (SEL.size) { SEL.clear(); paintSel(); } anchorIdx = i; cullGo(i); }
+}
+function rateAll(r, advance) {
+  const t = targets();
+  t.forEach(s => rate(s, r, advance && t.length === 1));
+}
+/* Number keys follow one of Photo Mechanic's three keyboard presets (chosen in the Shortcuts sheet). */
+const NUM_PRESETS = {
+  lightroom: { pm: "Lightroom Classic" },
+  stars: { pm: "Numbers set Star Ratings" },
+  colors: { pm: "Numbers set Color Classes" },
+};
+let numPreset = store.get("num-keys", "lightroom");
+if (!(numPreset in NUM_PRESETS)) numPreset = "lightroom";
+function numberKey(n) {
+  if (numPreset === "colors") { if (n > 8) return false; colorAll(n); return true; }
+  if (n === 0) { rateAll(0, false); return true; }
+  if (n <= 5) { rateAll(n, true); return true; }
+  if (numPreset === "lightroom") { colorAll(n - 5); return true; }
+  return false;
+}
+function paintKeyHints() {
+  const nums = numPreset === "colors" ? "<kbd>1</kbd>–<kbd>8</kbd> color class" : "<kbd>1</kbd>–<kbd>5</kbd> stars" + (numPreset === "lightroom" ? " · <kbd>6</kbd>–<kbd>9</kbd> color" : "");
+  $("cull-keys").innerHTML = `<kbd>T</kbd> tag · ${nums} · <kbd>X</kbd> reject · <kbd>G</kbd> grid · <kbd>?</kbd> all keys`;
+  const rows = numPreset === "colors"
+    ? [["1–8", "Color class (1 Winner … 8 Trash)"], ["0", "Clear the color class"]]
+    : [["1–5", "Star rating"], ["0", "Clear the stars"]].concat(numPreset === "lightroom" ? [["6–9", "Color class 1–4 (Winner … Superior Alt)"]] : []);
+  const dl = $("kh-numbers"); dl.innerHTML = "";
+  rows.forEach(([k, d]) => {
+    const dt = document.createElement("dt");
+    k.split("–").forEach((p, j) => { if (j) dt.append("–"); const kb = document.createElement("kbd"); kb.textContent = p; dt.append(kb); });
+    const dd = document.createElement("dd"); dd.textContent = d;
+    dl.append(dt, dd);
+  });
+  $("num-keys").value = numPreset;
+  $("num-keys-pm").textContent = `Same as Photo Mechanic's "${NUM_PRESETS[numPreset].pm}" keyboard preset.`;
+}
+$("num-keys").addEventListener("change", () => { numPreset = $("num-keys").value; store.set("num-keys", numPreset); paintKeyHints(); });
+paintKeyHints();
+
+// Photo Mechanic's tag: T toggles it. Saved in the photo's XMP where Photo Mechanic looks for it.
+async function tag(s, on) {
+  const before = !!s.tagged;
+  s.tagged = on;
+  paintThumb(s); if (CULL[cullIdx] === s) paintTag(s); cullCounts();
+  try { await post("/api/meta", { id: s.id, tagged: on }); captionDirty = true; }
+  catch (e) { s.tagged = before; paintThumb(s); if (CULL[cullIdx] === s) paintTag(s); cullCounts(); flash("Couldn't save the tag: " + e.message); }
+}
+function paintTag(s) { const b = $("cull-tag"); b.setAttribute("aria-pressed", String(!!s.tagged)); b.textContent = s.tagged ? "Tagged" : "Tag"; }
+$("cull-tag").addEventListener("click", () => { const s = CULL[cullIdx]; if (s) tag(s, !s.tagged); });
+function flash(text, ok) { $("cull-counts").textContent = text; $("cull-counts").classList.toggle("error", !ok); setTimeout(() => { $("cull-counts").classList.remove("error"); cullCounts(); }, 4000); }
+
+function setZoom(on, cx, cy) {
+  zoomed = on;
+  stage.classList.toggle("zoomed", on);
+  const s = CULL[cullIdx];
+  if (!on || !s) { $("stage-loading").hidden = true; return; }
+  const rect = stageImg.getBoundingClientRect();
+  const fx = cx === undefined ? 0.5 : Math.min(1, Math.max(0, (cx - rect.left) / rect.width));
+  const fy = cy === undefined ? 0.5 : Math.min(1, Math.max(0, (cy - rect.top) / rect.height));
+  const center = () => { stage.scrollLeft = fx * stageImg.offsetWidth - stage.clientWidth / 2; stage.scrollTop = fy * stageImg.offsetHeight - stage.clientHeight / 2; };
+  const full = photoURL(s, "full");
+  if (stageImg.src.endsWith(full)) { center(); return; }
+  $("stage-loading").hidden = false;
+  const im = new Image();
+  im.onload = () => { if (!zoomed || CULL[cullIdx] !== s) return; stageImg.src = full; $("stage-loading").hidden = true; requestAnimationFrame(center); };
+  im.src = full;
+  center();
+}
+stage.addEventListener("click", e => { if (e.target === stageImg) setZoom(!zoomed, e.clientX, e.clientY); else if (zoomed) setZoom(false); });
+
+document.addEventListener("keydown", e => {
+  if (e.key !== "?" || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) || document.activeElement.isContentEditable) return;
+  e.preventDefault();
+  const d = $("keys-help"); d.open ? d.close() : d.showModal();
+});
+document.addEventListener("keydown", e => {
+  if (VIEW !== "cull") return;
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) || document.querySelector("dialog[open]")) return;
+  if ((e.metaKey || e.ctrlKey) && !e.altKey && e.key.toLowerCase() === "a") { e.preventDefault(); selectRange(0, CULL.length - 1); return; }
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const s = CULL[cullIdx];
+  const k = e.key.toLowerCase();
+  const step = k === "arrowright" ? 1 : k === "arrowleft" ? -1 : k === "arrowdown" ? (inGrid() ? gridColumns() : 1) : k === "arrowup" ? -(inGrid() ? gridColumns() : 1) : 0;
+  if (step) { e.preventDefault(); moveTo(cullIdx + step, e.shiftKey); }
+  else if (k === "g") { e.preventDefault(); setGrid(!inGrid()); }
+  else if (k === "enter" && inGrid()) { e.preventDefault(); setGrid(false); }
+  else if (k === "home") { e.preventDefault(); cullGo(0); }
+  else if (k === "end") { e.preventDefault(); cullGo(CULL.length - 1); }
+  else if (!s) return;
+  else if (/^[0-9]$/.test(e.key) && numberKey(+e.key)) e.preventDefault();
+  else if (k === "`") { e.preventDefault(); rateAll(0, false); }
+  else if (k === "x") { e.preventDefault(); const t = targets(); const on = t.some(x => x.rating !== -1); rateAll(on ? -1 : 0, on); }
+  else if (k === "t") { e.preventDefault(); const t = targets(); const on = t.some(x => !x.tagged); t.forEach(x => tag(x, on)); }
+  else if ((k === "z" || k === " ") && !inGrid()) { e.preventDefault(); setZoom(!zoomed); }
+  else if (k === "escape" && zoomed) setZoom(false);
+  else if (k === "escape" && selected().length) { SEL.clear(); paintSel(); }
+});
+$("cull-filter").addEventListener("change", () => { store.set("cull-filter", $("cull-filter").value); cullRebuild(CULL[cullIdx] && CULL[cullIdx].id); $("cull-filter").blur(); });
+$("cull-filter").value = store.get("cull-filter", "all");
+$("cull-advance").checked = store.get("cull-advance", "1") === "1";
+$("cull-advance").addEventListener("change", () => store.set("cull-advance", $("cull-advance").checked ? "1" : "0"));
+
+function showCullJob(s) {
+  $("cull-job").hidden = false;
+  $("cull-job-bar").style.width = (s.bytes_total ? 100 * s.bytes_done / s.bytes_total : (s.finished ? 100 : 0)) + "%";
+  $("cull-job-cancel").hidden = s.finished;
+  $("cull-job-text").textContent = !s.finished
+    ? `Copying ${Math.min(s.files_done + 1, s.files_total)} of ${s.files_total} files to ${s.dest}`
+    : `${s.cancelled ? "Stopped" : "Done"}: copied ${plural(s.copied, "file")} to ${s.dest}` + (s.skipped ? ` (${s.skipped} were already there)` : "") + (s.errors.length ? `. ${plural(s.errors.length, "problem")}: ${s.errors[0]}` : ".");
+  if (s.finished) setTimeout(() => { if (JOBSTATE === s) $("cull-job").hidden = true; }, 12000);
+}
+$("cull-copy").addEventListener("click", async () => {
+  const ids = (selected().length > 1 ? selected() : CULL).map(s => s.id);
+  const dest = await chooseFolder(`Copy ${plural(ids.length, "photo")} to`, FOLDER);
+  if (!dest) return;
+  try { await post("/api/cull/copy", { ids, dest }); pollJob(s => { if (s.kind === "copy") showCullJob(s); }); }
+  catch (e) { flash(e.message); }
+});
+$("cull-job-cancel").addEventListener("click", () => post("/api/job/cancel"));
+
+$("cull-rejects").addEventListener("click", () => {
+  const n = SHOTS.filter(s => s.rating === -1).length;
+  $("cull-confirm-text").textContent = `Move ${plural(n, "rejected photo")} into a "Rejects" folder?`;
+  $("cull-actions").hidden = true; $("cull-confirm").hidden = false;
+});
+$("cull-confirm-no").addEventListener("click", () => { $("cull-actions").hidden = false; $("cull-confirm").hidden = true; });
+$("cull-confirm-yes").addEventListener("click", async () => {
+  $("cull-actions").hidden = false; $("cull-confirm").hidden = true;
+  try {
+    const ids = SHOTS.filter(s => s.rating === -1).map(s => s.id);
+    const r = await post("/api/cull/move-rejects", { ids });
+    const keep = CULL[cullIdx] && CULL[cullIdx].rating !== -1 ? CULL[cullIdx].id : null;
+    await loadShots();
+    cullRebuild(keep);
+    flash(`Moved ${plural(r.moved, "file")} to ${r.dest}`);
+  } catch (e) { flash(e.message); }
+});
+
+/* ================= CAPTION ================= */
+let items = [], CODES = {}, LOWER = {}, lastTa = null, FILES = [], ACTIVE = new Set();
+const list = $("list");
+const delimInput = $("delim");
+
+function getDelim() { return delimInput.value || "\\"; }
+delimInput.value = store.get("delim", "\\");
+delimInput.addEventListener("input", () => { store.set("delim", getDelim()); renderCodeRows(); });
+function codeRegex() {
+  const d = getDelim();
+  const outer = d.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const inner = d.replace(/[\\\]^-]/g, "\\$&");
+  return new RegExp(outer + "([^" + inner + "\\s]{1,60})" + outer, "g");
+}
+// \code\ uses the first replacement column; \code#2\ uses the second, and so on.
+function lookup(code) {
+  let col = 0;
+  const m = code.match(/^(.+)#(\d+)$/);
+  if (m) { code = m[1]; col = parseInt(m[2], 10) - 1; }
+  const row = CODES[code] || LOWER[code.toLowerCase()];
+  if (!row || col < 0 || row[col] === undefined) return null;
+  return row[col];
+}
+function expand(text, caret) {
+  const unknown = [];
+  if (!Object.keys(CODES).length) return { text, caret, unknown, changed: false };
+  let out = "", last = 0, newCaret = caret, changed = false;
+  for (const m of text.matchAll(codeRegex())) {
+    const rep = lookup(m[1]);
+    out += text.slice(last, m.index);
+    const end = m.index + m[0].length;
+    if (rep === null) { unknown.push(m[0]); out += m[0]; }
+    else {
+      changed = true; out += rep;
+      if (caret >= end) newCaret += rep.length - m[0].length;
+      else if (caret > m.index) newCaret = out.length;
+    }
+    last = end;
+  }
+  out += text.slice(last);
+  return { text: out, caret: newCaret, unknown, changed };
+}
+function applyExpansion(it, doExpand = true) {
+  const ta = it.ta;
+  const r = expand(ta.value, ta.selectionStart);
+  if (r.changed && doExpand) { ta.value = r.text; ta.setSelectionRange(r.caret, r.caret); }
+  if (r.unknown.length) {
+    it.warnEl.hidden = false;
+    it.warnEl.textContent = "Unknown code" + (r.unknown.length > 1 ? "s" : "") + ": ";
+    r.unknown.forEach((u, i) => { if (i) it.warnEl.append(", "); const c = document.createElement("code"); c.textContent = u; it.warnEl.append(c); });
+  } else it.warnEl.hidden = true;
+}
+
+// Each code file is a toggle, like choosing the active code file in Photo Mechanic.
+try { ACTIVE = new Set(JSON.parse(store.get("active-codes", "[]"))); } catch (e) {}
+const saveActive = () => store.set("active-codes", JSON.stringify([...ACTIVE]));
+const shortName = n => n.replace(/\.(txt|tsv|tab)$/i, "").replace(/^BGSU Code Replacement - /i, "");
+function setCodes(d) {
+  FILES = d.files || [];
+  const names = new Set(FILES.map(f => f.name));
+  ACTIVE = new Set([...ACTIVE].filter(n => names.has(n)));
+  rebuildCodes();
+}
+function rebuildCodes() {
+  setTimeout(refreshPlayers, 0);
+  CODES = {}; LOWER = {};
+  let overlaps = 0;
+  FILES.filter(f => ACTIVE.has(f.name)).forEach(f => {
+    for (const [k, v] of Object.entries(f.codes)) { if (k in CODES) overlaps++; CODES[k] = v; }
+  });
+  for (const k of Object.keys(CODES)) { const l = k.toLowerCase(); if (!(l in LOWER)) LOWER[l] = CODES[k]; }
+  tplChanged();
+  const box = $("code-files");
+  if (!FILES.length) box.innerHTML = '<span class="msg">No code files yet</span>';
+  else {
+    const on = FILES.filter(f => ACTIVE.has(f.name)).map(f => shortName(f.name));
+    pickMenu(box, {
+      summary: on.length ? listSummary(on) : "None on",
+      items: FILES.map(f => ({ label: shortName(f.name), on: ACTIVE.has(f.name), note: f.count + " codes", title: f.name })),
+      toggle: (i, on) => { const f = FILES[i]; on ? ACTIVE.add(f.name) : ACTIVE.delete(f.name); saveActive(); rebuildCodes(); },
+      all: on => { FILES.forEach(f => on ? ACTIVE.add(f.name) : ACTIVE.delete(f.name)); saveActive(); rebuildCodes(); },
+    });
+  }
+  const n = Object.keys(CODES).length;
+  if (!FILES.length) codeMsg("");
+  else if (!n) codeMsg("Pick the code files for this shoot.");
+  else codeMsg(n + " codes on" + (overlaps ? ` · ${overlaps} repeated between files (the one further right wins)` : ""));
+  renderCodeRows();
+  items.forEach(it => it.ta && applyExpansion(it, false));
+}
+// "Volleyball, DATES" / "Volleyball, DATES +2"
+const listSummary = names => names.length <= 3 ? names.join(", ") : names.slice(0, 2).join(", ") + ` +${names.length - 2}`;
+// a button that opens a list of checkboxes; stays open while you tick, closes on a click elsewhere or Esc
+function pickMenu(box, { summary, summarySwatches = [], items, toggle, all }) {
+  const wasOpen = !!box.querySelector("details[open]");
+  const keepScroll = wasOpen ? box.querySelector(".pick-panel").scrollTop : 0;
+  box.innerHTML = "";
+  const d = document.createElement("details");
+  d.className = "pick";
+  const sum = document.createElement("summary");
+  sum.className = "btn";
+  summarySwatches.forEach(t => sum.append(swatch(t)));
+  sum.append(summary);
+  const panel = document.createElement("div");
+  panel.className = "pick-panel";
+  items.forEach((it, i) => {
+    const l = document.createElement("label");
+    const c = document.createElement("input");
+    c.type = "checkbox"; c.checked = it.on;
+    c.addEventListener("change", () => toggle(i, c.checked));
+    l.append(c);
+    if (it.swatch) l.append(swatch(it.swatch));
+    const name = document.createElement("span"); name.textContent = it.label; l.append(name);
+    if (it.note) { const n = document.createElement("small"); n.textContent = it.note; l.append(n); }
+    if (it.title) l.title = it.title;
+    panel.append(l);
+  });
+  const foot = document.createElement("div");
+  foot.className = "pick-foot";
+  [["All on", true], ["All off", false]].forEach(([t, v]) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "linkish"; b.textContent = t;
+    b.addEventListener("click", () => all(v));
+    foot.append(b);
+  });
+  panel.append(foot);
+  d.append(sum, panel);
+  box.append(d);
+  if (wasOpen) { d.open = true; panel.scrollTop = keepScroll; }
+}
+document.addEventListener("click", e => { if (e.target.isConnected) document.querySelectorAll("details.pick[open]").forEach(d => { if (!d.contains(e.target)) d.open = false; }); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") document.querySelectorAll("details.pick[open]").forEach(d => { d.open = false; d.querySelector("summary").focus(); }); });
+function codeMsg(text, isError) { const m = $("code-msg"); m.textContent = text; m.className = "msg" + (isError ? " error" : ""); }
+function decode(buf) {
+  try { return new TextDecoder("utf-8", { fatal: true }).decode(buf).replace(/^﻿/, ""); }
+  catch (e) { return new TextDecoder("windows-1252").decode(buf); }
+}
+$("add-codes").addEventListener("click", () => $("code-file").click());
+$("code-file").addEventListener("change", async e => {
+  for (const file of e.target.files) {
+    try {
+      const d = await post("/api/codes/add", { name: file.name, text: decode(await file.arrayBuffer()) });
+      ACTIVE.add(d.added); saveActive(); setCodes(d);
+    } catch (err) { codeMsg(file.name + ": " + err.message, true); }
+  }
+  e.target.value = "";
+});
+const lookupBtn = $("toggle-lookup");
+lookupBtn.addEventListener("click", () => {
+  const panel = $("codes-panel");
+  panel.hidden = !panel.hidden;
+  lookupBtn.setAttribute("aria-pressed", String(!panel.hidden));
+  if (!panel.hidden) { renderCodeRows(); $("code-search").focus(); }
+});
+$("code-search").addEventListener("input", renderCodeRows);
+$("code-search").addEventListener("keydown", e => {
+  if (e.key === "Enter") { e.preventDefault(); const first = document.querySelector("#code-rows tr"); if (first) first.click(); }
+  if (e.key === "Escape") lookupBtn.click();
+});
+function renderCodeRows() {
+  if ($("codes-panel").hidden) return;
+  const q = $("code-search").value.trim().toLowerCase();
+  const tbody = $("code-rows");
+  tbody.innerHTML = "";
+  const keys = Object.keys(CODES);
+  const hits = keys.filter(k => !q || k.toLowerCase().includes(q) || CODES[k].some(v => v.toLowerCase().includes(q)));
+  const d = getDelim();
+  const cols = Math.min(4, Math.max(1, ...hits.slice(0, 300).map(k => CODES[k].length)));
+  if (cols > 1) {
+    const h = document.createElement("tr"); h.className = "head";
+    ["Code", d + "code" + d, ...Array.from({ length: cols - 1 }, (_, i) => d + "code#" + (i + 2) + d)].forEach(t => { const th = document.createElement("th"); th.textContent = t; h.append(th); });
+    tbody.append(h);
+  }
+  hits.slice(0, 300).forEach(k => {
+    const tr = document.createElement("tr");
+    const c = document.createElement("td"); c.textContent = d + k + d;
+    tr.append(c);
+    for (let i = 0; i < cols; i++) {
+      const v = document.createElement("td"), text = CODES[k][i];
+      if (text) {
+        v.textContent = text;
+        v.title = `${d}${k}${i ? "#" + (i + 1) : ""}${d} · click to insert`;
+        v.addEventListener("click", () => insertText(text));
+      }
+      if (i) v.className = "extra";
+      tr.append(v);
+    }
+    tbody.appendChild(tr);
+  });
+  const note = $("codes-note");
+  if (!keys.length) note.textContent = "Turn on a code file above to look up its codes.";
+  else note.textContent = hits.length > 300 ? `Showing 300 of ${hits.length} matches. Keep typing to narrow it down.`
+    : `${plural(hits.length, "match", "matches")}. Click a column to insert it. Type ${d}code#2${d} or ${d}code#3${d} for the other columns.`;
+}
+function insertText(text) {
+  const ta = lastTa || (items[0] && items[0].ta);
+  if (!ta) return;
+  ta.focus();
+  ta.setRangeText(text, ta.selectionStart, ta.selectionEnd, "end");
+  ta.dispatchEvent(new Event("input"));
+}
+
+/* photographer (caption tab): only fills photos with no photographer; never replaces someone's credit */
+const autoCredit = $("auto-credit"), creditBtn = $("credit-all");
+autoCredit.checked = store.get("auto-credit", "1") === "1";
+autoCredit.addEventListener("change", () => store.set("auto-credit", autoCredit.checked ? "1" : "0"));
+function creditMsg(t) { $("credit-msg").textContent = t; }
+function showByline(it) { if (it.bylineEl) it.bylineEl.textContent = it.creator ? "  ·  By " + it.creator : ""; }
+const needsCredit = s => !s.error && !s.creator;
+function updateCredit() {
+  const n = photographer(), todo = SHOTS.filter(needsCredit).length;
+  creditBtn.disabled = !n || !todo;
+  creditBtn.textContent = todo ? `Add to ${plural(todo, "photo")} without a name` : "Every photo has a name";
+  const others = n ? SHOTS.filter(s => s.creator && s.creator !== n).length : 0;
+  creditMsg(others ? `${plural(others, "photo is", "photos are")} credited to someone else and will be left alone` : "");
+}
+creditBtn.addEventListener("click", async () => {
+  const n = photographer(), todo = SHOTS.filter(needsCredit);
+  creditBtn.disabled = true;
+  let failed = 0;
+  for (let i = 0; i < todo.length; i++) {
+    creditMsg(`Adding your name… ${i + 1} of ${todo.length}`);
+    try { const d = await post("/api/meta", { id: todo[i].id, creator: n }); todo[i].creator = d.creator; showByline(todo[i]); }
+    catch (e) { failed++; }
+  }
+  updateCredit();
+  creditMsg(failed ? `Added to ${todo.length - failed} photos. ${failed} couldn't be saved.` : `Added your name to ${plural(todo.length, "photo")}.`);
+});
+
+function setState(it, cls, text) { it.stateEl.className = "state " + cls; it.stateEl.textContent = text; }
+function updateProgress() {
+  const done = SHOTS.filter(s => s.caption.trim()).length;
+  $("progress").innerHTML = `<b>${done}</b> of ${SHOTS.length} captioned`;
+  $("meter").style.width = SHOTS.length ? (100 * done / SHOTS.length) + "%" : "0";
+  updateSend();
+}
+function sendable() { return SHOTS.filter(s => s.caption.trim() && captionFilter(s)); }
+function updateSend() {
+  const card = !!INFO.on_card, mode = $("send-mode");
+  mode.querySelector('option[value="move"]').disabled = card;
+  if (card && mode.value === "move") mode.value = "copy";
+  mode.title = card ? "Photos on a memory card can't be moved, only copied" : "";
+  $("small-opt").hidden = !EXPORT_OK;
+  if (!EXPORT_OK && mode.value === "small") mode.value = "copy";
+  $("lr-opt").hidden = !LR_APPS.length;
+  if (!LR_APPS.length && mode.value === "lightroom") mode.value = card ? "copy" : "move";
+  const small = mode.value === "small", lr = mode.value === "lightroom";
+  $("small-size").hidden = $("small-limit").hidden = !small;
+  $("lr-app").hidden = !lr || LR_APPS.length < 2;
+  const n = sendable().length;
+  const btn = $("send-captioned");
+  btn.disabled = !n || (JOBSTATE && JOBSTATE.running);
+  btn.title = lr ? "Opens Lightroom's import window with these photos picked. Stars, captions and tags go with them." : "";
+  if (lr) btn.textContent = n ? `Send ${plural(n, "captioned photo")} to Lightroom` : "Send captioned photos to Lightroom";
+  else if (small) btn.textContent = n ? `Save ${plural(n, "smaller copy", "smaller copies")} to…` : "Save smaller copies to…";
+  else {
+    const verb = mode.value === "move" ? "Move" : "Copy";
+    btn.textContent = n ? `${verb} ${plural(n, "captioned photo")} to…` : `${verb} captioned photos to…`;
+  }
+}
+function showSendJob(s) {
+  if (s.export) return showExportJob(s);
+  const moving = s.move, verb = moving ? "Moving" : "Copying", did = moving ? "moved" : "copied";
+  $("send-job").hidden = false;
+  $("send-job-bar").style.width = (s.bytes_total ? 100 * s.bytes_done / s.bytes_total : (s.finished ? 100 : 0)) + "%";
+  $("send-job-cancel").hidden = s.finished;
+  const n = moving ? s.moved : s.copied;
+  $("send-job-text").textContent = !s.finished
+    ? `${verb} ${Math.min(s.files_done + 1, s.files_total)} of ${s.files_total} files to ${s.dest}`
+    : `${s.cancelled ? "Stopped" : "Done"}: ${did} ${plural(n, "file")} to ${s.dest}` + (s.skipped ? ` (${s.skipped} were already there)` : "") + (s.errors.length ? `. ${plural(s.errors.length, "problem")}: ${s.errors[0]}` : ".");
+  updateSend();
+  if (s.finished) {
+    if (moving) loadShots();
+    setTimeout(() => { if (JOBSTATE === s) $("send-job").hidden = true; }, 15000);
+  }
+}
+function showExportJob(s) {
+  $("send-job").hidden = false;
+  $("send-job-bar").style.width = (s.files_total ? 100 * s.files_done / s.files_total : (s.finished ? 100 : 0)) + "%";
+  $("send-job-cancel").hidden = s.finished;
+  const mb = b => b >= 1048576 ? (b / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(b / 1024)) + " KB";
+  $("send-job-text").textContent = !s.finished
+    ? `Making smaller copy ${Math.min(s.files_done + 1, s.files_total)} of ${s.files_total}…`
+    : `${s.cancelled ? "Stopped" : "Done"}: saved ${plural(s.made || 0, "smaller copy", "smaller copies")}` + (s.made ? ` (${mb(s.made_bytes)} in all, about ${mb(s.made_bytes / s.made)} each)` : "") + ` to ${s.dest}` + (s.errors.length ? `. ${plural(s.errors.length, "problem")}: ${s.errors[0]}` : ".");
+  updateSend();
+  if (s.finished) setTimeout(() => { if (JOBSTATE === s) $("send-job").hidden = true; }, 20000);
+}
+let EXPORT_OK = true, LR_APPS = [];
+getJSON("/api/lightroom").then(d => {
+  LR_APPS = d.apps || [];
+  const sel = $("lr-app");
+  LR_APPS.forEach(a => { const o = document.createElement("option"); o.value = a.id; o.textContent = a.name; sel.append(o); });
+  const saved = store.get("lightroom", "");
+  if (LR_APPS.some(a => a.id === saved)) sel.value = saved;
+  if (store.get("send-mode", "") === "lightroom" && LR_APPS.length) $("send-mode").value = "lightroom";
+  updateSend();
+}).catch(() => {});
+$("lr-app").addEventListener("change", () => store.set("lightroom", $("lr-app").value));
+getJSON("/api/export/available").then(d => { EXPORT_OK = !!d.available; updateSend(); }).catch(() => {});
+$("send-mode").value = store.get("send-mode", "move");
+$("send-mode").addEventListener("change", () => { store.set("send-mode", $("send-mode").value); updateSend(); });
+$("small-size").value = (v => v === "2048" ? "2000" : v)(store.get("small-size", "2000"));  // 2048 was the old web size
+$("small-limit").value = store.get("small-limit", "0");
+$("small-size").addEventListener("change", () => store.set("small-size", $("small-size").value));
+$("small-limit").addEventListener("change", () => store.set("small-limit", $("small-limit").value));
+$("send-job-cancel").addEventListener("click", () => post("/api/job/cancel"));
+$("send-captioned").addEventListener("click", async () => {
+  for (const it of items) if (it.ta && it.ta.value.trim() !== it.caption.trim()) await save(it);  // finish any typing first
+  const shots = sendable(), move = $("send-mode").value === "move" && !INFO.on_card;
+  if (!shots.length) return;
+  if ($("send-mode").value === "lightroom") {
+    const name = $("lr-app").selectedOptions[0].textContent;
+    $("send-job").hidden = false; $("send-job-cancel").hidden = true; $("send-job-bar").style.width = "0";
+    try {
+      await post("/api/lightroom", { ids: shots.map(s => s.id), app: $("lr-app").value });
+      $("send-job-bar").style.width = "100%";
+      $("send-job-text").textContent = `Sent ${plural(shots.length, "photo")} to ${name}. Finish in its import window.`;
+    } catch (e) { $("send-job-text").textContent = e.message; }
+    setTimeout(() => { $("send-job").hidden = true; }, 15000);
+    return;
+  }
+  if ($("send-mode").value === "small") {
+    const dest = await chooseFolder(`Save ${plural(shots.length, "smaller copy", "smaller copies")} in`, FOLDER);
+    if (!dest) return;
+    try {
+      await post("/api/export", { ids: shots.map(s => s.id), dest, long_edge: +$("small-size").value, quality: 85, max_mb: +$("small-limit").value });
+      $("send-captioned").disabled = true; pollJob(s => { if (s.kind === "copy") showSendJob(s); });
+    } catch (e) { $("send-job").hidden = false; $("send-job-cancel").hidden = true; $("send-job-bar").style.width = "0"; $("send-job-text").textContent = e.message; }
+    return;
+  }
+  const dest = await chooseFolder(`${move ? "Move" : "Copy"} ${plural(shots.length, "captioned photo")} to`, FOLDER);
+  if (!dest) return;
+  try { await post("/api/cull/copy", { ids: shots.map(s => s.id), dest, move }); $("send-captioned").disabled = true; pollJob(s => { if (s.kind === "copy") showSendJob(s); }); }
+  catch (e) { $("send-job").hidden = false; $("send-job-cancel").hidden = true; $("send-job-bar").style.width = "0"; $("send-job-text").textContent = e.message; }
+});
+async function save(it) {
+  clearTimeout(it.timer);
+  applyExpansion(it);
+  const value = it.ta.value;
+  if (value.trim() === it.caption.trim()) { if (it.stateEl.classList.contains("unsaved")) setState(it, "saved", it.caption ? "Saved" : ""); return; }
+  setState(it, "unsaved", "Saving…");
+  const body = { id: it.id, caption: value };
+  if (autoCredit.checked && photographer() && value.trim() && !it.creator) body.creator = photographer();
+  try {
+    const d = await post("/api/meta", body);
+    it.caption = d.caption;
+    if (it.creator !== d.creator) { it.creator = d.creator; showByline(it); updateCredit(); }
+    setState(it, "saved", it.ta.value.trim() === d.caption ? "Saved" : "Unsaved");
+    updateProgress();
+  } catch (e) { setState(it, "error", "Not saved: " + e.message); }
+}
+function captionFilter(s) {
+  const f = $("cap-filter").value;
+  if (f === "missing") return !s.caption.trim();
+  if (f === "all") return true;
+  if (f === "tagged") return !!s.tagged;
+  if (f.startsWith("cc-")) return f === "cc-any" ? s.colorclass > 0 : s.colorclass === +f.slice(3);
+  return s.rating >= +f;
+}
+function captionRender() {
+  numSeen.disconnect(); numQueue = [];
+  list.innerHTML = "";
+  if (!FOLDER || INFO.missing) { list.innerHTML = `<div class="empty">${emptyFolderHTML(INFO.missing ? missingMsg() : "Open a folder of photos to caption them.")}</div>`; return; }
+  items = SHOTS.filter(captionFilter);
+  if (!items.length) {
+    list.innerHTML = `<p class="empty">${SHOTS.length ? "No photos match this filter." : "No photos in this folder."}</p>`;
+    return;
+  }
+  items.forEach((it, idx) => {
+    const row = document.createElement("article");
+    row.className = "row";
+    row.innerHTML = `<figure><a target="_blank" title="Open larger"><img loading="lazy" alt=""></a></figure>
+      <div class="edit"><div class="meta"><span><span class="fname"></span> <span class="rowstars"></span><span class="byline"></span></span><span class="state"></span></div>
+      <textarea id="cap-${idx}" placeholder="Write a caption…"></textarea>
+      <div class="tags">
+        <div class="tag-row"><span class="plabel">Tags</span><span class="tag-list"></span><input class="tag-input" type="text" placeholder="Add a tag or #number…" aria-label="Add a tag" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false"></div>
+        <div class="players" hidden></div>
+      </div>
+      <div class="codewarn" hidden></div>
+      <div class="hint"><kbd>Enter</kbd> saves and moves to the next photo · <kbd>Shift</kbd>+<kbd>Enter</kbd> adds a new line</div></div>`;
+    row.querySelector("a").href = photoURL(it, "full");
+    row.querySelector("img").src = photoURL(it, "medium");
+    row.querySelector(".fname").textContent = it.files.length > 1 ? `${it.name.replace(/\.[^.]+$/, "")} (${it.label})` : it.name;
+    row.querySelector(".rowstars").textContent = it.rating === -1 ? "Rejected" : starText(it.rating);
+    it.ta = row.querySelector("textarea");
+    it.stateEl = row.querySelector(".state");
+    it.warnEl = row.querySelector(".codewarn");
+    it.playersEl = row.querySelector(".players");
+    it.tagsEl = row.querySelector(".tag-list");
+    it.idx = idx;
+    renderTags(it);
+    const tin = row.querySelector(".tag-input");
+    tin.addEventListener("keydown", e => {
+      if ((e.key === "Enter" || e.key === ",") && !e.isComposing) {
+        e.preventDefault();
+        if (e.key === "Enter" && tagMenuPick(it, tin)) return;
+        const v = tin.value.trim();
+        if (v) { typedTags(it, v.split(/[,;]/)); tin.value = ""; }
+        closeTagMenu();
+      } else if (e.key === "Backspace" && !tin.value && it.keywords.length) {
+        removeTag(it, it.keywords[it.keywords.length - 1]);
+      }
+    });
+    tagMenu(it, tin);
+    tin.addEventListener("focus", () => { queueNumbers([it], true); });
+    if (playersOn()) { it.playersEl.hidden = false; numSeen.observe(row); row._it = it; }
+    it.bylineEl = row.querySelector(".byline");
+    showByline(it);
+    it.ta.value = it.caption;
+    if (it.error) setState(it, "error", "Can't read this file: " + it.error);
+    else if (it.caption) setState(it, "saved", "Saved");
+    it.ta.addEventListener("input", () => {
+      applyExpansion(it);
+      setState(it, "unsaved", "Unsaved");
+      clearTimeout(it.timer);
+      it.timer = setTimeout(() => save(it), 1200);
+    });
+    it.ta.addEventListener("focus", () => { row.classList.add("focused"); lastTa = it.ta; queueNumbers([it, items[idx + 1], items[idx + 2]], true); });
+    it.ta.addEventListener("blur", () => { row.classList.remove("focused"); save(it); });
+    it.ta.addEventListener("keydown", e => {
+      if (e.key === "Enter" && !e.shiftKey && !e.isComposing) {
+        e.preventDefault();
+        save(it);
+        const next = items[idx + 1];
+        if (next) { next.ta.focus(); next.ta.closest(".row").scrollIntoView({ block: "center", behavior: "smooth" }); }
+        else it.ta.blur();
+      }
+    });
+    list.appendChild(row);
+  });
+  items[0].ta.focus({ preventScroll: true });
+  rebuildCodes();
+}
+/* ---- tags (keywords + people) ---- */
+const lc = x => x.toLowerCase();
+const TAG_OPTIONS = new Set();
+// your own tags from Tags.txt (next to the app), read again whenever you click a tag box, so edits show up right away
+let FILE_TAGS = [], fileTagsAt = 0;
+function loadFileTags() {
+  if (Date.now() - fileTagsAt < 3000) return Promise.resolve();
+  fileTagsAt = Date.now();
+  return fetch("/api/tags", { cache: "no-store" }).then(r => r.json()).then(d => { FILE_TAGS = d.tags || []; }).catch(() => {});
+}
+function refreshTagOptions() {
+  TAG_OPTIONS.clear();
+  SHOTS.forEach(s => (s.keywords || []).forEach(k => { if (!personOff(k)) TAG_OPTIONS.add(k); }));
+  peopleAll().filter(teamOn).forEach(p => TAG_OPTIONS.add(p.name));
+  const dl = $("tag-options"); dl.innerHTML = "";
+  [...TAG_OPTIONS].sort((a, b) => a.localeCompare(b)).slice(0, 500).forEach(t => { const o = document.createElement("option"); o.value = t; dl.append(o); });
+}
+function renderTags(it) {
+  const box = it.tagsEl;
+  if (!box) return;
+  box.innerHTML = "";
+  const people = new Set((it.people || []).map(lc));
+  (it.keywords || []).forEach(k => {
+    const person = people.has(lc(k)), off = person && personOff(k);
+    const chip = document.createElement("span");
+    chip.className = "tag" + (person ? " person" : "") + (off ? " off" : "") + (it.autoTags && it.autoTags.has(lc(k)) ? " auto" : "");
+    chip.innerHTML = '<button type="button" class="t"></button><button type="button" class="x" aria-label="Remove tag">×</button>';
+    const t = chip.querySelector(".t");
+    t.textContent = k;
+    if (it.autoTags && it.autoTags.has(lc(k))) { const m = document.createElement("span"); m.className = "auto-mark"; m.textContent = "auto"; t.after(m); }
+    if (person) { const pp = findPlayer(k); if (pp && pp.team) chip.prepend(swatch(pp.team)); }
+    if (person) {
+      const p = findPlayer(k);
+      t.title = off ? `${off.team} is turned off under Teams. Remove this tag, or turn the team back on.`
+        : p ? `${p.text}\nClick to add this to the caption.` + (p.short ? `\nShift-click to add just "${p.short}".` : "") : "Person shown";
+      t.addEventListener("mousedown", e => e.preventDefault());
+      t.addEventListener("click", e => { if (p) { lastTa = it.ta; insertText(e.shiftKey && p.short ? p.short : p.text); } });
+    } else t.tabIndex = -1;
+    chip.querySelector(".x").title = `Remove "${k}"`;
+    chip.querySelector(".x").addEventListener("click", () => removeTag(it, k));
+    box.append(chip);
+  });
+}
+async function saveTags(it) {
+  const body = { id: it.id, keywords: it.keywords, people: it.people };
+  if (autoCredit.checked && photographer() && !it.creator) body.creator = photographer();
+  try {
+    const d = await post("/api/meta", body);
+    it.keywords = d.keywords; it.people = d.people;
+    if (it.creator !== d.creator) { it.creator = d.creator; showByline(it); updateCredit(); }
+    setState(it, "saved", it.ta.value.trim() === it.caption.trim() ? "Saved" : "Unsaved");
+  } catch (e) { setState(it, "error", "Tags not saved: " + e.message); }
+  renderTags(it); renderPlayers(it); refreshTagOptions();
+  if (typeof updateNeighbours === "function") updateNeighbours(it);
+}
+function addTags(it, list, asPeople = false, auto = false) {
+  const have = new Set(it.keywords.map(lc));
+  let changed = false;
+  list.map(x => x.trim()).filter(Boolean).forEach(x => {
+    if (!have.has(lc(x))) { it.keywords = [...it.keywords, x]; have.add(lc(x)); changed = true; }
+    if (asPeople && !it.people.map(lc).includes(lc(x))) { it.people = [...it.people, x]; changed = true; }
+    if (auto) (it.autoTags = it.autoTags || new Set()).add(lc(x));
+  });
+  if (changed) saveTags(it);
+}
+// typed tags: a player or coach on a team that's on becomes a person tag; one on a team that's off isn't tagged
+function typedTags(it, list) {
+  const people = [], words = [], blocked = [];
+  list.map(x => x.trim()).filter(Boolean).forEach(x => {
+    const off = personOff(x), p = !off && findPlayer(x);
+    if (off) blocked.push(off);
+    else if (p) people.push(p.name);
+    else words.push(x);
+  });
+  if (people.length) addTags(it, people, true);
+  if (words.length) addTags(it, words);
+  if (blocked.length) setState(it, "error", blocked.map(b => `${b.name} isn't tagged: ${b.team} is turned off under Teams.`).join(" "));
+}
+// school colours (main, second) so each team is easy to pick out; teams not listed get a colour of their own
+const SCHOOL_COLORS = {
+  "Bowling Green Falcons": ["#FE5000", "#4F2C1D"], "Akron Zips": ["#041E42", "#A89968"], "Augustana Vikings": ["#003DA5", "#FFC72C"],
+  "Ball State Cardinals": ["#BA0C2F", "#FFFFFF"], "Bellarmine Knights": ["#C8102E", "#A2AAAD"], "Belmont Bruins": ["#002D62", "#C8102E"],
+  "Bemidji State Beavers": ["#004D44", "#FFFFFF"], "Bradley Braves": ["#A50000", "#FFFFFF"], "Buffalo Bulls": ["#005BBB", "#FFFFFF"],
+  "Central Michigan Chippewas": ["#6A0032", "#FFC82E"], "Cleveland State Vikings": ["#006A4D", "#FFFFFF"], "Denver Pioneers": ["#8B2332", "#8B6F4E"],
+  "Drake Bulldogs": ["#004477", "#FFFFFF"], "Eastern Michigan Eagles": ["#046A38", "#FFFFFF"], "Evansville Purple Aces": ["#4F2D7F", "#FF6600"],
+  "Ferris State Bulldogs": ["#BA0C2F", "#FFB81C"], "Fresno State Bulldogs": ["#DB0032", "#002E6D"], "Gardner-Webb Runnin' Bulldogs": ["#BF2C37", "#000000"],
+  "Georgia Southern Eagles": ["#011E41", "#87714D"], "Georgia State Panthers": ["#0039A6", "#C60C30"], "Indiana Hoosiers": ["#990000", "#EEEDEB"],
+  "Kent State Golden Flashes": ["#002664", "#EAAB00"], "Lake Superior State Lakers": ["#003F87", "#FDB813"], "Lawrence Tech Blue Devils": ["#003DA5", "#FFFFFF"],
+  "Maryville Saints": ["#C8102E", "#FFFFFF"], "Miami (Ohio) RedHawks": ["#C3142D", "#FFFFFF"], "Michigan Tech Huskies": ["#000000", "#FFCD00"],
+  "Minnesota State Mavericks": ["#592C88", "#F5B335"], "Niagara Purple Eagles": ["#582C83", "#FFFFFF"], "North Carolina A&T Aggies": ["#004684", "#FDB927"],
+  "Northern Illinois Huskies": ["#BA0C2F", "#000000"], "Northern Michigan Wildcats": ["#154734", "#FFC72C"], "Notre Dame Fighting Irish": ["#0C2340", "#C99700"],
+  "Ohio Bobcats": ["#00694E", "#FFFFFF"], "Penn State Lady Lions": ["#041E42", "#FFFFFF"], "Purdue Fort Wayne Mastodons": ["#003DA5", "#CFB991"],
+  "St. Thomas Tommies": ["#510C76", "#FFFFFF"], "Texas A&M Aggies": ["#500000", "#FFFFFF"], "Toledo Rockets": ["#15397F", "#FFCE00"],
+  "Tulsa Golden Hurricane": ["#002D72", "#C8102E"], "UIC Flames": ["#001E62", "#D50032"], "UMass Minutemen": ["#881C1C", "#FFFFFF"],
+  "UMass Minutewomen": ["#881C1C", "#FFFFFF"], "UNC Wilmington Seahawks": ["#006666", "#FFD600"], "Western Michigan Broncos": ["#6C4023", "#B5A167"],
+  "William & Mary Tribe": ["#115740", "#B9975B"],
+};
+function schoolColors(team) {
+  if (SCHOOL_COLORS[team]) return SCHOOL_COLORS[team];
+  let h = 0; for (const c of team) h = (h * 31 + c.charCodeAt(0)) % 360;
+  return [`hsl(${h} 55% 42%)`, `hsl(${(h + 40) % 360} 60% 75%)`];
+}
+function swatch(team) {
+  const [a, b] = schoolColors(team), i = document.createElement("i");
+  i.className = "sw"; i.style.setProperty("--a", a); i.style.setProperty("--b", b); i.title = team;
+  return i;
+}
+
+// the tag dropdown: players and coaches on the teams that are on (find them by number, name or team), then your other tags
+const tagMenuEl = document.createElement("div");
+tagMenuEl.className = "tag-menu"; tagMenuEl.hidden = true; tagMenuEl.setAttribute("role", "listbox");
+document.body.append(tagMenuEl);
+let MENU = { it: null, tin: null, opts: [], at: -1 };
+function closeTagMenu() { tagMenuEl.hidden = true; if (MENU.tin) MENU.tin.setAttribute("aria-expanded", "false"); MENU = { it: null, tin: null, opts: [], at: -1 }; }
+const teamOrder = t => (t === "Bowling Green Falcons" ? "0" : "1") + (t || "~");
+function tagMenuOptions(it, q) {
+  const have = new Set(it.keywords.map(lc)), num = q.match(/^#?(\d{1,2})$/);
+  const people = peopleAll().filter(p => teamOn(p) && !have.has(lc(p.name)));
+  const seen = new Set(), ps = [];
+  people.forEach(p => { const k = lc(p.name) + "|" + p.team; if (!seen.has(k)) { seen.add(k); ps.push(p); } });
+  const byTeam = (a, b) => teamOrder(a.team).localeCompare(teamOrder(b.team)) || (a.coach - b.coach) || (a.number - b.number);
+  let out;
+  if (num) out = ps.filter(p => p.number === +num[1]).sort(byTeam);
+  else if (!q) out = ps.sort(byTeam);
+  else {
+    const ql = lc(q);
+    out = ps.filter(p => lc(p.name).includes(ql) || lc(p.team || "").includes(ql))
+      .sort((a, b) => (lc(b.name).startsWith(ql) || lc(b.name).split(" ").some(w => w.startsWith(ql))) - (lc(a.name).startsWith(ql) || lc(a.name).split(" ").some(w => w.startsWith(ql))) || byTeam(a, b));
+  }
+  const opts = out.slice(0, 80).map(p => ({ person: p }));
+  if (!num) {
+    const names = new Set(peopleAll().map(p => lc(p.name)));
+    const pool = new Map();  // one of each, ignoring capitals; your Tags.txt spelling wins
+    [...FILE_TAGS, ...TAG_OPTIONS].forEach(k => { if (!pool.has(lc(k))) pool.set(lc(k), k); });
+    const words = [...pool.values()].filter(k => !names.has(lc(k)) && !have.has(lc(k)) && (!q || lc(k).includes(lc(q)))).sort((a, b) => a.localeCompare(b)).slice(0, 200);
+    words.forEach(w => opts.push({ word: w }));
+  }
+  return { opts, num: !!num };
+}
+function showTagMenu(it, tin) {
+  const q = tin.value.trim(), { opts, num } = tagMenuOptions(it, q);
+  MENU = { it, tin, opts, at: num && opts.length ? 0 : -1 };
+  if (!opts.length) { tagMenuEl.hidden = true; tagMenuEl.innerHTML = ""; tin.setAttribute("aria-expanded", "false"); return; }
+  tagMenuEl.innerHTML = "";
+  let lastTeam = null, lastKind = null;
+  opts.forEach((o, i) => {
+    const grouped = !q;
+    if (o.person && grouped && o.person.team !== lastTeam) {
+      lastTeam = o.person.team;
+      const g = document.createElement("div"); g.className = "grp"; g.textContent = lastTeam || "Players";
+      if (lastTeam) g.prepend(swatch(lastTeam));
+      tagMenuEl.append(g);
+    }
+    if (o.word && lastKind !== "word") { const g = document.createElement("div"); g.className = "grp"; g.textContent = "Tags"; tagMenuEl.append(g); }
+    lastKind = o.word ? "word" : "person";
+    const d = document.createElement("div");
+    d.className = "opt"; d.setAttribute("role", "option"); d.dataset.i = i;
+    if (o.person) {
+      const p = o.person;
+      d.innerHTML = '<span class="num"></span><span class="nm"></span><span class="tm"></span>';
+      d.prepend(swatch(p.team || ""));
+      if (!p.team) d.firstChild.style.visibility = "hidden";
+      d.querySelector(".num").textContent = p.coach ? "Coach" : "#" + p.number;
+      d.querySelector(".nm").textContent = p.name;
+      d.querySelector(".tm").textContent = p.team ? shortTeam(p.team) : "";
+      d.title = p.text;
+    } else {
+      d.innerHTML = '<span class="nm"></span>';
+      d.querySelector(".nm").textContent = o.word;
+    }
+    d.addEventListener("mousedown", e => { e.preventDefault(); MENU.at = i; tagMenuPick(it, tin); });
+    d.addEventListener("mousemove", () => { if (MENU.at !== i) { MENU.at = i; markTagMenu(); } });
+    tagMenuEl.append(d);
+  });
+  const r = tin.getBoundingClientRect(), below = innerHeight - r.bottom;
+  tagMenuEl.hidden = false;
+  tagMenuEl.style.left = Math.min(r.left, innerWidth - 300) + "px";
+  if (below < 200 && r.top > below) { tagMenuEl.style.top = ""; tagMenuEl.style.bottom = (innerHeight - r.top + 3) + "px"; tagMenuEl.style.maxHeight = Math.min(300, r.top - 12) + "px"; }
+  else { tagMenuEl.style.bottom = ""; tagMenuEl.style.top = (r.bottom + 3) + "px"; tagMenuEl.style.maxHeight = Math.min(300, below - 12) + "px"; }
+  tin.setAttribute("aria-expanded", "true");
+  markTagMenu();
+}
+function markTagMenu() {
+  tagMenuEl.querySelectorAll(".opt").forEach(d => d.classList.toggle("on", +d.dataset.i === MENU.at));
+  const cur = tagMenuEl.querySelector(".opt.on");
+  if (cur) cur.scrollIntoView({ block: "nearest" });
+}
+function tagMenuPick(it, tin) {
+  if (tagMenuEl.hidden || MENU.tin !== tin || MENU.at < 0) return false;
+  const o = MENU.opts[MENU.at];
+  if (o.person) addTags(it, [o.person.name], true); else addTags(it, [o.word]);
+  tin.value = "";
+  closeTagMenu();
+  return true;
+}
+function tagMenu(it, tin) {
+  const open = () => { showTagMenu(it, tin); loadFileTags().then(() => { if (MENU.tin === tin || document.activeElement === tin) showTagMenu(it, tin); }); };
+  tin.addEventListener("input", open);
+  tin.addEventListener("focus", open);
+  tin.addEventListener("click", () => { if (tagMenuEl.hidden) showTagMenu(it, tin); });
+  tin.addEventListener("blur", () => setTimeout(() => { if (MENU.tin === tin && document.activeElement !== tin) closeTagMenu(); }, 0));
+  tin.addEventListener("keydown", e => {
+    if (e.key === "Escape" && !tagMenuEl.hidden) { e.preventDefault(); e.stopPropagation(); closeTagMenu(); return; }
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+    if (tagMenuEl.hidden) { showTagMenu(it, tin); if (tagMenuEl.hidden) return; }
+    e.preventDefault();
+    const n = MENU.opts.length;
+    MENU.at = e.key === "ArrowDown" ? (MENU.at + 1) % n : (MENU.at <= 0 ? n - 1 : MENU.at - 1);
+    markTagMenu();
+  });
+}
+document.addEventListener("scroll", e => { if (!tagMenuEl.hidden && !tagMenuEl.contains(e.target)) closeTagMenu(); }, true);
+
+function removeTag(it, k) {
+  it.keywords = it.keywords.filter(x => lc(x) !== lc(k));
+  it.people = it.people.filter(x => lc(x) !== lc(k));
+  if (it.autoTags) it.autoTags.delete(lc(k));
+  dismissed(it).add(lc(k)); saveDismissed();
+  saveTags(it);
+}
+
+/* ---- players from jersey numbers ---- */
+let NUMS_OK = true, numQueue = [], numBusy = 0;
+const numCache = new Map();
+// Jersey-number suggestions are switched off: they named the wrong players too often. Set to true to bring them back.
+const SUGGEST_PLAYERS = false;
+const playersOn = () => SUGGEST_PLAYERS && NUMS_OK && $("suggest-players").checked;
+$("suggest-players").checked = store.get("suggest-players", "1") === "1";
+$("suggest-players").addEventListener("change", () => { store.set("suggest-players", $("suggest-players").checked ? "1" : "0"); captionRender(); });
+$("auto-tag").checked = store.get("auto-tag", "1") === "1";
+$("auto-tag").addEventListener("change", () => { store.set("auto-tag", $("auto-tag").checked ? "1" : "0"); if ($("auto-tag").checked) items.forEach(it => it.reads && autoTag(it)); });
+const numSeen = new IntersectionObserver(entries => {
+  const seen = entries.filter(e => e.isIntersecting).map(e => e.target._it);
+  if (seen.length) queueNumbers(seen, false);
+}, { rootMargin: "600px 0px" });
+
+// tags the user removed stay removed (per folder)
+let DISMISSED = {};
+const dismissedKey = () => "dismissed:" + (FOLDER || "");
+function dismissed(it) { return (DISMISSED[it.id] = DISMISSED[it.id] || new Set()); }
+function loadDismissed() {
+  DISMISSED = {};
+  try { for (const [k, v] of Object.entries(JSON.parse(store.get(dismissedKey(), "{}")))) DISMISSED[k] = new Set(v); } catch (e) {}
+}
+function saveDismissed() { store.set(dismissedKey(), JSON.stringify(Object.fromEntries(Object.entries(DISMISSED).map(([k, v]) => [k, [...v]])))); }
+
+const CLASS_RE = /\s(?:redshirt\s|graduate\s|fifth[- ]year\s)?(?:freshman|sophomore|junior|senior|graduate|grad student|fifth[- ]year)\b/i;
+// a player code: "Avery Hobson #9 of the Bowling Green Falcons" (Getty style), or text ending in "#9"
+const PLAYER_RE = /#\s?(\d{1,2})(?:\s+of the\s+([^#]+?))?\.?$/;
+function rosterAll() {  // jersey number -> players, from the code files that are on
+  const groups = {};
+  for (const [code, vals] of Object.entries(CODES)) {
+    const t = (vals[0] || "").trim(), r = t.match(PLAYER_RE);
+    if (!r) continue;
+    // vb9 / vb9n / vb9p are one player written three ways
+    const short = code.replace(/[a-z]$/i, ""), key = (short !== code && short in CODES ? short : code).toLowerCase() + "|" + +r[1];
+    (groups[key] = groups[key] || []).push({ code, text: t, cols: vals });
+  }
+  const m = {};
+  for (const [key, forms] of Object.entries(groups)) {
+    forms.sort((a, b) => b.text.length - a.text.length);
+    const full = forms[0], n = +key.split("|")[1], shortest = forms[forms.length - 1].text;
+    const g = full.text.match(PLAYER_RE), getty = !!(g && g[2]);
+    const team = getty ? g[2].trim() : teamOf(full.text);
+    const bare = shortest.replace(PLAYER_RE, "").trim();
+    const name = getty ? full.text.slice(0, g.index).trim()
+      : forms.length > 1 && bare.split(/\s+/).length <= 4 ? bare : full.text.replace(/#\s?\d{1,2}$/, "").trim().split(/\s+/).slice(-2).join(" ");
+    // one line with columns (full | Name #9 | last name), or older files with one code per form (vb9 / vb9n / vb9l)
+    const short = full.cols.length > 1 && full.cols[1] ? full.cols[1] : forms.length > 1 ? shortest : "";
+    (m[n] = m[n] || []).push({ code: full.code, text: full.text, name, team, number: n, short });
+  }
+  return m;
+}
+function roster() {  // only the teams that are turned on
+  const m = {};
+  for (const [n, ps] of Object.entries(rosterAll())) {
+    const on = ps.filter(p => !(p.team && TEAMS_OFF.has(p.team)));
+    if (on.length) m[n] = on;
+  }
+  return m;
+}
+// coaches: "Head coach Eddie George of the Bowling Green Falcons"
+const COACH_RE = /^((?:head|assistant|associate|interim)\s+coach)\s+(.+?)\s+of the\s+(.+?)\.?$/i;
+function coachesAll() {
+  const out = [], seen = new Set();
+  for (const [code, vals] of Object.entries(CODES)) {
+    const t = (vals[0] || "").trim(), m = t.match(COACH_RE);
+    if (!m || seen.has(lc(m[2]))) continue;
+    seen.add(lc(m[2]));
+    out.push({ code, text: t, name: m[2].trim(), team: m[3].trim(), number: "", short: vals[1] || "", coach: true });
+  }
+  return out;
+}
+function peopleAll() { return Object.values(rosterAll()).flat().concat(coachesAll()); }
+const teamOn = p => !(p.team && TEAMS_OFF.has(p.team));
+function findPlayer(name) {  // prefers someone on a team that's on, if two people share a name
+  const ps = peopleAll().filter(p => lc(p.name) === lc(name));
+  return ps.find(teamOn) || ps[0];
+}
+function personOff(name) {  // the player or coach, if everyone with this name is on a team that's off
+  const ps = peopleAll().filter(p => lc(p.name) === lc(name));
+  return ps.length && !ps.some(teamOn) ? ps[0] : null;
+}
+function teamOf(text) {  // "Toledo Rockets freshman middle blocker ..." -> "Toledo Rockets"
+  const ci = text.search(CLASS_RE), team = ci > 0 ? text.slice(0, ci).trim() : "";
+  return /^[A-Z]/.test(team) ? team : "";
+}
+const shortTeam = t => t.split(" ").length > 1 ? t.split(" ").slice(0, -1).join(" ") : t;  // drop the mascot
+function allTeams() { return [...new Set(peopleAll().map(p => p.team).filter(Boolean))].sort(); }
+
+let TEAMS_OFF = new Set();
+const teamsKey = () => "teams-off:" + (FOLDER || "");
+function showTeams() {
+  try { TEAMS_OFF = new Set(JSON.parse(store.get(teamsKey(), "[]"))); } catch (e) { TEAMS_OFF = new Set(); }
+  loadColors(); loadDismissed();
+  const teams = allTeams(), box = $("team-chips");
+  $("teams-bar").hidden = teams.length < 2;
+  if (teams.length < 2) { box.innerHTML = ""; return; }
+  const on = teams.filter(t => !TEAMS_OFF.has(t));
+  const setTeams = () => { store.set(teamsKey(), JSON.stringify([...TEAMS_OFF])); refreshPlayers(); };
+  pickMenu(box, {
+    summary: on.length === teams.length ? `All ${teams.length} teams` : on.length ? listSummary(on.map(shortTeam)) : "None on",
+    summarySwatches: on.length < teams.length ? on : [],
+    items: teams.map(t => ({ label: t, on: !TEAMS_OFF.has(t), swatch: t })),
+    toggle: (i, isOn) => { isOn ? TEAMS_OFF.delete(teams[i]) : TEAMS_OFF.add(teams[i]); setTeams(); },
+    all: isOn => { TEAMS_OFF = new Set(isOn ? [] : teams); setTeams(); },
+  });
+}
+
+// jersey colours each team wears in this folder, learned when you tag a player
+let TEAM_COLORS = {};
+const colorsKey = () => "team-colors:" + (FOLDER || "");
+function loadColors() { try { TEAM_COLORS = JSON.parse(store.get(colorsKey(), "{}")); } catch (e) { TEAM_COLORS = {}; } }
+function learnColor(team, color) {
+  if (!team || !color) return;
+  const list = TEAM_COLORS[team] = TEAM_COLORS[team] || [];
+  if (list.some(c => colorDist(c, color) < 25)) return;
+  list.push(color); if (list.length > 8) list.shift();
+  store.set(colorsKey(), JSON.stringify(TEAM_COLORS));
+}
+const colorDist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+function teamColorFit(team, color) {  // smallest distance to a colour this team wore, or null if unknown
+  const list = TEAM_COLORS[team];
+  if (!color || !list || !list.length) return null;
+  return Math.min(...list.map(c => colorDist(c, color)));
+}
+
+// players a read could be: its number on the rosters (or its second guesses), narrowed by jersey colour
+function candidates(read, R) {
+  let ps = R[+read.n] || [];
+  let viaAlt = false;
+  if (!ps.length) for (const a of read.alts || []) if (R[+a]) { ps = R[+a]; viaAlt = true; break; }
+  if (ps.length > 1 && read.color) {
+    const fits = ps.map(p => teamColorFit(p.team, read.color));
+    const near = fits.filter(f => f !== null && f < 70);
+    if (near.length) ps = ps.filter((p, i) => fits[i] === null ? false : fits[i] < 110);
+    else ps = ps.filter((p, i) => fits[i] === null || fits[i] < 110);
+  }
+  return { ps, viaAlt };
+}
+
+/* bursts: the frames around a photo (same burst, within 4 frames and 2 seconds) usually show the same players */
+const BURST_FRAMES = 4, BURST_SECONDS = 2;
+const secs = s => { const m = /(\d{4}):(\d\d):(\d\d) (\d\d):(\d\d):(\d\d)/.exec(s.time || ""); return m ? Date.UTC(+m[1], m[2] - 1, +m[3], +m[4], +m[5], +m[6]) / 1000 : null; };
+function nearbyFrames(it) {
+  const i = SHOTS.indexOf(it), t = secs(it);
+  if (i < 0 || t === null) return { before: [], after: [] };
+  const pick = dir => {
+    const out = [];
+    for (let k = 1; k <= BURST_FRAMES; k++) {
+      const o = SHOTS[i + dir * k], prev = SHOTS[i + dir * (k - 1)];
+      if (!o || secs(o) === null || Math.abs(secs(o) - secs(prev)) > BURST_SECONDS || Math.abs(secs(o) - t) > BURST_SECONDS * 2) break;
+      out.push(o);
+    }
+    return out;
+  };
+  return { before: pick(-1), after: pick(1) };
+}
+// a clear read: on a player, the reads agree, and seen more than once (or once, and the model you taught agrees)
+const MODEL_SHOW = 0.9;  // the model's own guesses are shown from this sure, never tagged by themselves
+const clearRead = r => r.onPlayer && (r.agree || 0) >= 0.7 && ((r.votes || 0) >= 2 || ((r.votes || 0) >= 1 && (r.model || 0) >= 0.95));
+const learnedOnly = r => !(r.votes > 0);
+// players known in a frame: tagged ones, plus clear reads that only one player fits
+function knownIn(o, R) {
+  const names = new Map();
+  (o.people || []).forEach(n => { const p = findPlayer(n); if (p && teamOn(p)) names.set(lc(n), p); });
+  (o.reads || []).forEach(r => {
+    if (!clearRead(r)) return;
+    const { ps, viaAlt } = candidates(r, R);
+    if (ps.length === 1 && !viaAlt && !dismissed(o).has(lc(ps[0].name))) names.set(lc(ps[0].name), ps[0]);
+  });
+  return names;
+}
+function burstSuggestions(it, R) {
+  const { before, after } = nearbyFrames(it), out = new Map();
+  [...before, ...after].forEach(o => knownIn(o, R).forEach((p, k) => out.set(k, p)));
+  return out;
+}
+
+function queueNumbers(list, front) {
+  if (!playersOn()) return;
+  list = list.filter(it => it && !it.reads && !numQueue.includes(it));
+  numQueue = front ? list.concat(numQueue) : numQueue.concat(list);
+  pumpNumbers();
+}
+let scanTotal = 0;
+function pumpNumbers() {
+  while (numBusy < 2 && numQueue.length) {
+    const it = numQueue.shift();
+    if (it.reads || (it.playersEl && !it.playersEl.isConnected && !scanTotal)) continue;
+    numBusy++;
+    findPlayers(it).finally(() => { numBusy--; scanProgress(); pumpNumbers(); });
+  }
+  scanProgress();
+}
+function scanProgress() {
+  if (!scanTotal) return;
+  const done = items.filter(it => it.reads).length;
+  $("scan-msg").textContent = numQueue.length || numBusy ? `Checked ${done} of ${items.length} photos…` : `Checked all ${items.length} photos.`;
+  if (!numQueue.length && !numBusy) { scanTotal = 0; $("scan-all").disabled = false; }
+}
+$("scan-all").addEventListener("click", () => {
+  scanTotal = items.length; $("scan-all").disabled = true;
+  queueNumbers(items, false);
+});
+async function findPlayers(it) {
+  const el = it.playersEl && it.playersEl.isConnected ? it.playersEl : null;
+  if (el) el.innerHTML = '<span class="plabel">Players</span><span class="hint">Looking for jersey numbers…</span>';
+  // the frames around this one help it, so read them too
+  const { before, after } = nearbyFrames(it);
+  queueNumbers([...before, ...after], false);
+  try {
+    if (!numCache.has(it.id)) numCache.set(it.id, getJSON("/api/players?id=" + encodeURIComponent(it.id)));
+    const d = await numCache.get(it.id);
+    if (d.available === false) { NUMS_OK = false; $("suggest-wrap").hidden = true; items.forEach(x => x.playersEl && (x.playersEl.hidden = true)); return; }
+    it.reads = d.numbers;
+    autoTag(it);
+    renderPlayers(it);
+    updateNeighbours(it);
+  } catch (e) {
+    numCache.delete(it.id);
+    if (el) { el.innerHTML = '<span class="plabel">Players</span><span class="hint"></span>'; el.querySelector(".hint").textContent = "Couldn't check for jersey numbers: " + e.message; }
+  }
+}
+function updateNeighbours(it) {
+  const { before, after } = nearbyFrames(it);
+  [...before, ...after].forEach(o => { if (o.ta) { autoTag(o); renderPlayers(o); } });
+}
+function autoTag(it) {
+  if (!$("auto-tag").checked || !it.ta) return;
+  const R = roster(), add = [];
+  const ok = p => p && p.name && !dismissed(it).has(lc(p.name)) && !it.keywords.map(lc).includes(lc(p.name)) && !add.includes(p.name);
+  for (const r of it.reads || []) {
+    if (!clearRead(r)) continue;
+    const { ps, viaAlt } = candidates(r, R);
+    if (ps.length === 1 && !viaAlt && ok(ps[0])) add.push(ps[0].name);  // only when exactly one player wears it
+  }
+  // a player known in the frames both before and after this one, in the same burst
+  const { before, after } = nearbyFrames(it);
+  if (before.length && after.length) {
+    const b = new Map(), a = new Map();
+    before.forEach(o => knownIn(o, R).forEach((p, k) => b.set(k, p)));
+    after.forEach(o => knownIn(o, R).forEach((p, k) => a.set(k, p)));
+    b.forEach((p, k) => { if (a.has(k) && ok(p)) add.push(p.name); });
+  }
+  if (add.length) addTags(it, add, true, true);
+}
+function playerButton(it, p, label, title, color, read) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "player";
+  b.innerHTML = "<b></b><span></span><span class=\"team\"></span>";
+  if (p.team) b.prepend(swatch(p.team));
+  b.querySelector("b").textContent = label;
+  b.querySelector("span").textContent = p.name;
+  b.querySelector(".team").textContent = p.team ? "· " + shortTeam(p.team) : "";
+  b.title = title;
+  b.addEventListener("mousedown", e => e.preventDefault());
+  b.addEventListener("click", () => {
+    if (color) learnColor(p.team, color);
+    if (read && read.torso && p.number !== "") post("/api/teach/confirm", { crop: read.torso, n: p.number }).catch(() => {});  // their jersey teaches the model
+    addTags(it, [p.name], true);
+    items.forEach(x => { if (x !== it && x.reads) { autoTag(x); renderPlayers(x); } });  // a new colour may settle other photos
+  });
+  return b;
+}
+function renderPlayers(it) {
+  const el = it.playersEl;
+  if (!el || !playersOn()) return;
+  const R = roster(), tagged = new Set(it.keywords.map(lc)), shownNames = new Set();
+  const nearby = burstSuggestions(it, R);
+  if (!it.reads && !nearby.size) return;
+  el.hidden = false;
+  el.innerHTML = '<span class="plabel">Players</span>';
+  const hint = t => { const h = document.createElement("span"); h.className = "hint"; h.textContent = t; el.append(h); };
+  const reads = (it.reads || []).filter(r => r.onPlayer && (!learnedOnly(r) || (r.model || 0) >= MODEL_SHOW));
+  reads.forEach(r => {
+    const { ps, viaAlt } = candidates(r, R);
+    if (!ps.length && learnedOnly(r)) return;
+    if (!ps.length) {
+      const x = document.createElement("span"); x.className = "player-num"; x.textContent = "#" + r.n;
+      x.title = "Not on the rosters you have turned on" + (r.alts && r.alts.length ? ` (might also be ${r.alts.map(a => "#" + a).join(", ")})` : "");
+      el.append(x); return;
+    }
+    ps.forEach(p => {
+      if (tagged.has(lc(p.name)) || shownNames.has(lc(p.name))) return;
+      shownNames.add(lc(p.name));
+      if (learnedOnly(r)) {
+        const b = playerButton(it, p, "#" + p.number + (viaAlt ? "?" : ""), `Tag ${p.name}: a guess from the jerseys you taught it (${Math.round(r.model * 100)}% sure). The text reader didn't see this number, so check it.\n${p.text}`, r.color, r);
+        b.classList.add("learned");
+        b.querySelector(".team").textContent += " · learned";
+        el.append(b); return;
+      }
+      el.append(playerButton(it, p, "#" + p.number + (viaAlt ? "?" : ""), `Tag ${p.name}` + (viaAlt ? ` (read as #${r.n}, which isn't on your rosters)` : "") + `\n${p.text}`, r.color, r));
+    });
+  });
+  nearby.forEach((p, k) => {
+    if (tagged.has(k) || shownNames.has(k)) return;
+    shownNames.add(k);
+    const b = playerButton(it, p, p.number !== "" ? "#" + p.number : "", `Tag ${p.name}: found in a frame next to this one, in the same burst` + (p.text ? `\n${p.text}` : ""), null);
+    b.classList.add("nearby");
+    b.querySelector(".team").textContent += " · nearby frame";
+    el.append(b);
+  });
+  if (!shownNames.size && !reads.length) hint(it.reads ? "No jersey numbers found in this photo." : "");
+  else if (!Object.keys(rosterAll()).length) hint("Turn on a sport's code file to see names.");
+  else if (shownNames.size) hint("Check before tagging.");
+}
+function refreshPlayers() { showTeams(); items.forEach(it => { renderTags(it); if (it.reads) renderPlayers(it); }); refreshTagOptions(); }
+
+/* ---- teach numbers: you label jerseys, the app trains a number model on this Mac ---- */
+const T = { list: [], cur: null, last: null, st: null, poll: 0, taught: false, done: new Set(), wasTraining: false, wasScanning: false };
+const teachEl = $("teach"), teachNum = $("teach-num");
+getJSON("/api/teach/status").then(d => { $("teach-open").hidden = !(d.available && d.reader); }).catch(() => {});
+$("teach-open").addEventListener("click", openTeach);
+$("teach-close").addEventListener("click", closeTeach);
+teachEl.addEventListener("click", e => { if (e.target === teachEl) closeTeach(); });
+async function openTeach() {
+  teachEl.hidden = false;
+  T.list = []; T.cur = null;
+  showJersey();
+  const d = await teachStatus();
+  await loadWaiting();
+  if (!T.cur && !d.waiting && !d.scanning && FOLDER) startScan();
+  teachNum.focus();
+}
+function closeTeach() {
+  teachEl.hidden = true;
+  clearTimeout(T.poll); T.poll = 0;
+  if (T.taught) {  // read the photos again with the new model
+    T.taught = false;
+    numCache.clear();
+    items.forEach(it => { it.reads = null; });
+    if (VIEW === "caption") captionRender(); else captionDirty = true;
+  }
+}
+async function teachStatus() {
+  let d;
+  try { d = await getJSON("/api/teach/status"); } catch (e) { return T.st || {}; }
+  T.st = d;
+  if (T.wasTraining && !d.training && !d.error) T.taught = true;
+  if (T.wasScanning && !T.cur) loadWaiting();
+  T.wasTraining = d.training; T.wasScanning = d.scanning;
+  renderTeachStatus();
+  clearTimeout(T.poll);
+  if (!teachEl.hidden && (d.scanning || d.training)) T.poll = setTimeout(teachStatus, 1500);
+  return d;
+}
+async function loadWaiting() {
+  if (T.loading) return;
+  T.loading = true;
+  try {
+    const d = await getJSON("/api/teach/waiting?n=40");
+    const have = new Set(T.list.map(j => j.crop).concat(T.cur ? [T.cur.crop] : []));
+    T.list = T.list.concat(d.jerseys.filter(j => !have.has(j.crop) && !T.done.has(j.crop)));
+  } catch (e) {}
+  T.loading = false;
+  if (!T.cur && T.list.length) nextJersey(); else if (!T.cur) showJersey(); else prefetch();
+}
+function prefetch() { T.list.slice(0, 3).forEach(j => { new Image().src = "/teach/crop/" + encodeURIComponent(j.crop); }); }
+function nextJersey() {
+  T.cur = T.list.shift() || null;
+  showJersey();
+  prefetch();
+  if (T.list.length < 5 && (T.st || {}).waiting > T.list.length) setTimeout(loadWaiting, 300);
+}
+function showJersey() {
+  const j = T.cur, img = $("teach-img"), empty = $("teach-empty"), st = T.st || {};
+  img.hidden = !j; empty.hidden = !!j;
+  ["teach-save", "teach-none", "teach-skip"].forEach(id => { $(id).disabled = !j; });
+  teachNum.disabled = !j;
+  if (!j) {
+    empty.textContent = st.scanning ? "Looking for jerseys in your photos…"
+      : FOLDER ? "No jerseys waiting. Click “Find more jerseys in this folder” to get more."
+      : "Open a folder of game photos first (top right), then come back here.";
+    $("teach-guess").textContent = ""; $("teach-who").textContent = ""; teachNum.value = "";
+    return;
+  }
+  img.src = "/teach/crop/" + encodeURIComponent(j.crop);
+  const g = $("teach-guess");
+  g.innerHTML = "";
+  const say = (a, b, c) => { g.append(a); const x = document.createElement("b"); x.textContent = b; g.append(x, c); };
+  if (j.by === "read") say("The text reader saw ", "#" + j.guess, ". Press Enter if that's right, or type the right number.");
+  else if (j.by === "model" && j.guess === "none") say("What you taught it says ", "no number", ` (${Math.round(j.conf * 100)}% sure). Press N if that's right.`);
+  else if (j.by === "model") say("What you taught it guesses ", "#" + j.guess, ` (${Math.round(j.conf * 100)}% sure). Press Enter if that's right.`);
+  else g.textContent = "What number is on this jersey? Press N if no number is showing.";
+  teachNum.value = j.guess && j.guess !== "none" ? j.guess : "";
+  teachWho();
+  teachNum.focus(); teachNum.select();
+}
+function teachWho() {
+  const n = teachNum.value.trim(), w = $("teach-who");
+  if (!/^\d{1,2}$/.test(n)) { w.textContent = ""; return; }
+  const ps = rosterAll()[+n] || [];
+  w.textContent = ps.length ? ps.map(p => p.name + (p.team ? " (" + shortTeam(p.team) + ")" : "")).join(", ") : Object.keys(rosterAll()).length ? "No one on your rosters wears #" + +n + "." : "";
+}
+teachNum.addEventListener("input", () => { teachNum.value = teachNum.value.replace(/\D/g, "").slice(0, 2); teachWho(); });
+teachNum.addEventListener("keydown", e => {
+  const k = e.key.toLowerCase();
+  if ((e.metaKey || e.ctrlKey) && k === "z") { e.preventDefault(); teachUndo(); return; }
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (k === "n") { e.preventDefault(); teachLabel("none"); }
+  else if (k === "s") { e.preventDefault(); teachLabel("skip"); }
+});
+teachEl.addEventListener("keydown", e => { if (e.key === "Escape") { e.preventDefault(); closeTeach(); } });
+$("teach-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const n = teachNum.value.trim();
+  if (!/^\d{1,2}$/.test(n)) { $("teach-guess").textContent = "Type the number, or press N if no number is showing, or S if you can't tell."; return; }
+  teachLabel(String(+n));
+});
+$("teach-none").addEventListener("click", () => teachLabel("none"));
+$("teach-skip").addEventListener("click", () => teachLabel("skip"));
+$("teach-undo").addEventListener("click", teachUndo);
+async function teachLabel(label) {
+  const j = T.cur;
+  if (!j) return;
+  T.done.add(j.crop);
+  T.last = { crop: j.crop, label, entry: j };
+  $("teach-undo").disabled = false;
+  const st = T.st || (T.st = { counts: {}, waiting: 0 });
+  if (label !== "skip") st.counts[label] = (st.counts[label] || 0) + 1;
+  st.waiting = Math.max(0, (st.waiting || 0) - 1);
+  nextJersey(); renderTeachStatus();
+  try { await post("/api/teach/label", { crop: j.crop, label }); }
+  catch (e) { $("teach-guess").textContent = "Couldn't save that label: " + e.message; teachStatus(); }
+}
+async function teachUndo() {
+  const l = T.last;
+  if (!l) return;
+  T.last = null; $("teach-undo").disabled = true;
+  try {
+    await post("/api/teach/undo", { crop: l.crop, label: l.label, entry: l.entry });
+    T.done.delete(l.crop);
+    if (T.cur) T.list.unshift(T.cur);
+    T.cur = l.entry; showJersey();
+    teachStatus();
+  } catch (e) { $("teach-guess").textContent = e.message; }
+}
+function trainReady(c) { return Object.values(c || {}).filter(n => n >= (T.st && T.st.min_per || 3)).length >= 2; }
+function renderTeachStatus() {
+  const st = T.st || {}, c = st.counts || {}, min = st.min_per || 3;
+  const box = $("teach-counts"); box.innerHTML = "";
+  const keys = Object.keys(c).sort((a, b) => (a === "none") - (b === "none") || +a - +b);
+  if (!keys.length) box.innerHTML = '<span class="hint">Nothing yet.</span>';
+  keys.forEach(k => {
+    const x = document.createElement("span");
+    x.className = "tcount" + (c[k] < min ? " few" : "");
+    x.innerHTML = "<b></b><span></span>";
+    x.querySelector("b").textContent = k === "none" ? "No number" : "#" + k;
+    x.querySelector("span").textContent = c[k];
+    if (c[k] < min) x.title = `Needs at least ${min} to be learned`;
+    box.append(x);
+  });
+  const total = Object.values(c).reduce((a, b) => a + b, 0);
+  $("teach-left").textContent = (st.waiting ? plural(st.waiting, "jersey") + " waiting" : "") + (total ? (st.waiting ? " · " : "") + plural(total, "label") + " so far" : "");
+  $("teach-scan").disabled = !!st.scanning || !FOLDER;
+  $("teach-scan-msg").textContent = st.scanning ? `Looking through photos… ${st.scanned} of ${st.to_scan}` : "";
+  $("teach-train").disabled = !!st.training || !trainReady(c);
+  $("teach-train-msg").textContent = st.training ? "Learning… this takes about a minute." : st.error ? st.error
+    : !trainReady(c) ? `Label at least ${min} jerseys each for two numbers, then click this.` : "";
+  const m = st.model, mm = $("teach-model");
+  mm.innerHTML = "";
+  if (m) {
+    const when = new Date(m.when * 1000).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    const nums = Object.keys(m.numbers || {}).filter(k => k !== "none").length;
+    let t = `Last taught ${when}, from ${plural(m.labels, "jersey")} (${plural(nums, "number")}).`;
+    if (m.right != null) t += ` On jerseys it hadn't seen, it got ${Math.round(m.right * 100)}% right.`;
+    t += " Its guesses show as “learned” suggestions (dotted outline). It never tags anyone by itself. ";
+    mm.append(t);
+    const f = document.createElement("button");
+    f.type = "button"; f.className = "linkish"; f.textContent = "Forget what it learned";
+    f.title = "Delete the trained model. Your labels are kept.";
+    f.addEventListener("click", async () => { if (!confirm("Delete what the app learned? Your labels are kept, so you can teach it again.")) return; T.st = await post("/api/teach/forget"); T.taught = true; renderTeachStatus(); });
+    mm.append(f);
+  } else if (total) mm.textContent = "When you click “Teach the app”, it learns from your labels on this Mac. Nothing is sent anywhere.";
+  if (!T.cur) showJersey();
+}
+async function startScan() {
+  try { T.st = await post("/api/teach/scan"); T.wasScanning = true; renderTeachStatus(); teachStatus(); }
+  catch (e) { $("teach-scan-msg").textContent = e.message; }
+}
+$("teach-scan").addEventListener("click", startScan);
+$("teach-train").addEventListener("click", async () => {
+  try { T.st = await post("/api/teach/train"); T.wasTraining = true; renderTeachStatus(); teachStatus(); }
+  catch (e) { $("teach-train-msg").textContent = e.message; }
+});
+
+function captionShow() {
+  updateProgress(); updateCredit();
+  if (captionDirty) { captionDirty = false; captionRender(); }
+}
+$("cap-filter").value = store.get("cap-filter", "all");
+$("cap-filter").addEventListener("change", () => { store.set("cap-filter", $("cap-filter").value); captionRender(); updateSend(); });
+window.addEventListener("beforeunload", e => { if (items.some(it => it.ta && it.ta.isConnected && it.ta.value.trim() !== it.caption.trim())) e.preventDefault(); });
+
+/* ================= running / quit ================= */
+let misses = 0, quitting = false;
+const PAGE_VERSION = 5;  // matches APP_VERSION in caption.py
+function showClosed(title, text) {
+  $("closed-title").textContent = title; $("closed-text").textContent = text; $("closed").hidden = false;
+}
+async function ping() {
+  if (quitting) return;
+  try {
+    const r = await fetch("/api/ping", { cache: "no-store" }); misses = 0; $("closed").hidden = true;
+    const d = await r.json().catch(() => ({}));
+    $("update-banner").hidden = (d.v || 0) >= PAGE_VERSION;  // an older copy is still running: ask for a restart
+  }
+  catch (e) { if (++misses >= 2) showClosed("Caption Images is closed", "You can close this window. To start again, open Caption Images."); }
+}
+setInterval(ping, 15000);
+ping();
+document.addEventListener("visibilitychange", () => { if (!document.hidden) ping(); });
+$("quit").addEventListener("click", async () => {
+  let force = false;
+  if (JOBSTATE && JOBSTATE.running) {
+    if (!confirm("Photos are still copying. Stop the copy and quit?")) return;
+    force = true;
+  }
+  if (items.some(it => it.ta && it.ta.isConnected && it.ta.value.trim() !== it.caption.trim())) {
+    if (!confirm("Some captions haven't saved yet. Quit anyway?")) return;
+  }
+  quitting = true;
+  try { await post("/api/quit", { force }); } catch (e) {}
+  showClosed("Caption Images is closed", "You can close this window. To start again, open Caption Images.");
+  setTimeout(() => window.close(), 400);
+});
+
+/* ================= start ================= */
+(async () => {
+  const [shots, codes] = await Promise.all([getJSON("/api/shots"), getJSON("/api/codes"), loadFileTags()]);
+  setCodes(codes);
+  if (!shots.folder) {
+    const last = store.get("last-folder", "");
+    if (last) { try { await post("/api/folder", { path: last }); } catch (e) {} }
+  }
+  await loadShots();
+  route();
+})();
+</script>
+<div class="update-banner" id="update-banner" role="alert" hidden>Caption Images was updated while it was open. Quit, then open it again to finish.<button class="btn" id="update-quit" type="button" onclick="document.getElementById('quit').click()">Quit now</button></div>
+<div class="closed" id="closed" hidden><div><svg viewBox="100 100 824 824" aria-hidden="true"><defs><linearGradient id="ig2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#e2500f"/></linearGradient><clipPath id="ic2"><rect x="268" y="264" width="488" height="312" rx="18"/></clipPath></defs><rect x="100" y="100" width="824" height="824" rx="185" fill="url(#ig2)"/><rect x="232" y="228" width="560" height="384" rx="40" fill="#fff"/><rect x="268" y="264" width="488" height="312" rx="18" fill="#4f2c1d"/><g clip-path="url(#ic2)"><circle cx="652" cy="350" r="44" fill="#ffb27a"/><path d="M250 600 L430 380 L560 520 L625 455 L780 600 Z" fill="#f26a21"/></g><rect x="232" y="676" width="560" height="44" rx="22" fill="#fff"/><rect x="232" y="760" width="388" height="44" rx="22" fill="#fff" opacity=".85"/></svg><h2 id="closed-title">Caption Images is closed</h2><p id="closed-text">You can close this window. To start again, open Caption Images.</p></div></div>
+</body>
+</html>

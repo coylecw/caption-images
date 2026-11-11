@@ -1,0 +1,21 @@
+{
+  "name": "Generic",
+  "values": {
+    "caption": "",
+    "headline": "",
+    "title": "{event}",
+    "keywords": "",
+    "copyright": "{photographer}/BG Falcon Media",
+    "credit": "BG Falcon Media",
+    "source": "{photographer}",
+    "location": "",
+    "city": "Bowling Green",
+    "state": "Ohio",
+    "country": "United States",
+    "countrycode": "USA",
+    "bylinetitle": "",
+    "jobid": "",
+    "instructions": "Editorial use only.",
+    "getty": "1"
+  }
+}

@@ -1,0 +1,433 @@
+dmacmbb	during a Mid-American Conference men's basketball game
+dncmbb	during a non-conference men's basketball game
+stroh	at the Stroh Center
+inbg	in Bowling Green, Ohio.
+mbbcoach	Head coach Todd Simon of the Bowling Green Falcons	head coach Todd Simon	Simon
+pressc	speaks during a postgame press conference
+mact	during the Mid-American Conference Tournament
+ncaa	during the NCAA Tournament
+cwbg	(Coyle Withrow/BG Falcon Media)
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+cheer	Bowling Green cheerleaders perform
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+band	The Bowling Green pep band performs
+sn	is honored during Senior Night
+
+h1	during the first half
+h2	during the second half
+ot	during overtime
+2ot	during double overtime
+half	at halftime
+pre	before the game
+intro	is introduced before the game
+
+cel	celebrates
+hud	huddles with teammates
+bench	reacts from the bench
+hf	high-fives a teammate
+anthem	stands for the national anthem
+react	reacts to a call
+3pt	shoots a 3-pointer
+jump	shoots a jump shot
+lay	goes up for a layup
+dunk	dunks the ball
+alley	finishes an alley-oop
+drive	drives to the basket
+post	posts up
+reb	grabs a rebound
+oreb	grabs an offensive rebound
+ft	shoots a free throw
+blk	blocks a shot
+stl	steals the ball
+pass	passes the ball
+drib	brings the ball up the court
+def	defends against
+loose	dives for a loose ball
+tip	goes up for the opening tip
+foul	is called for a foul
+to	listens during a timeout
+cel3	celebrates a 3-pointer
+and1	celebrates an and-one
+
+
+mbb0	Tristan Beckford #0 of the Bowling Green Falcons	Tristan Beckford #0	Beckford
+mbb1	Trey Simmons #1 of the Bowling Green Falcons	Trey Simmons #1	Simmons
+mbb2	KJ Torbert #2 of the Bowling Green Falcons	KJ Torbert #2	Torbert
+mbb3	Makhi Leach #3 of the Bowling Green Falcons	Makhi Leach #3	Leach
+mbb4	Josiah Shackelford #4 of the Bowling Green Falcons	Josiah Shackelford #4	Shackelford
+mbb5	Christian Dedivanaj #5 of the Bowling Green Falcons	Christian Dedivanaj #5	Dedivanaj
+mbb7	Zach Howell #7 of the Bowling Green Falcons	Zach Howell #7	Howell
+mbb8	Juan Cranford Jr. #8 of the Bowling Green Falcons	Juan Cranford Jr. #8	Cranford
+mbb10	Jayden Johnson #10 of the Bowling Green Falcons	Jayden Johnson #10	Johnson
+mbb11	Talan Staley #11 of the Bowling Green Falcons	Talan Staley #11	Staley
+mbb13	Preston Squire #13 of the Bowling Green Falcons	Preston Squire #13	Squire
+mbb15	Camden Karel #15 of the Bowling Green Falcons	Camden Karel #15	Karel
+mbb22	Christ Essandoko #22 of the Bowling Green Falcons	Christ Essandoko #22	Essandoko
+mbb34	Aiden Goins #34 of the Bowling Green Falcons	Aiden Goins #34	Goins
+mbb35	Leek Ateny #35 of the Bowling Green Falcons	Leek Ateny #35	Ateny
+
+
+bg	Bowling Green Falcons
+akr	Akron Zips
+akr1	Exavier Wilson #1 of the Akron Zips	Exavier Wilson #1	Wilson
+akr2	Tahj Staveskie #2 of the Akron Zips	Tahj Staveskie #2	Staveskie
+akr4	Buddy Hammer Jr. #4 of the Akron Zips	Buddy Hammer Jr. #4	Hammer
+akr5	Chabi Barre #5 of the Akron Zips	Chabi Barre #5	Barre
+akr6	Tai Perkins #6 of the Akron Zips	Tai Perkins #6	Perkins
+akr7	Josh Henderson #7 of the Akron Zips	Josh Henderson #7	Henderson
+akr8	Ty Pence #8 of the Akron Zips	Ty Pence #8	Pence
+akr9	Cody Head #9 of the Akron Zips	Cody Head #9	Head
+akr10	Max Burton #10 of the Akron Zips	Max Burton #10	Burton
+akr12	Evan Mahaffey #12 of the Akron Zips	Evan Mahaffey #12	Mahaffey
+akr15	RJ Jones #15 of the Akron Zips	RJ Jones #15	Jones
+akr19	Devan Christion #19 of the Akron Zips	Devan Christion #19	Christion
+akr21	Zach Halligan #21 of the Akron Zips	Zach Halligan #21	Halligan
+akr22	Colin White #22 of the Akron Zips	Colin White #22	White
+akr23	Marvin Musiime-Kamali #23 of the Akron Zips	Marvin Musiime-Kamali #23	Musiime-Kamali
+
+
+aqu	Aquinas Saints
+aqu0	Lamont Green-Torbert #0 of the Aquinas Saints	Lamont Green-Torbert #0	Green-Torbert
+aqu1	Mershon Dickerson #1 of the Aquinas Saints	Mershon Dickerson #1	Dickerson
+aqu2	Jordan McCoy #2 of the Aquinas Saints	Jordan McCoy #2	McCoy
+aqu3	David Day #3 of the Aquinas Saints	David Day #3	Day
+aqu4	Jack Futa #4 of the Aquinas Saints	Jack Futa #4	Futa
+aqu5	Charlie Anderson #5 of the Aquinas Saints	Charlie Anderson #5	Anderson
+aqu10	Jordan Bledsoe #10 of the Aquinas Saints	Jordan Bledsoe #10	Bledsoe
+aqu12	Joe Russau #12 of the Aquinas Saints	Joe Russau #12	Russau
+aqu13	Nick Henry #13 of the Aquinas Saints	Nick Henry #13	Henry
+aqu14	Terrell Jefferson #14 of the Aquinas Saints	Terrell Jefferson #14	Jefferson
+aqu15jo	Tjay Jones #15 of the Aquinas Saints	Tjay Jones #15	Jones
+aqu15br	Zaiden Bramer #15 of the Aquinas Saints	Zaiden Bramer #15	Bramer
+aqu20	Samuel Medendorp #20 of the Aquinas Saints	Samuel Medendorp #20	Medendorp
+aqu21	Tj Terrentine #21 of the Aquinas Saints	Tj Terrentine #21	Terrentine
+aqu22	Brendan Vanderhart #22 of the Aquinas Saints	Brendan Vanderhart #22	Vanderhart
+aqu23	Caden Pokorzynski #23 of the Aquinas Saints	Caden Pokorzynski #23	Pokorzynski
+aqu24	Johnny Edwards #24 of the Aquinas Saints	Johnny Edwards #24	Edwards
+aqu25	Tommy Valenti #25 of the Aquinas Saints	Tommy Valenti #25	Valenti
+aqu30	Malachi DenBraber #30 of the Aquinas Saints	Malachi DenBraber #30	DenBraber
+aqu34	Xavier Zubric #34 of the Aquinas Saints	Xavier Zubric #34	Zubric
+
+
+bsu	Ball State Cardinals
+bsu0	Sean Blake #0 of the Ball State Cardinals	Sean Blake #0	Blake
+bsu1	Trey Lewis #1 of the Ball State Cardinals	Trey Lewis #1	Lewis
+bsu2	Javion Guy-King #2 of the Ball State Cardinals	Javion Guy-King #2	Guy-King
+bsu3	Aaron Fine #3 of the Ball State Cardinals	Aaron Fine #3	Fine
+bsu4	Jazz Henderson Jr. #4 of the Ball State Cardinals	Jazz Henderson Jr. #4	Henderson
+bsu5	K'Jei Parker #5 of the Ball State Cardinals	K'Jei Parker #5	Parker
+bsu6	Kamden McGilveary #6 of the Ball State Cardinals	Kamden McGilveary #6	McGilveary
+bsu7	Jaden Smith #7 of the Ball State Cardinals	Jaden Smith #7	Smith
+bsu11	Babatunde Durodola #11 of the Ball State Cardinals	Babatunde Durodola #11	Durodola
+bsu20	Joey Hart #20 of the Ball State Cardinals	Joey Hart #20	Hart
+bsu24	Mason Jones #24 of the Ball State Cardinals	Mason Jones #24	Jones
+bsu25	Kai McGrew #25 of the Ball State Cardinals	Kai McGrew #25	McGrew
+bsu33	Kijani Wright #33 of the Ball State Cardinals	Kijani Wright #33	Wright
+bsu55	Zaon Collins #55 of the Ball State Cardinals	Zaon Collins #55	Collins
+
+
+ub	Buffalo Bulls
+ub0	Matas Buteliauskas #0 of the Buffalo Bulls	Matas Buteliauskas #0	Buteliauskas
+ub1	Jalen Pitre #1 of the Buffalo Bulls	Jalen Pitre #1	Pitre
+ub2	J.J. Starling #2 of the Buffalo Bulls	J.J. Starling #2	Starling
+ub3	Tristan Kuska #3 of the Buffalo Bulls	Tristan Kuska #3	Kuska
+ub5	Boluwasefe John #5 of the Buffalo Bulls	Boluwasefe John #5	John
+ub7	Harrison Reede #7 of the Buffalo Bulls	Harrison Reede #7	Reede
+ub9	Antoine Lorick III #9 of the Buffalo Bulls	Antoine Lorick III #9	Lorick
+ub10	Mikkel Tyne #10 of the Buffalo Bulls	Mikkel Tyne #10	Tyne
+ub12	Kyle Jones #12 of the Buffalo Bulls	Kyle Jones #12	Jones
+ub20	Daniel Shao #20 of the Buffalo Bulls	Daniel Shao #20	Shao
+ub21	Drew Steffe #21 of the Buffalo Bulls	Drew Steffe #21	Steffe
+ub22	JJ Frakes #22 of the Buffalo Bulls	JJ Frakes #22	Frakes
+ub24	Jahrel Vigo #24 of the Buffalo Bulls	Jahrel Vigo #24	Vigo
+ub25	Dylan Ducommun #25 of the Buffalo Bulls	Dylan Ducommun #25	Ducommun
+ub35	Evan Romano #35 of the Buffalo Bulls	Evan Romano #35	Romano
+
+
+cmu	Central Michigan Chippewas
+cmu0	Uchenna Amene #0 of the Central Michigan Chippewas	Uchenna Amene #0	Amene
+cmu1	Nsikan Usen #1 of the Central Michigan Chippewas	Nsikan Usen #1	Usen
+cmu2	Jalen Kampen #2 of the Central Michigan Chippewas	Jalen Kampen #2	Kampen
+cmu3	Jaxson Whitaker #3 of the Central Michigan Chippewas	Jaxson Whitaker #3	Whitaker
+cmu4	Kareem Aburashed #4 of the Central Michigan Chippewas	Kareem Aburashed #4	Aburashed
+cmu5	Jayson Petty #5 of the Central Michigan Chippewas	Jayson Petty #5	Petty
+cmu10	Phat Phat Brooks #10 of the Central Michigan Chippewas	Phat Phat Brooks #10	Phat Brooks
+cmu11	Tyre Acuff #11 of the Central Michigan Chippewas	Tyre Acuff #11	Acuff
+cmu13	Keenan Garner #13 of the Central Michigan Chippewas	Keenan Garner #13	Garner
+cmu20	Jayden Hackett #20 of the Central Michigan Chippewas	Jayden Hackett #20	Hackett
+cmu21	Brock Mendoza #21 of the Central Michigan Chippewas	Brock Mendoza #21	Mendoza
+cmu23	Jacob Wrencher #23 of the Central Michigan Chippewas	Jacob Wrencher #23	Wrencher
+cmu24	Jake Bascom #24 of the Central Michigan Chippewas	Jake Bascom #24	Bascom
+cmu40	Travis Ambrose #40 of the Central Michigan Chippewas	Travis Ambrose #40	Ambrose
+cmu55	Conrad Luczynski #55 of the Central Michigan Chippewas	Conrad Luczynski #55	Luczynski
+
+
+csu	Cleveland State Vikings
+csu0	Jordan Lowery #0 of the Cleveland State Vikings	Jordan Lowery #0	Lowery
+csu1	Rayvon Griffith #1 of the Cleveland State Vikings	Rayvon Griffith #1	Griffith
+csu2	Owen Bronston Jr. #2 of the Cleveland State Vikings	Owen Bronston Jr. #2	Bronston
+csu3	Micah Bays #3 of the Cleveland State Vikings	Micah Bays #3	Bays
+csu4	Xavier McKinney #4 of the Cleveland State Vikings	Xavier McKinney #4	McKinney
+csu5	Alex Bruskotter #5 of the Cleveland State Vikings	Alex Bruskotter #5	Bruskotter
+csu7	Brandon White #7 of the Cleveland State Vikings	Brandon White #7	White
+csu9	CJ Stinson Jr. #9 of the Cleveland State Vikings	CJ Stinson Jr. #9	Stinson
+csu11	Ogbe Uagboe #11 of the Cleveland State Vikings	Ogbe Uagboe #11	Uagboe
+csu12	Deandre Jones #12 of the Cleveland State Vikings	Deandre Jones #12	Jones
+csu13	Dylan Foster #13 of the Cleveland State Vikings	Dylan Foster #13	Foster
+csu15	Braden McCruter #15 of the Cleveland State Vikings	Braden McCruter #15	McCruter
+csu22	Derek Vorst #22 of the Cleveland State Vikings	Derek Vorst #22	Vorst
+csu33	Gavin Headings #33 of the Cleveland State Vikings	Gavin Headings #33	Headings
+
+
+corn	Cornerstone Golden Eagles
+corn0	Myles Everingham #0 of the Cornerstone Golden Eagles	Myles Everingham #0	Everingham
+corn1	Myles Steffen #1 of the Cornerstone Golden Eagles	Myles Steffen #1	Steffen
+corn2	Judah Bartels #2 of the Cornerstone Golden Eagles	Judah Bartels #2	Bartels
+corn3	Kayden Bird #3 of the Cornerstone Golden Eagles	Kayden Bird #3	Bird
+corn5	Maddux Everingham #5 of the Cornerstone Golden Eagles	Maddux Everingham #5	Everingham
+corn11	Titus Spencer #11 of the Cornerstone Golden Eagles	Titus Spencer #11	Spencer
+corn13	Andy Mora #13 of the Cornerstone Golden Eagles	Andy Mora #13	Mora
+corn14	Levi Schultz #14 of the Cornerstone Golden Eagles	Levi Schultz #14	Schultz
+corn15	Brody Johnson #15 of the Cornerstone Golden Eagles	Brody Johnson #15	Johnson
+corn21	Collin Czarnecki #21 of the Cornerstone Golden Eagles	Collin Czarnecki #21	Czarnecki
+corn22	Mark DeVries #22 of the Cornerstone Golden Eagles	Mark DeVries #22	DeVries
+corn24	Hudson Hornback #24 of the Cornerstone Golden Eagles	Hudson Hornback #24	Hornback
+corn30	Josiah DeMeester #30 of the Cornerstone Golden Eagles	Josiah DeMeester #30	DeMeester
+corn33	Colin Heyboer #33 of the Cornerstone Golden Eagles	Colin Heyboer #33	Heyboer
+corn34	Jackson Wiegerink #34 of the Cornerstone Golden Eagles	Jackson Wiegerink #34	Wiegerink
+
+
+emu	Eastern Michigan Eagles
+emu0	Gregory Lawson II #0 of the Eastern Michigan Eagles	Gregory Lawson II #0	Lawson
+emu1	Kaden Johnson #1 of the Eastern Michigan Eagles	Kaden Johnson #1	Johnson
+emu2	Emanuel Richards #2 of the Eastern Michigan Eagles	Emanuel Richards #2	Richards
+emu3	Jabri Fitzpatrick #3 of the Eastern Michigan Eagles	Jabri Fitzpatrick #3	Fitzpatrick
+emu4	Mohammad Habhab #4 of the Eastern Michigan Eagles	Mohammad Habhab #4	Habhab
+emu5	Braelon Green #5 of the Eastern Michigan Eagles	Braelon Green #5	Green
+emu7	Omar Suleiman #7 of the Eastern Michigan Eagles	Omar Suleiman #7	Suleiman
+emu12	DaCory Porter #12 of the Eastern Michigan Eagles	DaCory Porter #12	Porter
+emu13	Jordan Wright #13 of the Eastern Michigan Eagles	Jordan Wright #13	Wright
+emu14	Kilian Brockhoff #14 of the Eastern Michigan Eagles	Kilian Brockhoff #14	Brockhoff
+emu20	Max Booher #20 of the Eastern Michigan Eagles	Max Booher #20	Booher
+emu30	Jaiden Martin #30 of the Eastern Michigan Eagles	Jaiden Martin #30	Martin
+emu32	Sencire Harris #32 of the Eastern Michigan Eagles	Sencire Harris #32	Harris
+emu44	Aviv Aronov #44 of the Eastern Michigan Eagles	Aviv Aronov #44	Aronov
+
+
+gwu	Gardner-Webb Runnin' Bulldogs
+gwu0	Jamias Ferere #0 of the Gardner-Webb Runnin' Bulldogs	Jamias Ferere #0	Ferere
+gwu1	Seth Brown #1 of the Gardner-Webb Runnin' Bulldogs	Seth Brown #1	Brown
+gwu2	DJ Daniel #2 of the Gardner-Webb Runnin' Bulldogs	DJ Daniel #2	Daniel
+gwu3	Mikhali Pocknett #3 of the Gardner-Webb Runnin' Bulldogs	Mikhali Pocknett #3	Pocknett
+gwu4	Jackson Skipper #4 of the Gardner-Webb Runnin' Bulldogs	Jackson Skipper #4	Skipper
+gwu6	Jacob Hudson #6 of the Gardner-Webb Runnin' Bulldogs	Jacob Hudson #6	Hudson
+gwu9	Bryson Luther #9 of the Gardner-Webb Runnin' Bulldogs	Bryson Luther #9	Luther
+gwu10	Rue Wells #10 of the Gardner-Webb Runnin' Bulldogs	Rue Wells #10	Wells
+gwu12	David Gaymon #12 of the Gardner-Webb Runnin' Bulldogs	David Gaymon #12	Gaymon
+gwu14	Ginuwine Tropnas #14 of the Gardner-Webb Runnin' Bulldogs	Ginuwine Tropnas #14	Tropnas
+gwu24	Chinedu Okpara #24 of the Gardner-Webb Runnin' Bulldogs	Chinedu Okpara #24	Okpara
+gwu25	Ace Talbert #25 of the Gardner-Webb Runnin' Bulldogs	Ace Talbert #25	Talbert
+gwu32	Sam Nosakhare #32 of the Gardner-Webb Runnin' Bulldogs	Sam Nosakhare #32	Nosakhare
+gwu33	Brave Rutsindura #33 of the Gardner-Webb Runnin' Bulldogs	Brave Rutsindura #33	Rutsindura
+
+
+gsu	Georgia State Panthers
+gsu0	Chris Jones #0 of the Georgia State Panthers	Chris Jones #0	Jones
+gsu1	AJ Smith #1 of the Georgia State Panthers	AJ Smith #1	Smith
+gsu2	Owen Augunas #2 of the Georgia State Panthers	Owen Augunas #2	Augunas
+gsu4	Jacob Meyer #4 of the Georgia State Panthers	Jacob Meyer #4	Meyer
+gsu7	Eric Parnell #7 of the Georgia State Panthers	Eric Parnell #7	Parnell
+gsu8	Zion Wilburn #8 of the Georgia State Panthers	Zion Wilburn #8	Wilburn
+gsu10	Jacolb Fredson-Cole #10 of the Georgia State Panthers	Jacolb Fredson-Cole #10	Fredson-Cole
+gsu11	Jonas Sirtautas #11 of the Georgia State Panthers	Jonas Sirtautas #11	Sirtautas
+gsu12	David Thomas #12 of the Georgia State Panthers	David Thomas #12	Thomas
+gsu14	Jaden Jackson #14 of the Georgia State Panthers	Jaden Jackson #14	Jackson
+gsu15	Orion Wilson #15 of the Georgia State Panthers	Orion Wilson #15	Wilson
+gsu23	Terrance Dixon Jr. #23 of the Georgia State Panthers	Terrance Dixon Jr. #23	Dixon
+gsu24	Keeper Jackson #24 of the Georgia State Panthers	Keeper Jackson #24	Jackson
+gsu32	Shiyloh Fisher #32 of the Georgia State Panthers	Shiyloh Fisher #32	Fisher
+gsu50	Mason Nicholson #50 of the Georgia State Panthers	Mason Nicholson #50	Nicholson
+
+
+iu	Indiana Hoosiers
+iu0	Trevor Manhertz #0 of the Indiana Hoosiers	Trevor Manhertz #0	Manhertz
+iu1	Darren Harris #1 of the Indiana Hoosiers	Darren Harris #1	Harris
+iu2	Bryce Lindsay #2 of the Indiana Hoosiers	Bryce Lindsay #2	Lindsay
+iu3	Jaeden Mustaf #3 of the Indiana Hoosiers	Jaeden Mustaf #3	Mustaf
+iu4	Sam Alexis #4 of the Indiana Hoosiers	Sam Alexis #4	Alexis
+iu5	Markus Burton #5 of the Indiana Hoosiers	Markus Burton #5	Burton
+iu8	Prince-Alexander Moody #8 of the Indiana Hoosiers	Prince-Alexander Moody #8	Moody
+iu10	Drew Snively #10 of the Indiana Hoosiers	Drew Snively #10	Snively
+iu11	Trent Sisley #11 of the Indiana Hoosiers	Trent Sisley #11	Sisley
+iu12	Justin Monden #12 of the Indiana Hoosiers	Justin Monden #12	Monden
+iu14	Jordan Rayford #14 of the Indiana Hoosiers	Jordan Rayford #14	Rayford
+iu17	Clemens Sokolov #17 of the Indiana Hoosiers	Clemens Sokolov #17	Sokolov
+iu21	Samet Yigitoglu #21 of the Indiana Hoosiers	Samet Yigitoglu #21	Yigitoglu
+iu22	Aiden Sherrell #22 of the Indiana Hoosiers	Aiden Sherrell #22	Sherrell
+iu24	Vaughn Karvala #24 of the Indiana Hoosiers	Vaughn Karvala #24	Karvala
+iu30	Ian Stephens #30 of the Indiana Hoosiers	Ian Stephens #30	Stephens
+iu33	Ben Winker #33 of the Indiana Hoosiers	Ben Winker #33	Winker
+
+
+ksu	Kent State Golden Flashes
+ksu0	Chansey Willis Jr. #0 of the Kent State Golden Flashes	Chansey Willis Jr. #0	Willis
+ksu1	Jamal Sumlin #1 of the Kent State Golden Flashes	Jamal Sumlin #1	Sumlin
+ksu2	Dhani Miller #2 of the Kent State Golden Flashes	Dhani Miller #2	Miller
+ksu5	Brenden Moss #5 of the Kent State Golden Flashes	Brenden Moss #5	Moss
+ksu6	Quinn Woidke #6 of the Kent State Golden Flashes	Quinn Woidke #6	Woidke
+ksu7	Landon Vanderwarker #7 of the Kent State Golden Flashes	Landon Vanderwarker #7	Vanderwarker
+ksu8	Jakhi Calloway #8 of the Kent State Golden Flashes	Jakhi Calloway #8	Calloway
+ksu11	Dezmon Briscoe #11 of the Kent State Golden Flashes	Dezmon Briscoe #11	Briscoe
+ksu13	Godslove Nwabude #13 of the Kent State Golden Flashes	Godslove Nwabude #13	Nwabude
+ksu22	Jaymen Townsend #22 of the Kent State Golden Flashes	Jaymen Townsend #22	Townsend
+ksu23	Latif Diouf #23 of the Kent State Golden Flashes	Latif Diouf #23	Diouf
+ksu30	Christian Henry #30 of the Kent State Golden Flashes	Christian Henry #30	Henry
+ksu31	Dylan Lakatos #31 of the Kent State Golden Flashes	Dylan Lakatos #31	Lakatos
+ksu34	Cameron Williams #34 of the Kent State Golden Flashes	Cameron Williams #34	Williams
+ksu42	Elian Arick #42 of the Kent State Golden Flashes	Elian Arick #42	Arick
+
+
+mu	Miami (Ohio) RedHawks
+mu00	Alan Horton #00 of the Miami (Ohio) RedHawks	Alan Horton #00	Horton
+mu1	Anthony Fresh #1 of the Miami (Ohio) RedHawks	Anthony Fresh #1	Fresh
+mu2	Evan Ipsaro #2 of the Miami (Ohio) RedHawks	Evan Ipsaro #2	Ipsaro
+mu3	Luke Skaljac #3 of the Miami (Ohio) RedHawks	Luke Skaljac #3	Skaljac
+mu5	Preston Copeland #5 of the Miami (Ohio) RedHawks	Preston Copeland #5	Copeland
+mu6	Justin Kirby #6 of the Miami (Ohio) RedHawks	Justin Kirby #6	Kirby
+mu7	Ethan Wright #7 of the Miami (Ohio) RedHawks	Ethan Wright #7	Wright
+mu8	Stevie Elam #8 of the Miami (Ohio) RedHawks	Stevie Elam #8	Elam
+mu9	Rich Rolf #9 of the Miami (Ohio) RedHawks	Rich Rolf #9	Rolf
+mu11	Almar Atlason #11 of the Miami (Ohio) RedHawks	Almar Atlason #11	Atlason
+mu13	Antwone Woolfolk #13 of the Miami (Ohio) RedHawks	Antwone Woolfolk #13	Woolfolk
+mu20	Tyler Robbins #20 of the Miami (Ohio) RedHawks	Tyler Robbins #20	Robbins
+mu21	Leshawn Stowers #21 of the Miami (Ohio) RedHawks	Leshawn Stowers #21	Stowers
+mu24	Jackson Kotecki #24 of the Miami (Ohio) RedHawks	Jackson Kotecki #24	Kotecki
+mu25	Kyle Waltz #25 of the Miami (Ohio) RedHawks	Kyle Waltz #25	Waltz
+mu33	Blake Anderson #33 of the Miami (Ohio) RedHawks	Blake Anderson #33	Anderson
+mu35	Danny Kelly #35 of the Miami (Ohio) RedHawks	Danny Kelly #35	Kelly
+
+
+niag	Niagara Purple Eagles
+niag0	Ruey Ruey #0 of the Niagara Purple Eagles	Ruey Ruey #0	Ruey
+niag1	Vukasin Todorovic #1 of the Niagara Purple Eagles	Vukasin Todorovic #1	Todorovic
+niag2	Trenton Walters #2 of the Niagara Purple Eagles	Trenton Walters #2	Walters
+niag4	Logan Woods #4 of the Niagara Purple Eagles	Logan Woods #4	Woods
+niag5	Fidel Rotta #5 of the Niagara Purple Eagles	Fidel Rotta #5	Rotta
+niag6	Noah Slingerland #6 of the Niagara Purple Eagles	Noah Slingerland #6	Slingerland
+niag7	Jackson Redmond #7 of the Niagara Purple Eagles	Jackson Redmond #7	Redmond
+niag8	Bastien Rieber #8 of the Niagara Purple Eagles	Bastien Rieber #8	Rieber
+niag9	Gael Dalmau #9 of the Niagara Purple Eagles	Gael Dalmau #9	Dalmau
+niag10	Cole Farrell #10 of the Niagara Purple Eagles	Cole Farrell #10	Farrell
+niag12	Brian Angeletti #12 of the Niagara Purple Eagles	Brian Angeletti #12	Angeletti
+niag13	Samuele Miccoli #13 of the Niagara Purple Eagles	Samuele Miccoli #13	Miccoli
+niag24	Daniel Emokhare #24 of the Niagara Purple Eagles	Daniel Emokhare #24	Emokhare
+niag77	Tae Blackshear #77 of the Niagara Purple Eagles	Tae Blackshear #77	Blackshear
+
+
+niu	Northern Illinois Huskies
+niu0	Nino Carter-Smith #0 of the Northern Illinois Huskies	Nino Carter-Smith #0	Carter-Smith
+niu1	Uzziah Buntyn #1 of the Northern Illinois Huskies	Uzziah Buntyn #1	Buntyn
+niu2	Colin Hardrick #2 of the Northern Illinois Huskies	Colin Hardrick #2	Hardrick
+niu3	Tolu Samuels #3 of the Northern Illinois Huskies	Tolu Samuels #3	Samuels
+niu4	Cal Klesmit #4 of the Northern Illinois Huskies	Cal Klesmit #4	Klesmit
+niu5	Mykolas Ivanauskas #5 of the Northern Illinois Huskies	Mykolas Ivanauskas #5	Ivanauskas
+niu6	Max Weisbrod #6 of the Northern Illinois Huskies	Max Weisbrod #6	Weisbrod
+niu7	Izaya Larthridge #7 of the Northern Illinois Huskies	Izaya Larthridge #7	Larthridge
+niu8	Bennett Basich #8 of the Northern Illinois Huskies	Bennett Basich #8	Basich
+niu9	Jack Daugherty #9 of the Northern Illinois Huskies	Jack Daugherty #9	Daugherty
+niu10	Trevor Polite #10 of the Northern Illinois Huskies	Trevor Polite #10	Polite
+niu11	Keller Hanson #11 of the Northern Illinois Huskies	Keller Hanson #11	Hanson
+niu14	Nathan Ramus #14 of the Northern Illinois Huskies	Nathan Ramus #14	Ramus
+niu15	David Douglas Jr. #15 of the Northern Illinois Huskies	David Douglas Jr. #15	Douglas
+niu32	Brayden Gross #32 of the Northern Illinois Huskies	Brayden Gross #32	Gross
+niu70	Akiva McBirney-Griffin #70 of the Northern Illinois Huskies	Akiva McBirney-Griffin #70	McBirney-Griffin
+
+
+ou	Ohio Bobcats
+ou0	Christian Trudic #0 of the Ohio Bobcats	Christian Trudic #0	Trudic
+ou1	Javan Simmons #1 of the Ohio Bobcats	Javan Simmons #1	Simmons
+ou2	Jordie Bowens #2 of the Ohio Bobcats	Jordie Bowens #2	Bowens
+ou3	Jackson Paveletzke #3 of the Ohio Bobcats	Jackson Paveletzke #3	Paveletzke
+ou4	Ché Brogan #4 of the Ohio Bobcats	Ché Brogan #4	Brogan
+ou5	Zay Mosley #5 of the Ohio Bobcats	Zay Mosley #5	Mosley
+ou8	Moek Icke #8 of the Ohio Bobcats	Moek Icke #8	Icke
+ou10	Siebe Ledegen #10 of the Ohio Bobcats	Siebe Ledegen #10	Ledegen
+ou11	Carter Reese #11 of the Ohio Bobcats	Carter Reese #11	Reese
+ou12	Kyler D'Augustino #12 of the Ohio Bobcats	Kyler D'Augustino #12	D'Augustino
+ou13	Dusan Makitan #13 of the Ohio Bobcats	Dusan Makitan #13	Makitan
+ou14	Kolton Mitchell #14 of the Ohio Bobcats	Kolton Mitchell #14	Mitchell
+ou17	Kiir Kuany #17 of the Ohio Bobcats	Kiir Kuany #17	Kuany
+ou21	Jesse Burris #21 of the Ohio Bobcats	Jesse Burris #21	Burris
+ou24	Marin Petkov #24 of the Ohio Bobcats	Marin Petkov #24	Petkov
+
+
+ut	Toledo Rockets
+ut0	Toby Nwokolo #0 of the Toledo Rockets	Toby Nwokolo #0	Nwokolo
+ut1	Sean Jones #1 of the Toledo Rockets	Sean Jones #1	Jones
+ut2	Manny Johnson #2 of the Toledo Rockets	Manny Johnson #2	Johnson
+ut3	Marco Mattucci #3 of the Toledo Rockets	Marco Mattucci #3	Mattucci
+ut5	Mynor Strong #5 of the Toledo Rockets	Mynor Strong #5	Strong
+ut7	Jaylohn Allen #7 of the Toledo Rockets	Jaylohn Allen #7	Allen
+ut9	Angel Montas Jr. #9 of the Toledo Rockets	Angel Montas Jr. #9	Montas
+ut10	Chris Riddle #10 of the Toledo Rockets	Chris Riddle #10	Riddle
+ut11	Will James Jr. #11 of the Toledo Rockets	Will James Jr. #11	James
+ut23	Rich Barron #23 of the Toledo Rockets	Rich Barron #23	Barron
+ut24	Rashaun Porter #24 of the Toledo Rockets	Rashaun Porter #24	Porter
+ut25	Austin Parks #25 of the Toledo Rockets	Austin Parks #25	Parks
+ut32	Jaylan Ouwinga #32 of the Toledo Rockets	Jaylan Ouwinga #32	Ouwinga
+
+
+umass	UMass Minutemen
+umass0	Danny Carbuccia #0 of the UMass Minutemen	Danny Carbuccia #0	Carbuccia
+umass1	Abdullah Ahmed #1 of the UMass Minutemen	Abdullah Ahmed #1	Ahmed
+umass2	Dwayne Wimbley Jr. #2 of the UMass Minutemen	Dwayne Wimbley Jr. #2	Wimbley
+umass3	Jordan Clayton #3 of the UMass Minutemen	Jordan Clayton #3	Clayton
+umass5	Cam Hailey #5 of the UMass Minutemen	Cam Hailey #5	Hailey
+umass9	Josh Engel #9 of the UMass Minutemen	Josh Engel #9	Engel
+umass10	Junjie Wang #10 of the UMass Minutemen	Junjie Wang #10	Wang
+umass11	Jayden Ndjigue #11 of the UMass Minutemen	Jayden Ndjigue #11	Ndjigue
+umass12	Noa Zemljić #12 of the UMass Minutemen	Noa Zemljić #12	Zemljić
+umass13	Luka Damjanac #13 of the UMass Minutemen	Luka Damjanac #13	Damjanac
+umass14	Heimir Helgason #14 of the UMass Minutemen	Heimir Helgason #14	Helgason
+umass25	Dimitri Clerc #25 of the UMass Minutemen	Dimitri Clerc #25	Clerc
+umass27	Rollie Castineyra #27 of the UMass Minutemen	Rollie Castineyra #27	Castineyra
+umass34	Cheick Sylla #34 of the UMass Minutemen	Cheick Sylla #34	Sylla
+
+
+wmu	Western Michigan Broncos
+wmu0	Jaylen Washington Jr. #0 of the Western Michigan Broncos	Jaylen Washington Jr. #0	Washington
+wmu1	Mason Bendinger #1 of the Western Michigan Broncos	Mason Bendinger #1	Bendinger
+wmu2	Joshua Eli #2 of the Western Michigan Broncos	Joshua Eli #2	Eli
+wmu3	Tanner Hayhurst #3 of the Western Michigan Broncos	Tanner Hayhurst #3	Hayhurst
+wmu4	Ben Johnson #4 of the Western Michigan Broncos	Ben Johnson #4	Johnson
+wmu7	Jordan Sigmon #7 of the Western Michigan Broncos	Jordan Sigmon #7	Sigmon
+wmu8	Isaac Finlinson #8 of the Western Michigan Broncos	Isaac Finlinson #8	Finlinson
+wmu10	Adam Harakow #10 of the Western Michigan Broncos	Adam Harakow #10	Harakow
+wmu11	Augustinas Kiudulas #11 of the Western Michigan Broncos	Augustinas Kiudulas #11	Kiudulas
+wmu13	Julien Gomez #13 of the Western Michigan Broncos	Julien Gomez #13	Gomez
+wmu20	Janis Jünemann #20 of the Western Michigan Broncos	Janis Jünemann #20	Jünemann
+wmu22	Ramere Draper #22 of the Western Michigan Broncos	Ramere Draper #22	Draper
+wmu23	DeAaron Watkins #23 of the Western Michigan Broncos	DeAaron Watkins #23	Watkins
+wmu24	Rob Lee Jr. #24 of the Western Michigan Broncos	Rob Lee Jr. #24	Lee
+
+
+wm	William & Mary Tribe
+wm0	Nick Byrd #0 of the William & Mary Tribe	Nick Byrd #0	Byrd
+wm1	Brian Carter Jr. #1 of the William & Mary Tribe	Brian Carter Jr. #1	Carter
+wm2	Tre Blassingame #2 of the William & Mary Tribe	Tre Blassingame #2	Blassingame
+wm4	Jayden Forsythe #4 of the William & Mary Tribe	Jayden Forsythe #4	Forsythe
+wm5	Ethan Connery #5 of the William & Mary Tribe	Ethan Connery #5	Connery
+wm6	Colin Lamine Ndaw #6 of the William & Mary Tribe	Colin Lamine Ndaw #6	Lamine Ndaw
+wm7	John Roland Jr. #7 of the William & Mary Tribe	John Roland Jr. #7	Roland
+wm8	Will Feagles #8 of the William & Mary Tribe	Will Feagles #8	Feagles
+wm9	Stas Sivka #9 of the William & Mary Tribe	Stas Sivka #9	Sivka
+wm10	Jesse McIntosh #10 of the William & Mary Tribe	Jesse McIntosh #10	McIntosh
+wm11	Gavin Ward #11 of the William & Mary Tribe	Gavin Ward #11	Ward
+wm12	Nilavan Daniels #12 of the William & Mary Tribe	Nilavan Daniels #12	Daniels
+wm24	Josh Baldwin #24 of the William & Mary Tribe	Josh Baldwin #24	Baldwin
+wm31	Chris Richards #31 of the William & Mary Tribe	Chris Richards #31	Richards
+wm33	ZZ Clark #33 of the William & Mary Tribe	ZZ Clark #33	Clark

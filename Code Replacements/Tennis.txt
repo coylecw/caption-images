@@ -1,0 +1,65 @@
+# Tennis codes (Caption Images). Rosters aren't in this file yet: add players as
+# code, TAB, full ID, TAB, Name #N, TAB, last name (like the basketball files).
+
+# BOWLING GREEN, CONFERENCE AND PLACE
+bg	Bowling Green Falcons
+bgdate	BOWLING GREEN, OHIO -
+dmacten	during a Mid-American Conference tennis match
+dncten	during a non-conference tennis match
+mact	during the Mid-American Conference Tournament
+keefe	at Keefe Courts
+inbg	in Bowling Green, Ohio.
+tencoach	Head coach Autumn Williams of the Bowling Green Falcons	head coach Autumn Williams	Williams
+
+# WHEN
+singles	during a singles match
+doubles	during a doubles match
+pre	before the match
+
+# ACTION
+serve	serves
+fore	hits a forehand
+backh	hits a backhand
+volley	hits a volley
+point	celebrates a point
+wins	celebrates a win
+
+# EVERY SPORT
+gv	A general view of
+fans	Fans cheer
+stu	The Bowling Green student section cheers
+freddie	Bowling Green Falcons mascot Freddie Falcon
+frieda	Bowling Green Falcons mascot Frieda Falcon
+agst	against the
+pressc	speaks during a postgame press conference
+cel	celebrates
+hud	huddles with teammates
+hf	high-fives a teammate
+anthem	stands for the national anthem
+intro	is introduced before the match
+react	reacts
+cwbg	(Coyle Withrow/BG Falcon Media)
+sd	is honored during Senior Day
+
+# OPPONENTS (add players the same way as the other sport files)
+akr	Akron Zips
+bsu	Ball State Cardinals
+ub	Buffalo Bulls
+cmu	Central Michigan Chippewas
+emu	Eastern Michigan Eagles
+ksu	Kent State Golden Flashes
+mu	Miami (Ohio) RedHawks
+niu	Northern Illinois Huskies
+ou	Ohio Bobcats
+ut	Toledo Rockets
+wmu	Western Michigan Broncos
+umass	UMass Minutewomen
+osu	Ohio State Buckeyes
+um	Michigan Wolverines
+msu	Michigan State Spartans
+uc	Cincinnati Bearcats
+oak	Oakland Golden Grizzlies
+ysu	Youngstown State Penguins
+wsu	Wright State Raiders
+ud	Dayton Flyers
+udm	Detroit Mercy Titans

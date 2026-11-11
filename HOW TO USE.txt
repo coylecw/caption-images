@@ -1,0 +1,330 @@
+CAPTION IMAGES
+
+New here? Open "Caption Images - Team Guide.pdf" in this folder: a step-by-step
+guide with pictures and the common codes.
+Ingest photos from a card, cull them, and caption them, with
+Photo Mechanic-style code replacements.
+
+---------------------------------------------------------------
+START IT
+---------------------------------------------------------------
+Mac:      Double-click "Caption Images" (the orange app icon)
+Windows:  Double-click "Caption Images (Windows).bat"
+
+It opens in its own window (in Chrome or Edge if you have one, otherwise
+your normal browser). Opening it again just brings the window back.
+
+Keep the app in this folder, next to "Code Replacements". To keep it
+handy, drag it onto your Dock (that makes a shortcut; the app stays here).
+
+To quit: click the power button at the top right, or on a Mac press
+Command-Q / right-click the Dock icon > Quit. If you just close the
+window, it quits by itself a few minutes later. It never quits in the
+middle of copying photos.
+
+FIRST TIME ON A MAC (one time only):
+1. If it says Apple "could not verify" Caption Images: click Done, open
+   System Settings > Privacy & Security, scroll down, and click
+   "Open Anyway" next to Caption Images. Then open it again.
+2. If it asks to install "Command Line Tools", click Install, wait for
+   it to finish, then open Caption Images again.
+3. When it asks to access files in your Documents / iCloud Drive, or on
+   a removable volume (your memory card), click Allow.
+   If you clicked Don't Allow by mistake: System Settings > Privacy &
+   Security > Files and Folders > Caption Images, and turn the switches on.
+
+FIRST TIME ON WINDOWS: if Python isn't installed, get it from
+https://www.python.org/downloads/ (tick "Add Python to PATH").
+The first time you open it, a black window says "Setting up Caption
+Images" for a minute while it adds the photo tools (Pillow) that smaller
+copies and HEIC previews need. Be online for that. If it can't, the app
+still opens and sets them up next time.
+
+The three tabs at the top go in order: Ingest -> Cull -> Caption.
+"Open folder..." (top right) opens any folder of photos to cull or caption.
+
+---------------------------------------------------------------
+1. INGEST  (copy photos off a card)
+---------------------------------------------------------------
+- Plug in your card. It shows up under "Copy from" on its own.
+- Choose where to save, type the event (e.g. Football vs Toledo).
+  A new folder is made, like "2026-11-02 Football vs Toledo".
+- File names: keep the camera's names, or rename. The default pattern
+  {date}_{event}_{num} gives 20261102_Football-vs-Toledo_0001.cr3.
+  Other fill-ins: {isodate} {time} {original} {initials}.
+  RAW+JPEG pairs keep the same number.
+- Your photographer name is added to every photo.
+- "Copy" can leave out your rejects, or copy only photos you rated
+  (see "Working on the card" below).
+- "Skip photos I've already ingested" means you can ingest the same card
+  again after shooting more and only the new photos are copied.
+- Ingesting never moves or deletes anything on the card. Format the card
+  in your camera once you've checked the copies.
+- When it's done, click "Cull these photos".
+
+METADATA TEMPLATE  (bottom of the Ingest page)
+- Tick "Add this to every photo" and fill in what you want stamped on
+  each photo as it's copied: caption, headline, title, keywords,
+  copyright, credit, source, venue, city, state, country, job ID and
+  instructions. Leave a field blank to skip it.
+- Fill-ins work in every field: {event} {longdate} (November 2, 2026)
+  {isodate} {year} {num} {original}. So "{year} Bowling Green State
+  University" always has the right year.
+- GETTY FORMAT: click "Getty style". It ticks "Getty format" and fills
+  the empty boxes: Credit BG Falcon Media, Copyright
+  "{photographer}/BG Falcon Media", Source "{photographer}", Bowling
+  Green, Ohio, United States, USA, Staff. {photographer} is replaced by
+  the photographer name you typed, so each teammate gets their own name
+  (e.g. "Coyle Withrow/BG Falcon Media"). Then type the Venue the way it reads in a
+  caption ("the Stroh Center") and, in Caption, just what's happening:
+    The visiting Cleveland State Vikings and the Bowling Green Falcons
+    warm up before a non-conference women's basketball game
+  Each photo gets the dateline in front and the date, venue, place and
+  your credit at the end, using the photo's own date:
+    BOWLING GREEN, OHIO - NOVEMBER 05: The visiting Cleveland State
+    Vikings and the Bowling Green Falcons warm up before a non-conference
+    women's basketball game on November 5, 2026 at the Stroh Center in
+    Bowling Green, Ohio. (Coyle Withrow/BG Falcon Media)
+  The box under Caption shows exactly how it will read. Anything you
+  already wrote yourself (a dateline, the date, a credit) isn't added
+  twice. The photo's Location field gets "Stroh Center" without "the".
+- Codes work too, e.g. \bgdate\ or \ut\, using the code files turned
+  on in the Caption tab. Unknown codes are flagged in red.
+- The caption only goes on photos that don't have one yet (one you wrote
+  while culling on the card stays). Keywords are added to any already
+  there. The other fields replace whatever the camera wrote.
+- "Save as..." keeps the template under a name (e.g. Volleyball home);
+  pick it from the menu next time. "Save" updates it after you edit,
+  "Delete" removes it. Whatever is in the boxes is remembered either way.
+- SHARING TEMPLATES: saved templates are files in the "Metadata
+  Templates" folder next to the app (one .json file each). They come
+  with the app when you share the zip. To give a teammate one template,
+  send them its .json file to drop into their Metadata Templates folder.
+- Written the same way as captions: inside JPEGs, in an .xmp sidecar
+  for RAW files. Lightroom, Photo Mechanic and Bridge all read it.
+
+---------------------------------------------------------------
+WORKING ON THE CARD  (no copying first)
+---------------------------------------------------------------
+You can cull and caption straight off the card:
+- On the Ingest tab, pick the card, then click "Cull on the card" or
+  "Caption on the card". (Or "Open folder..." and choose the card.)
+  Every folder on the card (100CANON, 101CANON...) shows up together.
+- Ratings, captions and your name are saved on the card, in a small .xmp
+  file next to each RAW (JPEGs keep them inside the file). The camera
+  ignores these files.
+- "Move rejects" is turned off on a card. Leave rejects behind instead:
+  when you ingest, set "Copy" to "Everything except rejects" or
+  "Rated 1 star or more". Ratings and captions come along with the copies.
+- Careful: formatting the card erases everything on it, including your
+  ratings and captions. Copy your picks off first ("Copy N photos to..."
+  in Cull works too).
+- If it says the card is locked, slide the lock switch on the side of the
+  SD card up and plug it back in.
+
+---------------------------------------------------------------
+2. CULL  (pick the keepers)
+---------------------------------------------------------------
+  Left / Right arrows   previous / next photo
+  T                     tag / untag (Photo Mechanic's tag)
+  1 - 5                 star rating (moves to the next photo)
+  6 - 9                 color class 1-4 (Winner, Winner Alt, Superior,
+                        Superior Alt)
+  0                     clear the rating
+  X                     reject (press again to un-reject)
+  Z, Space, or click    zoom to 100% to check focus (Esc to leave)
+  G                     contact sheet (grid) / one big photo
+  Shift + arrows        select a run of photos (or Shift-click,
+                        Cmd/Ctrl-click to add one, Cmd/Ctrl+A for all)
+  ?                     every shortcut, on screen
+
+- Number keys can work like any of Photo Mechanic's three keyboard
+  presets. Press ? and pick "Number keys set":
+    1-5 stars, 6-9 color classes   (Photo Mechanic: "Lightroom Classic")
+    1-5 stars only                  ("Numbers set Star Ratings")
+    1-8 color classes               ("Numbers set Color Classes")
+- With several photos selected, T, X, stars and color classes change
+  all of them at once, and "Copy N selected to..." copies just those.
+- The big photo is a sharp 2000 px preview (the website size). It shows
+  the camera's quick preview first and sharpens a moment later.
+
+- "Show" filters the strip: not rated yet, 3 stars or more, rejected...
+- "Copy N photos to..." copies whatever is showing (RAW, JPEG and their
+  sidecars) to another folder, e.g. your picks for the editor.
+- "Move rejects..." moves rejected photos into a "Rejects" folder inside
+  the shoot. Nothing is deleted. (Not available on a card.)
+- Ratings are the standard star rating Lightroom, Bridge and Photo
+  Mechanic read (a reject is -1, same as Lightroom).
+- Stars you give in the camera (the rating button) show up here too, on
+  the card and after ingesting. Change them here and your change wins.
+- Tags and color classes are saved where Photo Mechanic keeps them
+  (its own XMP fields), so a folder can go back and forth between this
+  app and Photo Mechanic. Lightroom reads the stars, not tags.
+
+SWITCHING FROM PHOTO MECHANIC
+  Photo Mechanic              Here
+  Ingest + stationery pad     Ingest tab + Metadata template
+  Contact sheet               Cull tab, press G
+  Preview window              Cull tab, one big photo (G again)
+  T to tag                    T to tag
+  Color classes               6-9, or 1-8 with that preset (press ?)
+  Show tagged only            Show: Tagged
+  Copy tagged photos          Show: Tagged, then "Copy N photos to..."
+  Code replacements \code\    Same codes, same files, in Caption
+  IPTC info / captions        Caption tab
+
+---------------------------------------------------------------
+3. CAPTION
+---------------------------------------------------------------
+- Type a caption under each photo. It saves on its own after a moment.
+- Enter = save and go to the next photo.  Shift+Enter = new line.
+- "Show" can limit the list to photos without a caption, or to your
+  3-star picks.
+- TAGS: under each caption. Type a tag and press Enter (or a comma).
+  Click x to remove one. Tags are saved as Keywords, the field Photo
+  Mechanic, Lightroom and Bridge search. Click the tag box (or press the
+  down arrow) for a list of the players and coaches on the teams that are
+  on, grouped by team. Type a number (9 or #9), a name, or a school to
+  narrow it; up/down arrows + Return, or a click, picks one. Each team has
+  a colour dot in its school colours (also on player tags, suggestions
+  and the Teams buttons).
+  YOUR TAG LIST: "Tags.txt" (next to the app) holds tags you use often,
+  one per line. They show in the tag box's list in every folder. Open it
+  in TextEdit (or Notepad), add or delete lines and save; the app picks
+  up the change the next time you click a tag box. Lines starting with #
+  are notes. The list also includes tags already used in the open folder.
+  Player tags (with the person
+  icon) are also saved as "Person Shown". Click a player tag to put
+  their full ID in the caption (Shift-click for just "Name #9").
+- When you're done, click "Move N captioned photos to..." (top right)
+  and choose a folder, e.g. one for the editor or for upload. Only photos
+  that have a caption go (and only those the "Show" filter is showing).
+  Their .xmp sidecars go with them, so nothing is lost.
+  Switch "Move" to "Copy" to leave the originals where they are.
+  If a file with the same name is already there, nothing is replaced:
+  the new one is saved as e.g. IMG_0001-2.
+  On a memory card it can only copy (the card is never changed).
+- SEND TO LIGHTROOM: set the menu next to that button to
+  "Send to Lightroom" and click "Send N captioned photos to Lightroom".
+  Like Move and Copy, it sends the captioned photos the "Show" filter is
+  showing (e.g. set Show to "Rated 3 stars or more" for your picks).
+  Lightroom opens its import window with them picked; choose how to
+  import and click Import there. Stars, captions and tags go with them.
+  If you have both Lightroom Classic and Lightroom, pick one in the menu
+  that appears (it remembers).
+  On Windows, Lightroom has to be installed in the usual place
+  (Program Files\Adobe), and it takes about 350 photos at a time.
+- SMALLER COPIES: set the menu next to that button to
+  "Save smaller copies of", pick a size and, if needed, a file-size limit:
+    2000 px (web) - 1080 px (social) - 3000 px (editor, print) - Full size
+    Any file size - Under 5 MB / 2 MB / 1 MB / 500 KB (for email or
+    upload limits; it lowers quality a little, then size, to fit)
+  Click "Save N smaller copies to..." and choose a folder. You get JPEGs
+  (made from the RAW's full-size preview), turned upright, with the
+  caption, photographer, stars, tags, date taken, and the copyright,
+  credit and location from the metadata template. The originals
+  aren't touched. Works on a memory card too.
+
+---------------------------------------------------------------
+TEAMS
+---------------------------------------------------------------
+When the code files you have on include more than one team, a Teams row
+appears on the Caption tab. Open its menu and untick the teams that
+aren't in this game ("All off", then tick the two playing, is quickest).
+Only players and coaches from the teams that are on can be tagged: typing
+the name of someone from a team that's off doesn't tag them, and a tag you
+already added for them turns orange as a warning.
+
+(Reading jersey numbers to suggest players is switched off. It named the
+wrong players too often. Tag players from the tag box's list instead.)
+
+---------------------------------------------------------------
+WHERE THINGS ARE SAVED
+---------------------------------------------------------------
+- JPEG and PNG: inside the file (the same caption, photographer,
+  rating, keyword and Person Shown fields Photo Mechanic, Lightroom and
+  Photoshop use).
+- RAW (CR3, NEF, ARW...), HEIC and TIFF: in a sidecar file next to it,
+  e.g. IMG_0001.xmp for IMG_0001.CR3, the same way Lightroom does it.
+  The RAW file itself is never changed. Keep the .xmp files with the RAWs
+  when you move or share them.
+
+---------------------------------------------------------------
+PHOTOGRAPHER NAME
+---------------------------------------------------------------
+- Type your name once (Ingest or Caption tab). The app remembers it.
+- It's added to photos that don't have a photographer yet. A photo that
+  already has someone else's name keeps it; the app never replaces
+  another photographer's credit. Each photo shows "By ..." on the
+  Caption tab.
+
+---------------------------------------------------------------
+CODE REPLACEMENTS
+---------------------------------------------------------------
+- Code files live in the "Code Replacements" folder next to the app.
+  Same format as Photo Mechanic: one code per line, a tab, then the text.
+- On the Caption tab, open the Codes menu and tick the code files for
+  your shoot (for example Football and DATES). The menu button shows
+  which are on.
+- Type a code between backslashes and it expands as you type:
+      \q1\   ->  in the first quarter
+      \doyt\ ->  at Doyt L. Perry Stadium in Bowling Green, Ohio
+- COLUMNS: a code can have more than one replacement, separated by tabs
+  on the same line (Photo Mechanic's column style). \code\ uses the
+  first, \code#2\ the second, \code#3\ the third. Every player and
+  coach is one line with three columns:
+    ut9  Audrey Dyas #9 of the Toledo Rockets  Audrey Dyas #9  Dyas
+      \ut9\    ->  Audrey Dyas #9 of the Toledo Rockets
+      \ut9#2\  ->  Audrey Dyas #9
+      \ut9#3\  ->  Dyas
+    Coaches: \vbalex\ = Head coach Alex Delpiombo of the Bowling Green
+    Falcons, \vbalex#2\ = head coach Alex Delpiombo, \vbalex#3\ =
+    Delpiombo.
+  To add a player, add one line: code, tab, full ID, tab, Name #N, tab,
+  last name.
+- "Look up codes" searches every code that's on and shows each column
+  in its own cell. Click a cell to insert that version.
+- Turn on only one sport at a time. Some codes (h1, foul, drive...)
+  mean different things in different sports, and opponents use the same
+  short school code in every sport (ut = Toledo, ksu = Kent State...).
+- The codes follow Getty Images caption style:
+    \bgdate\ \nov5\: \vb9\ spikes the ball against the \ut\ \s2\
+    \nov5d\ \stroh\ \inbg\ \cwbg\
+  becomes
+    BOWLING GREEN, OHIO - NOVEMBER 05: Avery Hobson #9 of the Bowling
+    Green Falcons spikes the ball against the Toledo Rockets during
+    the second set on November 5, 2026 at the Stroh Center in Bowling
+    Green, Ohio. (Coyle Withrow/BG Falcon Media)
+  Player codes: vb9 = full ID, vb9#2 = "Avery Hobson #9", vb9#3 =
+  "Hobson". Opponents the same way: ut9, ut9#2, ut9#3. Dates: nov5 = NOVEMBER 05 (dateline),
+  nov5d = on November 5, 2026.
+- Every sport has bg = Bowling Green Falcons (like ut = Toledo Rockets),
+  plus: agst = against the, gv = A general view of, fans = Fans cheer,
+  stu = The Bowling Green student section cheers, cheer = Bowling Green
+  cheerleaders perform, band, freddie / frieda (the mascots), and
+  sn = is honored during Senior Night (sd = Senior Day for football and
+  soccer; hc = during the Homecoming game for football).
+- Every sport also has a head coach code: fbcoach, mbbcoach, wbbcoach,
+  hkycoach, msoccoach, wsoccoach, vbcoach (\vbcoach#3\ = last name), plus
+  pressc = speaks during a postgame press conference, and tournament
+  codes (mact, ncaa, mvct for men's soccer, macc and bowl for football).
+- New sport files, no rosters yet: Baseball, Softball, Gymnastics,
+  Swimming and Diving, Track and Field, Tennis, Golf. Add players the
+  same way as the other files.
+- PHOTO CREDITS: everyone on the photo team has a credit code in DATES,
+  their initials + bg: cwbg = (Coyle Withrow/BG Falcon Media), qdbg =
+  (Quentin Dolengowski/BG Falcon Media) and so on. The full list is in
+  the team guide. New on the team? Add a line to DATES.txt the same way.
+- NEWS: turn on News (and DATES) for news photos around Bowling Green and
+  northwest Ohio. Datelines: toldate = TOLEDO, OHIO -, intol = in Toledo,
+  Ohio. (every town works the same way: perrydate, inperry...). Places
+  (union, jerome, wccourt, tma...), officials (bgmayor = Bowling Green
+  Mayor Mike Aspacher, #2 = name, #3 = last name), meetings (council,
+  trmeet), elections, public safety, weather, community events and campus
+  life. Officials were checked Nov. 5, 2026. In January 2027 switch \gov\ to
+  Gov. Amy Acton and \wcclee\ to Commissioner Ryan Lee.
+- A full caption from codes:
+    \bgdate\ \nov5\: \wbb11\ (left) takes a floater over \csu10\ (right)
+    \dncwbb\ \agst\ \csu\ \nov5d\ \stroh\ \inbg\ \cwbg\
+  (cwbg is Coyle's credit; teammates add their own code the same way)
+
