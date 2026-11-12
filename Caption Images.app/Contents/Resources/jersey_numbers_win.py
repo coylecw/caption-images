@@ -24,6 +24,13 @@ from collections import Counter
 
 DIGIT_RE = re.compile(r"^\d{1,2}$")
 
+# RapidOCR's own default confidence floor (0.5) is tuned for whole words; a 1-2 digit jersey
+# number reads lower than a word simply for having less context to lean on (e.g. a correctly
+# read "7" scored ~0.32 in testing) and gets silently dropped at the default. Lowering it here
+# lets those through; _summarize()'s onPlayer check (below) is what keeps the resulting noise
+# (stray low-confidence single-pass "reads" of background texture) from being treated as real.
+TEXT_SCORE = 0.3
+
 MAX_FULL_PX = 1800  # long edge for the quick whole-photo pass
 TILE_GRID = (2, 2)  # columns, rows for the detail sweep
 TILE_OVERLAP = 0.15  # fraction of a tile's size shared with its neighbours
@@ -148,9 +155,12 @@ def _summarize(cluster, img_h, path):
     conf = max(d["conf"] for d in cluster if d["n"] == n)
     box = _union_box([d["box"] for d in cluster if d["n"] == n])
     bh = box[3] - box[1]
-    # a loose stand-in for "found on a player": a plausible number, read with some confidence,
-    # at a size that looks like a chest number rather than a scoreboard digit or stray text
-    on_player = conf >= 0.4 and 0.015 * img_h <= bh <= 0.5 * img_h
+    # a loose stand-in for "found on a player": a plausible size for a chest number (not a
+    # scoreboard digit or stray background text), seen more than once across the sweep's
+    # passes (two independent reads agreeing is good evidence even at low confidence each —
+    # short 1-2 digit strings read lower than whole words simply for having less context), or
+    # read with real confidence even just once
+    on_player = 0.015 * img_h <= bh <= 0.5 * img_h and ((len(cluster) >= 2 and conf >= 0.3) or conf >= 0.55)
     return {
         "n": n, "alts": alts, "onPlayer": bool(on_player), "votes": len(cluster),
         "agree": round(agree, 2), "model": 0, "color": _sample_color(path, box),
@@ -173,7 +183,7 @@ def read_numbers(path):
     raw = []
     for crop, ox, oy, scale in _passes(im):
         try:
-            result, _ = engine(np.array(crop))
+            result, _ = engine(np.array(crop), text_score=TEXT_SCORE)
         except Exception:
             continue
         if not result:
