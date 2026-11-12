@@ -19,6 +19,15 @@ if errorlevel 1 (
   %PY% -m pip install --user --quiet --disable-pip-version-check pillow pillow-heif
 )
 
+REM Also one-time: RapidOCR reads jersey numbers on Windows (free, offline, no account or GPU
+REM needed). It's a bigger download than Pillow, so this may take a minute the first time.
+REM If it can't be installed, the app still opens; jersey-number suggestions just won't appear.
+%PY% -c "import rapidocr_onnxruntime" >nul 2>nul
+if errorlevel 1 (
+  echo Setting up jersey-number reading. This only happens once and may take a minute...
+  %PY% -m pip install --user --quiet --disable-pip-version-check rapidocr-onnxruntime
+)
+
 where pyw >nul 2>nul
 if not errorlevel 1 (
   start "" pyw "%APPDIR%\caption.py"

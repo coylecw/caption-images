@@ -7,10 +7,10 @@ For how to *use* it, see `HOW TO USE.txt` and `Caption Images - Team Guide.pdf`.
 ## Running it
 
 - **Mac:** double-click `Caption Images.app`. The launcher in `Contents/MacOS/` (a universal binary) starts `Contents/Resources/caption.py`.
-- **Windows:** `Caption Images (Windows).bat` runs the same `caption.py` with `pyw`/`pythonw`. On first run it pip-installs Pillow and pillow-heif (optional; used for smaller copies and HEIC previews).
+- **Windows:** `Caption Images (Windows).bat` runs the same `caption.py` with `pyw`/`pythonw`. On first run it pip-installs Pillow and pillow-heif (optional; used for smaller copies and HEIC previews) and RapidOCR (optional; used for jersey-number reading — see `jersey_numbers_win.py`). All three fail gracefully if there's no internet the first time; the app still opens, just without those features.
 - **From a terminal:** `python3 "Caption Images.app/Contents/Resources/caption.py" [folder]`
 
-The server listens on `127.0.0.1:8765` only. `/api/ping` returns `APP_VERSION` (currently 5, in `caption.py`). If the page sees a newer version than the running server, it shows an "updated while it was open, Quit now" banner. **Bump `APP_VERSION` whenever you change the Python.**
+The server listens on `127.0.0.1:8765` only. `/api/ping` returns `APP_VERSION` (currently 6, in `caption.py`). If the page sees a newer version than the running server, it shows an "updated while it was open, Quit now" banner. **Bump `APP_VERSION` whenever you change the Python.**
 
 ### Testing without breaking the live app
 
@@ -25,8 +25,9 @@ Coyle uses the app at games. `app.html` is re-read on every page load, so editin
 | `Contents/Resources/imgmeta.py` | Reads and writes metadata with no dependencies: XMP, IPTC, EXIF in JPEG; PNG text chunks; `.xmp` sidecars for RAW/HEIC/TIFF. Extracts embedded JPEG previews from RAW (CR3 parsing included). |
 | `Contents/Resources/ingest.py` | Card detection (folders with `DCIM`), copy with renaming, apply metadata template, Getty caption formatting, copy/move/export jobs. Never deletes or changes files on the card. Remembers what's been ingested in `~/.caption-images-ingested.json`. |
 | `Contents/Resources/teach.py` | "Teach numbers": labelling jersey crops and training a personal model. Data lives in `~/Library/Application Support/Caption Images/Numbers`. Mac only. |
-| `Contents/Resources/jersey-numbers.m` / `jersey-numbers` | Objective-C tool using Apple Vision to read jersey numbers (pose → torso crop → OCR, plus a tile sweep, voting). Prints JSON. The compiled binary is checked in. |
-| `Contents/Resources/jersey-train.swift` / `jersey-train` | Trains the Core ML number model from labelled crops. The compiled binary is checked in. |
+| `Contents/Resources/jersey-numbers.m` / `jersey-numbers` | Objective-C tool using Apple Vision to read jersey numbers (pose → torso crop → OCR, plus a tile sweep, voting). Prints JSON. The compiled binary is checked in. Mac only. |
+| `Contents/Resources/jersey-train.swift` / `jersey-train` | Trains the Core ML number model from labelled crops. The compiled binary is checked in. Mac only. |
+| `Contents/Resources/jersey_numbers_win.py` | Reads jersey numbers on Windows: free, offline OCR (RapidOCR/ONNX Runtime, pip-installed by the `.bat`) over the whole photo plus a tile sweep, with the same read-and-vote idea as the Mac tool. No pose/player detection (nothing free to do that with), so no torso crop and no personal-model training on Windows — "Teach numbers" training stays Mac only. See its docstring for the exact tradeoffs. |
 | `Code Replacements/*.txt` | Photo Mechanic–style code files, one `code<TAB>replacement` per line. One per sport, plus `News.txt` and `DATES.txt` (dates, datelines, photo-credit codes). |
 | `Metadata Templates/Generic.json` | The shared ingest/caption template. Personal templates are saved next to it but are git-ignored. |
 | `Tags.txt` | Keyword list offered in the UI. |
@@ -47,7 +48,8 @@ RAW files are never modified; their metadata goes into a sidecar with the same n
 ## Open items
 
 - Photo Mechanic hasn't been checked to confirm it shows our tags and color classes.
-- **The Windows version opens and then crashes** (reported by Coyle). The cause hasn't been found yet. The Windows paths have never been tested on a real PC.
+- **The Windows version opens and then crashes** (reported by Coyle). Investigated in `INVESTIGATION.md` (no Windows crash log exists yet, so the cause is still a ranked guess, not confirmed) — the next step there is a one-time logging change so the next crash leaves a trace.
+- Jersey-number *reading* now works on Windows too (`jersey_numbers_win.py`, free/offline OCR — see its docstring and `INVESTIGATION.md` for why this approach and what's different from the Mac tool). "Teach numbers" *training* is still Mac only; a Windows trainer would be a separate project if the team wants it.
 - In January 2027, update the officials: switch `\gov\` to Amy Acton and `\wcclee\` to Ryan Lee in `News.txt`, and remove Herringshaw.
 - The new sport files (baseball, softball, gymnastics, swimming and diving, track and field, tennis, golf) have no rosters yet.
 - 30 of the 42 photo-credit names came from an email recipient list, so preferred names aren't confirmed.
