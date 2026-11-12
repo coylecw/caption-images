@@ -96,14 +96,50 @@ that lives exclusively in the two compiled Mac binaries.
 
 ## Windows crash: investigation and ranked hypotheses
 
-**I could not reproduce this** (no Windows box here) and the repo has no crash log, traceback, or
-even a description of *when* it happens (immediately on double-click? after some minutes of use?
-on a specific action?). The code review below did **not** find a clear, deterministic bug that
-would crash the Python process outright — the server and its background threads are unusually
-well-guarded (broad `try/except` in every `do_GET`/`do_POST` handler, `friendly()` error
-translation, `main()` wrapped in `try/except` with a `MessageBoxW` fallback). That's good news for
-a quick fix but means the cause is more likely environmental/launch-path than a single bad line.
-Ranked by how likely each is to produce "opens, then [appears to] crash," most confident first:
+**Update — a real, reproducible, Windows-only bug was found and fixed in a follow-up session on
+a real Windows 11 laptop** (see "Confirmed bug" just below). It doesn't match "opens and then
+crashes" as literally as a process dying would, but it produces exactly the kind of unpredictable,
+hard-to-pin-down breakage a non-technical user would describe that way, and it's a real,
+demonstrated defect rather than a guess — worth ruling in or out with Coyle directly (did a window
+ever behave strangely, or did saving/rating/captioning seem to randomly fail?).
+
+### Confirmed bug: two launches can end up serving the same port with different tokens
+
+**Reproduced twice, directly, on real hardware.** `http.server.HTTPServer` (which `caption.py`'s
+server is built on) sets `allow_reuse_address = True` by default. On macOS/Linux, `SO_REUSEADDR`
+only helps reuse a port stuck in `TIME_WAIT` — it does **not** let two processes simultaneously
+bind and listen on the same active port. **On Windows, `SO_REUSEADDR` is far more permissive: it
+lets a second process bind to a port a first process is already listening on.** `main()`'s own
+comment assumes the opposite (`except OSError: # something else is using it`, falling back to a
+random port) — that fallback simply never triggers on Windows, because the second bind doesn't
+fail there the way it does on a Mac.
+
+Concretely: launch the app twice in close succession (an impatient double-click, or opening it
+again before the first copy has fully started — easiest to hit during the ~28 second first-run
+dependency install, timed on this laptop) and **both processes can end up listening on
+127.0.0.1:8765 at once, each with its own independently-generated `TOKEN`.** Windows then routes
+incoming connections between the two somewhat arbitrarily. `GET`s (page loads, `/api/ping`) don't
+need the token and work regardless of which process answers; every `POST` (saving a caption,
+rating, ingest, quit — anything that changes something) does need it, so whether a given save
+succeeds or gets a `403 Forbidden` becomes a coin flip depending on which process's socket
+happened to take that particular connection. That's an exact match for "it opens, then starts
+behaving unpredictably" from the user's side, with no single error to point at.
+
+**Fix:** set `allow_reuse_address = False` on the server (a 1-line change, `Server` subclass in
+`caption.py`), which restores the behaviour the code already assumed it had — a second bind now
+correctly fails, and the existing fallback-to-a-random-port logic (which already worked, untested,
+on Windows) actually runs. Re-tested after the fix, under the same conditions (including the wide
+~28s race window during a cold first-run install): only one process ever binds 8765 now; a second,
+near-simultaneous launch correctly falls back to its own random port instead of colliding. What's
+left after the fix is a much more benign cosmetic issue — two separate app windows, each pointed
+at a different, independent server — not silent, intermittent data loss.
+
+### Other hypotheses (unconfirmed, ranked by how likely each is to produce "opens, then crashes")
+
+No Windows crash log or traceback exists for the original report, and the server and its
+background threads are otherwise unusually well-guarded (broad `try/except` in every
+`do_GET`/`do_POST` handler, `friendly()` error translation, `main()` wrapped in `try/except` with
+a `MessageBoxW` fallback — see "What's been fixed so far" below for what's since been hardened).
 
 ### 1. (Medium-high confidence, easy to confirm) The batch file can silently fail to find a working Python, even when Python is installed
 

@@ -530,6 +530,24 @@ def photo_jpeg(sid):
 
 # ------------------------------------------------------------- server ----
 
+class Server(ThreadingHTTPServer):
+    # HTTPServer turns this on by default. On macOS/Linux that only lets a port in TIME_WAIT be
+    # reused; on Windows it also lets a second process bind the port while the first is still
+    # listening - both end up serving 127.0.0.1:8765 with different TOKENs, and incoming
+    # connections land on whichever one Windows feels like, so requests fail unpredictably
+    # ("Forbidden" on some POSTs, not others). Turning it off restores the behaviour main()'s
+    # "except OSError: use a random port instead" already assumes: a second launch should fail
+    # to bind and fall back cleanly, the same way it already does on a Mac.
+    allow_reuse_address = False
+
+    def handle_error(self, request, client_address):
+        """A page closing or reloading mid-request resets the connection; that's normal, not
+        a bug, and logging it on every reload would bury a real error under routine noise."""
+        if isinstance(sys.exc_info()[1], (BrokenPipeError, ConnectionResetError, ConnectionAbortedError)):
+            return
+        super().handle_error(request, client_address)
+
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
         pass
@@ -868,9 +886,9 @@ def main():
     threading.Thread(target=imgmeta.prune_previews, daemon=True).start()
     # A fixed port keeps the browser's remembered settings between runs.
     try:
-        SERVER = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
+        SERVER = Server(("127.0.0.1", PORT), Handler)
     except OSError:  # something else is using it
-        SERVER = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        SERVER = Server(("127.0.0.1", 0), Handler)
     url = "http://127.0.0.1:%d/" % SERVER.server_address[1]
     print("Caption Images is running at", url, flush=True)
     if show:
