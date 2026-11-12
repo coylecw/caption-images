@@ -33,9 +33,33 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, APP_DIR)
-import imgmeta  # noqa: E402
-import ingest  # noqa: E402
-import teach  # noqa: E402
+
+# Launched with pythonw (no console window), so there's nowhere for a startup problem to show
+# up - stdout/stderr are discarded (or even None). Send them to a log file instead, before
+# anything else runs, so an import-time failure or any other silent crash leaves a trace.
+if sys.platform == "win32":
+    try:
+        _log_path = os.path.join(tempfile.gettempdir(), "caption-images.log")
+        _log = open(_log_path, "a", buffering=1, encoding="utf-8")
+        _log.write("\n--- %s ---\n" % time.strftime("%Y-%m-%d %H:%M:%S"))
+        sys.stdout = sys.stderr = _log
+    except Exception:
+        pass  # worst case, back to no log - not worth failing startup over
+
+try:
+    import imgmeta
+    import ingest
+    import teach
+    import jersey_numbers_win
+except Exception as _e:
+    print("Caption Images couldn't start: a required file is missing or broken (%s)" % _e, flush=True)
+    if sys.platform == "win32":
+        try:
+            import ctypes
+            ctypes.windll.user32.MessageBoxW(0, "Caption Images couldn't start: %s" % _e, "Caption Images", 0x10)
+        except Exception:
+            pass
+    raise
 
 TOKEN = secrets.token_urlsafe(24)
 FOLDER = ""
@@ -86,9 +110,9 @@ TEMPLATES_DIR = os.path.join(HOME_DIR, "Metadata Templates")  # one .json file p
 TAGS_FILE = os.path.join(HOME_DIR, "Tags.txt")  # your own tag list: one tag per line, "#" lines are notes
 PORT = 8765
 APP_ID = "caption-images"
-APP_VERSION = 5  # the page checks this, so an old copy still running is noticed after an update
+APP_VERSION = 7  # the page checks this, so an old copy still running is noticed after an update
 LAST_SEEN = [time.monotonic()]  # when a page last checked in
-IDLE_QUIT = 180  # seconds with no page open before the app closes itself
+IDLE_QUIT = 600  # seconds with no page open before the app closes itself
 SERVER = None
 CODE_EXTS = {".txt", ".tsv", ".tab"}
 LOCK = threading.Lock()
@@ -427,6 +451,12 @@ def new_code_file_path(name):
 # photo with Apple Vision, on this Mac. It finds each player, reads a zoomed-in
 # crop of their jersey, sweeps the whole photo, and lets the reads vote.
 # No face data is kept.
+#
+# On Windows there's no Apple Vision, so jersey_numbers_win.py reads numbers a
+# different way: free, offline OCR (RapidOCR) over the whole photo plus a tile
+# sweep, with the same voting idea. It doesn't find players by pose, so there's
+# no torso crop and no "Teach numbers" training there (teach.available() stays
+# Mac-only; see jersey_numbers_win.py's docstring for what's different).
 
 NUMBERS_TOOL = os.path.join(APP_DIR, "jersey-numbers")
 NUMBERS_CACHE = {}
@@ -434,7 +464,9 @@ NUMBERS_SLOTS = threading.Semaphore(2)  # reading photos is heavy; at most two a
 
 
 def numbers_available():
-    return sys.platform == "darwin" and os.access(NUMBERS_TOOL, os.X_OK)
+    if sys.platform == "darwin":
+        return os.access(NUMBERS_TOOL, os.X_OK)
+    return jersey_numbers_win.available()
 
 
 def jersey_numbers(sid):
@@ -450,17 +482,23 @@ def jersey_numbers(sid):
     with NUMBERS_SLOTS:
         try:
             tmp = photo_jpeg(sid)
-            # each jersey is kept for a while, so tagging the player can teach the model ("Teach numbers")
-            os.makedirs(teach.SEEN, exist_ok=True)
-            args = [NUMBERS_TOOL, "--crops", teach.SEEN, "--name", teach.crop_name(folder, sid)] + teach.model_args()
-            r = subprocess.run(args + [tmp], capture_output=True, timeout=180)
+            if sys.platform == "darwin":
+                # each jersey is kept for a while, so tagging the player can teach the model ("Teach numbers")
+                os.makedirs(teach.SEEN, exist_ok=True)
+                args = [NUMBERS_TOOL, "--crops", teach.SEEN, "--name", teach.crop_name(folder, sid)] + teach.model_args()
+                r = subprocess.run(args + [tmp], capture_output=True, timeout=180)
+                try:
+                    out = json.loads(r.stdout.decode("utf-8").strip().splitlines()[-1]).get("numbers", [])
+                except (ValueError, IndexError):
+                    out = []
+            else:
+                try:
+                    out = jersey_numbers_win.read_numbers(tmp)
+                except Exception:
+                    out = []
         finally:
             if tmp:
                 os.unlink(tmp)
-    try:
-        out = json.loads(r.stdout.decode("utf-8").strip().splitlines()[-1]).get("numbers", [])
-    except (ValueError, IndexError):
-        out = []
     NUMBERS_CACHE[key] = out
     READS[0] += 1
     if READS[0] % 200 == 0:
@@ -491,6 +529,24 @@ def photo_jpeg(sid):
 
 
 # ------------------------------------------------------------- server ----
+
+class Server(ThreadingHTTPServer):
+    # HTTPServer turns this on by default. On macOS/Linux that only lets a port in TIME_WAIT be
+    # reused; on Windows it also lets a second process bind the port while the first is still
+    # listening - both end up serving 127.0.0.1:8765 with different TOKENs, and incoming
+    # connections land on whichever one Windows feels like, so requests fail unpredictably
+    # ("Forbidden" on some POSTs, not others). Turning it off restores the behaviour main()'s
+    # "except OSError: use a random port instead" already assumes: a second launch should fail
+    # to bind and fall back cleanly, the same way it already does on a Mac.
+    allow_reuse_address = False
+
+    def handle_error(self, request, client_address):
+        """A page closing or reloading mid-request resets the connection; that's normal, not
+        a bug, and logging it on every reload would bury a real error under routine noise."""
+        if isinstance(sys.exc_info()[1], (BrokenPipeError, ConnectionResetError, ConnectionAbortedError)):
+            return
+        super().handle_error(request, client_address)
+
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
@@ -626,6 +682,7 @@ class Handler(BaseHTTPRequestHandler):
                 if JOB:
                     JOB.cancel.set()
                 self._send(200, {"ok": True})
+                print("Closing: quit requested from the page.", flush=True)
                 threading.Thread(target=SERVER.shutdown, daemon=True).start()
                 return
             if path == "/api/pick-folder":
@@ -789,8 +846,9 @@ def watch_idle():
     """Close the app a few minutes after its window is closed, unless a copy is running."""
     while True:
         time.sleep(15)
-        if time.monotonic() - LAST_SEEN[0] > IDLE_QUIT and not (JOB and JOB.state["running"]):
-            print("No window open for a while, closing.", flush=True)
+        idle_for = time.monotonic() - LAST_SEEN[0]
+        if idle_for > IDLE_QUIT and not (JOB and JOB.state["running"]):
+            print("Closing: no page has checked in for %d seconds (limit %d)." % (idle_for, IDLE_QUIT), flush=True)
             SERVER.shutdown()
             return
 
@@ -828,9 +886,9 @@ def main():
     threading.Thread(target=imgmeta.prune_previews, daemon=True).start()
     # A fixed port keeps the browser's remembered settings between runs.
     try:
-        SERVER = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
+        SERVER = Server(("127.0.0.1", PORT), Handler)
     except OSError:  # something else is using it
-        SERVER = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        SERVER = Server(("127.0.0.1", 0), Handler)
     url = "http://127.0.0.1:%d/" % SERVER.server_address[1]
     print("Caption Images is running at", url, flush=True)
     if show:
