@@ -33,12 +33,12 @@ FIRST TIME ON A MAC (one time only):
    If you clicked Don't Allow by mistake: System Settings > Privacy &
    Security > Files and Folders > Caption Images, and turn the switches on.
 
-FIRST TIME ON WINDOWS: if Python isn't installed, get it from
-https://www.python.org/downloads/ (tick "Add Python to PATH").
-The first time you open it, a black window says "Setting up Caption
-Images" for a minute while it adds the photo tools (Pillow) that smaller
-copies and HEIC previews need. Be online for that. If it can't, the app
-still opens and sets them up next time.
+FIRST TIME ON WINDOWS: nothing to install - just double-click "Caption
+Images (Windows)". The first time you open it, a black window says
+"Setting up Caption Images" for a minute or so while it adds the photo
+tools (smaller copies, HEIC previews, jersey-number reading) that don't
+come with Python itself. Be online for that. If it can't, the app still
+opens and sets them up next time.
 
 The three tabs at the top go in order: Ingest -> Cull -> Caption.
 "Open folder..." (top right) opens any folder of photos to cull or caption.
