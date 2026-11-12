@@ -250,6 +250,34 @@ None of this *proves* what caused the original report — there's still no log f
 crash — but the next time it happens, `%TEMP%\caption-images.log` should say why, and several
 plausible silent-failure paths are now closed off either way.
 
+### Further checks, all on the real Windows 11 laptop (nothing more found, but worth recording)
+
+- **Non-ASCII names, captions, folder paths, emoji** — a realistic risk given this is a college
+  roster with international athletes, and Windows' default console/text codec (`cp1252`) isn't
+  UTF-8. Tested end-to-end through the real running server: a folder named `Café José García —
+  Senior Night`, a caption of `José García and Søren Müller celebrate with the 🏀 trophy — a huge
+  win!`, a unicode metadata template name, all round-tripped correctly through the actual JPEG's
+  XMP/EXIF/IPTC and through `Metadata Templates/*.json`, verified by independently re-reading the
+  file in a separate process. **No bug found** — `imgmeta.py` already writes everything as UTF-8
+  explicitly, and the file I/O throughout the app already specifies `encoding="utf-8"` rather than
+  relying on Windows' non-UTF-8 default. The one real `UnicodeEncodeError` hit during this testing
+  was in my own ad-hoc test script printing an emoji to a `cp1252` console — not in the app, which
+  never prints raw user text to an unredirected stream (checked every `print()` call in
+  `caption.py` directly).
+- **Sustained use** — simulated processing a full game's worth of jersey-number reads (60
+  sequential OCR calls in one long-running process, the same engine-reuse pattern the real server
+  uses). Memory rose once from ~18MB to ~110MB when the OCR models first loaded, then stayed flat
+  for all 60 reads — no leak — and timing stayed consistent (~3s/read) with no slowdown over the
+  run.
+- **"Mark of the Web"** — Coyle almost certainly got this app via email or a download link rather
+  than `git clone`, and Windows treats internet-downloaded files differently (an Explorer security
+  warning, or SmartScreen, before they'll run). Simulated this by manually attaching a
+  `Zone.Identifier` alternate data stream (`ZoneId=3`, with a fake `mail.google.com` referrer) to a
+  copy of the `.bat` and launching it the normal way. **It ran with no warning or block** on this
+  machine's default settings — ruled out as the cause here, though a corporate-managed Windows
+  install with stricter Attachment Manager policy could still behave differently, so this isn't a
+  100% guarantee for Coyle's specific machine.
+
 ## Why it's fast and reliable on Mac
 
 - **Jersey-number reading**: Apple Vision's on-device text recognition (`VNRecognizeTextRequest`,
