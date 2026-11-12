@@ -100,8 +100,10 @@ that lives exclusively in the two compiled Mac binaries.
 a real Windows 11 laptop** (see "Confirmed bug" just below). It doesn't match "opens and then
 crashes" as literally as a process dying would, but it produces exactly the kind of unpredictable,
 hard-to-pin-down breakage a non-technical user would describe that way, and it's a real,
-demonstrated defect rather than a guess — worth ruling in or out with Coyle directly (did a window
-ever behave strangely, or did saving/rating/captioning seem to randomly fail?).
+demonstrated defect rather than a guess. **Note: Coyle develops on a MacBook and can't run the
+Windows build himself** — the original report came from whoever on the team actually used it on
+Windows, so these questions (here and in "Open questions" below) need to reach that person, not
+Coyle directly; he can relay them but can't answer from firsthand experience.
 
 ### Confirmed bug: two launches can end up serving the same port with different tokens
 
@@ -154,10 +156,11 @@ machine it's common to have:
 
 If neither `pyw` nor `pythonw` resolves, the script falls straight to `:nopython` (line 33) and
 prints "Caption Images needs Python... install it..." — this is a clean failure, not a crash, but
-if Coyle saw a console flash and vanish (a `.bat` window closes instantly unless something pauses
-it) it is easy to describe after the fact as "it opens and then crashes." **This doesn't match "it
-opens" meaning the browser UI appeared**, so treat this as the leading hypothesis only if Coyle
-never actually saw the app's web page — worth asking directly (see Open Questions).
+if the Windows user saw a console flash and vanish (a `.bat` window closes instantly unless
+something pauses it) it is easy to describe after the fact as "it opens and then crashes." **This
+doesn't match "it opens" meaning the browser UI appeared**, so treat this as the leading hypothesis
+only if the app's web page never actually showed up — worth asking directly (see Open Questions;
+route through Coyle to whoever actually ran it, since he's on a Mac and can't test this himself).
 
 **Minimal fix:** add a `pause` (or an explicit message box via `ctypes`/`msg`) before exiting on
 every failure branch, and fall back to `%PY% -m pythonw` / `%PY% -m pyw` style invocation using the
@@ -169,14 +172,15 @@ start "" %PY% "%APPDIR%\caption.py"
 (launching with plain `python`/`py` briefly flashes a console, but that's strictly better than a
 silent failure, and can be hidden later with `pythonw -c` detection kept as the preferred path).
 
-### 2. (Medium confidence, environmental, hard to confirm without Coyle) The idle auto-quit firing while the window is still open
+### 2. (Medium confidence, environmental, hard to confirm without the Windows user) The idle auto-quit firing while the window is still open
 
 `caption.py:788-795` (`watch_idle`) calls `SERVER.shutdown()` — which ends `serve_forever()` and
 exits the whole `pythonw` process — if no page has called `/api/ping` for `IDLE_QUIT = 180`
-seconds. The page calls `ping()` every 15 seconds (`app.html:2672`) while open. If those pings stop
-reaching the server for 3 minutes **while the browser window still looks open to Coyle**, the app
-will quietly disappear from under him — which matches "opens and then crashes" quite well (he's
-mid-use, then it's just gone). Ways this could happen specifically on Windows and not Mac:
+seconds (now 600, see "What's been fixed so far"). The page calls `ping()` every 15 seconds
+(`app.html:2672`) while open. If those pings stop reaching the server for that long **while the
+browser window still looks open to whoever's using it**, the app will quietly disappear from under
+them — which matches "opens and then crashes" quite well (mid-use, then it's just gone). Ways this
+could happen specifically on Windows and not Mac:
 - A system proxy (common on managed/campus Windows machines, e.g. via Group Policy or a security
   agent that injects a loopback proxy for traffic inspection) intercepting `127.0.0.1` requests —
   `urllib`/browser `fetch` would then either hang or fail depending on the proxy's handling of
@@ -239,7 +243,8 @@ the other three mitigations below are now in `caption.py` / `Caption Images (Win
   before.
 
 **Two other classic Windows/`pythonw` gotchas were checked directly on real hardware and ruled
-out** (on this machine/Python version, at least — can't promise the same on Coyle's older setup):
+out** (on this machine/Python version, at least — can't promise the same on whatever the Windows
+user's own machine is running):
 `print()` to a `None` stream (which is what `sys.stdout`/`sys.stderr` actually are under a
 truly detached `pythonw`, confirmed empirically) is a documented no-op in CPython, not a crash;
 and `subprocess.Popen()` without explicit stdio redirection — the exact pattern `open_window()`
@@ -269,14 +274,15 @@ plausible silent-failure paths are now closed off either way.
   uses). Memory rose once from ~18MB to ~110MB when the OCR models first loaded, then stayed flat
   for all 60 reads — no leak — and timing stayed consistent (~3s/read) with no slowdown over the
   run.
-- **"Mark of the Web"** — Coyle almost certainly got this app via email or a download link rather
-  than `git clone`, and Windows treats internet-downloaded files differently (an Explorer security
-  warning, or SmartScreen, before they'll run). Simulated this by manually attaching a
-  `Zone.Identifier` alternate data stream (`ZoneId=3`, with a fake `mail.google.com` referrer) to a
-  copy of the `.bat` and launching it the normal way. **It ran with no warning or block** on this
-  machine's default settings — ruled out as the cause here, though a corporate-managed Windows
-  install with stricter Attachment Manager policy could still behave differently, so this isn't a
-  100% guarantee for Coyle's specific machine.
+- **"Mark of the Web"** — whoever hit this on Windows almost certainly got the app via email, a
+  shared drive, or a download link rather than `git clone` (Coyle is on a Mac and can't have
+  tested the Windows path himself), and Windows treats internet-downloaded files differently (an
+  Explorer security warning, or SmartScreen, before they'll run). Simulated this by manually
+  attaching a `Zone.Identifier` alternate data stream (`ZoneId=3`, with a fake `mail.google.com`
+  referrer) to a copy of the `.bat` and launching it the normal way. **It ran with no warning or
+  block** on this machine's default settings — ruled out as the cause here, though a
+  corporate-managed Windows install (e.g. a BGSU-IT-imaged machine) with stricter Attachment
+  Manager policy could still behave differently, so this isn't a 100% guarantee.
 
 ## Why it's fast and reliable on Mac
 
@@ -325,8 +331,8 @@ the one in front of you (an unexplained crash on one specific OS) and would *rem
   inside it. Containerizing even just the Mac build would mean losing jersey-number reading
   entirely, the one feature that's actually hard to replicate elsewhere. You'd gain nothing (the
   rest of the app already runs identically on both OSes in plain Python) and lose that one feature.
-- **Windows Docker (WSL2)** needs the NVIDIA Container Toolkit for GPU passthrough, and Coyle's
-  Windows box is unlikely to have an NVIDIA GPU dedicated to this (and the current Windows path
+- **Windows Docker (WSL2)** needs the NVIDIA Container Toolkit for GPU passthrough, and a typical
+  team Windows laptop is unlikely to have an NVIDIA GPU dedicated to this (and the current Windows path
   doesn't use a GPU at all — it's CPU-only Pillow). So containerizing the Windows side buys nothing
   either; CPU-only Pillow runs exactly as fast in a container as outside one, with extra overhead
   for Docker Desktop itself.
@@ -360,16 +366,28 @@ This is the one that actually addresses "it broke on an OS nobody tested" as a *
 
 ## Recommended path, in priority order
 
-1. **(Do today, ~15 min)** Add stdout/stderr logging to a file on Windows (see snippet above) and ship that one change to Coyle so the *next* crash leaves a trace. This is the single highest-leverage thing you can do — everything else is a guess until there's a real log.
-2. **(Do today, ~10 min)** Harden the `.bat` launcher: don't silently vanish if `pyw`/`pythonw` aren't found when `py`/`python` are (hypothesis #1) — fall back to launching with whichever of `py`/`python` was actually found, and add a `pause` on every failure path so a flashed-and-closed console becomes a readable message.
-3. **(Do this week, ~30 min)** Raise `IDLE_QUIT` and/or log *why* `watch_idle` or `/api/quit` shut the server down (hypothesis #2) — cheap, safe, and turns the most likely root cause into either a confirmed fix or a ruled-out one once you see the log from step 1.
-4. **(Do this week, ~15 min)** Wrap the three top-level imports in `caption.py` in the same `try/except` + `tell_user()` pattern `main()` already uses (hypothesis #3) — cheap insurance, near-zero risk.
-5. **(Next, once the above ships and you have a real Windows log)** If the log points to something not covered above, come back with the actual traceback — at that point this becomes a normal, fast bug fix instead of a guessing exercise.
-6. **(Medium-term, independent track)** Set up CI on Windows + macOS (alternative **d** above) so the next regression is caught before it reaches Coyle at a game.
-7. **(Only if/when the team actually wants jersey-number reading on Windows)** Design a Windows OCR/classifier backend behind the existing `numbers_available()`-style switch (alternative **a**). This is a real project (data collection, model choice, accuracy testing against what Vision already gives Mac users) — don't bundle it with the crash fix.
+Steps 1-4 and the confirmed port-reuse bug (see above) are **done**, on the `dawson` branch, as of
+the follow-up Windows testing session. Since Coyle can't run Windows himself to verify any of
+this, "done" here means tested directly on a real Windows 11 laptop in this session, not confirmed
+by Coyle — that's the gap step 5 is about closing.
+
+1. ~~Add stdout/stderr logging to a file on Windows~~ **Done.** `%TEMP%\caption-images.log`.
+2. ~~Harden the `.bat` launcher~~ **Done.** Falls back if `pyw`/`pythonw` aren't found; no more silent failures.
+3. ~~Raise `IDLE_QUIT` and log why the server shuts down~~ **Done.** 180s → 600s, both idle-quit and explicit quit now log why.
+4. ~~Guard the top-level imports~~ **Done.** Import failures now show a message box, not silence.
+5. **(Next — this is the actual remaining gap)** Get this branch in front of whoever actually uses
+   Windows for this (not Coyle — he's on a Mac). If it crashes again, `%TEMP%\caption-images.log`
+   should now say why; if it doesn't, that's meaningful evidence too, given the confirmed
+   port-reuse bug this branch fixes. Either way, this is the step that needs a human with a
+   Windows machine who isn't this session's test laptop.
+6. **(Medium-term, independent track)** Set up CI on Windows + macOS (alternative **d** above) so the next regression is caught before it reaches a game, on whichever OS.
+7. **(Only if/when the team actually wants jersey-number reading on Windows)** Already shipped on this branch (free OCR via `jersey_numbers_win.py`) — training a personal model on Windows (alternative **a**'s remaining piece) is still a separate, bigger project if ever wanted.
 8. **Do not pursue Docker** for the app as it exists (see assessment above); revisit only if a headless/server mode becomes an actual product need.
 
-## Open questions for your friend
+## Open questions for whoever actually hit this on Windows
+
+Coyle develops on a MacBook and can't run the Windows build himself, so these need to reach
+whichever teammate originally reported "it crashes" — he can relay them but can't answer directly.
 
 1. **What does "opens and then crashes" literally look like?** Does the browser window/UI ever appear? If yes, how long does it stay usable before it breaks (seconds? minutes? after a specific click)? If no, does even a console window flash briefly? This single answer would let me collapse the three ranked hypotheses above into one.
 2. Is there any visible error — a Windows error dialog, a browser "can't connect" page, or just the window disappearing with no message at all?
