@@ -105,7 +105,7 @@ from whoever on the team actually used it on Windows; he can relay questions but
 from firsthand experience, and neither can this testing session's own Windows laptop, which already
 had a real Python installed for development before any of this testing started.
 
-### Root-cause theory, now fixed: the app used to require a Python the machine probably doesn't have
+### Now reproduced directly, not just theorized: the app used to require a Python the machine probably doesn't have
 
 **This is the leading explanation for "couldn't even open it,"** and it's structural, not a single
 bad line: `Caption Images (Windows).bat` used to run `caption.py` with whatever `py`/`python`/
@@ -134,10 +134,33 @@ RapidOCR into its own isolated `Lib/site-packages` with no `--user` flag needed,
 of the app folder (not just this session's already-set-up one), confirming the process that ends
 up listening on port 8765 is genuinely `...\python-windows\pythonw.exe`, not any system Python;
 (3) a full regression pass through the real HTTP API (folder browsing, metadata, jersey-number
-reading) against that bundled interpreter. **Can't reproduce the exact Store-stub failure itself on
-this machine** (it already has real Python installed, which is the whole point), so this is a
-strong, well-reasoned theory backed by a verified fix — not a confirmed root cause the way the
-port-reuse bug below is. The actual confirmation can only come from someone else's Windows machine.
+reading) against that bundled interpreter.
+
+**Update — directly reproduced the actual failure, not just theorized it, without a VM or a new
+Windows account.** This machine (Pro-free Windows 10 Home, so no Windows Sandbox or Hyper-V either)
+already has real Python, so it can't show the genuine Microsoft Store stub — but the stub's
+*effect* (a `python`-named thing on `PATH` that silently does nothing useful) can be reproduced
+exactly: a hand-written `.bat` stand-in matching the stub's documented behavior (prints a
+"Python was not found... install from the Microsoft Store" message, exits non-zero, nothing on
+stdout) was placed ahead of everything else on `PATH` for a test process only — including shadowing
+this machine's own real, already-installed, system-wide `py`/`pyw` launchers (`C:\Windows\py.exe`,
+installed "for all users" by this machine's own Python setup), since `where`/`cmd.exe` resolve the
+first `PATH` match and the stand-ins were listed first.
+
+Under that exact condition:
+- **The original `.bat`** (pulled from the first commit, `915b272`, byte-for-byte what the team
+  first received) — **never started the app.** No server ever came up on port 8765, no process left
+  running. `where py`/`where python` "succeed" (finding the non-functional stand-ins), so the script
+  proceeds, silently fails every subsequent step against them, and exits. Any console window would
+  flash and vanish with no lasting message, since nothing pauses on this failure path — as close to
+  "the moment they'd try to open it, it would crash, they couldn't even do it" as a repro gets.
+- **The current, fixed `.bat`**, run immediately after under the *identical* hostile `PATH` —
+  **opened normally in 18 seconds**, confirmed genuinely running
+  `...\python-windows\pythonw.exe`, completely unaffected, because it never looks at `PATH` at all.
+
+This doesn't prove the *original* report was caused by exactly this (still no log from that actual
+machine), but it confirms the mechanism is real, reproducible, and that the fix closes it — on real
+hardware, side by side, same machine, same conditions, two different results.
 
 ### Confirmed bug: two launches can end up serving the same port with different tokens
 
