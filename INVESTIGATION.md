@@ -182,17 +182,37 @@ try/except that calls `tell_user()`.
 ### What I'd actually do first (cheaper than guessing further)
 
 Redirect stdout/stderr to a log file before anything else runs, so the *next* time it "crashes" on
-Windows there's a trace instead of nothing. This is a 3-line, fully reversible change and should be
-the very first fix landed — everything above is a reasoned guess; a real Windows log turns it into
-a known bug.
+Windows there's a trace instead of nothing.
 
-```python
-if sys.platform == "win32" and "--no-browser" not in sys.argv:
-    log_path = os.path.join(tempfile.gettempdir(), "caption-images.log")
-    sys.stdout = sys.stderr = open(log_path, "a", buffering=1, encoding="utf-8")
-```
-(placed at the very top of `caption.py`, before the `imgmeta`/`ingest`/`teach` imports, so it also
-catches import-time failures per hypothesis 3).
+**Update — implemented and tested on a real Windows 11 laptop, in a follow-up session.** This and
+the other three mitigations below are now in `caption.py` / `Caption Images (Windows).bat`:
+
+- **Logging** (`%TEMP%\caption-images.log`), placed before the `imgmeta`/`ingest`/`teach`/
+  `jersey_numbers_win` imports so it also catches import-time failures (hypothesis 3). Verified:
+  deliberately broke one of the imported files and confirmed the log captured the exact error
+  instead of the process dying with zero trace, which is exactly what used to happen.
+- **Import-time failures now show a message box too** (hypothesis 3), not just failures inside
+  `main()` — same verification as above.
+- **The `.bat` no longer gives up if `pyw`/`pythonw` aren't on `PATH`** (hypothesis 1): it now
+  looks for `pythonw.exe` next to whichever `python`/`py` it already found, and as a last resort
+  opens with a visible console rather than failing silently.
+- **`IDLE_QUIT` raised from 180s to 600s, and both the idle-shutdown and an explicit quit now log
+  why they're closing** (hypothesis 2), e.g. `Closing: no page has checked in for 611 seconds
+  (limit 600).` vs `Closing: quit requested from the page.` — so the log can now tell the
+  difference between "the app decided to close itself" and "it just vanished," which it couldn't
+  before.
+
+**Two other classic Windows/`pythonw` gotchas were checked directly on real hardware and ruled
+out** (on this machine/Python version, at least — can't promise the same on Coyle's older setup):
+`print()` to a `None` stream (which is what `sys.stdout`/`sys.stderr` actually are under a
+truly detached `pythonw`, confirmed empirically) is a documented no-op in CPython, not a crash;
+and `subprocess.Popen()` without explicit stdio redirection — the exact pattern `open_window()`
+uses to launch Edge/Chrome — also didn't raise under a detached `pythonw` here, contrary to an
+older, once-common Windows gotcha.
+
+None of this *proves* what caused the original report — there's still no log from the actual
+crash — but the next time it happens, `%TEMP%\caption-images.log` should say why, and several
+plausible silent-failure paths are now closed off either way.
 
 ## Why it's fast and reliable on Mac
 

@@ -39,6 +39,21 @@ if not errorlevel 1 (
   exit /b 0
 )
 
+REM Neither pyw nor pythonw is on PATH (this happens with some Python installs, e.g. the
+REM Microsoft Store one, or python.org without "Install launcher for all users"). %PY% itself
+REM works, though, so look for pythonw.exe next to it instead of giving up.
+set "PYW="
+for /f "delims=" %%P in ('%PY% -c "import sys,os;print(os.path.join(os.path.dirname(sys.executable),'pythonw.exe'))" 2^>nul') do set "PYW=%%P"
+if defined PYW if exist "%PYW%" (
+  start "" "%PYW%" "%APPDIR%\caption.py"
+  exit /b 0
+)
+
+REM Last resort: open with a visible console rather than not open at all.
+echo Couldn't find a windowed Python (pyw/pythonw); opening with a console instead...
+start "Caption Images" %PY% "%APPDIR%\caption.py"
+exit /b 0
+
 :nopython
 echo Caption Images needs Python. Install it from https://www.python.org/downloads/
 echo (tick "Add Python to PATH"), then double-click Caption Images again.
