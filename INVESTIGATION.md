@@ -96,14 +96,48 @@ that lives exclusively in the two compiled Mac binaries.
 
 ## Windows crash: investigation and ranked hypotheses
 
-**Update — a real, reproducible, Windows-only bug was found and fixed in a follow-up session on
-a real Windows 11 laptop** (see "Confirmed bug" just below). It doesn't match "opens and then
-crashes" as literally as a process dying would, but it produces exactly the kind of unpredictable,
-hard-to-pin-down breakage a non-technical user would describe that way, and it's a real,
-demonstrated defect rather than a guess. **Note: Coyle develops on a MacBook and can't run the
-Windows build himself** — the original report came from whoever on the team actually used it on
-Windows, so these questions (here and in "Open questions" below) need to reach that person, not
-Coyle directly; he can relay them but can't answer from firsthand experience.
+**Update — Coyle got more detail from whoever hit this: it didn't open at all. "The moment they
+would try to open the program it would crash, like they couldn't even do it."** That's a much
+better match for the architectural problem below than for the port-reuse bug further down (which
+needs the app to have started serving requests first). **Note throughout: Coyle develops on a
+MacBook and can't run the Windows build himself** — the original report, and any follow-up, comes
+from whoever on the team actually used it on Windows; he can relay questions but can't answer them
+from firsthand experience, and neither can this testing session's own Windows laptop, which already
+had a real Python installed for development before any of this testing started.
+
+### Root-cause theory, now fixed: the app used to require a Python the machine probably doesn't have
+
+**This is the leading explanation for "couldn't even open it,"** and it's structural, not a single
+bad line: `Caption Images (Windows).bat` used to run `caption.py` with whatever `py`/`python`/
+`pyw`/`pythonw` it could find on the machine's `PATH`. That's a reasonable assumption for a
+developer's machine (this testing session's laptop included — real Python was already installed
+for other work, which is exactly why this was never caught here until asked to think about *who*
+actually reported the crash). **It's a bad assumption for a non-technical teammate's Windows 11
+machine that's never had Python installed**, because Windows 11 ships `python.exe`/`python3.exe`
+as built-in **App Execution Alias stubs**: typing `python` (or running it from a script) on such a
+machine doesn't error — it silently opens the Microsoft Store to the Python listing page (or, when
+invoked with arguments the way `caption.py` needs, just prints a "get Python from the Store"
+message and exits) and does nothing useful. `where python` still finds this stub and reports
+success, so the `.bat`'s Python-detection logic would think it found a working Python, then every
+subsequent step (the one-time Pillow/RapidOCR install, then the actual launch) would silently fail
+against the stub — no real error, no window, nothing. That lines up with "the moment they'd try to
+open the program it would crash" far better than anything else investigated.
+
+**Fix:** the app now ships its own Python (`Contents/Resources/python-windows/`, a Windows
+"embeddable" CPython 3.12 build with `pip` bootstrapped in, ~29 MB, no packages pre-installed) and
+`Caption Images (Windows).bat` uses it exclusively by its exact bundled path — it no longer calls
+`where py`/`where python`/`where pyw`/`where pythonw` at all, so what is or isn't on the machine's
+`PATH` can no longer matter. Verified on this laptop in three ways: (1) directly invoking the
+bundled interpreter standalone — imports the app's own modules, installs Pillow/pillow-heif/
+RapidOCR into its own isolated `Lib/site-packages` with no `--user` flag needed, and runs
+`RapidOCR()` successfully; (2) running the real `.bat` end-to-end from a byte-for-byte fresh copy
+of the app folder (not just this session's already-set-up one), confirming the process that ends
+up listening on port 8765 is genuinely `...\python-windows\pythonw.exe`, not any system Python;
+(3) a full regression pass through the real HTTP API (folder browsing, metadata, jersey-number
+reading) against that bundled interpreter. **Can't reproduce the exact Store-stub failure itself on
+this machine** (it already has real Python installed, which is the whole point), so this is a
+strong, well-reasoned theory backed by a verified fix — not a confirmed root cause the way the
+port-reuse bug below is. The actual confirmation can only come from someone else's Windows machine.
 
 ### Confirmed bug: two launches can end up serving the same port with different tokens
 
@@ -143,7 +177,13 @@ background threads are otherwise unusually well-guarded (broad `try/except` in e
 `do_GET`/`do_POST` handler, `friendly()` error translation, `main()` wrapped in `try/except` with
 a `MessageBoxW` fallback — see "What's been fixed so far" below for what's since been hardened).
 
-### 1. (Medium-high confidence, easy to confirm) The batch file can silently fail to find a working Python, even when Python is installed
+### 1. (Superseded — the whole mechanism this describes no longer exists) The batch file can silently fail to find a working Python, even when Python is installed
+
+**This entire hypothesis is now moot**: it was about the old `.bat`'s `where py`/`where python`/
+`where pyw`/`where pythonw` detection logic failing in various ways. That detection logic doesn't
+exist anymore — the `.bat` now always uses the bundled `python-windows/` interpreter by its exact
+path (see "Root-cause theory, now fixed" above), so there's nothing left to fail to find. Left
+below for the record of what was investigated, not as a live concern.
 
 `Caption Images (Windows).bat:7-12` checks `where py` then `where python` to set `%PY%` (used only
 for the one-time Pillow install check), but the actual app launch at lines 22-31 requires **a
@@ -372,7 +412,7 @@ this, "done" here means tested directly on a real Windows 11 laptop in this sess
 by Coyle — that's the gap step 5 is about closing.
 
 1. ~~Add stdout/stderr logging to a file on Windows~~ **Done.** `%TEMP%\caption-images.log`.
-2. ~~Harden the `.bat` launcher~~ **Done.** Falls back if `pyw`/`pythonw` aren't found; no more silent failures.
+2. ~~Harden the `.bat` launcher~~ **Done, then superseded by something stronger.** First hardened the fallback if `pyw`/`pythonw` weren't found; then, once it became clear the real report was "couldn't even open it" at all (pointing at machines with no real Python, not just a missing launcher variant), replaced the whole system-Python dependency with a bundled interpreter instead — see "Root-cause theory, now fixed" above.
 3. ~~Raise `IDLE_QUIT` and log why the server shuts down~~ **Done.** 180s → 600s, both idle-quit and explicit quit now log why.
 4. ~~Guard the top-level imports~~ **Done.** Import failures now show a message box, not silence.
 5. **(Next — this is the actual remaining gap)** Get this branch in front of whoever actually uses
