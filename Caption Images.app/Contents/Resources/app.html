@@ -2656,7 +2656,7 @@ window.addEventListener("beforeunload", e => { if (items.some(it => it.ta && it.
 
 /* ================= running / quit ================= */
 let misses = 0, quitting = false;
-const PAGE_VERSION = 5;  // matches APP_VERSION in caption.py
+const PAGE_VERSION = 6;  // matches APP_VERSION in caption.py
 function showClosed(title, text) {
   $("closed-title").textContent = title; $("closed-text").textContent = text; $("closed").hidden = false;
 }

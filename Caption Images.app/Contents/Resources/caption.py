@@ -36,6 +36,7 @@ sys.path.insert(0, APP_DIR)
 import imgmeta  # noqa: E402
 import ingest  # noqa: E402
 import teach  # noqa: E402
+import jersey_numbers_win  # noqa: E402
 
 TOKEN = secrets.token_urlsafe(24)
 FOLDER = ""
@@ -86,7 +87,7 @@ TEMPLATES_DIR = os.path.join(HOME_DIR, "Metadata Templates")  # one .json file p
 TAGS_FILE = os.path.join(HOME_DIR, "Tags.txt")  # your own tag list: one tag per line, "#" lines are notes
 PORT = 8765
 APP_ID = "caption-images"
-APP_VERSION = 5  # the page checks this, so an old copy still running is noticed after an update
+APP_VERSION = 6  # the page checks this, so an old copy still running is noticed after an update
 LAST_SEEN = [time.monotonic()]  # when a page last checked in
 IDLE_QUIT = 180  # seconds with no page open before the app closes itself
 SERVER = None
@@ -427,6 +428,12 @@ def new_code_file_path(name):
 # photo with Apple Vision, on this Mac. It finds each player, reads a zoomed-in
 # crop of their jersey, sweeps the whole photo, and lets the reads vote.
 # No face data is kept.
+#
+# On Windows there's no Apple Vision, so jersey_numbers_win.py reads numbers a
+# different way: free, offline OCR (RapidOCR) over the whole photo plus a tile
+# sweep, with the same voting idea. It doesn't find players by pose, so there's
+# no torso crop and no "Teach numbers" training there (teach.available() stays
+# Mac-only; see jersey_numbers_win.py's docstring for what's different).
 
 NUMBERS_TOOL = os.path.join(APP_DIR, "jersey-numbers")
 NUMBERS_CACHE = {}
@@ -434,7 +441,9 @@ NUMBERS_SLOTS = threading.Semaphore(2)  # reading photos is heavy; at most two a
 
 
 def numbers_available():
-    return sys.platform == "darwin" and os.access(NUMBERS_TOOL, os.X_OK)
+    if sys.platform == "darwin":
+        return os.access(NUMBERS_TOOL, os.X_OK)
+    return jersey_numbers_win.available()
 
 
 def jersey_numbers(sid):
@@ -450,17 +459,23 @@ def jersey_numbers(sid):
     with NUMBERS_SLOTS:
         try:
             tmp = photo_jpeg(sid)
-            # each jersey is kept for a while, so tagging the player can teach the model ("Teach numbers")
-            os.makedirs(teach.SEEN, exist_ok=True)
-            args = [NUMBERS_TOOL, "--crops", teach.SEEN, "--name", teach.crop_name(folder, sid)] + teach.model_args()
-            r = subprocess.run(args + [tmp], capture_output=True, timeout=180)
+            if sys.platform == "darwin":
+                # each jersey is kept for a while, so tagging the player can teach the model ("Teach numbers")
+                os.makedirs(teach.SEEN, exist_ok=True)
+                args = [NUMBERS_TOOL, "--crops", teach.SEEN, "--name", teach.crop_name(folder, sid)] + teach.model_args()
+                r = subprocess.run(args + [tmp], capture_output=True, timeout=180)
+                try:
+                    out = json.loads(r.stdout.decode("utf-8").strip().splitlines()[-1]).get("numbers", [])
+                except (ValueError, IndexError):
+                    out = []
+            else:
+                try:
+                    out = jersey_numbers_win.read_numbers(tmp)
+                except Exception:
+                    out = []
         finally:
             if tmp:
                 os.unlink(tmp)
-    try:
-        out = json.loads(r.stdout.decode("utf-8").strip().splitlines()[-1]).get("numbers", [])
-    except (ValueError, IndexError):
-        out = []
     NUMBERS_CACHE[key] = out
     READS[0] += 1
     if READS[0] % 200 == 0:
