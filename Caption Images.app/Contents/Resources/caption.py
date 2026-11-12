@@ -33,10 +33,33 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, APP_DIR)
-import imgmeta  # noqa: E402
-import ingest  # noqa: E402
-import teach  # noqa: E402
-import jersey_numbers_win  # noqa: E402
+
+# Launched with pythonw (no console window), so there's nowhere for a startup problem to show
+# up - stdout/stderr are discarded (or even None). Send them to a log file instead, before
+# anything else runs, so an import-time failure or any other silent crash leaves a trace.
+if sys.platform == "win32":
+    try:
+        _log_path = os.path.join(tempfile.gettempdir(), "caption-images.log")
+        _log = open(_log_path, "a", buffering=1, encoding="utf-8")
+        _log.write("\n--- %s ---\n" % time.strftime("%Y-%m-%d %H:%M:%S"))
+        sys.stdout = sys.stderr = _log
+    except Exception:
+        pass  # worst case, back to no log - not worth failing startup over
+
+try:
+    import imgmeta
+    import ingest
+    import teach
+    import jersey_numbers_win
+except Exception as _e:
+    print("Caption Images couldn't start: a required file is missing or broken (%s)" % _e, flush=True)
+    if sys.platform == "win32":
+        try:
+            import ctypes
+            ctypes.windll.user32.MessageBoxW(0, "Caption Images couldn't start: %s" % _e, "Caption Images", 0x10)
+        except Exception:
+            pass
+    raise
 
 TOKEN = secrets.token_urlsafe(24)
 FOLDER = ""
@@ -87,9 +110,9 @@ TEMPLATES_DIR = os.path.join(HOME_DIR, "Metadata Templates")  # one .json file p
 TAGS_FILE = os.path.join(HOME_DIR, "Tags.txt")  # your own tag list: one tag per line, "#" lines are notes
 PORT = 8765
 APP_ID = "caption-images"
-APP_VERSION = 6  # the page checks this, so an old copy still running is noticed after an update
+APP_VERSION = 7  # the page checks this, so an old copy still running is noticed after an update
 LAST_SEEN = [time.monotonic()]  # when a page last checked in
-IDLE_QUIT = 180  # seconds with no page open before the app closes itself
+IDLE_QUIT = 600  # seconds with no page open before the app closes itself
 SERVER = None
 CODE_EXTS = {".txt", ".tsv", ".tab"}
 LOCK = threading.Lock()
@@ -641,6 +664,7 @@ class Handler(BaseHTTPRequestHandler):
                 if JOB:
                     JOB.cancel.set()
                 self._send(200, {"ok": True})
+                print("Closing: quit requested from the page.", flush=True)
                 threading.Thread(target=SERVER.shutdown, daemon=True).start()
                 return
             if path == "/api/pick-folder":
@@ -804,8 +828,9 @@ def watch_idle():
     """Close the app a few minutes after its window is closed, unless a copy is running."""
     while True:
         time.sleep(15)
-        if time.monotonic() - LAST_SEEN[0] > IDLE_QUIT and not (JOB and JOB.state["running"]):
-            print("No window open for a while, closing.", flush=True)
+        idle_for = time.monotonic() - LAST_SEEN[0]
+        if idle_for > IDLE_QUIT and not (JOB and JOB.state["running"]):
+            print("Closing: no page has checked in for %d seconds (limit %d)." % (idle_for, IDLE_QUIT), flush=True)
             SERVER.shutdown()
             return
 
